@@ -1,0 +1,32 @@
+# MagicBlock's ephemeral validator v1.0.2, with this chain as its base chain.
+# The validator's identity must be one that the network's genesis admitted
+# with `svmd init --ephemeral-validator`. Its keypair comes through the
+# environment (examples/ephemeral-validator.service).
+#
+# The validator is under the BSL 1.1 until 2027-12-01. Check that you have the
+# right to run it in production, or get a commercial license from MagicBlock.
+#
+#   ephemeral-validator --no-tui /etc/svmd/ephemeral-validator.toml
+
+# An ephemeral rollup. It takes accounts delegated from the base chain,
+# executes transactions on them, commits them back and undelegates them.
+lifecycle = "ephemeral"
+
+# The base chain's RPC and websocket, on a machine of this network or on the
+# gateway. The validator tracks the base chain's slot through a Clock
+# subscription, which this chain sends at every block.
+remotes = ["http://127.0.0.1:8899", "ws://127.0.0.1:8900"]
+
+# The rollup's ledger.
+storage = "/var/lib/ephemeral-validator"
+
+[aperture]
+# Where apps reach the rollup: its RPC, with the websocket on the next port.
+listen = "0.0.0.0:7799"
+
+[commit]
+# The compute unit price of each commit on the base chain, in micro-lamports.
+# Set it from getRecentPrioritizationFees on this chain. Use 0 while blocks
+# are not full, because this chain burns every fee and a priority fee buys
+# only a place in the block.
+compute-unit-price = 0

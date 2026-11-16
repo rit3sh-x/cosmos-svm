@@ -1,0 +1,64 @@
+# The alerts that docs/runbook.md section 9 asks for.
+#
+# A full pool refuses transactions by arrival and removes nothing, so new
+# transactions are lost. The two numbers are the shipped config.toml values,
+# mempool.size = 5000 and mempool.max_txs_bytes = 8358477. Change them to match
+# your file. The rejected counter alone does not show a full pool, because it
+# also counts a transaction that the pool already holds. So the rule also asks
+# for a full pool, by count or by bytes.
+
+groups:
+  - name: svmd
+    rules:
+      - alert: SVMPoolFull
+        expr: >
+          (cometbft_mempool_size >= 5000 or cometbft_mempool_size_bytes >= 8358477 - 4139)
+          and increase(cometbft_mempool_rejected_txs[2m]) > 0
+        for: 1m
+        labels:
+          severity: page
+        annotations:
+          summary: "The pool of {{ $labels.instance }} is full and refuses transactions"
+          description: "cometbft_mempool_size is {{ $value }}; raise the limits or add the app-side pool (docs/runbook.md section 9)."
+
+      - alert: SVMBehindPeers
+        # getHealth answers behind at eight blocks. This rule uses the same number.
+        expr: max(cometbft_consensus_peer_height) - cometbft_consensus_height > 8
+        for: 2m
+        labels:
+          severity: warn
+        annotations:
+          summary: "{{ $labels.instance }} is more than eight blocks behind its peers"
+
+      - alert: SVMHistoryCompactionFailing
+        # A failed compaction leaves the disk space of purged history in use.
+        expr: increase(svm_history_compaction_failures_total[1h]) > 0
+        labels:
+          severity: warn
+        annotations:
+          summary: "A history compaction failed on {{ $labels.instance }}"
+
+      - alert: SVMProposalRefused
+        # ProcessProposal refused a proposal, under the first reason it met.
+        # For signature or decode, the proposer sent a bad block. For another
+        # reason, find the cause first. When this machine alone refuses, the
+        # fault is likely on this machine. Each instance and reason fires on
+        # its own, with no aggregation.
+        expr: increase(svm_proposals_refused_total[10m]) > 0
+        labels:
+          severity: warn
+        annotations:
+          summary: "{{ $labels.instance }} refused a proposal, reason {{ $labels.reason }}"
+          description: "Read the 'svm: proposal refused' log line for the height, the proposer and the index (runbook section 9)."
+
+      - alert: SVMBlockAdmissionFailed
+        # Phase 1 did not admit a transaction of a finalized block and left it
+        # unprocessed. The block passed without this machine's vote, or this
+        # machine reads a check differently from the others, for example a
+        # gate. It is an alarm, never a reason to halt. The block stands.
+        expr: increase(svm_block_admission_failed_total[10m]) > 0
+        labels:
+          severity: page
+        annotations:
+          summary: "{{ $labels.instance }} did not admit a transaction of a finalized block, reason {{ $labels.reason }}"
+          description: "Read the 'svm: block transaction not admitted' log line, and check the gates scheduled for that height (runbook section 9)."

@@ -1,0 +1,26 @@
+# A Prometheus scrape of a machine of this chain.
+# One port gives the cometbft_* and the svm_* metrics together. It is
+# instrumentation.prometheus_listen_addr in config.toml, :26660 by default.
+# examples/prometheus-alerts.yml holds the alerts that runbook section 9 asks
+# for.
+#
+#   prometheus --config.file=examples/prometheus.yml
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+rule_files:
+  - prometheus-alerts.yml
+
+scrape_configs:
+  - job_name: svmd
+    static_configs:
+      - targets: ["127.0.0.1:26660"]
+        labels:
+          machine: my-validator
+
+  # The crank turner's metrics, if this machine runs one (runbook section 14).
+  - job_name: tuktuk-crank-turner
+    static_configs:
+      - targets: ["127.0.0.1:8080"]

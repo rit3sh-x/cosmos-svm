@@ -1,0 +1,5473 @@
+{
+ "header": {
+  "agave": "4.3.0",
+  "command": "solana-test-validator --reset --quiet --ledger \u003cwork\u003e/ledger --account-dir \u003cwork\u003e/accounts --deactivate-feature 3HcSrCTGXTUnrTueHi4DAwNuMxZSsm5xui2Ax3mgxHqf --deactivate-feature 4EBQBjw1kqF1dqUBb6fc5Ji4tCEQgNf9ESGGX3smwXwh --deactivate-feature 51VCKU5eV6mcTc9q9ArfWELU2CqDoi13hdAjr6fHMdtv --deactivate-feature 55oikhjJ2LUi1xdgJ17ueRyHFURZEw32asT3iAKfh7gg --deactivate-feature 5TuppMutoyzhUSfuYdhgzD47F92GL1g89KpCZQKqedxP --deactivate-feature 6TkHkRmP7JZy1fdM6fg5uXn76wChQBWGokHBJzrLB3mj --deactivate-feature 7VgiehxNxu53KdxgLspGQY8myE6f7UokaWa4jsGcaSz --deactivate-feature 8aXvSuopd1PUj7UhehfXJRg6619RHp8ZvwTyyJHdUYsj --deactivate-feature 9LZdXeKGeBV6hRLdxS1rHbHoEUsKqesCC2ZAPTPKJAbK --deactivate-feature 9onWzzvCzNC2jfhxxeqRgs5q7nFAAKpCUvkj6T6GJK9i --deactivate-feature A1pengvuM6JEcyNuTnMqepBKhwHE3N6PmUrdATGawhJS --deactivate-feature B1ockRevenueSharing111111111111111111111111 --deactivate-feature B8JJXCy5amZyWG9r7EnUYLwzXSXTxG7GZ1qZ1qggo83g --deactivate-feature BM11F4hqrpinQs28sEZfzQ2fYddivYs4NEAHF6QMjkJF --deactivate-feature CR3dVN2Yoo95Y96kLSTaziWDAQT2MNEpiWh5cqVq2pNE --deactivate-feature DT4n6ABDqs6w4bnfwrXT9rsprcPf6cdDga1egctaPkLC --deactivate-feature EaQpmC6GtRssaZ3PCUM5YksGqUdMLeZ46BQXYtHYakDS --deactivate-feature ExtendProgCheckedWi11BeDe1eted11111111111111 --deactivate-feature FEEXbxUuKobtrt1qNK5pjtzbPQhsppBTrNNG74xu4mai --deactivate-feature FLHoAWBDjNh6zwmJ5i1NKK4KyD8otAiv7XxvmnFnVnKH --deactivate-feature HTW2pSyErTj4BV6KBM9NZ9VBUJVxt7sacNWcf76wtzb3 --deactivate-feature LoaderV4WasAbandoned11111111111111111111111 --deactivate-feature RfEcA95xnhuwooVAhUUksEJLZBF7xKCLuqrJoqk4Zph --deactivate-feature TestFeature11111111111111111111111111111111 --deactivate-feature TestFeature21111111111111111111111111111111 --deactivate-feature VoteAccount1nitia1izeV211111111111111111111 --deactivate-feature chaie9S2zVfuxJKNRGkyTDokLwWxx6kD2ZLsqQHaDD8 --deactivate-feature depVvnQ2UysGrhwdiwU42tCadZL8GcBb1i2GYhMopQv --deactivate-feature expH2ppKPW2ANEdEmAjfhSEcnBQJfmoX4FjuNpe9ttg --deactivate-feature iBRLL3k18HST852F1Mf3Lv83waTNQmmqvKDxvYGwQFL --deactivate-feature iBRLMc81UjRa8fn8A6eE8bJTnRbgQoPTynM51akENCV --deactivate-feature iBRLjhJnkmDZgNoZRDMW11d8ZV7HvsL3vAyRjZB5npW --deactivate-feature p51x11QCYMHwuVS1MBcLHKb3MezWyqGS5BEB41CA1dk --deactivate-feature ptr9umikaeAS7ZBBp2fsfRhie16F1V2jCKA2y6gXNAK --deactivate-feature rnt8ZQpz2HYhX3DkYBDGjJS1a36mYq69oXka7JrhEdi --deactivate-feature rntCigrTppP5JdZz7K8TyN9sMzLdAcXp8SejYpVpX6D --deactivate-feature rntD7invRBswCAdKtRsh1G4psKjrPdS3BKqtnA78C7N --deactivate-feature rntTjNZ9boq8owDxjGVFHPfWNQPDaKiM5JcjxmDGg47 --deactivate-feature s512oDwgx8hjMnaQjXfqqrZroVj4HvC6TkN3iSSWXCh --deactivate-feature s51VGwCAgebo2745DSUris72RavoLkXGUmVJosESCXr --deactivate-feature turbRpTzBzDU6PJmWvRTbcJXXGxUs19CvQamUrRD9bN --deactivate-feature txv1aq4pp281K9um3tnPgkfX8UqtFT6wcVW3hNezGLL --deactivate-feature zk1snxsc6Fh3wsGNbbHAJNHiJoYgF29mMnTSusGx5EJ --deactivate-feature zkNLP7EQALfC1TYeB3biDU7akDckj8iPkvh9y2Mt2K3 --deactivate-feature zkiTNuzBKxrCLMKehzuQeKZyLtX2yvFcEKMML8nExU8",
+  "corpus": "acfce35f513774f6f9118c6e9f7c70de35b80e16e6591ca94eef4cef3c3a18a7",
+  "recorded": "2026-10-10T12:24:59Z"
+ },
+ "bindings": {
+  "blockhash": "Dthup6CuZJVzMtY6xRZ4qkHqMh1KnhxmHDa7nNGBjxde",
+  "delegate": "CBnoTv5ueMY8hUWmdiwshrhCBQ5Q2FmLotUxYpNehyaT",
+  "message.transfer": "AQABA3p5QRDMeWALf57J0unCKkAmdz9ZrTOAP3kTWAAWAOZ+MHOp0cfjQHsixNL/691scnBLz+Ez10dsErClM65TymcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL+LH0D6xzdFMH2HGbmFOxO5jhJbdErGeuJ23qwwfDhZAQICAAEMAgAAAHYIAAAAAAAA",
+  "mint": "9CoQ9cvHxv8RAtJMQxeg5RqHNrDFERiJe9qpsm4aHw45",
+  "payer": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+  "recipient": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+  "sig.accounts": "Fre9JRu6V5xdTL8T27ETEkkPP1MkY4wbdbVAtt8rgGhikkP1U6zsxCmBtY6wEpg6CwvEW4CiF47oYq5QWcKwFXS",
+  "sig.approve": "4RvwDREG4Q4vTY4Hg2Cxnq4XUKuCqXzC8k2TMYPPwtEJXbT3uzzALkVQ2rrCrCKVoY3LQpHyw8oce7GPxW3pZm9T",
+  "sig.failed": "PVehWid7ReXBUDzL39ejsAc7a7SmVVsdyiXgwCCtECo48m29mJudH8ibb6nY6RMUD5NiWca6t7mWqVyHLqNSNKF",
+  "sig.memo": "By18VjfL9zakomtqjYjJ78AgPjLnHdr1axwkn6LLdNiPAjGeMe9SuDNR2EQJDYLSyeYCgSp7fcJ9jTzpRuH2ge2",
+  "sig.mint": "3g5owwy4nAySjiEWEzLvqbYddSTUFXxpM9dJ982XnV5QSVHwUNKB7hqE3datR4EFjgxRq7T2ryorMsCZi82bzTZx",
+  "sig.tokenTransfer": "5B4UVT6Mwjw9pHmhLKvYXGh8YXTTvtp6o9Ph6uKheMYvk33U6u8pDDB8nLLqifViYCaMu3BPovuHWuzkYJh54w5B",
+  "sig.transfer": "3V5gqucwWK78Fv5uHGnCEn7k3KsCYTMiFHyNJms9j9t2YY9hbmS5H4mSAYEyMG3NR8XPhBogFeB4r8JzmwPE7v7x",
+  "sig.trigger": "32Bo5uaaK3ZHV9ahuc5viC5dUddVXMV8i2byf78n4srKeb74ivoMS6EwDCCrTAmNNdHkEG4rWKvo9nHfPeiTXE16",
+  "slot.accounts": 115,
+  "slot.approve": 182,
+  "slot.failed": 247,
+  "slot.memo": 214,
+  "slot.mint": 82,
+  "slot.tokenTransfer": 149,
+  "slot.transfer": 48,
+  "systemProgram": "11111111111111111111111111111111",
+  "tokenA": "95xY9tcQRGeGqELGKmiAFZcjB19yhMwBXQCTEo5bmffT",
+  "tokenB": "8dS1sEFSxwqA8rnk6eXrZX5Zk76mmxQrYVmTKLtdhnam",
+  "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+  "tx.badSignature": "AcepHMa0OHsTlgGuwyxPl4x62NoJavMuA6y8E42WfhXmBP7cOQljYgr+AHeAj9qtzIFjGzIkmzSWyBNnOzBfbQQBAAEDenlBEMx5YAt/nsnS6cIqQCZ3P1mtM4A/eRNYABYA5n4wc6nRx+NAeyLE0v/r3WxycEvP4TPXR2wSsKUzrlPKZwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv4sfQPrHN0UwfYcZuYU7E7mOElt0SsZ64nberDB8OFkBAgIAAQwCAAAAdAgAAAAAAAA=",
+  "tx.send": "AaCnqJkWbTGTcAzMhCXFeKxLj/RwovqfpjeXHMmrNNbPA8KiCgguO75E/KOBTfedD4PtUVzaFVnMsQo0fhNubQoBAAEDenlBEMx5YAt/nsnS6cIqQCZ3P1mtM4A/eRNYABYA5n4wc6nRx+NAeyLE0v/r3WxycEvP4TPXR2wSsKUzrlPKZwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv4sfQPrHN0UwfYcZuYU7E7mOElt0SsZ64nberDB8OFkBAgIAAQwCAAAAcQgAAAAAAAA=",
+  "tx.send.base58": "4v8Xt1KnnNXKsktmyivX2FEnunvJXAEuZb3MNLo6isV5JK1tcxCU2hTMfQbscNePVVJTzbwCuFRNQJuWh7F366iSKm82qkTJSvSad5BPcMzdKsQCnMYKYooTHqR3mF51H8K59f4NFHCJEr6V6sJiYvdBFcJZCwb1pRj9DTWCdpDW9nmhUhCseNXgDnLxcQK3g2jmEGtVb1qer91XhTSXTau2vMMQDKcjnqkQMHuGhAvMkQfGkzFkY4ARiinGWhWcPD1fcMJjKovof659zvGqGhJFXYFqXtCJknnvK",
+  "tx.simulate": "ATp+9sOkh+lYfs935NhsifNE/xb6yASNLl63sCJQN+peyK2eHgtYqwVNlvRDE3ogUaWRFBrhilDUXyikcM9VrwwBAAEDenlBEMx5YAt/nsnS6cIqQCZ3P1mtM4A/eRNYABYA5n4wc6nRx+NAeyLE0v/r3WxycEvP4TPXR2wSsKUzrlPKZwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv4sfQPrHN0UwfYcZuYU7E7mOElt0SsZ64nberDB8OFkBAgIAAQwCAAAAcwgAAAAAAAA=",
+  "tx.unfunded": "AV4KgBUwy+ikU21zNZpswN99rrwVBhfDQVeq2YBtPXcTHFcqO5BSICYE/Y6YqEmSI/3wsE05OIFUzV5cs+SrhwYBAAEDW2dXLdCsfAZNfZcJhBm5VUyebiN0KAFJGTmJWc1aZjAwc6nRx+NAeyLE0v/r3WxycEvP4TPXR2wSsKUzrlPKZwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv4sfQPrHN0UwfYcZuYU7E7mOElt0SsZ64nberDB8OFkBAgIAAQwCAAAAdQgAAAAAAAA=",
+  "unfunded": "79oVjWkS493eWiA2YWMdyQgA5CwC5kYJeyLL3Tn7G4o1"
+ },
+ "answers": {
+  "accountSubscribe/bad-key": {
+   "ack": {
+    "jsonrpc": "2.0",
+    "error": {
+     "code": -32602,
+     "message": "Invalid Request: Invalid pubkey provided"
+    },
+    "id": 1
+   }
+  },
+  "accountSubscribe/payer": {
+   "ack": {
+    "jsonrpc": "2.0",
+    "result": 0,
+    "id": 1
+   },
+   "notifications": [
+    {
+     "jsonrpc": "2.0",
+     "method": "accountNotification",
+     "params": {
+      "result": {
+       "context": {
+        "slot": 281
+       },
+       "value": {
+        "lamports": 98994406839,
+        "data": [
+         "",
+         "base64"
+        ],
+        "owner": "11111111111111111111111111111111",
+        "executable": false,
+        "rentEpoch": 18446744073709551615,
+        "space": 0
+       }
+      },
+      "subscription": 0
+     }
+    }
+   ],
+   "unsubscribe": {
+    "jsonrpc": "2.0",
+    "result": true,
+    "id": 2
+   }
+  },
+  "accountSubscribe/payer-default": {
+   "ack": {
+    "jsonrpc": "2.0",
+    "result": 1,
+    "id": 1
+   },
+   "notifications": [
+    {
+     "jsonrpc": "2.0",
+     "method": "accountNotification",
+     "params": {
+      "result": {
+       "context": {
+        "slot": 315
+       },
+       "value": {
+        "lamports": 98994398837,
+        "data": "",
+        "owner": "11111111111111111111111111111111",
+        "executable": false,
+        "rentEpoch": 18446744073709551615,
+        "space": 0
+       }
+      },
+      "subscription": 1
+     }
+    }
+   ],
+   "unsubscribe": {
+    "jsonrpc": "2.0",
+    "result": true,
+    "id": 2
+   }
+  },
+  "accountSubscribe/token-jsonParsed": {
+   "ack": {
+    "jsonrpc": "2.0",
+    "result": 2,
+    "id": 1
+   },
+   "notifications": [
+    {
+     "jsonrpc": "2.0",
+     "method": "accountNotification",
+     "params": {
+      "result": {
+       "context": {
+        "slot": 349
+       },
+       "value": {
+        "lamports": 2039280,
+        "data": {
+         "program": "spl-token",
+         "parsed": {
+          "info": {
+           "isNative": false,
+           "mint": "9CoQ9cvHxv8RAtJMQxeg5RqHNrDFERiJe9qpsm4aHw45",
+           "owner": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+           "state": "initialized",
+           "tokenAmount": {
+            "amount": "250003",
+            "decimals": 6,
+            "uiAmount": 0.250003,
+            "uiAmountString": "0.250003"
+           }
+          },
+          "type": "account"
+         },
+         "space": 165
+        },
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "executable": false,
+        "rentEpoch": 18446744073709551615,
+        "space": 165
+       }
+      },
+      "subscription": 2
+     }
+    }
+   ],
+   "unsubscribe": {
+    "jsonrpc": "2.0",
+    "result": true,
+    "id": 2
+   }
+  },
+  "blockSubscribe/all": {
+   "ack": {
+    "jsonrpc": "2.0",
+    "error": {
+     "code": -32601,
+     "message": "Method not found"
+    },
+    "id": 1
+   }
+  },
+  "framing/batch": [
+   {
+    "jsonrpc": "2.0",
+    "result": 249,
+    "id": 1
+   },
+   {
+    "jsonrpc": "2.0",
+    "error": {
+     "code": -32601,
+     "message": "Method not found"
+    },
+    "id": 2
+   }
+  ],
+  "framing/empty-batch": "",
+  "framing/no-version": {
+   "error": {
+    "code": -32600,
+    "message": "Unsupported JSON-RPC protocol version"
+   },
+   "id": 1
+  },
+  "framing/not-json": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32700,
+    "message": "Parse error"
+   },
+   "id": null
+  },
+  "framing/notification": "",
+  "framing/params-not-expected": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid parameters: No parameters were expected",
+    "data": "Array([Number(1)])"
+   },
+   "id": 1
+  },
+  "framing/params-object": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "`params` should be an array"
+   },
+   "id": 1
+  },
+  "framing/too-few-params": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "`params` should have at least 1 argument(s)"
+   },
+   "id": 1
+  },
+  "framing/too-many-params": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid parameters: Expected from 1 to 2 parameters.",
+    "data": "\"Got: 3\""
+   },
+   "id": 1
+  },
+  "framing/unknown-method": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32601,
+    "message": "Method not found"
+   },
+   "id": 1
+  },
+  "getAccountInfo/bad-key": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid param: WrongSize"
+   },
+   "id": 1
+  },
+  "getAccountInfo/data-slice": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "data": [
+      "enlBEMx5YAs=",
+      "base64"
+     ],
+     "executable": false,
+     "lamports": 1461600,
+     "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+     "rentEpoch": 18446744073709551615,
+     "space": 82
+    }
+   },
+   "id": 1
+  },
+  "getAccountInfo/min-context-slot-ahead": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32016,
+    "message": "Minimum context slot has not been reached",
+    "data": {
+     "contextSlot": 249
+    }
+   },
+   "id": 1
+  },
+  "getAccountInfo/mint-base58": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "data": [
+      "DK9N3EZNjvFfq5M5hFovmCacemJmwf1LkyzFSEJ2ndjTBeTkYhoYbnE9vmFHmh1XDG6H7AsEprakHp7oGpiLC99ryLTTmawVKAgVP4TK9woboCT",
+      "base58"
+     ],
+     "executable": false,
+     "lamports": 1461600,
+     "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+     "rentEpoch": 18446744073709551615,
+     "space": 82
+    }
+   },
+   "id": 1
+  },
+  "getAccountInfo/mint-base64": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "data": [
+      "AQAAAHp5QRDMeWALf57J0unCKkAmdz9ZrTOAP3kTWAAWAOZ+QEIPAAAAAAAGAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+      "base64"
+     ],
+     "executable": false,
+     "lamports": 1461600,
+     "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+     "rentEpoch": 18446744073709551615,
+     "space": 82
+    }
+   },
+   "id": 1
+  },
+  "getAccountInfo/mint-binary": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "data": "DK9N3EZNjvFfq5M5hFovmCacemJmwf1LkyzFSEJ2ndjTBeTkYhoYbnE9vmFHmh1XDG6H7AsEprakHp7oGpiLC99ryLTTmawVKAgVP4TK9woboCT",
+     "executable": false,
+     "lamports": 1461600,
+     "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+     "rentEpoch": 18446744073709551615,
+     "space": 82
+    }
+   },
+   "id": 1
+  },
+  "getAccountInfo/mint-jsonParsed": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "data": {
+      "parsed": {
+       "info": {
+        "decimals": 6,
+        "freezeAuthority": null,
+        "isInitialized": true,
+        "mintAuthority": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+        "supply": "1000000"
+       },
+       "type": "mint"
+      },
+      "program": "spl-token",
+      "space": 82
+     },
+     "executable": false,
+     "lamports": 1461600,
+     "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+     "rentEpoch": 18446744073709551615,
+     "space": 82
+    }
+   },
+   "id": 1
+  },
+  "getAccountInfo/mint-zstd": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "data": [
+      "KLUv/QBYpQEAtAIBAAAAenlBEMx5YAt/nsnS6cIqQCZ3P1mtM4A/eRNYABYA5n5AQg8ABgEAAgAADaygDA==",
+      "base64+zstd"
+     ],
+     "executable": false,
+     "lamports": 1461600,
+     "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+     "rentEpoch": 18446744073709551615,
+     "space": 82
+    }
+   },
+   "id": 1
+  },
+  "getAccountInfo/payer-base64": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "data": [
+      "",
+      "base64"
+     ],
+     "executable": false,
+     "lamports": 98994414840,
+     "owner": "11111111111111111111111111111111",
+     "rentEpoch": 18446744073709551615,
+     "space": 0
+    }
+   },
+   "id": 1
+  },
+  "getAccountInfo/payer-default": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "data": "",
+     "executable": false,
+     "lamports": 98994414840,
+     "owner": "11111111111111111111111111111111",
+     "rentEpoch": 18446744073709551615,
+     "space": 0
+    }
+   },
+   "id": 1
+  },
+  "getAccountInfo/token-account-base58-over-128": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32600,
+    "message": "Encoded binary (base 58) data should be less than 128 bytes, please use Base64 encoding."
+   },
+   "id": 1
+  },
+  "getAccountInfo/token-account-jsonParsed": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "data": {
+      "parsed": {
+       "info": {
+        "delegate": "CBnoTv5ueMY8hUWmdiwshrhCBQ5Q2FmLotUxYpNehyaT",
+        "delegatedAmount": {
+         "amount": "100",
+         "decimals": 6,
+         "uiAmount": 0.0001,
+         "uiAmountString": "0.0001"
+        },
+        "isNative": false,
+        "mint": "9CoQ9cvHxv8RAtJMQxeg5RqHNrDFERiJe9qpsm4aHw45",
+        "owner": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+        "state": "initialized",
+        "tokenAmount": {
+         "amount": "750000",
+         "decimals": 6,
+         "uiAmount": 0.75,
+         "uiAmountString": "0.75"
+        }
+       },
+       "type": "account"
+      },
+      "program": "spl-token",
+      "space": 165
+     },
+     "executable": false,
+     "lamports": 2039280,
+     "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+     "rentEpoch": 18446744073709551615,
+     "space": 165
+    }
+   },
+   "id": 1
+  },
+  "getAccountInfo/unknown": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": null
+   },
+   "id": 1
+  },
+  "getAgGenesisCert": {
+   "jsonrpc": "2.0",
+   "result": null,
+   "id": 1
+  },
+  "getBalance/bad-commitment": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": 98994414840
+   },
+   "id": 1
+  },
+  "getBalance/bad-key": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid param: WrongSize"
+   },
+   "id": 1
+  },
+  "getBalance/finalized": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": 98994414840
+   },
+   "id": 1
+  },
+  "getBalance/min-context-slot-ahead": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32016,
+    "message": "Minimum context slot has not been reached",
+    "data": {
+     "contextSlot": 249
+    }
+   },
+   "id": 1
+  },
+  "getBalance/payer": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": 98994414840
+   },
+   "id": 1
+  },
+  "getBalance/processed": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 280
+    },
+    "value": 98994414840
+   },
+   "id": 1
+  },
+  "getBalance/short-key": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid param: WrongSize"
+   },
+   "id": 1
+  },
+  "getBalance/unknown": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": 0
+   },
+   "id": 1
+  },
+  "getBlock/above-committed": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32004,
+    "message": "Block not available for slot 999999999"
+   },
+   "id": 1
+  },
+  "getBlock/bare-string": {
+   "jsonrpc": "2.0",
+   "result": {
+    "blockHeight": 48,
+    "blockTime": 1791634850,
+    "blockhash": "7VfmaMDYYcCxgYnjGcg21HBmYyiMEKuLe6dGW6Tk76ZF",
+    "parentSlot": 47,
+    "previousBlockhash": "A8jPLJEZzoG1SakXgHjT3B2Nu81B5BBxVy7kjWSUQDGN",
+    "rewards": [
+     {
+      "commission": null,
+      "lamports": 7500,
+      "postBalance": 499999770000,
+      "pubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+      "rewardType": "Fee"
+     }
+    ],
+    "transactions": [
+     {
+      "meta": {
+       "computeUnitsConsumed": 2100,
+       "costUnits": 4185,
+       "err": null,
+       "fee": 10000,
+       "innerInstructions": [],
+       "loadedAddresses": {
+        "readonly": [],
+        "writable": []
+       },
+       "logMessages": [
+        "Program Vote111111111111111111111111111111111111111 invoke [1]",
+        "Program Vote111111111111111111111111111111111111111 success"
+       ],
+       "postBalances": [
+        499999762500,
+        1000000000000000,
+        1
+       ],
+       "postTokenBalances": [],
+       "preBalances": [
+        499999772500,
+        1000000000000000,
+        1
+       ],
+       "preTokenBalances": [],
+       "rewards": [],
+       "status": {
+        "Ok": null
+       }
+      },
+      "transaction": [
+       "AtHZ2hrkgWw+0Qot4F0DnmjXTCNowSERdXXDRQGsWPj+JXz4TYUJzfmMIGVdQ5VlHAC6ru5gxjaU9FZZagGzXAQg31Qz1d7pMTQwAPU9l5rb4uUtLw0vQer+WLsiyx/jG5RQ41E0Qx54L2zcJtLYRj+0dQSGevJGEDzBQrpdROMDAgABA/xt6pSVxvbpAgSelsbcha05GgSmxp04jVPgoxFqOwuDdusoTQLuOzzBzqxxgwq41eE8NWT1E+AHWxCIOOU4QE8HYUgdNXR0u3xNdiTr072z2DVec9EQQ/wNo1OAAAAAAIe0LETdgTQaWGbPyRelntCTnGFEryZYy16tc1AUuT1TAQICAQGUAQ4AAAAQAAAAAAAAAB8BHwEeAR0BHAEbARoBGQEYARcBFgEVARQBEwESAREBEAEPAQ4BDQEMAQsBCgEJAQgBBwEGAQUBBAEDAQIBAe+Oj6XSLizMhMP/20zVnYwcPxXqZCfgSNxpbM43CO/NAaItymoAAAAAhs0RsqlHkLg7htj2MZKR4iKSop9SZfVyjSV/jlj7ipw=",
+       "base64"
+      ]
+     },
+     {
+      "meta": {
+       "computeUnitsConsumed": 150,
+       "costUnits": 1481,
+       "err": null,
+       "fee": 5000,
+       "innerInstructions": [],
+       "loadedAddresses": {
+        "readonly": [],
+        "writable": []
+       },
+       "logMessages": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success"
+       ],
+       "postBalances": [
+        98999995000,
+        1000000000,
+        1
+       ],
+       "postTokenBalances": [],
+       "preBalances": [
+        100000000000,
+        0,
+        1
+       ],
+       "preTokenBalances": [],
+       "rewards": [],
+       "status": {
+        "Ok": null
+       }
+      },
+      "transaction": [
+       "AXw/9ESRU7apUWFYp9dv2oTU4/dm5iGL6yXTo+SdO1lll3/S6sBr9Xud7u3ckAPR5DLrIK+7QOHyXbgfEUAyIwcBAAEDenlBEMx5YAt/nsnS6cIqQCZ3P1mtM4A/eRNYABYA5n4wc6nRx+NAeyLE0v/r3WxycEvP4TPXR2wSsKUzrlPKZwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzpnsz8xVCPyxxGUPoeip64R2FVekjAKhoA0xLAEq770BAgIAAQwCAAAAAMqaOwAAAAA=",
+       "base64"
+      ]
+     }
+    ]
+   },
+   "id": 1
+  },
+  "getBlock/processed": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Method does not support commitment below `confirmed`"
+   },
+   "id": 1
+  },
+  "getBlock/transfer-accounts": {
+   "jsonrpc": "2.0",
+   "result": {
+    "blockHeight": 48,
+    "blockTime": 1791634850,
+    "blockhash": "7VfmaMDYYcCxgYnjGcg21HBmYyiMEKuLe6dGW6Tk76ZF",
+    "parentSlot": 47,
+    "previousBlockhash": "A8jPLJEZzoG1SakXgHjT3B2Nu81B5BBxVy7kjWSUQDGN",
+    "rewards": [
+     {
+      "commission": null,
+      "lamports": 7500,
+      "postBalance": 499999770000,
+      "pubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+      "rewardType": "Fee"
+     }
+    ],
+    "transactions": [
+     {
+      "meta": {
+       "err": null,
+       "fee": 10000,
+       "postBalances": [
+        499999762500,
+        1000000000000000,
+        1
+       ],
+       "postTokenBalances": [],
+       "preBalances": [
+        499999772500,
+        1000000000000000,
+        1
+       ],
+       "preTokenBalances": [],
+       "rewards": [],
+       "status": {
+        "Ok": null
+       }
+      },
+      "transaction": {
+       "accountKeys": [
+        {
+         "pubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+         "signer": true,
+         "source": "transaction",
+         "writable": true
+        },
+        {
+         "pubkey": "91D5oPS7RFk276Z2BWPdP8BPonbegy6pdJkUJvRnBkcv",
+         "signer": true,
+         "source": "transaction",
+         "writable": true
+        },
+        {
+         "pubkey": "Vote111111111111111111111111111111111111111",
+         "signer": false,
+         "source": "transaction",
+         "writable": false
+        }
+       ],
+       "signatures": [
+        "5CLyc1tFEZySrQzRH8s3URLrgNdAXkDxrAKU9BiHUZ84QZr4SVTi1dWNAjZFmzx82kwSWDbktDGcKupABijqAS3d",
+        "f7uKK9d3yBPB92Z1oMrx9TNsu5jheUSqmJfnEDYzoTFfnA4PAwpDodVFT2cLZw7paB9ngjmY7VeGSD6JAJyjac2"
+       ]
+      },
+      "version": "legacy"
+     },
+     {
+      "meta": {
+       "err": null,
+       "fee": 5000,
+       "postBalances": [
+        98999995000,
+        1000000000,
+        1
+       ],
+       "postTokenBalances": [],
+       "preBalances": [
+        100000000000,
+        0,
+        1
+       ],
+       "preTokenBalances": [],
+       "rewards": [],
+       "status": {
+        "Ok": null
+       }
+      },
+      "transaction": {
+       "accountKeys": [
+        {
+         "pubkey": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+         "signer": true,
+         "source": "transaction",
+         "writable": true
+        },
+        {
+         "pubkey": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+         "signer": false,
+         "source": "transaction",
+         "writable": true
+        },
+        {
+         "pubkey": "11111111111111111111111111111111",
+         "signer": false,
+         "source": "transaction",
+         "writable": false
+        }
+       ],
+       "signatures": [
+        "3V5gqucwWK78Fv5uHGnCEn7k3KsCYTMiFHyNJms9j9t2YY9hbmS5H4mSAYEyMG3NR8XPhBogFeB4r8JzmwPE7v7x"
+       ]
+      },
+      "version": "legacy"
+     }
+    ]
+   },
+   "id": 1
+  },
+  "getBlock/transfer-base64": {
+   "jsonrpc": "2.0",
+   "result": {
+    "blockHeight": 48,
+    "blockTime": 1791634850,
+    "blockhash": "7VfmaMDYYcCxgYnjGcg21HBmYyiMEKuLe6dGW6Tk76ZF",
+    "parentSlot": 47,
+    "previousBlockhash": "A8jPLJEZzoG1SakXgHjT3B2Nu81B5BBxVy7kjWSUQDGN",
+    "rewards": [
+     {
+      "commission": null,
+      "lamports": 7500,
+      "postBalance": 499999770000,
+      "pubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+      "rewardType": "Fee"
+     }
+    ],
+    "transactions": [
+     {
+      "meta": {
+       "computeUnitsConsumed": 2100,
+       "costUnits": 4185,
+       "err": null,
+       "fee": 10000,
+       "innerInstructions": [],
+       "loadedAddresses": {
+        "readonly": [],
+        "writable": []
+       },
+       "logMessages": [
+        "Program Vote111111111111111111111111111111111111111 invoke [1]",
+        "Program Vote111111111111111111111111111111111111111 success"
+       ],
+       "postBalances": [
+        499999762500,
+        1000000000000000,
+        1
+       ],
+       "postTokenBalances": [],
+       "preBalances": [
+        499999772500,
+        1000000000000000,
+        1
+       ],
+       "preTokenBalances": [],
+       "rewards": [],
+       "status": {
+        "Ok": null
+       }
+      },
+      "transaction": [
+       "AtHZ2hrkgWw+0Qot4F0DnmjXTCNowSERdXXDRQGsWPj+JXz4TYUJzfmMIGVdQ5VlHAC6ru5gxjaU9FZZagGzXAQg31Qz1d7pMTQwAPU9l5rb4uUtLw0vQer+WLsiyx/jG5RQ41E0Qx54L2zcJtLYRj+0dQSGevJGEDzBQrpdROMDAgABA/xt6pSVxvbpAgSelsbcha05GgSmxp04jVPgoxFqOwuDdusoTQLuOzzBzqxxgwq41eE8NWT1E+AHWxCIOOU4QE8HYUgdNXR0u3xNdiTr072z2DVec9EQQ/wNo1OAAAAAAIe0LETdgTQaWGbPyRelntCTnGFEryZYy16tc1AUuT1TAQICAQGUAQ4AAAAQAAAAAAAAAB8BHwEeAR0BHAEbARoBGQEYARcBFgEVARQBEwESAREBEAEPAQ4BDQEMAQsBCgEJAQgBBwEGAQUBBAEDAQIBAe+Oj6XSLizMhMP/20zVnYwcPxXqZCfgSNxpbM43CO/NAaItymoAAAAAhs0RsqlHkLg7htj2MZKR4iKSop9SZfVyjSV/jlj7ipw=",
+       "base64"
+      ],
+      "version": "legacy"
+     },
+     {
+      "meta": {
+       "computeUnitsConsumed": 150,
+       "costUnits": 1481,
+       "err": null,
+       "fee": 5000,
+       "innerInstructions": [],
+       "loadedAddresses": {
+        "readonly": [],
+        "writable": []
+       },
+       "logMessages": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success"
+       ],
+       "postBalances": [
+        98999995000,
+        1000000000,
+        1
+       ],
+       "postTokenBalances": [],
+       "preBalances": [
+        100000000000,
+        0,
+        1
+       ],
+       "preTokenBalances": [],
+       "rewards": [],
+       "status": {
+        "Ok": null
+       }
+      },
+      "transaction": [
+       "AXw/9ESRU7apUWFYp9dv2oTU4/dm5iGL6yXTo+SdO1lll3/S6sBr9Xud7u3ckAPR5DLrIK+7QOHyXbgfEUAyIwcBAAEDenlBEMx5YAt/nsnS6cIqQCZ3P1mtM4A/eRNYABYA5n4wc6nRx+NAeyLE0v/r3WxycEvP4TPXR2wSsKUzrlPKZwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzpnsz8xVCPyxxGUPoeip64R2FVekjAKhoA0xLAEq770BAgIAAQwCAAAAAMqaOwAAAAA=",
+       "base64"
+      ],
+      "version": "legacy"
+     }
+    ]
+   },
+   "id": 1
+  },
+  "getBlock/transfer-default": {
+   "jsonrpc": "2.0",
+   "result": {
+    "blockHeight": 48,
+    "blockTime": 1791634850,
+    "blockhash": "7VfmaMDYYcCxgYnjGcg21HBmYyiMEKuLe6dGW6Tk76ZF",
+    "parentSlot": 47,
+    "previousBlockhash": "A8jPLJEZzoG1SakXgHjT3B2Nu81B5BBxVy7kjWSUQDGN",
+    "rewards": [
+     {
+      "commission": null,
+      "lamports": 7500,
+      "postBalance": 499999770000,
+      "pubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+      "rewardType": "Fee"
+     }
+    ],
+    "transactions": [
+     {
+      "meta": {
+       "computeUnitsConsumed": 2100,
+       "costUnits": 4185,
+       "err": null,
+       "fee": 10000,
+       "innerInstructions": [],
+       "loadedAddresses": {
+        "readonly": [],
+        "writable": []
+       },
+       "logMessages": [
+        "Program Vote111111111111111111111111111111111111111 invoke [1]",
+        "Program Vote111111111111111111111111111111111111111 success"
+       ],
+       "postBalances": [
+        499999762500,
+        1000000000000000,
+        1
+       ],
+       "postTokenBalances": [],
+       "preBalances": [
+        499999772500,
+        1000000000000000,
+        1
+       ],
+       "preTokenBalances": [],
+       "rewards": [],
+       "status": {
+        "Ok": null
+       }
+      },
+      "transaction": {
+       "message": {
+        "accountKeys": [
+         "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+         "91D5oPS7RFk276Z2BWPdP8BPonbegy6pdJkUJvRnBkcv",
+         "Vote111111111111111111111111111111111111111"
+        ],
+        "header": {
+         "numReadonlySignedAccounts": 0,
+         "numReadonlyUnsignedAccounts": 1,
+         "numRequiredSignatures": 2
+        },
+        "instructions": [
+         {
+          "accounts": [
+           1,
+           1
+          ],
+          "data": "67MGn13jxcyfeEp82voiLFPGwJosowhUrz2MCQChirvwpxM5QNiSNAMaXN87hMxERPkLhg6fSccRv4H6Tcd4N9iacHyz3VqZyLtbh7BwXiw2VYzDkQe6cQToT5vc5JjmZsvj7vmAP3kGdutMrRHZvfwiXgc882W1d4Fhmd4C1BCqmS1a1Yn559jJtZtsL9s4G7eYbaoxcs",
+          "programIdIndex": 2,
+          "stackHeight": 1
+         }
+        ],
+        "recentBlockhash": "A8jPLJEZzoG1SakXgHjT3B2Nu81B5BBxVy7kjWSUQDGN"
+       },
+       "signatures": [
+        "5CLyc1tFEZySrQzRH8s3URLrgNdAXkDxrAKU9BiHUZ84QZr4SVTi1dWNAjZFmzx82kwSWDbktDGcKupABijqAS3d",
+        "f7uKK9d3yBPB92Z1oMrx9TNsu5jheUSqmJfnEDYzoTFfnA4PAwpDodVFT2cLZw7paB9ngjmY7VeGSD6JAJyjac2"
+       ]
+      }
+     },
+     {
+      "meta": {
+       "computeUnitsConsumed": 150,
+       "costUnits": 1481,
+       "err": null,
+       "fee": 5000,
+       "innerInstructions": [],
+       "loadedAddresses": {
+        "readonly": [],
+        "writable": []
+       },
+       "logMessages": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success"
+       ],
+       "postBalances": [
+        98999995000,
+        1000000000,
+        1
+       ],
+       "postTokenBalances": [],
+       "preBalances": [
+        100000000000,
+        0,
+        1
+       ],
+       "preTokenBalances": [],
+       "rewards": [],
+       "status": {
+        "Ok": null
+       }
+      },
+      "transaction": {
+       "message": {
+        "accountKeys": [
+         "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+         "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+         "11111111111111111111111111111111"
+        ],
+        "header": {
+         "numReadonlySignedAccounts": 0,
+         "numReadonlyUnsignedAccounts": 1,
+         "numRequiredSignatures": 1
+        },
+        "instructions": [
+         {
+          "accounts": [
+           0,
+           1
+          ],
+          "data": "3Bxs3zzLZLuLQEYX",
+          "programIdIndex": 2,
+          "stackHeight": 1
+         }
+        ],
+        "recentBlockhash": "EuV7qNxzNQAJ5m4YUb6LrFPNCariwKMdz3sWV5ecC1Wc"
+       },
+       "signatures": [
+        "3V5gqucwWK78Fv5uHGnCEn7k3KsCYTMiFHyNJms9j9t2YY9hbmS5H4mSAYEyMG3NR8XPhBogFeB4r8JzmwPE7v7x"
+       ]
+      }
+     }
+    ]
+   },
+   "id": 1
+  },
+  "getBlock/transfer-json": {
+   "jsonrpc": "2.0",
+   "result": {
+    "blockHeight": 48,
+    "blockTime": 1791634850,
+    "blockhash": "7VfmaMDYYcCxgYnjGcg21HBmYyiMEKuLe6dGW6Tk76ZF",
+    "parentSlot": 47,
+    "previousBlockhash": "A8jPLJEZzoG1SakXgHjT3B2Nu81B5BBxVy7kjWSUQDGN",
+    "rewards": [
+     {
+      "commission": null,
+      "lamports": 7500,
+      "postBalance": 499999770000,
+      "pubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+      "rewardType": "Fee"
+     }
+    ],
+    "transactions": [
+     {
+      "meta": {
+       "computeUnitsConsumed": 2100,
+       "costUnits": 4185,
+       "err": null,
+       "fee": 10000,
+       "innerInstructions": [],
+       "loadedAddresses": {
+        "readonly": [],
+        "writable": []
+       },
+       "logMessages": [
+        "Program Vote111111111111111111111111111111111111111 invoke [1]",
+        "Program Vote111111111111111111111111111111111111111 success"
+       ],
+       "postBalances": [
+        499999762500,
+        1000000000000000,
+        1
+       ],
+       "postTokenBalances": [],
+       "preBalances": [
+        499999772500,
+        1000000000000000,
+        1
+       ],
+       "preTokenBalances": [],
+       "rewards": [],
+       "status": {
+        "Ok": null
+       }
+      },
+      "transaction": {
+       "message": {
+        "accountKeys": [
+         "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+         "91D5oPS7RFk276Z2BWPdP8BPonbegy6pdJkUJvRnBkcv",
+         "Vote111111111111111111111111111111111111111"
+        ],
+        "header": {
+         "numReadonlySignedAccounts": 0,
+         "numReadonlyUnsignedAccounts": 1,
+         "numRequiredSignatures": 2
+        },
+        "instructions": [
+         {
+          "accounts": [
+           1,
+           1
+          ],
+          "data": "67MGn13jxcyfeEp82voiLFPGwJosowhUrz2MCQChirvwpxM5QNiSNAMaXN87hMxERPkLhg6fSccRv4H6Tcd4N9iacHyz3VqZyLtbh7BwXiw2VYzDkQe6cQToT5vc5JjmZsvj7vmAP3kGdutMrRHZvfwiXgc882W1d4Fhmd4C1BCqmS1a1Yn559jJtZtsL9s4G7eYbaoxcs",
+          "programIdIndex": 2,
+          "stackHeight": 1
+         }
+        ],
+        "recentBlockhash": "A8jPLJEZzoG1SakXgHjT3B2Nu81B5BBxVy7kjWSUQDGN"
+       },
+       "signatures": [
+        "5CLyc1tFEZySrQzRH8s3URLrgNdAXkDxrAKU9BiHUZ84QZr4SVTi1dWNAjZFmzx82kwSWDbktDGcKupABijqAS3d",
+        "f7uKK9d3yBPB92Z1oMrx9TNsu5jheUSqmJfnEDYzoTFfnA4PAwpDodVFT2cLZw7paB9ngjmY7VeGSD6JAJyjac2"
+       ]
+      },
+      "version": "legacy"
+     },
+     {
+      "meta": {
+       "computeUnitsConsumed": 150,
+       "costUnits": 1481,
+       "err": null,
+       "fee": 5000,
+       "innerInstructions": [],
+       "loadedAddresses": {
+        "readonly": [],
+        "writable": []
+       },
+       "logMessages": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success"
+       ],
+       "postBalances": [
+        98999995000,
+        1000000000,
+        1
+       ],
+       "postTokenBalances": [],
+       "preBalances": [
+        100000000000,
+        0,
+        1
+       ],
+       "preTokenBalances": [],
+       "rewards": [],
+       "status": {
+        "Ok": null
+       }
+      },
+      "transaction": {
+       "message": {
+        "accountKeys": [
+         "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+         "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+         "11111111111111111111111111111111"
+        ],
+        "header": {
+         "numReadonlySignedAccounts": 0,
+         "numReadonlyUnsignedAccounts": 1,
+         "numRequiredSignatures": 1
+        },
+        "instructions": [
+         {
+          "accounts": [
+           0,
+           1
+          ],
+          "data": "3Bxs3zzLZLuLQEYX",
+          "programIdIndex": 2,
+          "stackHeight": 1
+         }
+        ],
+        "recentBlockhash": "EuV7qNxzNQAJ5m4YUb6LrFPNCariwKMdz3sWV5ecC1Wc"
+       },
+       "signatures": [
+        "3V5gqucwWK78Fv5uHGnCEn7k3KsCYTMiFHyNJms9j9t2YY9hbmS5H4mSAYEyMG3NR8XPhBogFeB4r8JzmwPE7v7x"
+       ]
+      },
+      "version": "legacy"
+     }
+    ]
+   },
+   "id": 1
+  },
+  "getBlock/transfer-jsonParsed": {
+   "jsonrpc": "2.0",
+   "result": {
+    "blockHeight": 48,
+    "blockTime": 1791634850,
+    "blockhash": "7VfmaMDYYcCxgYnjGcg21HBmYyiMEKuLe6dGW6Tk76ZF",
+    "parentSlot": 47,
+    "previousBlockhash": "A8jPLJEZzoG1SakXgHjT3B2Nu81B5BBxVy7kjWSUQDGN",
+    "rewards": [
+     {
+      "commission": null,
+      "lamports": 7500,
+      "postBalance": 499999770000,
+      "pubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+      "rewardType": "Fee"
+     }
+    ],
+    "transactions": [
+     {
+      "meta": {
+       "computeUnitsConsumed": 2100,
+       "costUnits": 4185,
+       "err": null,
+       "fee": 10000,
+       "innerInstructions": [],
+       "logMessages": [
+        "Program Vote111111111111111111111111111111111111111 invoke [1]",
+        "Program Vote111111111111111111111111111111111111111 success"
+       ],
+       "postBalances": [
+        499999762500,
+        1000000000000000,
+        1
+       ],
+       "postTokenBalances": [],
+       "preBalances": [
+        499999772500,
+        1000000000000000,
+        1
+       ],
+       "preTokenBalances": [],
+       "rewards": [],
+       "status": {
+        "Ok": null
+       }
+      },
+      "transaction": {
+       "message": {
+        "accountKeys": [
+         {
+          "pubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+          "signer": true,
+          "source": "transaction",
+          "writable": true
+         },
+         {
+          "pubkey": "91D5oPS7RFk276Z2BWPdP8BPonbegy6pdJkUJvRnBkcv",
+          "signer": true,
+          "source": "transaction",
+          "writable": true
+         },
+         {
+          "pubkey": "Vote111111111111111111111111111111111111111",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+         }
+        ],
+        "instructions": [
+         {
+          "parsed": {
+           "info": {
+            "towerSync": {
+             "blockId": "A5CzkUAtrr2DvMHnCccKLTcKG25MrPo3rabXVPKFEK2s",
+             "hash": "H88XFUpcUdhGyrCyNTA7A5ZDSuvdPQ58oX3mMZncbcAx",
+             "lockouts": [
+              {
+               "confirmation_count": 31,
+               "slot": 17
+              },
+              {
+               "confirmation_count": 30,
+               "slot": 18
+              },
+              {
+               "confirmation_count": 29,
+               "slot": 19
+              },
+              {
+               "confirmation_count": 28,
+               "slot": 20
+              },
+              {
+               "confirmation_count": 27,
+               "slot": 21
+              },
+              {
+               "confirmation_count": 26,
+               "slot": 22
+              },
+              {
+               "confirmation_count": 25,
+               "slot": 23
+              },
+              {
+               "confirmation_count": 24,
+               "slot": 24
+              },
+              {
+               "confirmation_count": 23,
+               "slot": 25
+              },
+              {
+               "confirmation_count": 22,
+               "slot": 26
+              },
+              {
+               "confirmation_count": 21,
+               "slot": 27
+              },
+              {
+               "confirmation_count": 20,
+               "slot": 28
+              },
+              {
+               "confirmation_count": 19,
+               "slot": 29
+              },
+              {
+               "confirmation_count": 18,
+               "slot": 30
+              },
+              {
+               "confirmation_count": 17,
+               "slot": 31
+              },
+              {
+               "confirmation_count": 16,
+               "slot": 32
+              },
+              {
+               "confirmation_count": 15,
+               "slot": 33
+              },
+              {
+               "confirmation_count": 14,
+               "slot": 34
+              },
+              {
+               "confirmation_count": 13,
+               "slot": 35
+              },
+              {
+               "confirmation_count": 12,
+               "slot": 36
+              },
+              {
+               "confirmation_count": 11,
+               "slot": 37
+              },
+              {
+               "confirmation_count": 10,
+               "slot": 38
+              },
+              {
+               "confirmation_count": 9,
+               "slot": 39
+              },
+              {
+               "confirmation_count": 8,
+               "slot": 40
+              },
+              {
+               "confirmation_count": 7,
+               "slot": 41
+              },
+              {
+               "confirmation_count": 6,
+               "slot": 42
+              },
+              {
+               "confirmation_count": 5,
+               "slot": 43
+              },
+              {
+               "confirmation_count": 4,
+               "slot": 44
+              },
+              {
+               "confirmation_count": 3,
+               "slot": 45
+              },
+              {
+               "confirmation_count": 2,
+               "slot": 46
+              },
+              {
+               "confirmation_count": 1,
+               "slot": 47
+              }
+             ],
+             "root": 16,
+             "timestamp": 1791634850
+            },
+            "voteAccount": "91D5oPS7RFk276Z2BWPdP8BPonbegy6pdJkUJvRnBkcv",
+            "voteAuthority": "91D5oPS7RFk276Z2BWPdP8BPonbegy6pdJkUJvRnBkcv"
+           },
+           "type": "towersync"
+          },
+          "program": "vote",
+          "programId": "Vote111111111111111111111111111111111111111",
+          "stackHeight": 1
+         }
+        ],
+        "recentBlockhash": "A8jPLJEZzoG1SakXgHjT3B2Nu81B5BBxVy7kjWSUQDGN"
+       },
+       "signatures": [
+        "5CLyc1tFEZySrQzRH8s3URLrgNdAXkDxrAKU9BiHUZ84QZr4SVTi1dWNAjZFmzx82kwSWDbktDGcKupABijqAS3d",
+        "f7uKK9d3yBPB92Z1oMrx9TNsu5jheUSqmJfnEDYzoTFfnA4PAwpDodVFT2cLZw7paB9ngjmY7VeGSD6JAJyjac2"
+       ]
+      },
+      "version": "legacy"
+     },
+     {
+      "meta": {
+       "computeUnitsConsumed": 150,
+       "costUnits": 1481,
+       "err": null,
+       "fee": 5000,
+       "innerInstructions": [],
+       "logMessages": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success"
+       ],
+       "postBalances": [
+        98999995000,
+        1000000000,
+        1
+       ],
+       "postTokenBalances": [],
+       "preBalances": [
+        100000000000,
+        0,
+        1
+       ],
+       "preTokenBalances": [],
+       "rewards": [],
+       "status": {
+        "Ok": null
+       }
+      },
+      "transaction": {
+       "message": {
+        "accountKeys": [
+         {
+          "pubkey": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+          "signer": true,
+          "source": "transaction",
+          "writable": true
+         },
+         {
+          "pubkey": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+          "signer": false,
+          "source": "transaction",
+          "writable": true
+         },
+         {
+          "pubkey": "11111111111111111111111111111111",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+         }
+        ],
+        "instructions": [
+         {
+          "parsed": {
+           "info": {
+            "destination": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+            "lamports": 1000000000,
+            "source": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty"
+           },
+           "type": "transfer"
+          },
+          "program": "system",
+          "programId": "11111111111111111111111111111111",
+          "stackHeight": 1
+         }
+        ],
+        "recentBlockhash": "EuV7qNxzNQAJ5m4YUb6LrFPNCariwKMdz3sWV5ecC1Wc"
+       },
+       "signatures": [
+        "3V5gqucwWK78Fv5uHGnCEn7k3KsCYTMiFHyNJms9j9t2YY9hbmS5H4mSAYEyMG3NR8XPhBogFeB4r8JzmwPE7v7x"
+       ]
+      },
+      "version": "legacy"
+     }
+    ]
+   },
+   "id": 1
+  },
+  "getBlock/transfer-none": {
+   "jsonrpc": "2.0",
+   "result": {
+    "blockHeight": 48,
+    "blockTime": 1791634850,
+    "blockhash": "7VfmaMDYYcCxgYnjGcg21HBmYyiMEKuLe6dGW6Tk76ZF",
+    "parentSlot": 47,
+    "previousBlockhash": "A8jPLJEZzoG1SakXgHjT3B2Nu81B5BBxVy7kjWSUQDGN"
+   },
+   "id": 1
+  },
+  "getBlock/transfer-signatures": {
+   "jsonrpc": "2.0",
+   "result": {
+    "blockHeight": 48,
+    "blockTime": 1791634850,
+    "blockhash": "7VfmaMDYYcCxgYnjGcg21HBmYyiMEKuLe6dGW6Tk76ZF",
+    "parentSlot": 47,
+    "previousBlockhash": "A8jPLJEZzoG1SakXgHjT3B2Nu81B5BBxVy7kjWSUQDGN",
+    "rewards": [
+     {
+      "commission": null,
+      "lamports": 7500,
+      "postBalance": 499999770000,
+      "pubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+      "rewardType": "Fee"
+     }
+    ],
+    "signatures": [
+     "5CLyc1tFEZySrQzRH8s3URLrgNdAXkDxrAKU9BiHUZ84QZr4SVTi1dWNAjZFmzx82kwSWDbktDGcKupABijqAS3d",
+     "3V5gqucwWK78Fv5uHGnCEn7k3KsCYTMiFHyNJms9j9t2YY9hbmS5H4mSAYEyMG3NR8XPhBogFeB4r8JzmwPE7v7x"
+    ]
+   },
+   "id": 1
+  },
+  "getBlockCommitment/transfer": {
+   "jsonrpc": "2.0",
+   "result": {
+    "commitment": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     999999997717120
+    ],
+    "totalStake": 999999997717120
+   },
+   "id": 1
+  },
+  "getBlockHeight/default": {
+   "jsonrpc": "2.0",
+   "result": 249,
+   "id": 1
+  },
+  "getBlockHeight/min-context-slot-ahead": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32016,
+    "message": "Minimum context slot has not been reached",
+    "data": {
+     "contextSlot": 249
+    }
+   },
+   "id": 1
+  },
+  "getBlockProduction/bad-range": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "lastSlot, 5, cannot be less than firstSlot, 10"
+   },
+   "id": 1
+  },
+  "getBlockProduction/default": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "byIdentity": {
+      "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW": [
+       250,
+       250
+      ]
+     },
+     "range": {
+      "firstSlot": 0,
+      "lastSlot": 249
+     }
+    }
+   },
+   "id": 1
+  },
+  "getBlockTime/above-committed": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32004,
+    "message": "Block not available for slot 999999999"
+   },
+   "id": 1
+  },
+  "getBlockTime/genesis": {
+   "jsonrpc": "2.0",
+   "result": 1791634829,
+   "id": 1
+  },
+  "getBlockTime/transfer": {
+   "jsonrpc": "2.0",
+   "result": 1791634850,
+   "id": 1
+  },
+  "getBlocks/end-before-start": {
+   "jsonrpc": "2.0",
+   "result": [],
+   "id": 1
+  },
+  "getBlocks/over-500000": {
+   "jsonrpc": "2.0",
+   "result": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249
+   ],
+   "id": 1
+  },
+  "getBlocks/processed": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Method does not support commitment below `confirmed`"
+   },
+   "id": 1
+  },
+  "getBlocks/setup": {
+   "jsonrpc": "2.0",
+   "result": [
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247
+   ],
+   "id": 1
+  },
+  "getBlocksWithLimit/over-500000": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Limit too large; max 500000"
+   },
+   "id": 1
+  },
+  "getBlocksWithLimit/setup": {
+   "jsonrpc": "2.0",
+   "result": [
+    48,
+    49,
+    50
+   ],
+   "id": 1
+  },
+  "getClusterNodes": {
+   "jsonrpc": "2.0",
+   "result": [
+    {
+     "clientId": "Agave",
+     "featureSet": 3383571666,
+     "gossip": "127.0.0.1:8000",
+     "pubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+     "pubsub": "127.0.0.1:8900",
+     "rpc": "127.0.0.1:8899",
+     "serveRepair": "127.0.0.1:8008",
+     "shredVersion": 62863,
+     "tpu": null,
+     "tpuForwards": null,
+     "tpuForwardsQuic": "127.0.0.1:8003",
+     "tpuQuic": "127.0.0.1:8002",
+     "tpuVote": "127.0.0.1:8004",
+     "tvu": "127.0.0.1:8001",
+     "version": "4.3.0"
+    }
+   ],
+   "id": 1
+  },
+  "getEpochInfo/default": {
+   "jsonrpc": "2.0",
+   "result": {
+    "absoluteSlot": 249,
+    "blockHeight": 249,
+    "epoch": 0,
+    "slotIndex": 249,
+    "slotsInEpoch": 432000,
+    "transactionCount": 256
+   },
+   "id": 1
+  },
+  "getEpochInfo/min-context-slot-ahead": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32016,
+    "message": "Minimum context slot has not been reached",
+    "data": {
+     "contextSlot": 249
+    }
+   },
+   "id": 1
+  },
+  "getEpochSchedule": {
+   "jsonrpc": "2.0",
+   "result": {
+    "firstNormalEpoch": 0,
+    "firstNormalSlot": 0,
+    "leaderScheduleSlotOffset": 432000,
+    "slotsPerEpoch": 432000,
+    "warmup": false
+   },
+   "id": 1
+  },
+  "getFeeForMessage/garbage": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "failed to deserialize solana_message::versions::VersionedMessage: Attempting to read 1 bytes"
+   },
+   "id": 1
+  },
+  "getFeeForMessage/transfer": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": 5000
+   },
+   "id": 1
+  },
+  "getFirstAvailableBlock": {
+   "jsonrpc": "2.0",
+   "result": 0,
+   "id": 1
+  },
+  "getGenesisHash": {
+   "jsonrpc": "2.0",
+   "result": "8ALdiW95tiqSoXywjq4YbES1WWtVk2BDwPdURT7yfseG",
+   "id": 1
+  },
+  "getHealth": {
+   "jsonrpc": "2.0",
+   "result": "ok",
+   "id": 1
+  },
+  "getHighestSnapshotSlot": {
+   "jsonrpc": "2.0",
+   "result": {
+    "full": 200,
+    "incremental": null
+   },
+   "id": 1
+  },
+  "getIdentity": {
+   "jsonrpc": "2.0",
+   "result": {
+    "identity": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW"
+   },
+   "id": 1
+  },
+  "getInflationGovernor": {
+   "jsonrpc": "2.0",
+   "result": {
+    "foundation": 0.05,
+    "foundationTerm": 7.0,
+    "initial": 0.08,
+    "taper": 0.15,
+    "terminal": 0.015
+   },
+   "id": 1
+  },
+  "getInflationRate": {
+   "jsonrpc": "2.0",
+   "result": {
+    "epoch": 0,
+    "foundation": 0.004,
+    "total": 0.08,
+    "validator": 0.076
+   },
+   "id": 1
+  },
+  "getInflationReward/over-32": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Too many inputs provided; max 32"
+   },
+   "id": 1
+  },
+  "getInflationReward/payer": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32004,
+    "message": "Block not available for slot 432000"
+   },
+   "id": 1
+  },
+  "getLargestAccounts/circulating": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": [
+     {
+      "address": "8ECNTKkCv9ZJy9STaoFyhw1HfpW37B6h37NAgFvFXH4b",
+      "lamports": 500000000000000000
+     },
+     {
+      "address": "91D5oPS7RFk276Z2BWPdP8BPonbegy6pdJkUJvRnBkcv",
+      "lamports": 1000000000000000
+     },
+     {
+      "address": "fa1ji1c9fg8ttY2r7BikELRYc1DhGZU3cGvw8D6873j",
+      "lamports": 1000000000000000
+     },
+     {
+      "address": "8XdZxmkpXZazC3RRv16kCw4t5fVJ6T6pu32y8uZ1uMJU",
+      "lamports": 999899999995000
+     },
+     {
+      "address": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+      "lamports": 499998787500
+     },
+     {
+      "address": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+      "lamports": 98994414840
+     },
+     {
+      "address": "DoU57AYuPFu2QU514RktNPG22QhApEjnKxnBcu4BHDTY",
+      "lamports": 3214283640
+     },
+     {
+      "address": "6WU8Nxarf9fudRK5atWwjLY4vFaw5UrrWhL88qz7iCMJ",
+      "lamports": 1477113840
+     },
+     {
+      "address": "CHKQ74qcDUJbwc4snCEZXL8tV1WQvXqioArLGgUHPZq9",
+      "lamports": 1095204720
+     },
+     {
+      "address": "So11111111111111111111111111111111111111112",
+      "lamports": 1000000000
+     },
+     {
+      "address": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+      "lamports": 999995000
+     },
+     {
+      "address": "SysvarS1otHistory11111111111111111111111111",
+      "lamports": 913326000
+     },
+     {
+      "address": "4zSpbk5jGQyMmUrqCSjFZbRKwsrMXBPsyTzjhJEAsefG",
+      "lamports": 865210360
+     },
+     {
+      "address": "3gvYRKWyXRR9xKWe1ZjPhLY5ZJRN7KDB4rFZFGoJfFk2",
+      "lamports": 552566840
+     },
+     {
+      "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+      "lamports": 534212800
+     },
+     {
+      "address": "H253PPA38ecQvnpSvfWgqBfMuVgZ656CEXLgTHwZQHfs",
+      "lamports": 509172720
+     },
+     {
+      "address": "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr",
+      "lamports": 380634240
+     },
+     {
+      "address": "SysvarS1otHashes111111111111111111111111111",
+      "lamports": 143487360
+     },
+     {
+      "address": "SysvarStakeHistory1111111111111111111111111",
+      "lamports": 114979200
+     },
+     {
+      "address": "Memo1UhkJRfHyvLMcVucJwxXeuD728EqVDDwQDxFMNo",
+      "lamports": 88432640
+     }
+    ]
+   },
+   "id": 1
+  },
+  "getLargestAccounts/default": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": [
+     {
+      "address": "8ECNTKkCv9ZJy9STaoFyhw1HfpW37B6h37NAgFvFXH4b",
+      "lamports": 500000000000000000
+     },
+     {
+      "address": "91D5oPS7RFk276Z2BWPdP8BPonbegy6pdJkUJvRnBkcv",
+      "lamports": 1000000000000000
+     },
+     {
+      "address": "fa1ji1c9fg8ttY2r7BikELRYc1DhGZU3cGvw8D6873j",
+      "lamports": 1000000000000000
+     },
+     {
+      "address": "8XdZxmkpXZazC3RRv16kCw4t5fVJ6T6pu32y8uZ1uMJU",
+      "lamports": 999899999995000
+     },
+     {
+      "address": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+      "lamports": 499998787500
+     },
+     {
+      "address": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+      "lamports": 98994414840
+     },
+     {
+      "address": "DoU57AYuPFu2QU514RktNPG22QhApEjnKxnBcu4BHDTY",
+      "lamports": 3214283640
+     },
+     {
+      "address": "6WU8Nxarf9fudRK5atWwjLY4vFaw5UrrWhL88qz7iCMJ",
+      "lamports": 1477113840
+     },
+     {
+      "address": "CHKQ74qcDUJbwc4snCEZXL8tV1WQvXqioArLGgUHPZq9",
+      "lamports": 1095204720
+     },
+     {
+      "address": "So11111111111111111111111111111111111111112",
+      "lamports": 1000000000
+     },
+     {
+      "address": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+      "lamports": 999995000
+     },
+     {
+      "address": "SysvarS1otHistory11111111111111111111111111",
+      "lamports": 913326000
+     },
+     {
+      "address": "4zSpbk5jGQyMmUrqCSjFZbRKwsrMXBPsyTzjhJEAsefG",
+      "lamports": 865210360
+     },
+     {
+      "address": "3gvYRKWyXRR9xKWe1ZjPhLY5ZJRN7KDB4rFZFGoJfFk2",
+      "lamports": 552566840
+     },
+     {
+      "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+      "lamports": 534212800
+     },
+     {
+      "address": "H253PPA38ecQvnpSvfWgqBfMuVgZ656CEXLgTHwZQHfs",
+      "lamports": 509172720
+     },
+     {
+      "address": "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr",
+      "lamports": 380634240
+     },
+     {
+      "address": "SysvarS1otHashes111111111111111111111111111",
+      "lamports": 143487360
+     },
+     {
+      "address": "SysvarStakeHistory1111111111111111111111111",
+      "lamports": 114979200
+     },
+     {
+      "address": "Memo1UhkJRfHyvLMcVucJwxXeuD728EqVDDwQDxFMNo",
+      "lamports": 88432640
+     }
+    ]
+   },
+   "id": 1
+  },
+  "getLargestAccounts/non-circulating": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": []
+   },
+   "id": 1
+  },
+  "getLatestBlockhash/default": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "blockhash": "BfBRnqNC1nKg14Eeh2QqSB5ALoBZ9BRZPnyWWJ8SjNow",
+     "lastValidBlockHeight": 399
+    }
+   },
+   "id": 1
+  },
+  "getLatestBlockhash/min-context-slot-ahead": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32016,
+    "message": "Minimum context slot has not been reached",
+    "data": {
+     "contextSlot": 249
+    }
+   },
+   "id": 1
+  },
+  "getLatestBlockhash/processed": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 280
+    },
+    "value": {
+     "blockhash": "3GouNEBunnD9TWmf7Lzh6KVytJGvXssxdpAmTz1Trd3J",
+     "lastValidBlockHeight": 430
+    }
+   },
+   "id": 1
+  },
+  "getLeaderSchedule/bad-identity": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid param: WrongSize"
+   },
+   "id": 1
+  },
+  "getLeaderSchedule/far-slot": {
+   "jsonrpc": "2.0",
+   "result": null,
+   "id": 1
+  },
+  "getLeaderSchedule/not-a-leader": {
+   "jsonrpc": "2.0",
+   "result": {},
+   "id": 1
+  },
+  "getMaxRetransmitSlot": {
+   "jsonrpc": "2.0",
+   "result": 0,
+   "id": 1
+  },
+  "getMaxShredInsertSlot": {
+   "jsonrpc": "2.0",
+   "result": 0,
+   "id": 1
+  },
+  "getMinimumBalanceForRentExemption/over-10-MiB": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32600,
+    "message": "Invalid request"
+   },
+   "id": 1
+  },
+  "getMinimumBalanceForRentExemption/token-account": {
+   "jsonrpc": "2.0",
+   "result": 2039280,
+   "id": 1
+  },
+  "getMinimumBalanceForRentExemption/zero": {
+   "jsonrpc": "2.0",
+   "result": 890880,
+   "id": 1
+  },
+  "getMultipleAccounts/bad-key": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid param: WrongSize"
+   },
+   "id": 1
+  },
+  "getMultipleAccounts/default-encoding": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": [
+     {
+      "data": [
+       "AQAAAHp5QRDMeWALf57J0unCKkAmdz9ZrTOAP3kTWAAWAOZ+QEIPAAAAAAAGAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+       "base64"
+      ],
+      "executable": false,
+      "lamports": 1461600,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "rentEpoch": 18446744073709551615,
+      "space": 82
+     }
+    ]
+   },
+   "id": 1
+  },
+  "getMultipleAccounts/over-100": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Too many inputs provided; max 100"
+   },
+   "id": 1
+  },
+  "getMultipleAccounts/three": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": [
+     {
+      "data": [
+       "",
+       "base64"
+      ],
+      "executable": false,
+      "lamports": 98994414840,
+      "owner": "11111111111111111111111111111111",
+      "rentEpoch": 18446744073709551615,
+      "space": 0
+     },
+     {
+      "data": [
+       "AQAAAHp5QRDMeWALf57J0unCKkAmdz9ZrTOAP3kTWAAWAOZ+QEIPAAAAAAAGAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+       "base64"
+      ],
+      "executable": false,
+      "lamports": 1461600,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "rentEpoch": 18446744073709551615,
+      "space": 82
+     },
+     null
+    ]
+   },
+   "id": 1
+  },
+  "getProgramAccounts/bad-key": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid param: WrongSize"
+   },
+   "id": 1
+  },
+  "getProgramAccounts/data-slice": {
+   "jsonrpc": "2.0",
+   "result": [
+    {
+     "account": {
+      "data": [
+       "eeNZE6WBqqF1Vu/NjWwteJb5qKYwQWd94+8fdJmVv7o=",
+       "base64"
+      ],
+      "executable": false,
+      "lamports": 2039280,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "rentEpoch": 18446744073709551615,
+      "space": 165
+     },
+     "pubkey": "8dS1sEFSxwqA8rnk6eXrZX5Zk76mmxQrYVmTKLtdhnam"
+    },
+    {
+     "account": {
+      "data": [
+       "eeNZE6WBqqF1Vu/NjWwteJb5qKYwQWd94+8fdJmVv7o=",
+       "base64"
+      ],
+      "executable": false,
+      "lamports": 2039280,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "rentEpoch": 18446744073709551615,
+      "space": 165
+     },
+     "pubkey": "95xY9tcQRGeGqELGKmiAFZcjB19yhMwBXQCTEo5bmffT"
+    }
+   ],
+   "id": 1
+  },
+  "getProgramAccounts/five-filters": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Too many filters provided; max 4"
+   },
+   "id": 1
+  },
+  "getProgramAccounts/memcmp-over-128": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid param: DataTooLarge"
+   },
+   "id": 1
+  },
+  "getProgramAccounts/token-account-state": {
+   "jsonrpc": "2.0",
+   "result": [
+    {
+     "account": {
+      "data": [
+       "eeNZE6WBqqF1Vu/NjWwteJb5qKYwQWd94+8fdJmVv7owc6nRx+NAeyLE0v/r3WxycEvP4TPXR2wSsKUzrlPKZ5DQAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+       "base64"
+      ],
+      "executable": false,
+      "lamports": 2039280,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "rentEpoch": 18446744073709551615,
+      "space": 165
+     },
+     "pubkey": "8dS1sEFSxwqA8rnk6eXrZX5Zk76mmxQrYVmTKLtdhnam"
+    },
+    {
+     "account": {
+      "data": [
+       "eeNZE6WBqqF1Vu/NjWwteJb5qKYwQWd94+8fdJmVv7p6eUEQzHlgC3+eydLpwipAJnc/Wa0zgD95E1gAFgDmfrBxCwAAAAAAAQAAAKY0Jtlh2mW8Daqq//vxANLMjeF+JCM5NRSlGZ4ASxNkAQAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+       "base64"
+      ],
+      "executable": false,
+      "lamports": 2039280,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "rentEpoch": 18446744073709551615,
+      "space": 165
+     },
+     "pubkey": "95xY9tcQRGeGqELGKmiAFZcjB19yhMwBXQCTEo5bmffT"
+    }
+   ],
+   "id": 1
+  },
+  "getProgramAccounts/token-by-mint": {
+   "jsonrpc": "2.0",
+   "result": [
+    {
+     "account": {
+      "data": [
+       "eeNZE6WBqqF1Vu/NjWwteJb5qKYwQWd94+8fdJmVv7owc6nRx+NAeyLE0v/r3WxycEvP4TPXR2wSsKUzrlPKZ5DQAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+       "base64"
+      ],
+      "executable": false,
+      "lamports": 2039280,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "rentEpoch": 18446744073709551615,
+      "space": 165
+     },
+     "pubkey": "8dS1sEFSxwqA8rnk6eXrZX5Zk76mmxQrYVmTKLtdhnam"
+    },
+    {
+     "account": {
+      "data": [
+       "eeNZE6WBqqF1Vu/NjWwteJb5qKYwQWd94+8fdJmVv7p6eUEQzHlgC3+eydLpwipAJnc/Wa0zgD95E1gAFgDmfrBxCwAAAAAAAQAAAKY0Jtlh2mW8Daqq//vxANLMjeF+JCM5NRSlGZ4ASxNkAQAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+       "base64"
+      ],
+      "executable": false,
+      "lamports": 2039280,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "rentEpoch": 18446744073709551615,
+      "space": 165
+     },
+     "pubkey": "95xY9tcQRGeGqELGKmiAFZcjB19yhMwBXQCTEo5bmffT"
+    }
+   ],
+   "id": 1
+  },
+  "getProgramAccounts/token-jsonParsed": {
+   "jsonrpc": "2.0",
+   "result": [
+    {
+     "account": {
+      "data": {
+       "parsed": {
+        "info": {
+         "isNative": false,
+         "mint": "9CoQ9cvHxv8RAtJMQxeg5RqHNrDFERiJe9qpsm4aHw45",
+         "owner": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+         "state": "initialized",
+         "tokenAmount": {
+          "amount": "250000",
+          "decimals": 6,
+          "uiAmount": 0.25,
+          "uiAmountString": "0.25"
+         }
+        },
+        "type": "account"
+       },
+       "program": "spl-token",
+       "space": 165
+      },
+      "executable": false,
+      "lamports": 2039280,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "rentEpoch": 18446744073709551615,
+      "space": 165
+     },
+     "pubkey": "8dS1sEFSxwqA8rnk6eXrZX5Zk76mmxQrYVmTKLtdhnam"
+    },
+    {
+     "account": {
+      "data": {
+       "parsed": {
+        "info": {
+         "delegate": "CBnoTv5ueMY8hUWmdiwshrhCBQ5Q2FmLotUxYpNehyaT",
+         "delegatedAmount": {
+          "amount": "100",
+          "decimals": 6,
+          "uiAmount": 0.0001,
+          "uiAmountString": "0.0001"
+         },
+         "isNative": false,
+         "mint": "9CoQ9cvHxv8RAtJMQxeg5RqHNrDFERiJe9qpsm4aHw45",
+         "owner": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+         "state": "initialized",
+         "tokenAmount": {
+          "amount": "750000",
+          "decimals": 6,
+          "uiAmount": 0.75,
+          "uiAmountString": "0.75"
+         }
+        },
+        "type": "account"
+       },
+       "program": "spl-token",
+       "space": 165
+      },
+      "executable": false,
+      "lamports": 2039280,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "rentEpoch": 18446744073709551615,
+      "space": 165
+     },
+     "pubkey": "95xY9tcQRGeGqELGKmiAFZcjB19yhMwBXQCTEo5bmffT"
+    }
+   ],
+   "id": 1
+  },
+  "getProgramAccounts/token-with-context": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": [
+     {
+      "account": {
+       "data": [
+        "eeNZE6WBqqF1Vu/NjWwteJb5qKYwQWd94+8fdJmVv7owc6nRx+NAeyLE0v/r3WxycEvP4TPXR2wSsKUzrlPKZ5DQAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "base64"
+       ],
+       "executable": false,
+       "lamports": 2039280,
+       "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+       "rentEpoch": 18446744073709551615,
+       "space": 165
+      },
+      "pubkey": "8dS1sEFSxwqA8rnk6eXrZX5Zk76mmxQrYVmTKLtdhnam"
+     },
+     {
+      "account": {
+       "data": [
+        "eeNZE6WBqqF1Vu/NjWwteJb5qKYwQWd94+8fdJmVv7p6eUEQzHlgC3+eydLpwipAJnc/Wa0zgD95E1gAFgDmfrBxCwAAAAAAAQAAAKY0Jtlh2mW8Daqq//vxANLMjeF+JCM5NRSlGZ4ASxNkAQAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "base64"
+       ],
+       "executable": false,
+       "lamports": 2039280,
+       "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+       "rentEpoch": 18446744073709551615,
+       "space": 165
+      },
+      "pubkey": "95xY9tcQRGeGqELGKmiAFZcjB19yhMwBXQCTEo5bmffT"
+     }
+    ]
+   },
+   "id": 1
+  },
+  "getRecentPerformanceSamples/default": {
+   "jsonrpc": "2.0",
+   "result": [
+    {
+     "numNonVoteTransactions": 3,
+     "numSlots": 142,
+     "numTransactions": 112,
+     "samplePeriodSecs": 60,
+     "slot": 142
+    }
+   ],
+   "id": 1
+  },
+  "getRecentPerformanceSamples/over-720": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid limit; max 720"
+   },
+   "id": 1
+  },
+  "getRecentPrioritizationFees/default": {
+   "jsonrpc": "2.0",
+   "result": [
+    {
+     "prioritizationFee": 0,
+     "slot": 15
+    },
+    {
+     "prioritizationFee": 0,
+     "slot": 48
+    },
+    {
+     "prioritizationFee": 0,
+     "slot": 82
+    },
+    {
+     "prioritizationFee": 0,
+     "slot": 115
+    },
+    {
+     "prioritizationFee": 0,
+     "slot": 149
+    },
+    {
+     "prioritizationFee": 0,
+     "slot": 182
+    },
+    {
+     "prioritizationFee": 0,
+     "slot": 214
+    },
+    {
+     "prioritizationFee": 0,
+     "slot": 247
+    }
+   ],
+   "id": 1
+  },
+  "getRecentPrioritizationFees/over-128": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Too many inputs provided; max 128"
+   },
+   "id": 1
+  },
+  "getRecentPrioritizationFees/payer": {
+   "jsonrpc": "2.0",
+   "result": [
+    {
+     "prioritizationFee": 0,
+     "slot": 15
+    },
+    {
+     "prioritizationFee": 0,
+     "slot": 48
+    },
+    {
+     "prioritizationFee": 0,
+     "slot": 82
+    },
+    {
+     "prioritizationFee": 0,
+     "slot": 115
+    },
+    {
+     "prioritizationFee": 0,
+     "slot": 149
+    },
+    {
+     "prioritizationFee": 0,
+     "slot": 182
+    },
+    {
+     "prioritizationFee": 0,
+     "slot": 214
+    },
+    {
+     "prioritizationFee": 0,
+     "slot": 247
+    }
+   ],
+   "id": 1
+  },
+  "getSignatureStatuses/bad-signature": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid param: WrongSize"
+   },
+   "id": 1
+  },
+  "getSignatureStatuses/empty-config": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid params: missing field `searchTransactionHistory`."
+   },
+   "id": 1
+  },
+  "getSignatureStatuses/over-256": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Too many inputs provided; max 256"
+   },
+   "id": 1
+  },
+  "getSignatureStatuses/search-history": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 280
+    },
+    "value": [
+     {
+      "confirmationStatus": "finalized",
+      "confirmations": null,
+      "err": null,
+      "slot": 48,
+      "status": {
+       "Ok": null
+      }
+     },
+     {
+      "confirmationStatus": "finalized",
+      "confirmations": null,
+      "err": {
+       "InstructionError": [
+        0,
+        {
+         "Custom": 1
+        }
+       ]
+      },
+      "slot": 247,
+      "status": {
+       "Err": {
+        "InstructionError": [
+         0,
+         {
+          "Custom": 1
+         }
+        ]
+       }
+      }
+     }
+    ]
+   },
+   "id": 1
+  },
+  "getSignatureStatuses/transfer": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 280
+    },
+    "value": [
+     {
+      "confirmationStatus": "finalized",
+      "confirmations": null,
+      "err": null,
+      "slot": 48,
+      "status": {
+       "Ok": null
+      }
+     }
+    ]
+   },
+   "id": 1
+  },
+  "getSignaturesForAddress/before-transfer": {
+   "jsonrpc": "2.0",
+   "result": [
+    {
+     "blockTime": 1791634850,
+     "confirmationStatus": "finalized",
+     "err": null,
+     "memo": null,
+     "signature": "3V5gqucwWK78Fv5uHGnCEn7k3KsCYTMiFHyNJms9j9t2YY9hbmS5H4mSAYEyMG3NR8XPhBogFeB4r8JzmwPE7v7x",
+     "slot": 48,
+     "transactionIndex": 1
+    },
+    {
+     "blockTime": 1791634836,
+     "confirmationStatus": "finalized",
+     "err": null,
+     "memo": null,
+     "signature": "FBKWDftdh8GEz4DVtUuhuGMSNNyK4FEytokW8r9hskZEbnzXBjurpCcw9cLJJj4myfDGzEsf8tDcD4nF2G8onLj",
+     "slot": 15,
+     "transactionIndex": 1
+    }
+   ],
+   "id": 1
+  },
+  "getSignaturesForAddress/limit-0": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid limit; max 1000"
+   },
+   "id": 1
+  },
+  "getSignaturesForAddress/limit-1": {
+   "jsonrpc": "2.0",
+   "result": [
+    {
+     "blockTime": 1791634933,
+     "confirmationStatus": "finalized",
+     "err": {
+      "InstructionError": [
+       0,
+       {
+        "Custom": 1
+       }
+      ]
+     },
+     "memo": null,
+     "signature": "PVehWid7ReXBUDzL39ejsAc7a7SmVVsdyiXgwCCtECo48m29mJudH8ibb6nY6RMUD5NiWca6t7mWqVyHLqNSNKF",
+     "slot": 247,
+     "transactionIndex": 1
+    }
+   ],
+   "id": 1
+  },
+  "getSignaturesForAddress/limit-over-1000": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid limit; max 1000"
+   },
+   "id": 1
+  },
+  "getSignaturesForAddress/payer": {
+   "jsonrpc": "2.0",
+   "result": [
+    {
+     "blockTime": 1791634933,
+     "confirmationStatus": "finalized",
+     "err": {
+      "InstructionError": [
+       0,
+       {
+        "Custom": 1
+       }
+      ]
+     },
+     "memo": null,
+     "signature": "PVehWid7ReXBUDzL39ejsAc7a7SmVVsdyiXgwCCtECo48m29mJudH8ibb6nY6RMUD5NiWca6t7mWqVyHLqNSNKF",
+     "slot": 247,
+     "transactionIndex": 1
+    },
+    {
+     "blockTime": 1791634919,
+     "confirmationStatus": "finalized",
+     "err": null,
+     "memo": "[16] agave transcript",
+     "signature": "By18VjfL9zakomtqjYjJ78AgPjLnHdr1axwkn6LLdNiPAjGeMe9SuDNR2EQJDYLSyeYCgSp7fcJ9jTzpRuH2ge2",
+     "slot": 214,
+     "transactionIndex": 1
+    },
+    {
+     "blockTime": 1791634906,
+     "confirmationStatus": "finalized",
+     "err": null,
+     "memo": null,
+     "signature": "4RvwDREG4Q4vTY4Hg2Cxnq4XUKuCqXzC8k2TMYPPwtEJXbT3uzzALkVQ2rrCrCKVoY3LQpHyw8oce7GPxW3pZm9T",
+     "slot": 182,
+     "transactionIndex": 1
+    },
+    {
+     "blockTime": 1791634892,
+     "confirmationStatus": "finalized",
+     "err": null,
+     "memo": null,
+     "signature": "5B4UVT6Mwjw9pHmhLKvYXGh8YXTTvtp6o9Ph6uKheMYvk33U6u8pDDB8nLLqifViYCaMu3BPovuHWuzkYJh54w5B",
+     "slot": 149,
+     "transactionIndex": 1
+    },
+    {
+     "blockTime": 1791634878,
+     "confirmationStatus": "finalized",
+     "err": null,
+     "memo": null,
+     "signature": "Fre9JRu6V5xdTL8T27ETEkkPP1MkY4wbdbVAtt8rgGhikkP1U6zsxCmBtY6wEpg6CwvEW4CiF47oYq5QWcKwFXS",
+     "slot": 115,
+     "transactionIndex": 1
+    },
+    {
+     "blockTime": 1791634864,
+     "confirmationStatus": "finalized",
+     "err": null,
+     "memo": null,
+     "signature": "3g5owwy4nAySjiEWEzLvqbYddSTUFXxpM9dJ982XnV5QSVHwUNKB7hqE3datR4EFjgxRq7T2ryorMsCZi82bzTZx",
+     "slot": 82,
+     "transactionIndex": 1
+    },
+    {
+     "blockTime": 1791634850,
+     "confirmationStatus": "finalized",
+     "err": null,
+     "memo": null,
+     "signature": "3V5gqucwWK78Fv5uHGnCEn7k3KsCYTMiFHyNJms9j9t2YY9hbmS5H4mSAYEyMG3NR8XPhBogFeB4r8JzmwPE7v7x",
+     "slot": 48,
+     "transactionIndex": 1
+    },
+    {
+     "blockTime": 1791634836,
+     "confirmationStatus": "finalized",
+     "err": null,
+     "memo": null,
+     "signature": "FBKWDftdh8GEz4DVtUuhuGMSNNyK4FEytokW8r9hskZEbnzXBjurpCcw9cLJJj4myfDGzEsf8tDcD4nF2G8onLj",
+     "slot": 15,
+     "transactionIndex": 1
+    }
+   ],
+   "id": 1
+  },
+  "getSignaturesForAddress/processed": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Method does not support commitment below `confirmed`"
+   },
+   "id": 1
+  },
+  "getSignaturesForAddress/unknown-before": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32020,
+    "message": "Transaction 1111111111111111111111111111111111111111111111111111111111111111 not found"
+   },
+   "id": 1
+  },
+  "getSlot/default": {
+   "jsonrpc": "2.0",
+   "result": 249,
+   "id": 1
+  },
+  "getSlot/min-context-slot-ahead": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32016,
+    "message": "Minimum context slot has not been reached",
+    "data": {
+     "contextSlot": 249
+    }
+   },
+   "id": 1
+  },
+  "getSlot/processed": {
+   "jsonrpc": "2.0",
+   "result": 280,
+   "id": 1
+  },
+  "getSlotLeader/default": {
+   "jsonrpc": "2.0",
+   "result": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+   "id": 1
+  },
+  "getSlotLeaders/far": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid slot range: leader schedule for epoch 2314 is unavailable"
+   },
+   "id": 1
+  },
+  "getSlotLeaders/from-transfer": {
+   "jsonrpc": "2.0",
+   "result": [
+    "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+    "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+    "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+    "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+    "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW"
+   ],
+   "id": 1
+  },
+  "getSlotLeaders/limit-over-5000": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid limit; max 5000"
+   },
+   "id": 1
+  },
+  "getStakeMinimumDelegation": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": 1000000000
+   },
+   "id": 1
+  },
+  "getSupply/default": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "circulating": 503000511189676510,
+     "nonCirculating": 0,
+     "nonCirculatingAccounts": [
+      "8DE8fqPfv1fp9DHyGyDFFaMjpopMgDeXspzoi9jpBJjC",
+      "GpYnVDgB7dzvwSgsjQFeHznjG6Kt1DLBFYrKxjGU1LuD",
+      "H3Ni7vG1CsmJZdTvxF7RkAf9UM5qk4RsohJsmPvtZNnu",
+      "CuatS6njAcfkFHnvai7zXCs7syA9bykXWsDCJEWfhjHG",
+      "43Cwv866ActL11JqVQXoFPiytUYA3tFXUaNg1zPsarn9",
+      "AksPzoA9DKCipgdhHjhUzQJe4iEniCvBoEfvayuFA3BN",
+      "6yKHERk8rsbmJxvMpPuwPs1ct3hRiP7xaJF2tvnGU6nK",
+      "6zw7em7uQdmMpuS9fGz8Nq9TLHa5YQhEKKwPjo5PwDK4",
+      "GpxpMVhrBBBEYbEJxdR62w3daWz444V7m6dxYDZKH77D",
+      "P8aKfWQPeRnsZtpBrwWTYzyAoRk74KMz56xc6NEpC4J",
+      "6n1mSmsdGFCkEyyHe4wtgEigbwhiwYRszrerMW9YRyYF",
+      "3iPvAS4xdhYr6SkhVDHCLr7tJjMAFK4wvvHWJxFQVg15",
+      "43KdfhYK6LUXX4LmyxfZ1KLaQrfpRe8vNwopNS7wXsUC",
+      "AsrYX4FeLXnZcrjcZmrASY2Eq1jvEeQfwxtNTxS5zojA",
+      "513qFSVgmAQFBDsnyFCM1MrVKBrWiDgb4nXrdGsqa7Z4",
+      "CHmdL15akDcJgBkY6BP3hzs98Dqr6wbdDC5p8odvtSbq",
+      "FR84wZQy3Y3j2gWz6pgETUiUoJtreMEuWfbg6573UCj9",
+      "Es13uD2p64UVPFpEWfDtd6SERdoNR2XVgqBQBZcZSLqW",
+      "5HA8QV7tp59iNpfjs8f84LGUGX4imaynMFSKWHUcTrMT",
+      "CSSxN8vQYqSjg5GV6ZUGSM65dXqhytLzANLpMrBZjLKP",
+      "BuCEvc9ze8UoAQwwsQLy8d447C8sA4zeVtVpc6m5wQeS",
+      "DE1bawNcRJB9rVm3buyMVfr8mBEoyyu73NBovf2oXJsJ",
+      "8ndGYFjav6NDXvzYcxs449Aub3AxYv4vYpk89zRDwgj7",
+      "5XdtyEDREHJXXW1CTtCsVjJRjBapAwK78ZquzvnNVRrV",
+      "3ZrsTmNM6AkMcqFfv3ryfhQ2jMfqP64RQbqVyAaxqhrQ",
+      "EziVYi3Sv5kJWxmU77PnbrT8jmkVuqwdiFLLzZpLVEn7",
+      "BsKsunvENxAraBrL77UfAn1Gi7unVEmQAdCbhsjUN6tU",
+      "BVsJuJbhXmxPB9XPZrYMXs1SfuZuo998u1jQ9emVp8YD",
+      "Cj53e3n1WX9dAUNX5PZpsc9xG9e7hXGnuJkKLJkNaf6v",
+      "EbitXxcwjC1dzrGJ7sa3Y6RBzSM3wxvrxMaBncNBKEf2",
+      "HMmHHmCmC3oo4G4QCjKvNxctSBQzRFDp2WQHZoXyrW6Q",
+      "CQDYc4ET2mbFhVpgj41gXahL6Exn5ZoPcGAzSHuYxwmE",
+      "8CUUMKYNGxdgYio5CLHRHyzMEhhVRMcqefgE6dLqnVRK",
+      "7xJ9CLtEAcEShw9kW2gSoZkRWL566Dg12cvgzANJwbTr",
+      "8UVjvYyoqP6sqcctTso3xpCdCfgTMiv3VRh7vraC2eJk",
+      "C7C8odR8oashR5Feyrq2tJKaXL18id1dSj2zbkDGL2C2",
+      "6B7mXMM6BixHvDpPAPLSKweLyCXcbtprkfsw3HfMUSjZ",
+      "CUageMFi49kzoDqtdU8NvQ4Bq3sbtJygjKDAXJ45nmAi",
+      "EMAY24PrS6rWfvpqffFCsTsFJypeeYYmtUc26wdh3Wup",
+      "Fas9FrnngyVjdMZ6r8p8SsfyFDtHLMmrw1dyBxRWWVTF",
+      "BtvSeDfZNfA3VEH6baFprfx6JcS6JX8jdt6NffCxoJGV",
+      "9S2M3UYPpnPZTBtbcUvehYmiWFK3kBhwfzV2iWuwvaVy",
+      "2UdDthRdtZKMjEx9oQYnzuLdWy3sa4XKeaqihdXkXFza",
+      "AUqLkd6bR54NtXY9Zt4J2zZ7CJbhVHuDR95YFk5qahaX",
+      "5zHRch6mowPiobRQHYXZ1siRcthw4dYkFPuaNDQkK3EE",
+      "EhN8bv8LCXnNAVju9ERGsCccmdBNmNTAESAHXE8PyBLR",
+      "145FLxWrDG9gKifyJKSnkKNAUPhG6hxUMEiZWw6XeSMW",
+      "5tDptzMGG79DLp9XV4fdcmiRNPQGCkfBJeo8EVCSYKw7",
+      "DEGyTHFXmYuyANRDYRoEcShBXLonWNdBRpNzbFZBuzhY",
+      "3FKwgoQWCz4i43Pbo3jdfsjzkgrkjnk44rDWh7A9J9Ee",
+      "Ab1UcdsFXZVnkSt1Z3vcYU65GQk5MvCbs54SviaiaqHb",
+      "EHUv6Hc9XGAb57C8iNCUuoE9xnJnRTFr9LaP7zbu8LNB",
+      "88YC29WwpugANLcN7DYkuL3benW79WsdxkQ3KX8zER9s",
+      "9oBNYSARUMuH2swnxzbxCi827YfUnYWyWSAkrHz93h5y",
+      "CY7X5o3Wi2eQhTocLmUS6JSWyx1NinBfW7AXRrkRCpi8",
+      "HKJgYGTTYYR2ZkfJKHbn58w676fKueQXmvbtpyvrSM3N",
+      "DrKzW5koKSZp4mg4BdHLwr72MMXscd2kTiWgckCvvPXz",
+      "2xP8YQ3sVmfNPtGM17tZi7Lr4vsPUiN6mHLx42roazG5",
+      "8o8trB6XdG8o4qo29De2mcooY5E3pW2rvMMkeBwJHkUD",
+      "HNCooAiRiVeqGK9VSjxsvRsfr4weTcx14XhkvM7zDMgx",
+      "98j2yMfxrLzQ5YQJU1FMW3CTkoYgZStJirpm4HLAkA3o",
+      "5McU7LcsRw3RHyrjj98qHefx6ehy7MdjF1uKKi6Kp8hV",
+      "3CYxk8uTXtANvbU1HW3NHNhKcBEfYesi2BdBFizy3f6s",
+      "CND6ZjRTzaCFVdX7pSSWgjTfHZuhxqFDoUBqWBJguNoA",
+      "619qLS85ieR4qh7MGNLLZyLefN7hMi2FDVb5cmX1nisb",
+      "3fV2GaDKa3pZxyDcpMh5Vrh2FVAMUiWUKbYmnBFv8As3",
+      "HUAkU5psJXZuw54Lrg1ksbXzHv2fzczQ9sNbmisVMeJU",
+      "DWfXRxmUXKdSTji4S1nXncviTmrhWQwxHAQCcvjRLeWm",
+      "AKXpgmVhedTT49sekGbh6MXfx2kJKBcaFQLpc83NCp6N",
+      "6vHscAGjgbTfi1ooRVWGjSiUhHcUnLBceJyuKjpKrCYy",
+      "Hm9JW7of5i9dnrboS8pCUCSeoQUPh7JsP1rkbJnW7An4",
+      "3MP45RTcFdLX3HpPD18asXCCxFjsgrZM9V6tEeQxFXd4",
+      "BUnRE27mYXN9p8H1Ay24GXhJC88q2CuwLoNU2v2CrW4W",
+      "AVYpwVou2BhdLivAwLxKPALZQsY7aZNkNmGbP2fZw7RU",
+      "DeXE7LTUqsC3B9kSACfFdW5TPG1eT9n1Z6gVB9dJNxqz",
+      "FPzPT7YV5BHSTjYjqycXbwBsD4E5WsrZNPcCgcHhPkUx",
+      "4sNBQyPbJCQyUimBueZkGWnLVqds4rWkm7eXyi9WskGU",
+      "5D5NxsNVTgXHyVziwV7mDFwVDS6voaBsyyGxUbhQrhNW",
+      "DQQGPtj7pphPHCLzzBuEyDDQByUcKGrsJdsH7SP3hAug",
+      "8rT45mqpuDBR1vcnDc9kwP9DrZAXDR4ZeuKWw3u1gTGa",
+      "AnbszMCtjEVZTquG3FQ68x1f1WK5B1Z6E7gtN2J6vD5a",
+      "4bWjzNek2m6P3Q8rKkq11C47TaoAwpj3ykk5yDCYLWr1",
+      "3itU5ME8L6FDqtMiRoUiT1F7PwbkTtHBbW51YWD5jtjm",
+      "GK2zqSsXLA2rwVZk347RYhh6jJpRsCA69FjLW93ZGi3B",
+      "7Anoa4ZRiq8qaaiEnhmdpXyTEmBjZASXGfnQqVDynNie",
+      "H8wurbnaaXsgtrjqkNH1HhncUPUhTLAmKUHkwMeyqmfN",
+      "2bvGnYAPSV8pa1H3vRYr5tPAXktP4DkFACHfAgqyyfhd",
+      "33XwSCq2Ft5tTCsGK7kTyMCJ4hqufDZT2REFAWXmsia8",
+      "Amn9KQZY5kJj932b49pxwqZuuKfNWewrmNQtdMrRfdvf",
+      "6spvvQJzFCcw5fVVdF1zKxCeq8Gj2yRFGgFuG16fYSMo",
+      "HBfi37TwD4kMa1WrAWwXp3ZaFbZQ1g3XxWwNZs8QsCpY",
+      "Eyr9P5XsjK2NUKNCnfu39eqpGoiLFgVAv1LSQgMZCwiQ",
+      "BhvLngiqqKeZ8rpxch2uGjeCiC88zzewoWPRuoxpp1aS",
+      "BDvLyqobZFubd7ESEJde6KqjbNoChkdj5aEiBdCqcN5r",
+      "AZWdNvnZxJnbcT8ZzonpN19AZJadxPdUxSiCEDTJzu8L",
+      "HuqDWJodFhAEWh6aWdsDVUqsjRket5DYXMYyDYtD8hdN",
+      "7Np41oeYqPefeNQEHSv1UDhYrehxin3NStELsSKCT4K2",
+      "Ds69ZQPb3D3aVPXdN5REyzALBrzJLdruJZ1cwyfyoEEx",
+      "3yeCpRbBU5gzBaweVRqUXFcZUp7gSXBeknKcbGmjwmjJ",
+      "GdnSyH3YtwcxFvQrVVJMm1JhTS4QVX7MFsX56uJLUfiZ",
+      "FB6VmiYFnVGp1uKXA3WbNsqg9neGYVpwYYiB9q8bFRrQ",
+      "F9MWFw8cnYVwsRq8Am1PGfFL3cQUZV37mbGoxZftzLjN",
+      "6o5v1HC7WhBnLfRHp8mQTtCP2khdXXjhuyGyYEoy2Suy",
+      "73Aa7yCd6AMPqsaLisfgrpjESVFtDrLnHEjfDsXBK3HV",
+      "7PzsZ3ApLcfQosSr2B1C9YV1GNNgriZVFyqzDpeHoAD",
+      "5aUknZidNKmAPxLMHoUeWsEdmXX8sGKvj8s71pHTDC7H",
+      "Mc5XB47H3DKJHym5RLa9mPzWv5snERsF3KNv5AauXK8",
+      "FnXgwJZT7RMhpYEJFCXGLHp63bhVLfVn5d4aSVQDe19n",
+      "5TuV9WpmESXNfTNqasXVehoXpQy65WUHBbzgKPXPLwWx",
+      "GLz4zxemfHJy3BnK7PjZ4uUgJoHtycpT3JrmTDYduVpg",
+      "2WWb1gRzuXDd5viZLQF7pNRR6Y7UiyeaPpaL35X6j3ve",
+      "GNiz4Mq886bTNDT3pijGsu2gbw6it7sqrwncro45USeB",
+      "4bAowZuPRG8jzNwMceqjYjZnrGXQNR5ZCgQJM8s4hF4i",
+      "5khMKAcvmsFaAhoKkdg3u5abvKsmjUQNmhTNP624WB1F",
+      "E8jcgWvrvV7rwYHJThwfiBeQ8VAH4FgNEEMG9aAuCMAq",
+      "GumSE5HsMV5HCwBTv2D2D81yy9x17aDkvobkqAfTRgmo",
+      "H5PutDz8EgAoznaX7Bc8qSB6sPxD2Xho145H6MH6AcbV",
+      "FwfaykN7ACnsEUDHANzGHqTGQZMcGnUSsahAHUqbdPrz",
+      "GmyW1nqYcrw7P7JqrcyP9ivU9hYNbrgZ1r5SYJJH41Fs",
+      "BtF4msVoQYJPrQUMwNtEXw58LVjux18ddVhC4XjbsdwX",
+      "9huDUZfxoJ7wGMTffUE7vh1xePqef7gyrLJu9NApncqA",
+      "Br3aeVGapRb2xTq17RU2pYZCoJpWA7bq6TKBCcYtMSmt",
+      "CTvhdUVf8KNyMbyEdnvRrBCHJjBKtQwkbj6zwoqcEssG",
+      "CVgyXrbEd1ctEuvq11QdpnCQVnPit8NLdhyqXQHLprM2",
+      "H1rt8KvXkNhQExTRfkY8r9wjZbZ8yCih6J4wQ5Fz9HGP",
+      "Ht5roME7Fjzt3dcEyf7UxYpPPAAdyTrnJ6rgEwQrNAFg",
+      "A3aaVsuX7BfNCUQbuepQSaLs9KNB7c6djG6u4UuJzwwP",
+      "5smrYwb1Hr2T8XMnvsqccTgXxuqQs14iuE8RbHFYf2Cf",
+      "6dXeE5hS8bQKeqZsc18ewCyqHimnhCBAvVJBusnRqa2F",
+      "HQJtLqvEGGxgNYfRXUurfxV8E1swvCnsbC3456ik27HY",
+      "5A2yoxdGdC3B3QC39pkXpjx2ZPH4WGgie9exHQnhNz4J",
+      "AZkdkkHzSEbaZXpr7xBmt71AHj9c8iWE2oWYELm3nns5",
+      "FiWYY85b58zEEcPtxe3PuqzWPjqBJXqdwgZeqSBmT9Cn",
+      "3p9ZxnrSFTkXVrT3KnYg2tT6asnysDApEFB5DRkdeAhB",
+      "HbZ5FfmKWNHC7uwk6TF1hVi6TCs7dtYfdjEcuPGgzFAg",
+      "9xbcBZoGYFnfJZe81EDuDYKUm8xGkjzW8z4EgnVhNvsv",
+      "7Xgby7EgwoRkhbQSdNJL9sXwpo3jddUhqB4zv3WuJB4m",
+      "DVhs8YHWrvhhGxoefDNY9KotqtEEnjnSAK8MYGL2Q7X",
+      "7Y8smnoUrYKGGuDq2uaFKVxJYhojgg7DVixHyAtGTYEV",
+      "GbPK6cgUKso2ZGNV6GRwbp3hkdUzTVjsybYQMGDBvMFa",
+      "3jnknRabs7G2V9dKhxd2KP85pNWXKXiedYnYxtySnQMs",
+      "EPfiDzgbdgXdyqqwbYFMqU6Qvfx2J9Zf2J9noXBYYbbx",
+      "BUjkdqUuH5Lz9XzcMcR4DdEMnFG6r8QzUMBm16Rfau96",
+      "3o6xgkJ9sTmDeQWyfj3sxwon18fXJB9PV5LDc8sfgR4a",
+      "56AidDLicyQaLMqbMQeZ7itUmJyd7TAvehVDi8MXDYbx",
+      "H35YRuMGE6WDPBLu3fDYLxV7tEcL2yJ7C97jDkw6NrBf",
+      "4sxwau4mdqZ8zEJsfryXq4QFYnMJSCp3HWuZQod8WU5k",
+      "8W58E8JVJjH1jCy5CeHJQgvwFXTyAVyesuXRZGbcSUGG",
+      "8vqrX3H2BYLaXVintse3gorPEM4TgTwTFZNN1Fm9TdYs",
+      "FG6UGgT4VpCQxjwQsVy6woHeemwb5jP5u9kR5ry3twcK",
+      "G8EBx1Qo5W8731nmaBSGYyvU96onpEP5adrVSjt4vnLF",
+      "xQadXQiUTCCFhfHjvQx1hyJK6KVWr1w2fD6DT3cdwj7",
+      "9ahLw5LFpeTuBykK3A5aiFZ1CidTY7z4YxG2kmQdSGon",
+      "nGME7HgBT6tAJN1f6YuCCngpqT5cvSTndZUVLjQ4jwA",
+      "Dc2oHxFXQaC2QfLStuU7txtD3U5HZ82MrCSGDooWjbsv",
+      "14FUT96s9swbmH7ZjpDvfEDywnAYy9zaNhv4xvezySGu",
+      "5q54XjQ7vDx4y6KphPeE97LUNiYGtP55spjvXAWPGBuf",
+      "FThHNjNQYi7FLvP4KjeYf3LXjcN2LhyYHmza35ucqtDT",
+      "DUS1KxwUhUyDKB4A81E8vdnTe3hSahd92Abtn9CXsEcj",
+      "26FqcAbTLvr6cVXk2ktPu9hpeMYWukY7uUwNCtTwu7Wb",
+      "Fgyh8EeYGZtbW8sS33YmNQnzx54WXPrJ5KWNPkCfWPot",
+      "63DtkW7zuARcd185EmHAkfF44bDcC2SiTSEj2spLP3iA",
+      "Hz9nydgN1k15wnwffKX7CSmZp4VFTnTwLXAEdomFGNXy",
+      "AG3m2bAibcY8raMt4oXEGqRHwX4FWKPPJVjZxn1LySDX",
+      "8pNBEppa1VcFAsx4Hzq9CpdXUXZjUXbvQwLX2K7QsCwb",
+      "GK8R4uUmrawcREZ5xJy5dAzVV5V7aFvYg77id37pVTK",
+      "GEWSkfWgHkpiLbeKaAnwvqnECGdRNf49at5nFccVey7c",
+      "5kFTzLuM2VgFdb6x16smnY3JWoVdPxNZVFAqeVgjSTUP",
+      "AzVV9ZZDxTgW4wWfJmsG6ytaHpQGSe1yz76Nyy84VbQF",
+      "5PLJZLJiRR9vf7d1JCCg7UuWjtyN9nkab9uok6TqSyuP",
+      "EnX9MvycxMGKFpMPJHgNo6kD2proVaorKQcSaMmguMEZ",
+      "CTqnGTKHrcg8AVK5pSwVzpA3mmSxz7Js9y7rEqCbjryH",
+      "CzAHrrrHKx9Lxf6wdCMrsZkLvk74c7J2vGv8VYPUmY6v",
+      "9hknftBZAQL4f48tWfk3bUEV5YSLcYYtDRqNmpNnhCWG",
+      "ATWFW8xBGPe6xB8JnjyjZqG5FuEXnfyuhEocmqAqfeJG",
+      "CakcnaRDHka2gXyfbEd2d3xsvkJkqsLw2akB3zsN1D2S",
+      "JCwT5Ygmq3VeBEbDjL8s8E82Ra2rP9bq45QfZE7Xyaq7",
+      "EMhn1U3TMimW3bvWYbPUvN2eZnCfsuBN4LGWhzzYhiWR",
+      "DwqBsPgtAHqQUmRN3WF5YTuLKhK7dqzrb9eRJ4UVRNLf",
+      "4vuWt1oHRqLMhf8Nv1zyEXZsYaeK7dipwrfKLoYU9Riq",
+      "CWeRmXme7LmbaUWTZWFLt6FMnpzLCHaQLuR2TdgFn4Lq",
+      "GLUmCeJpXB8veNcchPwibkRYwCwvQbKodex5mEjrgToi",
+      "6mXiGJbQbX726ZhrMSmbLCF81E8rkSfo1pvBWyn1asG5",
+      "4VCET97mE8ixxAPRYabM7S7dvkiAFZ8ZzEoH6kbmfYus",
+      "9xz1vZSWgY6TFPLZgPM2WJjDM1KiPXcALnjYFHRTkYiK",
+      "8rp9vcJG1Uwk25g9XfQNHysfGBYcHizVEJvavqiffB6P",
+      "6nN69B4uZuESZYxr9nrLDjmKRtjDZQXrehwkfQTKw62U",
+      "HCV5dGFJXRrJ3jhDYA4DCeb9TEDTwGGYXtT3wHksu2Zr",
+      "GvpCiTgq9dmEeojCDBivoLoZqc4AkbUDACpqPMwYLWKh",
+      "Ep5Y58PaSyALPrdFxDVAdfKtVdP55vApvsWjb3jSmXsG",
+      "Gbz6wkNFus8SNEkWGNNENLv9NFwVvF1pWVDpaVKUWcMh",
+      "7cvkjYAkUYs4W8XcXsca7cBrEGFeSUjeZmKoNBvEwyri",
+      "wRVP5MYuqP8HJ1Q8RCJ5NzUraL3DxCKPGMKSBd5iQH1",
+      "6Lfk4e6yxXGcFNMHue5u8KQM9hWYKjbdMFZ2n7SHHd6L",
+      "B5tRZWRCTCLANkY5zLnxEXAn8S2exJD9EkH3cacEYqmE",
+      "8M731ZthMdeVoMFGRaPnUBzR7Ze6qY4zEcQ7WALEAn5i",
+      "3wzw3L4wd3B7DHocbQxHosQXEfqEz5AnkQHKBisGKLzY",
+      "EAJJD6nDqtXcZ4DnQb19F9XEz8y8bRDHxbWbahatZNbL",
+      "362rDzQwChHJ9ToZgLdv8wzFHTTsxsxzFLTZPwKY3CYg",
+      "768NcPfBJpFBtjDAbYZLFkej6ca1W5jeArsW5MtdF8S9",
+      "HbJUXNHXLzpucDr9wgjuoqAwK6XNKEcqi5h29MkkuSBQ",
+      "CfCvwXZk1sLSqzuoFx1K7KG1puMofgwHA3tSpcArVysX",
+      "GhsotwFMH6XUrRLJCxcx62h7748N2Uq8mf87hUGkmPhg",
+      "AzHQ8Bia1grVVbcGyci7wzueSWkgvu7YZVZ4B9rkL5P6",
+      "4pV47TiPzZ7SSBPHmgUvSLmH9mMSe8tjyPhQZGbi1zPC",
+      "CsUqV42gVQLJwQsKyjWHqGkfHarxn9hcY4YeSjgaaeTd",
+      "EWAjC8a9VPbALSM3D6tGsbRfgDV48kRuHZPu8qtYSNDv",
+      "6WuU6DWoM7ZpgUVL5TR97Fgose7vLgrv4Qvg1Yhqv8Xw",
+      "C4fATCN93YL5iYS3c2MrHeDmkMD6waHuBXLqsri5q5AF",
+      "4dc5ty7TNod2EQfx4bPnDofPbQk5cELcn3it47qnLizL",
+      "B22zqCsZL6PDsi4fftmcjj5k7hFjhH1BM8Dcz4fXfFXK",
+      "DFaHYDcuLmxx3vrJGCgw8sPehzBNjvbvZTjz7PgvYLcb",
+      "Fg12tB1tz8w6zJSQ4ZAGotWoCztdMJF9hqK8R11pakog",
+      "3bTGcGB9F98XxnrBNftmmm48JGfPgi5sYxDEKiCjQYk3"
+     ],
+     "total": 503000511189676510
+    }
+   },
+   "id": 1
+  },
+  "getSupply/exclude-list": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "circulating": 503000511189676510,
+     "nonCirculating": 0,
+     "nonCirculatingAccounts": [],
+     "total": 503000511189676510
+    }
+   },
+   "id": 1
+  },
+  "getTokenAccountBalance/not-token": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid param: not a Token account"
+   },
+   "id": 1
+  },
+  "getTokenAccountBalance/tokenA": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "amount": "750000",
+     "decimals": 6,
+     "uiAmount": 0.75,
+     "uiAmountString": "0.75"
+    }
+   },
+   "id": 1
+  },
+  "getTokenAccountBalance/unknown": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid param: could not find account"
+   },
+   "id": 1
+  },
+  "getTokenAccountsByDelegate/mint": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": [
+     {
+      "account": {
+       "data": [
+        "eeNZE6WBqqF1Vu/NjWwteJb5qKYwQWd94+8fdJmVv7p6eUEQzHlgC3+eydLpwipAJnc/Wa0zgD95E1gAFgDmfrBxCwAAAAAAAQAAAKY0Jtlh2mW8Daqq//vxANLMjeF+JCM5NRSlGZ4ASxNkAQAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "base64"
+       ],
+       "executable": false,
+       "lamports": 2039280,
+       "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+       "rentEpoch": 18446744073709551615,
+       "space": 165
+      },
+      "pubkey": "95xY9tcQRGeGqELGKmiAFZcjB19yhMwBXQCTEo5bmffT"
+     }
+    ]
+   },
+   "id": 1
+  },
+  "getTokenAccountsByDelegate/program": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": [
+     {
+      "account": {
+       "data": [
+        "eeNZE6WBqqF1Vu/NjWwteJb5qKYwQWd94+8fdJmVv7p6eUEQzHlgC3+eydLpwipAJnc/Wa0zgD95E1gAFgDmfrBxCwAAAAAAAQAAAKY0Jtlh2mW8Daqq//vxANLMjeF+JCM5NRSlGZ4ASxNkAQAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "base64"
+       ],
+       "executable": false,
+       "lamports": 2039280,
+       "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+       "rentEpoch": 18446744073709551615,
+       "space": 165
+      },
+      "pubkey": "95xY9tcQRGeGqELGKmiAFZcjB19yhMwBXQCTEo5bmffT"
+     }
+    ]
+   },
+   "id": 1
+  },
+  "getTokenAccountsByOwner/default-encoding": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32600,
+    "message": "Encoded binary (base 58) data should be less than 128 bytes, please use Base64 encoding."
+   },
+   "id": 1
+  },
+  "getTokenAccountsByOwner/no-filter": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid params: invalid value: map, expected map with a single key."
+   },
+   "id": 1
+  },
+  "getTokenAccountsByOwner/not-mint": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid param: Token mint could not be unpacked"
+   },
+   "id": 1
+  },
+  "getTokenAccountsByOwner/not-token-program": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid param: unrecognized Token program id"
+   },
+   "id": 1
+  },
+  "getTokenAccountsByOwner/payer-jsonParsed": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": [
+     {
+      "account": {
+       "data": {
+        "parsed": {
+         "info": {
+          "delegate": "CBnoTv5ueMY8hUWmdiwshrhCBQ5Q2FmLotUxYpNehyaT",
+          "delegatedAmount": {
+           "amount": "100",
+           "decimals": 6,
+           "uiAmount": 0.0001,
+           "uiAmountString": "0.0001"
+          },
+          "isNative": false,
+          "mint": "9CoQ9cvHxv8RAtJMQxeg5RqHNrDFERiJe9qpsm4aHw45",
+          "owner": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+          "state": "initialized",
+          "tokenAmount": {
+           "amount": "750000",
+           "decimals": 6,
+           "uiAmount": 0.75,
+           "uiAmountString": "0.75"
+          }
+         },
+         "type": "account"
+        },
+        "program": "spl-token",
+        "space": 165
+       },
+       "executable": false,
+       "lamports": 2039280,
+       "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+       "rentEpoch": 18446744073709551615,
+       "space": 165
+      },
+      "pubkey": "95xY9tcQRGeGqELGKmiAFZcjB19yhMwBXQCTEo5bmffT"
+     }
+    ]
+   },
+   "id": 1
+  },
+  "getTokenAccountsByOwner/payer-mint": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": [
+     {
+      "account": {
+       "data": [
+        "eeNZE6WBqqF1Vu/NjWwteJb5qKYwQWd94+8fdJmVv7p6eUEQzHlgC3+eydLpwipAJnc/Wa0zgD95E1gAFgDmfrBxCwAAAAAAAQAAAKY0Jtlh2mW8Daqq//vxANLMjeF+JCM5NRSlGZ4ASxNkAQAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "base64"
+       ],
+       "executable": false,
+       "lamports": 2039280,
+       "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+       "rentEpoch": 18446744073709551615,
+       "space": 165
+      },
+      "pubkey": "95xY9tcQRGeGqELGKmiAFZcjB19yhMwBXQCTEo5bmffT"
+     }
+    ]
+   },
+   "id": 1
+  },
+  "getTokenAccountsByOwner/payer-program": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": [
+     {
+      "account": {
+       "data": [
+        "eeNZE6WBqqF1Vu/NjWwteJb5qKYwQWd94+8fdJmVv7p6eUEQzHlgC3+eydLpwipAJnc/Wa0zgD95E1gAFgDmfrBxCwAAAAAAAQAAAKY0Jtlh2mW8Daqq//vxANLMjeF+JCM5NRSlGZ4ASxNkAQAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "base64"
+       ],
+       "executable": false,
+       "lamports": 2039280,
+       "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+       "rentEpoch": 18446744073709551615,
+       "space": 165
+      },
+      "pubkey": "95xY9tcQRGeGqELGKmiAFZcjB19yhMwBXQCTEo5bmffT"
+     }
+    ]
+   },
+   "id": 1
+  },
+  "getTokenAccountsByOwner/unknown-mint": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid param: could not find mint"
+   },
+   "id": 1
+  },
+  "getTokenLargestAccounts/mint": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": [
+     {
+      "address": "95xY9tcQRGeGqELGKmiAFZcjB19yhMwBXQCTEo5bmffT",
+      "amount": "750000",
+      "decimals": 6,
+      "uiAmount": 0.75,
+      "uiAmountString": "0.75"
+     },
+     {
+      "address": "8dS1sEFSxwqA8rnk6eXrZX5Zk76mmxQrYVmTKLtdhnam",
+      "amount": "250000",
+      "decimals": 6,
+      "uiAmount": 0.25,
+      "uiAmountString": "0.25"
+     }
+    ]
+   },
+   "id": 1
+  },
+  "getTokenLargestAccounts/not-mint": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid param: Token mint could not be unpacked"
+   },
+   "id": 1
+  },
+  "getTokenSupply/mint": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "amount": "1000000",
+     "decimals": 6,
+     "uiAmount": 1.0,
+     "uiAmountString": "1"
+    }
+   },
+   "id": 1
+  },
+  "getTokenSupply/not-mint": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid param: mint could not be unpacked"
+   },
+   "id": 1
+  },
+  "getTokenSupply/unknown": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid param: could not find account"
+   },
+   "id": 1
+  },
+  "getTransaction/bad-signature": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid param: WrongSize"
+   },
+   "id": 1
+  },
+  "getTransaction/failed-base64": {
+   "jsonrpc": "2.0",
+   "result": {
+    "blockTime": 1791634933,
+    "meta": {
+     "computeUnitsConsumed": 150,
+     "costUnits": 1481,
+     "err": {
+      "InstructionError": [
+       0,
+       {
+        "Custom": 1
+       }
+      ]
+     },
+     "fee": 5000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Transfer: insufficient lamports 999995000, need 5000000000",
+      "Program 11111111111111111111111111111111 failed: custom program error: 0x1"
+     ],
+     "postBalances": [
+      999995000,
+      98994414840,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      1000000000,
+      98994414840,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Err": {
+       "InstructionError": [
+        0,
+        {
+         "Custom": 1
+        }
+       ]
+      }
+     }
+    },
+    "slot": 247,
+    "transaction": [
+     "ARNl34CoTkEv72p0soz6Is+ddPFbqO/FcyCmIipz+MQe8LhQUUatGtrg55RAf0deo4zku3zJHwlt0yd7il1k3Q4BAAEDMHOp0cfjQHsixNL/691scnBLz+Ez10dsErClM65Tymd6eUEQzHlgC3+eydLpwipAJnc/Wa0zgD95E1gAFgDmfgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAuAmziNqGNMucvCCU2HvF4noy4K2j5227On1r2TyxSUoBAgIAAQwCAAAAAPIFKgEAAAA=",
+     "base64"
+    ],
+    "transactionIndex": 1
+   },
+   "id": 1
+  },
+  "getTransaction/memo-base64": {
+   "jsonrpc": "2.0",
+   "result": {
+    "blockTime": 1791634919,
+    "meta": {
+     "computeUnitsConsumed": 20713,
+     "costUnits": 21761,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [1]",
+      "Program log: Signed by 9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+      "Program log: Memo (len 16): \"agave transcript\"",
+      "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 20713 of 200000 compute units",
+      "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success"
+     ],
+     "postBalances": [
+      98994414840,
+      380634240
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      98994419840,
+      380634240
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "slot": 214,
+    "transaction": [
+     "AQl0zrKk08q4vA4krhvpkZMkmLJCEmCaA8vqy6I4yk15e7dWUmFD6eSvSTg6sfEQ/laY5rJGGIR4vIT8tHTAcQcBAAECenlBEMx5YAt/nsnS6cIqQCZ3P1mtM4A/eRNYABYA5n4FSlNamSkhBk0k6HFg2jh8fDW13bySu4HkH6hAQQVEjTMIwsiE8paXUkOWSHk1cYAykSNh35LE+dBjKYH/nLxcAQEBABBhZ2F2ZSB0cmFuc2NyaXB0",
+     "base64"
+    ],
+    "transactionIndex": 1
+   },
+   "id": 1
+  },
+  "getTransaction/processed": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Method does not support commitment below `confirmed`"
+   },
+   "id": 1
+  },
+  "getTransaction/token-transfer-base64": {
+   "jsonrpc": "2.0",
+   "result": {
+    "blockTime": 1791634892,
+    "meta": {
+     "computeUnitsConsumed": 105,
+     "costUnits": 1759,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 200000 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success"
+     ],
+     "postBalances": [
+      98994424840,
+      2039280,
+      2039280,
+      1461600,
+      833120
+     ],
+     "postTokenBalances": [
+      {
+       "accountIndex": 1,
+       "mint": "9CoQ9cvHxv8RAtJMQxeg5RqHNrDFERiJe9qpsm4aHw45",
+       "owner": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+       "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+       "uiTokenAmount": {
+        "amount": "750000",
+        "decimals": 6,
+        "uiAmount": 0.75,
+        "uiAmountString": "0.75"
+       }
+      },
+      {
+       "accountIndex": 2,
+       "mint": "9CoQ9cvHxv8RAtJMQxeg5RqHNrDFERiJe9qpsm4aHw45",
+       "owner": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+       "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+       "uiTokenAmount": {
+        "amount": "250000",
+        "decimals": 6,
+        "uiAmount": 0.25,
+        "uiAmountString": "0.25"
+       }
+      }
+     ],
+     "preBalances": [
+      98994429840,
+      2039280,
+      2039280,
+      1461600,
+      833120
+     ],
+     "preTokenBalances": [
+      {
+       "accountIndex": 1,
+       "mint": "9CoQ9cvHxv8RAtJMQxeg5RqHNrDFERiJe9qpsm4aHw45",
+       "owner": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+       "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+       "uiTokenAmount": {
+        "amount": "1000000",
+        "decimals": 6,
+        "uiAmount": 1.0,
+        "uiAmountString": "1"
+       }
+      },
+      {
+       "accountIndex": 2,
+       "mint": "9CoQ9cvHxv8RAtJMQxeg5RqHNrDFERiJe9qpsm4aHw45",
+       "owner": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+       "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+       "uiTokenAmount": {
+        "amount": "0",
+        "decimals": 6,
+        "uiAmount": null,
+        "uiAmountString": "0"
+       }
+      }
+     ],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "slot": 149,
+    "transaction": [
+     "AdC+Rq+HyI8kudpUO90k7blsdcgfege5Vx48jjdXeoWW/oicVXRo/r++ZyE96fU69dSLN7OIGLxIB7lrkf7SxwIBAAIFenlBEMx5YAt/nsnS6cIqQCZ3P1mtM4A/eRNYABYA5n54Ip1bV0h6/4Y08rsG4Yc/ctUMaGdDa6CJmpS5Tzu5jnFXAIiT1EIEK2Kc940HU9m3NdKpxjZk/nk0aG6EYpAaeeNZE6WBqqF1Vu/NjWwteJb5qKYwQWd94+8fdJmVv7oG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqTHzSLrP5t+dz8S62LcAtRI0BnBdd4GaubondVeZEISlAQQEAQMCAAoMkNADAAAAAAAG",
+     "base64"
+    ],
+    "transactionIndex": 1
+   },
+   "id": 1
+  },
+  "getTransaction/token-transfer-jsonParsed": {
+   "jsonrpc": "2.0",
+   "result": {
+    "blockTime": 1791634892,
+    "meta": {
+     "computeUnitsConsumed": 105,
+     "costUnits": 1759,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "logMessages": [
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 200000 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success"
+     ],
+     "postBalances": [
+      98994424840,
+      2039280,
+      2039280,
+      1461600,
+      833120
+     ],
+     "postTokenBalances": [
+      {
+       "accountIndex": 1,
+       "mint": "9CoQ9cvHxv8RAtJMQxeg5RqHNrDFERiJe9qpsm4aHw45",
+       "owner": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+       "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+       "uiTokenAmount": {
+        "amount": "750000",
+        "decimals": 6,
+        "uiAmount": 0.75,
+        "uiAmountString": "0.75"
+       }
+      },
+      {
+       "accountIndex": 2,
+       "mint": "9CoQ9cvHxv8RAtJMQxeg5RqHNrDFERiJe9qpsm4aHw45",
+       "owner": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+       "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+       "uiTokenAmount": {
+        "amount": "250000",
+        "decimals": 6,
+        "uiAmount": 0.25,
+        "uiAmountString": "0.25"
+       }
+      }
+     ],
+     "preBalances": [
+      98994429840,
+      2039280,
+      2039280,
+      1461600,
+      833120
+     ],
+     "preTokenBalances": [
+      {
+       "accountIndex": 1,
+       "mint": "9CoQ9cvHxv8RAtJMQxeg5RqHNrDFERiJe9qpsm4aHw45",
+       "owner": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+       "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+       "uiTokenAmount": {
+        "amount": "1000000",
+        "decimals": 6,
+        "uiAmount": 1.0,
+        "uiAmountString": "1"
+       }
+      },
+      {
+       "accountIndex": 2,
+       "mint": "9CoQ9cvHxv8RAtJMQxeg5RqHNrDFERiJe9qpsm4aHw45",
+       "owner": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+       "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+       "uiTokenAmount": {
+        "amount": "0",
+        "decimals": 6,
+        "uiAmount": null,
+        "uiAmountString": "0"
+       }
+      }
+     ],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "slot": 149,
+    "transaction": {
+     "message": {
+      "accountKeys": [
+       {
+        "pubkey": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+        "signer": true,
+        "source": "transaction",
+        "writable": true
+       },
+       {
+        "pubkey": "95xY9tcQRGeGqELGKmiAFZcjB19yhMwBXQCTEo5bmffT",
+        "signer": false,
+        "source": "transaction",
+        "writable": true
+       },
+       {
+        "pubkey": "8dS1sEFSxwqA8rnk6eXrZX5Zk76mmxQrYVmTKLtdhnam",
+        "signer": false,
+        "source": "transaction",
+        "writable": true
+       },
+       {
+        "pubkey": "9CoQ9cvHxv8RAtJMQxeg5RqHNrDFERiJe9qpsm4aHw45",
+        "signer": false,
+        "source": "transaction",
+        "writable": false
+       },
+       {
+        "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "signer": false,
+        "source": "transaction",
+        "writable": false
+       }
+      ],
+      "instructions": [
+       {
+        "parsed": {
+         "info": {
+          "authority": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+          "destination": "8dS1sEFSxwqA8rnk6eXrZX5Zk76mmxQrYVmTKLtdhnam",
+          "mint": "9CoQ9cvHxv8RAtJMQxeg5RqHNrDFERiJe9qpsm4aHw45",
+          "source": "95xY9tcQRGeGqELGKmiAFZcjB19yhMwBXQCTEo5bmffT",
+          "tokenAmount": {
+           "amount": "250000",
+           "decimals": 6,
+           "uiAmount": 0.25,
+           "uiAmountString": "0.25"
+          }
+         },
+         "type": "transferChecked"
+        },
+        "program": "spl-token",
+        "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "stackHeight": 1
+       }
+      ],
+      "recentBlockhash": "4Mz94CZoYbmYWkCLH2DZafVNXVeHvoCsJQDUEJ566NwW"
+     },
+     "signatures": [
+      "5B4UVT6Mwjw9pHmhLKvYXGh8YXTTvtp6o9Ph6uKheMYvk33U6u8pDDB8nLLqifViYCaMu3BPovuHWuzkYJh54w5B"
+     ]
+    },
+    "transactionIndex": 1
+   },
+   "id": 1
+  },
+  "getTransaction/transfer-base58": {
+   "jsonrpc": "2.0",
+   "result": {
+    "blockTime": 1791634850,
+    "meta": {
+     "computeUnitsConsumed": 150,
+     "costUnits": 1481,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98999995000,
+      1000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      100000000000,
+      0,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "slot": 48,
+    "transaction": [
+     "57agqNjMix6sMtd1Vvn9ebEQCDekSW1WgmPVe8QptmL7RNQSkQLkPW4s53sAaFSoKXkGutNqRhBfPMvHKofM27Qy8hTMGzuSyaeRzMv1cJpKxvPki6hpchioSYTydVeUUNcVdSXrDUDJMQeoawSKfxhed2KsuU3e9VceQ8ajnh7j3jGPbmFRn5bYoWWNLPTkCeNTFPNQtr35MW5dpJNvYjbUQ6jSDFHRf9E9MxrBhfXHaBCSXr51w3MbFmPFhYZthEtGUeYWsXhiJUcDdVKAvRzNYhu4DXJ2C7iHV",
+     "base58"
+    ],
+    "transactionIndex": 1
+   },
+   "id": 1
+  },
+  "getTransaction/transfer-base64": {
+   "jsonrpc": "2.0",
+   "result": {
+    "blockTime": 1791634850,
+    "meta": {
+     "computeUnitsConsumed": 150,
+     "costUnits": 1481,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98999995000,
+      1000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      100000000000,
+      0,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "slot": 48,
+    "transaction": [
+     "AXw/9ESRU7apUWFYp9dv2oTU4/dm5iGL6yXTo+SdO1lll3/S6sBr9Xud7u3ckAPR5DLrIK+7QOHyXbgfEUAyIwcBAAEDenlBEMx5YAt/nsnS6cIqQCZ3P1mtM4A/eRNYABYA5n4wc6nRx+NAeyLE0v/r3WxycEvP4TPXR2wSsKUzrlPKZwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzpnsz8xVCPyxxGUPoeip64R2FVekjAKhoA0xLAEq770BAgIAAQwCAAAAAMqaOwAAAAA=",
+     "base64"
+    ],
+    "transactionIndex": 1
+   },
+   "id": 1
+  },
+  "getTransaction/transfer-binary": {
+   "jsonrpc": "2.0",
+   "result": {
+    "blockTime": 1791634850,
+    "meta": {
+     "computeUnitsConsumed": 150,
+     "costUnits": 1481,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98999995000,
+      1000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      100000000000,
+      0,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "slot": 48,
+    "transaction": "57agqNjMix6sMtd1Vvn9ebEQCDekSW1WgmPVe8QptmL7RNQSkQLkPW4s53sAaFSoKXkGutNqRhBfPMvHKofM27Qy8hTMGzuSyaeRzMv1cJpKxvPki6hpchioSYTydVeUUNcVdSXrDUDJMQeoawSKfxhed2KsuU3e9VceQ8ajnh7j3jGPbmFRn5bYoWWNLPTkCeNTFPNQtr35MW5dpJNvYjbUQ6jSDFHRf9E9MxrBhfXHaBCSXr51w3MbFmPFhYZthEtGUeYWsXhiJUcDdVKAvRzNYhu4DXJ2C7iHV",
+    "transactionIndex": 1
+   },
+   "id": 1
+  },
+  "getTransaction/transfer-default": {
+   "jsonrpc": "2.0",
+   "result": {
+    "blockTime": 1791634850,
+    "meta": {
+     "computeUnitsConsumed": 150,
+     "costUnits": 1481,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98999995000,
+      1000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      100000000000,
+      0,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "slot": 48,
+    "transaction": {
+     "message": {
+      "accountKeys": [
+       "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+       "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+       "11111111111111111111111111111111"
+      ],
+      "header": {
+       "numReadonlySignedAccounts": 0,
+       "numReadonlyUnsignedAccounts": 1,
+       "numRequiredSignatures": 1
+      },
+      "instructions": [
+       {
+        "accounts": [
+         0,
+         1
+        ],
+        "data": "3Bxs3zzLZLuLQEYX",
+        "programIdIndex": 2,
+        "stackHeight": 1
+       }
+      ],
+      "recentBlockhash": "EuV7qNxzNQAJ5m4YUb6LrFPNCariwKMdz3sWV5ecC1Wc"
+     },
+     "signatures": [
+      "3V5gqucwWK78Fv5uHGnCEn7k3KsCYTMiFHyNJms9j9t2YY9hbmS5H4mSAYEyMG3NR8XPhBogFeB4r8JzmwPE7v7x"
+     ]
+    },
+    "transactionIndex": 1
+   },
+   "id": 1
+  },
+  "getTransaction/transfer-json": {
+   "jsonrpc": "2.0",
+   "result": {
+    "blockTime": 1791634850,
+    "meta": {
+     "computeUnitsConsumed": 150,
+     "costUnits": 1481,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98999995000,
+      1000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      100000000000,
+      0,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "slot": 48,
+    "transaction": {
+     "message": {
+      "accountKeys": [
+       "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+       "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+       "11111111111111111111111111111111"
+      ],
+      "header": {
+       "numReadonlySignedAccounts": 0,
+       "numReadonlyUnsignedAccounts": 1,
+       "numRequiredSignatures": 1
+      },
+      "instructions": [
+       {
+        "accounts": [
+         0,
+         1
+        ],
+        "data": "3Bxs3zzLZLuLQEYX",
+        "programIdIndex": 2,
+        "stackHeight": 1
+       }
+      ],
+      "recentBlockhash": "EuV7qNxzNQAJ5m4YUb6LrFPNCariwKMdz3sWV5ecC1Wc"
+     },
+     "signatures": [
+      "3V5gqucwWK78Fv5uHGnCEn7k3KsCYTMiFHyNJms9j9t2YY9hbmS5H4mSAYEyMG3NR8XPhBogFeB4r8JzmwPE7v7x"
+     ]
+    },
+    "transactionIndex": 1
+   },
+   "id": 1
+  },
+  "getTransaction/transfer-json-v0": {
+   "jsonrpc": "2.0",
+   "result": {
+    "blockTime": 1791634850,
+    "meta": {
+     "computeUnitsConsumed": 150,
+     "costUnits": 1481,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98999995000,
+      1000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      100000000000,
+      0,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "slot": 48,
+    "transaction": {
+     "message": {
+      "accountKeys": [
+       "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+       "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+       "11111111111111111111111111111111"
+      ],
+      "header": {
+       "numReadonlySignedAccounts": 0,
+       "numReadonlyUnsignedAccounts": 1,
+       "numRequiredSignatures": 1
+      },
+      "instructions": [
+       {
+        "accounts": [
+         0,
+         1
+        ],
+        "data": "3Bxs3zzLZLuLQEYX",
+        "programIdIndex": 2,
+        "stackHeight": 1
+       }
+      ],
+      "recentBlockhash": "EuV7qNxzNQAJ5m4YUb6LrFPNCariwKMdz3sWV5ecC1Wc"
+     },
+     "signatures": [
+      "3V5gqucwWK78Fv5uHGnCEn7k3KsCYTMiFHyNJms9j9t2YY9hbmS5H4mSAYEyMG3NR8XPhBogFeB4r8JzmwPE7v7x"
+     ]
+    },
+    "transactionIndex": 1,
+    "version": "legacy"
+   },
+   "id": 1
+  },
+  "getTransaction/transfer-jsonParsed": {
+   "jsonrpc": "2.0",
+   "result": {
+    "blockTime": 1791634850,
+    "meta": {
+     "computeUnitsConsumed": 150,
+     "costUnits": 1481,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "logMessages": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98999995000,
+      1000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      100000000000,
+      0,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "slot": 48,
+    "transaction": {
+     "message": {
+      "accountKeys": [
+       {
+        "pubkey": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+        "signer": true,
+        "source": "transaction",
+        "writable": true
+       },
+       {
+        "pubkey": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+        "signer": false,
+        "source": "transaction",
+        "writable": true
+       },
+       {
+        "pubkey": "11111111111111111111111111111111",
+        "signer": false,
+        "source": "transaction",
+        "writable": false
+       }
+      ],
+      "instructions": [
+       {
+        "parsed": {
+         "info": {
+          "destination": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+          "lamports": 1000000000,
+          "source": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty"
+         },
+         "type": "transfer"
+        },
+        "program": "system",
+        "programId": "11111111111111111111111111111111",
+        "stackHeight": 1
+       }
+      ],
+      "recentBlockhash": "EuV7qNxzNQAJ5m4YUb6LrFPNCariwKMdz3sWV5ecC1Wc"
+     },
+     "signatures": [
+      "3V5gqucwWK78Fv5uHGnCEn7k3KsCYTMiFHyNJms9j9t2YY9hbmS5H4mSAYEyMG3NR8XPhBogFeB4r8JzmwPE7v7x"
+     ]
+    },
+    "transactionIndex": 1
+   },
+   "id": 1
+  },
+  "getTransaction/unknown": {
+   "jsonrpc": "2.0",
+   "result": null,
+   "id": 1
+  },
+  "getTransactionCount/default": {
+   "jsonrpc": "2.0",
+   "result": 256,
+   "id": 1
+  },
+  "getVersion": {
+   "jsonrpc": "2.0",
+   "result": {
+    "feature-set": 3383571666,
+    "solana-core": "4.3.0"
+   },
+   "id": 1
+  },
+  "getVoteAccounts/bad-vote-pubkey": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "Invalid param: WrongSize"
+   },
+   "id": 1
+  },
+  "getVoteAccounts/default": {
+   "jsonrpc": "2.0",
+   "result": {
+    "current": [
+     {
+      "activatedStake": 999999997717120,
+      "commission": 0,
+      "epochCredits": [
+       [
+        0,
+        3472,
+        0
+       ]
+      ],
+      "epochVoteAccount": true,
+      "inflationRewardsCommissionBps": 0,
+      "lastVote": 248,
+      "nodePubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+      "rootSlot": 217,
+      "votePubkey": "91D5oPS7RFk276Z2BWPdP8BPonbegy6pdJkUJvRnBkcv"
+     }
+    ],
+    "delinquent": []
+   },
+   "id": 1
+  },
+  "http/circulating-supply": {
+   "body": "503000511.187839031",
+   "headers": {},
+   "status": 200
+  },
+  "http/genesis": {
+   "body": {
+    "length": 393542,
+    "sha256": "001c1b65a3023cf5c1c2b07d9fa2261f9ef81d926b1983488f3b71faf5294c32"
+   },
+   "headers": {},
+   "status": 200
+  },
+  "http/get-root": {
+   "body": "Used HTTP Method is not allowed. POST or OPTIONS is required\n",
+   "headers": {
+    "content-type": "text/plain; charset=utf-8"
+   },
+   "status": 405
+  },
+  "http/health": {
+   "body": "ok",
+   "headers": {},
+   "status": 200
+  },
+  "http/options": {
+   "body": "",
+   "headers": {
+    "accept": "application/json",
+    "access-control-allow-headers": "content-type",
+    "access-control-allow-methods": "OPTIONS, POST",
+    "access-control-allow-origin": "http://example.com",
+    "access-control-max-age": "86400",
+    "allow": "OPTIONS, POST",
+    "content-type": "application/json; charset=utf-8",
+    "vary": "origin"
+   },
+   "status": 200
+  },
+  "http/post-origin-null": {
+   "body": "Origin of the request is not whitelisted. CORS headers would not be sent and any side-effects were cancelled as well.\n",
+   "headers": {
+    "content-type": "text/plain; charset=utf-8"
+   },
+   "status": 403
+  },
+  "http/post-over-50KiB": {
+   "body": "request body size exceeds allowed maximum",
+   "headers": {
+    "content-type": "text/plain; charset=utf-8"
+   },
+   "status": 413
+  },
+  "http/post-text-plain": {
+   "body": "Supplied content type is not allowed. Content-Type: application/json is required\n",
+   "headers": {
+    "content-type": "text/plain; charset=utf-8"
+   },
+   "status": 415
+  },
+  "http/post-with-origin": {
+   "body": "{\"jsonrpc\":\"2.0\",\"result\":611,\"id\":1}\n",
+   "headers": {
+    "access-control-allow-methods": "OPTIONS, POST",
+    "access-control-allow-origin": "http://example.com",
+    "access-control-max-age": "86400",
+    "content-type": "application/json; charset=utf-8",
+    "vary": "origin"
+   },
+   "status": 200
+  },
+  "http/snapshot": {
+   "body": {
+    "length": 415768,
+    "sha256": "79c479006f4ba45d4ca590be7729ca9e7bbeaccfd6a78b151a37b54f0b4f3994"
+   },
+   "headers": {},
+   "status": 200
+  },
+  "http/total-supply": {
+   "body": "503000511.187839031",
+   "headers": {},
+   "status": 200
+  },
+  "isBlockhashValid/bad": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "WrongSize"
+   },
+   "id": 1
+  },
+  "isBlockhashValid/latest": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": true
+   },
+   "id": 1
+  },
+  "isBlockhashValid/unknown": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": false
+   },
+   "id": 1
+  },
+  "logsSubscribe/all": {
+   "ack": {
+    "jsonrpc": "2.0",
+    "result": 5,
+    "id": 1
+   },
+   "notifications": [
+    {
+     "jsonrpc": "2.0",
+     "method": "logsNotification",
+     "params": {
+      "result": {
+       "context": {
+        "slot": 448
+       },
+       "value": {
+        "signature": "5XTFGvjsnsJGwN12f9affiZccWAQBT6dEhkjMFf23ZtsSy4m5qBCq8Q8fk8CqN1gMHkmQcrotNXcPb7XC5dqdJqh",
+        "err": null,
+        "logs": [
+         "Program 11111111111111111111111111111111 invoke [1]",
+         "Program 11111111111111111111111111111111 success"
+        ]
+       }
+      },
+      "subscription": 5
+     }
+    }
+   ],
+   "unsubscribe": {
+    "jsonrpc": "2.0",
+    "result": true,
+    "id": 2
+   }
+  },
+  "logsSubscribe/mentions-payer": {
+   "ack": {
+    "jsonrpc": "2.0",
+    "result": 4,
+    "id": 1
+   },
+   "notifications": [
+    {
+     "jsonrpc": "2.0",
+     "method": "logsNotification",
+     "params": {
+      "result": {
+       "context": {
+        "slot": 414
+       },
+       "value": {
+        "signature": "5VKjJRGUkLsXmz6BP224ezSJeguoSJia6RbxZMNnV83DUJt26hRW2hPe6ihw3dXn38F6YrLoZtnZF8fUh127cp9X",
+        "err": null,
+        "logs": [
+         "Program 11111111111111111111111111111111 invoke [1]",
+         "Program 11111111111111111111111111111111 success"
+        ]
+       }
+      },
+      "subscription": 4
+     }
+    }
+   ],
+   "unsubscribe": {
+    "jsonrpc": "2.0",
+    "result": true,
+    "id": 2
+   }
+  },
+  "logsSubscribe/two-mentions": {
+   "ack": {
+    "jsonrpc": "2.0",
+    "error": {
+     "code": -32602,
+     "message": "Invalid Request: Only 1 address supported"
+    },
+    "id": 1
+   }
+  },
+  "minimumLedgerSlot": {
+   "jsonrpc": "2.0",
+   "result": 0,
+   "id": 1
+  },
+  "programSubscribe/five-filters": {
+   "ack": {
+    "jsonrpc": "2.0",
+    "error": {
+     "code": -32602,
+     "message": "Invalid params: Too many filters provided; max 4"
+    },
+    "id": 1
+   }
+  },
+  "programSubscribe/token": {
+   "ack": {
+    "jsonrpc": "2.0",
+    "result": 3,
+    "id": 1
+   },
+   "notifications": [
+    {
+     "jsonrpc": "2.0",
+     "method": "programNotification",
+     "params": {
+      "result": {
+       "context": {
+        "slot": 382
+       },
+       "value": {
+        "pubkey": "8dS1sEFSxwqA8rnk6eXrZX5Zk76mmxQrYVmTKLtdhnam",
+        "account": {
+         "lamports": 2039280,
+         "data": [
+          "eeNZE6WBqqF1Vu/NjWwteJb5qKYwQWd94+8fdJmVv7owc6nRx+NAeyLE0v/r3WxycEvP4TPXR2wSsKUzrlPKZ5fQAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "base64"
+         ],
+         "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+         "executable": false,
+         "rentEpoch": 18446744073709551615,
+         "space": 165
+        }
+       }
+      },
+      "subscription": 3
+     }
+    }
+   ],
+   "unsubscribe": {
+    "jsonrpc": "2.0",
+    "result": true,
+    "id": 2
+   }
+  },
+  "requestAirdrop/payer": {
+   "jsonrpc": "2.0",
+   "result": "3Y4kCwYGw12yEw9SaoPHu6t7X7HkPgo6jGnyRippVxMSYNRaGKWTegSaYrp61zxwLCpmE4jUCEy21ffqKRV8aZsc",
+   "id": 1
+  },
+  "rootSubscribe": {
+   "ack": {
+    "jsonrpc": "2.0",
+    "result": 10,
+    "id": 1
+   },
+   "notifications": [
+    {
+     "jsonrpc": "2.0",
+     "method": "rootNotification",
+     "params": {
+      "result": 579,
+      "subscription": 10
+     }
+    }
+   ],
+   "unsubscribe": {
+    "jsonrpc": "2.0",
+    "result": true,
+    "id": 2
+   }
+  },
+  "sendTransaction/bad-base64": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "invalid base64 encoding: InvalidByte(0, 37)"
+   },
+   "id": 1
+  },
+  "sendTransaction/bad-signature": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32002,
+    "message": "Transaction simulation failed: Transaction did not pass signature verification",
+    "data": {
+     "accounts": null,
+     "err": "SignatureFailure",
+     "fee": null,
+     "innerInstructions": null,
+     "loadedAccountsDataSize": 0,
+     "loadedAddresses": null,
+     "logs": [],
+     "postBalances": null,
+     "postTokenBalances": null,
+     "preBalances": null,
+     "preTokenBalances": null,
+     "replacementBlockhash": null,
+     "returnData": null,
+     "unitsConsumed": 0
+    }
+   },
+   "id": 1
+  },
+  "sendTransaction/bad-signature-skip-preflight": {
+   "jsonrpc": "2.0",
+   "result": "4ZsFZyfhkxi8xn5ZVLRK7ty7iiV1BLXBToMtSmRQtt1FGU5eR6ASMYWQCSgFJ7DSLDqPGsMy9QXU8tfzQGMZZLxd",
+   "id": 1
+  },
+  "sendTransaction/base58-default": {
+   "jsonrpc": "2.0",
+   "result": "4ThVXv9csgn1cK9UtKEsZKojfME7BbV6QLGbVfDo9iozJYsPwBtaY1fWEpuYNEn4WZiLxJm4dGXtqDoDoDHHExw2",
+   "id": 1
+  },
+  "sendTransaction/json-encoding": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "unsupported encoding: json. Supported encodings: base58, base64"
+   },
+   "id": 1
+  },
+  "sendTransaction/not-a-transaction": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "failed to deserialize solana_transaction::versioned::VersionedTransaction: Attempting to read 2 bytes"
+   },
+   "id": 1
+  },
+  "sendTransaction/unfunded": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32002,
+    "message": "Transaction simulation failed: Attempt to debit an account but found no record of a prior credit.",
+    "data": {
+     "accounts": null,
+     "err": "AccountNotFound",
+     "fee": null,
+     "innerInstructions": null,
+     "loadedAccountsDataSize": 0,
+     "loadedAddresses": null,
+     "logs": [],
+     "postBalances": null,
+     "postTokenBalances": null,
+     "preBalances": null,
+     "preTokenBalances": null,
+     "replacementBlockhash": null,
+     "returnData": null,
+     "unitsConsumed": 0
+    }
+   },
+   "id": 1
+  },
+  "sendTransaction/valid": {
+   "jsonrpc": "2.0",
+   "result": "51BBKZ3K2N4Up8rV9PqsUEWymtbKvmXUwC95vFraizfT6Nzqibt9pVaZEY6Nu3XEUcNsMxbGTRMyCCaBjcmjStTt",
+   "id": 1
+  },
+  "signatureSubscribe/bad": {
+   "ack": {
+    "jsonrpc": "2.0",
+    "error": {
+     "code": -32602,
+     "message": "Invalid Request: Invalid signature provided"
+    },
+    "id": 1
+   }
+  },
+  "signatureSubscribe/received": {
+   "ack": {
+    "jsonrpc": "2.0",
+    "result": 7,
+    "id": 1
+   },
+   "notifications": [
+    {
+     "jsonrpc": "2.0",
+     "method": "signatureNotification",
+     "params": {
+      "result": {
+       "context": {
+        "slot": 513
+       },
+       "value": {
+        "err": null
+       }
+      },
+      "subscription": 7
+     }
+    }
+   ],
+   "unsubscribe": {
+    "jsonrpc": "2.0",
+    "error": {
+     "code": -32602,
+     "message": "Invalid subscription id."
+    },
+    "id": 2
+   }
+  },
+  "signatureSubscribe/trigger": {
+   "ack": {
+    "jsonrpc": "2.0",
+    "result": 6,
+    "id": 1
+   },
+   "notifications": [
+    {
+     "jsonrpc": "2.0",
+     "method": "signatureNotification",
+     "params": {
+      "result": {
+       "context": {
+        "slot": 481
+       },
+       "value": {
+        "err": null
+       }
+      },
+      "subscription": 6
+     }
+    }
+   ],
+   "unsubscribe": {
+    "jsonrpc": "2.0",
+    "error": {
+     "code": -32602,
+     "message": "Invalid subscription id."
+    },
+    "id": 2
+   }
+  },
+  "simulateTransaction/accounts": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "accounts": [
+      {
+       "data": [
+        "",
+        "base64"
+       ],
+       "executable": false,
+       "lamports": 98994407767,
+       "owner": "11111111111111111111111111111111",
+       "rentEpoch": 18446744073709551615,
+       "space": 0
+      }
+     ],
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": null,
+     "loadedAccountsDataSize": 213,
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logs": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98994407767,
+      999997073,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      98994414840,
+      999995000,
+      1
+     ],
+     "preTokenBalances": [],
+     "replacementBlockhash": null,
+     "returnData": null,
+     "unitsConsumed": 150
+    }
+   },
+   "id": 1
+  },
+  "simulateTransaction/inner-instructions": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "accounts": null,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "loadedAccountsDataSize": 213,
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logs": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98994407757,
+      999997083,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      98994414840,
+      999995000,
+      1
+     ],
+     "preTokenBalances": [],
+     "replacementBlockhash": null,
+     "returnData": null,
+     "unitsConsumed": 150
+    }
+   },
+   "id": 1
+  },
+  "simulateTransaction/json-encoding": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "unsupported encoding: json. Supported encodings: base58, base64"
+   },
+   "id": 1
+  },
+  "simulateTransaction/replace-blockhash": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "accounts": null,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": null,
+     "loadedAccountsDataSize": 213,
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logs": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98994407787,
+      999997053,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      98994414840,
+      999995000,
+      1
+     ],
+     "preTokenBalances": [],
+     "replacementBlockhash": {
+      "blockhash": "BfBRnqNC1nKg14Eeh2QqSB5ALoBZ9BRZPnyWWJ8SjNow",
+      "lastValidBlockHeight": 399
+     },
+     "returnData": null,
+     "unitsConsumed": 150
+    }
+   },
+   "id": 1
+  },
+  "simulateTransaction/sig-verify": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "accounts": null,
+     "err": "SignatureFailure",
+     "fee": null,
+     "innerInstructions": null,
+     "loadedAccountsDataSize": 0,
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logs": [],
+     "postBalances": null,
+     "postTokenBalances": null,
+     "preBalances": null,
+     "preTokenBalances": null,
+     "replacementBlockhash": null,
+     "returnData": null,
+     "unitsConsumed": 0
+    }
+   },
+   "id": 1
+  },
+  "simulateTransaction/sig-verify-and-replace": {
+   "jsonrpc": "2.0",
+   "error": {
+    "code": -32602,
+    "message": "sigVerify may not be used with replaceRecentBlockhash"
+   },
+   "id": 1
+  },
+  "simulateTransaction/unfunded": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "accounts": null,
+     "err": "AccountNotFound",
+     "fee": null,
+     "innerInstructions": null,
+     "loadedAccountsDataSize": 0,
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logs": [],
+     "postBalances": [
+      0,
+      999995000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      0,
+      999995000,
+      1
+     ],
+     "preTokenBalances": [],
+     "replacementBlockhash": null,
+     "returnData": null,
+     "unitsConsumed": 0
+    }
+   },
+   "id": 1
+  },
+  "simulateTransaction/valid": {
+   "jsonrpc": "2.0",
+   "result": {
+    "context": {
+     "apiVersion": "4.3.0",
+     "slot": 249
+    },
+    "value": {
+     "accounts": null,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": null,
+     "loadedAccountsDataSize": 213,
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logs": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98994407807,
+      999997033,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      98994414840,
+      999995000,
+      1
+     ],
+     "preTokenBalances": [],
+     "replacementBlockhash": null,
+     "returnData": null,
+     "unitsConsumed": 150
+    }
+   },
+   "id": 1
+  },
+  "slotSubscribe": {
+   "ack": {
+    "jsonrpc": "2.0",
+    "result": 8,
+    "id": 1
+   },
+   "notifications": [
+    {
+     "jsonrpc": "2.0",
+     "method": "slotNotification",
+     "params": {
+      "result": {
+       "slot": 547,
+       "parent": 546,
+       "root": 515
+      },
+      "subscription": 8
+     }
+    }
+   ],
+   "unsubscribe": {
+    "jsonrpc": "2.0",
+    "result": true,
+    "id": 2
+   }
+  },
+  "slotsUpdatesSubscribe": {
+   "ack": {
+    "jsonrpc": "2.0",
+    "result": 9,
+    "id": 1
+   },
+   "notifications": [
+    {
+     "jsonrpc": "2.0",
+     "method": "slotsUpdatesNotification",
+     "params": {
+      "result": {
+       "type": "root",
+       "slot": 546,
+       "timestamp": 1791635072166
+      },
+      "subscription": 9
+     }
+    }
+   ],
+   "unsubscribe": {
+    "jsonrpc": "2.0",
+    "result": true,
+    "id": 2
+   }
+  },
+  "voteSubscribe": {
+   "ack": {
+    "jsonrpc": "2.0",
+    "error": {
+     "code": -32601,
+     "message": "Method not found"
+    },
+    "id": 1
+   }
+  },
+  "ws/getVersion": {
+   "ack": {
+    "jsonrpc": "2.0",
+    "result": {
+     "feature-set": 3383571666,
+     "solana-core": "4.3.0"
+    },
+    "id": 1
+   },
+   "notifications": null,
+   "unsubscribe": {
+    "jsonrpc": "2.0",
+    "error": {
+     "code": -32602,
+     "message": "Invalid parameters: No parameters were expected",
+     "data": "Array([Number(0)])"
+    },
+    "id": 2
+   }
+  },
+  "ws/unsubscribe-unknown": {
+   "ack": {
+    "jsonrpc": "2.0",
+    "error": {
+     "code": -32602,
+     "message": "Invalid subscription id."
+    },
+    "id": 1
+   }
+  }
+ }
+}

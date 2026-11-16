@@ -1,0 +1,41 @@
+# A systemd unit for a machine of this chain, under cosmovisor. cosmovisor changes
+# the binary at an upgrade's height, so no person has to. The home holds
+# config.toml, app.toml and the genesis file of the network. examples/app.toml and
+# examples/app.devnet.toml are the two app.toml files.
+#
+#   useradd --system --home /var/lib/svmd --create-home svmd
+#   sudo -u svmd cosmovisor init /usr/local/bin/svmd      # DAEMON_HOME/cosmovisor/genesis/bin/svmd
+#   sudo -u svmd svmd init <moniker> --chain-id <chain id> --home /var/lib/svmd
+#   # copy the network's genesis.json into /var/lib/svmd/config/, compare its hash
+#   # with a second operator, set persistent_peers and [statesync]
+#   install -m 644 examples/svmd.service /etc/systemd/system/
+#   systemctl enable --now svmd
+#   solana -u http://127.0.0.1:8899 block-height
+
+[Unit]
+Description=svmd, a machine of the SVM chain
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=svmd
+Group=svmd
+Environment=DAEMON_NAME=svmd
+Environment=DAEMON_HOME=/var/lib/svmd
+# cosmovisor downloads the artifact that an upgrade plan names, and checks it.
+Environment=DAEMON_ALLOW_DOWNLOAD_BINARIES=true
+Environment=DAEMON_RESTART_AFTER_UPGRADE=true
+Environment=UNSAFE_SKIP_BACKUP=true
+# The genesis hash of the network, in base58. svmd refuses a genesis file with
+# a different hash, and its error names both values.
+Environment=SVM_GENESIS_HASH=<base58 genesis hash>
+ExecStart=/usr/local/bin/cosmovisor run start --home /var/lib/svmd --expected-genesis-hash ${SVM_GENESIS_HASH}
+# Without cosmovisor, for a localnet that is never upgraded:
+# ExecStart=/usr/local/bin/svmd start --home /var/lib/svmd --expected-genesis-hash ${SVM_GENESIS_HASH}
+Restart=on-failure
+RestartSec=5
+# The QUIC port and the RPC keep many connections open (runbook section 4).
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,15 @@
+[workspace]
+resolver = "2"
+members = ["engine"]
+# bench/svm is not a member. It turns on dev-context-only-utils in solana-svm,
+# and cargo unifies features across workspace members. A workspace build would
+# then compile those test hooks into the production staticlib.
+exclude = ["bench/svm"]
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+# Must stay "unwind". The FFI boundary catches panics with catch_unwind.
+# With "abort", one bad transaction would crash the svmd process.
+panic = "unwind"

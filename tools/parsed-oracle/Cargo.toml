@@ -1,0 +1,27 @@
+[package]
+name = "parsed-oracle"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# A separate workspace, named nowhere in the root Cargo.toml. This table keeps
+# the crate out of the engine's build. The engine digest covers the root
+# manifest, so a line there would cost a coordinated halt for a test tool.
+[workspace]
+
+[[bin]]
+name = "parsed-oracle"
+path = "src/main.rs"
+
+[dependencies]
+base64 = "0.22.1"
+bs58 = "0.5.1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+# The oracle is solana-account-decoder. All of it is behind
+# `agave-unstable-api`, as solana-svm is.
+solana-account = "4"
+solana-account-decoder = { version = "=4.3.0", features = ["agave-unstable-api"] }
+solana-pubkey = "4"
+spl-generic-token = "2"
+spl-token-2022-interface = "3"

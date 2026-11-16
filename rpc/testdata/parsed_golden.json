@@ -1,0 +1,1053 @@
+[
+  {
+    "name": "spl-token account",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "closeAuthority": "LbUiWL3xVV8hTFYBVdbTNrpDo41NKS6o3LHHuDzjfcY",
+          "delegate": "GgBaCs3NCBuZN12kCJgAW63ydqohFkHEdfdEXBPzLHq",
+          "delegatedAmount": {
+            "amount": "1000",
+            "decimals": 6,
+            "uiAmount": 0.001,
+            "uiAmountString": "0.001"
+          },
+          "isNative": false,
+          "mint": "8qbHbw2BbbTHBW1sbeqakYXVKRQM8Ne7pLK7m6CVfeR",
+          "owner": "CktRuQ2mttgRGkXJtyksdKHjUdc2C4TgDzyB98oEzy8",
+          "state": "initialized",
+          "tokenAmount": {
+            "amount": "123456",
+            "decimals": 6,
+            "uiAmount": 0.123456,
+            "uiAmountString": "0.123456"
+          }
+        },
+        "type": "account"
+      },
+      "program": "spl-token",
+      "space": 165
+    }
+  },
+  {
+    "name": "spl-token account holding wrapped sol",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "isNative": true,
+          "mint": "8qbHbw2BbbTHBW1sbeqakYXVKRQM8Ne7pLK7m6CVfeR",
+          "owner": "CktRuQ2mttgRGkXJtyksdKHjUdc2C4TgDzyB98oEzy8",
+          "rentExemptReserve": {
+            "amount": "2039280",
+            "decimals": 6,
+            "uiAmount": 2.03928,
+            "uiAmountString": "2.03928"
+          },
+          "state": "initialized",
+          "tokenAmount": {
+            "amount": "5000000",
+            "decimals": 6,
+            "uiAmount": 5.0,
+            "uiAmountString": "5"
+          }
+        },
+        "type": "account"
+      },
+      "program": "spl-token",
+      "space": 165
+    }
+  },
+  {
+    "name": "spl-token account frozen",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "isNative": false,
+          "mint": "8qbHbw2BbbTHBW1sbeqakYXVKRQM8Ne7pLK7m6CVfeR",
+          "owner": "CktRuQ2mttgRGkXJtyksdKHjUdc2C4TgDzyB98oEzy8",
+          "state": "frozen",
+          "tokenAmount": {
+            "amount": "0",
+            "decimals": 6,
+            "uiAmount": 0.0,
+            "uiAmountString": "0"
+          }
+        },
+        "type": "account"
+      },
+      "program": "spl-token",
+      "space": 165
+    }
+  },
+  {
+    "name": "spl-token account whose mint cannot be read",
+    "parsed": null
+  },
+  {
+    "name": "spl-token account uninitialized",
+    "parsed": null
+  },
+  {
+    "name": "spl-token mint",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "decimals": 6,
+          "freezeAuthority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+          "isInitialized": true,
+          "mintAuthority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+          "supply": "1000000"
+        },
+        "type": "mint"
+      },
+      "program": "spl-token",
+      "space": 82
+    }
+  },
+  {
+    "name": "spl-token multisig",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "isInitialized": true,
+          "numRequiredSigners": 2,
+          "numValidSigners": 3,
+          "signers": [
+            "CktRuQ2mttgRGkXJtyksdKHjUdc2C4TgDzyB98oEzy8",
+            "GgBaCs3NCBuZN12kCJgAW63ydqohFkHEdfdEXBPzLHq",
+            "LbUiWL3xVV8hTFYBVdbTNrpDo41NKS6o3LHHuDzjfcY"
+          ]
+        },
+        "type": "multisig"
+      },
+      "program": "spl-token",
+      "space": 355
+    }
+  },
+  {
+    "name": "token-2022 mint with a transfer fee",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "decimals": 3,
+          "extensions": [
+            {
+              "extension": "transferFeeConfig",
+              "state": {
+                "newerTransferFee": {
+                  "epoch": 2,
+                  "maximumFee": 2000,
+                  "transferFeeBasisPoints": 75
+                },
+                "olderTransferFee": {
+                  "epoch": 1,
+                  "maximumFee": 1000,
+                  "transferFeeBasisPoints": 50
+                },
+                "transferFeeConfigAuthority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+                "withdrawWithheldAuthority": "GgBaCs3NCBuZN12kCJgAW63ydqohFkHEdfdEXBPzLHq",
+                "withheldAmount": 42
+              }
+            }
+          ],
+          "freezeAuthority": null,
+          "isInitialized": true,
+          "mintAuthority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+          "supply": "5"
+        },
+        "type": "mint"
+      },
+      "program": "spl-token-2022",
+      "space": 278
+    }
+  },
+  {
+    "name": "token-2022 mint that bears interest",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "decimals": 4,
+          "extensions": [
+            {
+              "extension": "interestBearingConfig",
+              "state": {
+                "currentRate": 200,
+                "initializationTimestamp": 0,
+                "lastUpdateTimestamp": 31556736,
+                "preUpdateAverageRate": 100,
+                "rateAuthority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF"
+              }
+            }
+          ],
+          "freezeAuthority": null,
+          "isInitialized": true,
+          "mintAuthority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+          "supply": "1000000"
+        },
+        "type": "mint"
+      },
+      "program": "spl-token-2022",
+      "space": 222
+    }
+  },
+  {
+    "name": "token-2022 account on a mint that bears interest",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "isNative": false,
+          "mint": "8qbHbw2BbbTHBW1sbeqakYXVKRQM8Ne7pLK7m6CVfeR",
+          "owner": "CktRuQ2mttgRGkXJtyksdKHjUdc2C4TgDzyB98oEzy8",
+          "state": "initialized",
+          "tokenAmount": {
+            "amount": "1000000",
+            "decimals": 4,
+            "uiAmount": 103.0455,
+            "uiAmountString": "103.0455"
+          }
+        },
+        "type": "account"
+      },
+      "program": "spl-token-2022",
+      "space": 165
+    }
+  },
+  {
+    "name": "token-2022 mint with a scaled ui amount",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "decimals": 2,
+          "extensions": [
+            {
+              "extension": "scaledUiAmountConfig",
+              "state": {
+                "authority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+                "multiplier": "1.5",
+                "newMultiplier": "2",
+                "newMultiplierEffectiveTimestamp": 1000
+              }
+            }
+          ],
+          "freezeAuthority": null,
+          "isInitialized": true,
+          "mintAuthority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+          "supply": "1000000"
+        },
+        "type": "mint"
+      },
+      "program": "spl-token-2022",
+      "space": 226
+    }
+  },
+  {
+    "name": "token-2022 account on a scaled mint before the new multiplier",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "isNative": false,
+          "mint": "8qbHbw2BbbTHBW1sbeqakYXVKRQM8Ne7pLK7m6CVfeR",
+          "owner": "CktRuQ2mttgRGkXJtyksdKHjUdc2C4TgDzyB98oEzy8",
+          "state": "initialized",
+          "tokenAmount": {
+            "amount": "12345",
+            "decimals": 2,
+            "uiAmount": 185.17,
+            "uiAmountString": "185.17"
+          }
+        },
+        "type": "account"
+      },
+      "program": "spl-token-2022",
+      "space": 165
+    }
+  },
+  {
+    "name": "token-2022 account on a scaled mint after the new multiplier",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "isNative": false,
+          "mint": "8qbHbw2BbbTHBW1sbeqakYXVKRQM8Ne7pLK7m6CVfeR",
+          "owner": "CktRuQ2mttgRGkXJtyksdKHjUdc2C4TgDzyB98oEzy8",
+          "state": "initialized",
+          "tokenAmount": {
+            "amount": "12345",
+            "decimals": 2,
+            "uiAmount": 246.9,
+            "uiAmountString": "246.9"
+          }
+        },
+        "type": "account"
+      },
+      "program": "spl-token-2022",
+      "space": 165
+    }
+  },
+  {
+    "name": "token-2022 mint whose scaled multiplier is not a number",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "decimals": 2,
+          "extensions": [
+            {
+              "extension": "scaledUiAmountConfig",
+              "state": {
+                "authority": null,
+                "multiplier": "inf",
+                "newMultiplier": "NaN",
+                "newMultiplierEffectiveTimestamp": 0
+              }
+            }
+          ],
+          "freezeAuthority": null,
+          "isInitialized": true,
+          "mintAuthority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+          "supply": "1"
+        },
+        "type": "mint"
+      },
+      "program": "spl-token-2022",
+      "space": 226
+    }
+  },
+  {
+    "name": "token-2022 account on a mint whose multiplier is not a number",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "isNative": false,
+          "mint": "8qbHbw2BbbTHBW1sbeqakYXVKRQM8Ne7pLK7m6CVfeR",
+          "owner": "CktRuQ2mttgRGkXJtyksdKHjUdc2C4TgDzyB98oEzy8",
+          "state": "initialized",
+          "tokenAmount": {
+            "amount": "3",
+            "decimals": 2,
+            "uiAmount": null,
+            "uiAmountString": "NaN"
+          }
+        },
+        "type": "account"
+      },
+      "program": "spl-token-2022",
+      "space": 165
+    }
+  },
+  {
+    "name": "token-2022 mint carrying metadata",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "decimals": 0,
+          "extensions": [
+            {
+              "extension": "metadataPointer",
+              "state": {
+                "authority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+                "metadataAddress": "8qbHbw2BbbTHBW1sbeqakYXVKRQM8Ne7pLK7m6CVfeR"
+              }
+            },
+            {
+              "extension": "tokenMetadata",
+              "state": {
+                "additionalMetadata": [
+                  [
+                    "colour",
+                    "blue"
+                  ]
+                ],
+                "mint": "8qbHbw2BbbTHBW1sbeqakYXVKRQM8Ne7pLK7m6CVfeR",
+                "name": "Example",
+                "symbol": "EXM",
+                "updateAuthority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+                "uri": "https://example.invalid/exm.json"
+              }
+            }
+          ],
+          "freezeAuthority": null,
+          "isInitialized": true,
+          "mintAuthority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+          "supply": "7"
+        },
+        "type": "mint"
+      },
+      "program": "spl-token-2022",
+      "space": 378
+    }
+  },
+  {
+    "name": "token-2022 mint carrying a group and a member",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "decimals": 0,
+          "extensions": [
+            {
+              "extension": "groupPointer",
+              "state": {
+                "authority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+                "groupAddress": "US517G5965aydkZ46HS38QLi7UQiSojurfbQfKCELFx"
+              }
+            },
+            {
+              "extension": "tokenGroup",
+              "state": {
+                "maxSize": 10,
+                "mint": "8qbHbw2BbbTHBW1sbeqakYXVKRQM8Ne7pLK7m6CVfeR",
+                "size": 1,
+                "updateAuthority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF"
+              }
+            },
+            {
+              "extension": "groupMemberPointer",
+              "state": {
+                "authority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+                "memberAddress": "US517G5965aydkZ46HS38QLi7UQiSojurfbQfKCELFx"
+              }
+            },
+            {
+              "extension": "tokenGroupMember",
+              "state": {
+                "group": "US517G5965aydkZ46HS38QLi7UQiSojurfbQfKCELFx",
+                "memberNumber": 1,
+                "mint": "8qbHbw2BbbTHBW1sbeqakYXVKRQM8Ne7pLK7m6CVfeR"
+              }
+            }
+          ],
+          "freezeAuthority": null,
+          "isInitialized": true,
+          "mintAuthority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+          "supply": "0"
+        },
+        "type": "mint"
+      },
+      "program": "spl-token-2022",
+      "space": 462
+    }
+  },
+  {
+    "name": "token-2022 mint with an extension outside the named nine",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "decimals": 0,
+          "extensions": [
+            {
+              "extension": "mintCloseAuthority",
+              "state": {
+                "closeAuthority": "LbUiWL3xVV8hTFYBVdbTNrpDo41NKS6o3LHHuDzjfcY"
+              }
+            }
+          ],
+          "freezeAuthority": null,
+          "isInitialized": true,
+          "mintAuthority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+          "supply": "5"
+        },
+        "type": "mint"
+      },
+      "program": "spl-token-2022",
+      "space": 202
+    }
+  },
+  {
+    "name": "token-2022 mint with every other mint extension",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "decimals": 0,
+          "extensions": [
+            {
+              "extension": "mintCloseAuthority",
+              "state": {
+                "closeAuthority": "LbUiWL3xVV8hTFYBVdbTNrpDo41NKS6o3LHHuDzjfcY"
+              }
+            },
+            {
+              "extension": "confidentialTransferMint",
+              "state": {
+                "auditorElgamalPubkey": "AwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISI=",
+                "authority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+                "autoApproveNewAccounts": true
+              }
+            },
+            {
+              "extension": "defaultAccountState",
+              "state": {
+                "accountState": "frozen"
+              }
+            },
+            {
+              "extension": "nonTransferable"
+            },
+            {
+              "extension": "permanentDelegate",
+              "state": {
+                "delegate": "GgBaCs3NCBuZN12kCJgAW63ydqohFkHEdfdEXBPzLHq"
+              }
+            },
+            {
+              "extension": "transferHook",
+              "state": {
+                "authority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+                "programId": "cGfHiC6Kgg3FpFZvgwGcswsCRtp4aBP2fzuXRQPizuN"
+              }
+            },
+            {
+              "extension": "confidentialTransferFeeConfig",
+              "state": {
+                "authority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+                "harvestToMintEnabled": true,
+                "withdrawWithheldAuthorityElgamalPubkey": "CQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmJyg=",
+                "withheldAmount": "FBUWFxgZGhscHR4fICEiIyQlJicoKSorLC0uLzAxMjM0NTY3ODk6Ozw9Pj9AQUJDREVGR0hJSktMTU5PUFFSUw=="
+              }
+            },
+            {
+              "extension": "confidentialMintBurn",
+              "state": {
+                "confidentialSupply": "Hh8gISIjJCUmJygpKissLS4vMDEyMzQ1Njc4OTo7PD0+P0BBQkNERUZHSElKS0xNTk9QUVJTVFVWV1hZWltcXQ==",
+                "decryptableSupply": "ZGVmZ2hpamtsbW5vcHFyc3R1dnd4eXp7fH1+f4CBgoOEhYaH",
+                "pendingBurn": "tLW2t7i5uru8vb6/wMHCw8TFxsfIycrLzM3Oz9DR0tPU1dbX2Nna29zd3t/g4eLj5OXm5+jp6uvs7e7v8PHy8w==",
+                "supplyElgamalPubkey": "jI2Oj5CRkpOUlZaXmJmam5ydnp+goaKjpKWmp6ipqqs="
+              }
+            },
+            {
+              "extension": "pausableConfig",
+              "state": {
+                "authority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+                "paused": true
+              }
+            },
+            {
+              "extension": "permissionedBurnConfig",
+              "state": {
+                "authority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF"
+              }
+            }
+          ],
+          "freezeAuthority": null,
+          "isInitialized": true,
+          "mintAuthority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+          "supply": "5"
+        },
+        "type": "mint"
+      },
+      "program": "spl-token-2022",
+      "space": 790
+    }
+  },
+  {
+    "name": "token-2022 mint whose optional keys are absent",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "decimals": 0,
+          "extensions": [
+            {
+              "extension": "mintCloseAuthority",
+              "state": {
+                "closeAuthority": null
+              }
+            },
+            {
+              "extension": "confidentialTransferMint",
+              "state": {
+                "auditorElgamalPubkey": null,
+                "authority": null,
+                "autoApproveNewAccounts": false
+              }
+            },
+            {
+              "extension": "defaultAccountState",
+              "state": {
+                "accountState": "uninitialized"
+              }
+            },
+            {
+              "extension": "confidentialTransferFeeConfig",
+              "state": {
+                "authority": null,
+                "harvestToMintEnabled": false,
+                "withdrawWithheldAuthorityElgamalPubkey": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+                "withheldAmount": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+              }
+            },
+            {
+              "extension": "pausableConfig",
+              "state": {
+                "authority": null,
+                "paused": false
+              }
+            }
+          ],
+          "freezeAuthority": null,
+          "isInitialized": true,
+          "mintAuthority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+          "supply": "5"
+        },
+        "type": "mint"
+      },
+      "program": "spl-token-2022",
+      "space": 446
+    }
+  },
+  {
+    "name": "token-2022 account with every account extension",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "extensions": [
+            {
+              "extension": "transferFeeAmount",
+              "state": {
+                "withheldAmount": 42
+              }
+            },
+            {
+              "extension": "confidentialTransferAccount",
+              "state": {
+                "actualPendingBalanceCreditCounter": 40,
+                "allowConfidentialCredits": true,
+                "allowNonConfidentialCredits": false,
+                "approved": true,
+                "availableBalance": "tLW2t7i5uru8vb6/wMHCw8TFxsfIycrLzM3Oz9DR0tPU1dbX2Nna29zd3t/g4eLj5OXm5+jp6uvs7e7v8PHy8w==",
+                "decryptableAvailableBalance": "BwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIiMkJSYnKCkq",
+                "elgamalPubkey": "AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyA=",
+                "expectedPendingBalanceCreditCounter": 30,
+                "maximumPendingBalanceCreditCounter": 20,
+                "pendingBalanceCreditCounter": 10,
+                "pendingBalanceHi": "bm9wcXJzdHV2d3h5ent8fX5/gIGCg4SFhoeIiYqLjI2Oj5CRkpOUlZaXmJmam5ydnp+goaKjpKWmp6ipqqusrQ==",
+                "pendingBalanceLo": "KCkqKywtLi8wMTIzNDU2Nzg5Ojs8PT4/QEFCQ0RFRkdISUpLTE1OT1BRUlNUVVZXWFlaW1xdXl9gYWJjZGVmZw=="
+              }
+            },
+            {
+              "extension": "immutableOwner"
+            },
+            {
+              "extension": "memoTransfer",
+              "state": {
+                "requireIncomingTransferMemos": true
+              }
+            },
+            {
+              "extension": "cpiGuard",
+              "state": {
+                "lockCpi": true
+              }
+            },
+            {
+              "extension": "nonTransferableAccount"
+            },
+            {
+              "extension": "transferHookAccount",
+              "state": {
+                "transferring": false
+              }
+            },
+            {
+              "extension": "confidentialTransferFeeAmount",
+              "state": {
+                "withheldAmount": "MjM0NTY3ODk6Ozw9Pj9AQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVpbXF1eX2BhYmNkZWZnaGlqa2xtbm9wcQ=="
+              }
+            },
+            {
+              "extension": "pausableAccount"
+            }
+          ],
+          "isNative": false,
+          "mint": "8qbHbw2BbbTHBW1sbeqakYXVKRQM8Ne7pLK7m6CVfeR",
+          "owner": "CktRuQ2mttgRGkXJtyksdKHjUdc2C4TgDzyB98oEzy8",
+          "state": "initialized",
+          "tokenAmount": {
+            "amount": "77",
+            "decimals": 6,
+            "uiAmount": 0.000077,
+            "uiAmountString": "0.000077"
+          }
+        },
+        "type": "account"
+      },
+      "program": "spl-token-2022",
+      "space": 572
+    }
+  },
+  {
+    "name": "token-2022 mint with extensions it cannot carry",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "decimals": 0,
+          "extensions": [
+            {
+              "extension": "unparseableExtension"
+            },
+            {
+              "extension": "immutableOwner"
+            },
+            {
+              "extension": "unparseableExtension"
+            },
+            {
+              "extension": "unparseableExtension"
+            }
+          ],
+          "freezeAuthority": null,
+          "isInitialized": true,
+          "mintAuthority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+          "supply": "5"
+        },
+        "type": "mint"
+      },
+      "program": "spl-token-2022",
+      "space": 248
+    }
+  },
+  {
+    "name": "token-2022 account with extensions it cannot carry",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "extensions": [
+            {
+              "extension": "unparseableExtension"
+            },
+            {
+              "extension": "nonTransferable"
+            },
+            {
+              "extension": "unparseableExtension"
+            }
+          ],
+          "isNative": false,
+          "mint": "8qbHbw2BbbTHBW1sbeqakYXVKRQM8Ne7pLK7m6CVfeR",
+          "owner": "CktRuQ2mttgRGkXJtyksdKHjUdc2C4TgDzyB98oEzy8",
+          "state": "initialized",
+          "tokenAmount": {
+            "amount": "77",
+            "decimals": 6,
+            "uiAmount": 0.000077,
+            "uiAmountString": "0.000077"
+          }
+        },
+        "type": "account"
+      },
+      "program": "spl-token-2022",
+      "space": 212
+    }
+  },
+  {
+    "name": "system nonce",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "authority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+          "blockhash": "YMN9Qj5jPNp7j14VPcML1B6xGgcPWVZUGLFU3Mnyfaf",
+          "feeCalculator": {
+            "lamportsPerSignature": "5000"
+          }
+        },
+        "type": "initialized"
+      },
+      "program": "nonce",
+      "space": 80
+    }
+  },
+  {
+    "name": "system account that is not a nonce",
+    "parsed": null
+  },
+  {
+    "name": "address lookup table",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "addresses": [
+            "CktRuQ2mttgRGkXJtyksdKHjUdc2C4TgDzyB98oEzy8",
+            "GgBaCs3NCBuZN12kCJgAW63ydqohFkHEdfdEXBPzLHq"
+          ],
+          "authority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+          "deactivationSlot": "18446744073709551615",
+          "lastExtendedSlot": "12",
+          "lastExtendedSlotStartIndex": 3
+        },
+        "type": "lookupTable"
+      },
+      "program": "address-lookup-table",
+      "space": 120
+    }
+  },
+  {
+    "name": "address lookup table without an authority",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "addresses": [
+            "CktRuQ2mttgRGkXJtyksdKHjUdc2C4TgDzyB98oEzy8"
+          ],
+          "deactivationSlot": "7",
+          "lastExtendedSlot": "8",
+          "lastExtendedSlotStartIndex": 0
+        },
+        "type": "lookupTable"
+      },
+      "program": "address-lookup-table",
+      "space": 88
+    }
+  },
+  {
+    "name": "address lookup table uninitialized",
+    "parsed": {
+      "parsed": {
+        "type": "uninitialized"
+      },
+      "program": "address-lookup-table",
+      "space": 56
+    }
+  },
+  {
+    "name": "upgradeable loader uninitialized",
+    "parsed": {
+      "parsed": {
+        "type": "uninitialized"
+      },
+      "program": "bpf-upgradeable-loader",
+      "space": 4
+    }
+  },
+  {
+    "name": "upgradeable loader buffer",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "authority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+          "data": [
+            "BwcHBw==",
+            "base64"
+          ]
+        },
+        "type": "buffer"
+      },
+      "program": "bpf-upgradeable-loader",
+      "space": 41
+    }
+  },
+  {
+    "name": "upgradeable loader buffer without an authority",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "authority": null,
+          "data": [
+            "CAg=",
+            "base64"
+          ]
+        },
+        "type": "buffer"
+      },
+      "program": "bpf-upgradeable-loader",
+      "space": 7
+    }
+  },
+  {
+    "name": "upgradeable loader program",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "programData": "8qbHbw2BbbTHBW1sbeqakYXVKRQM8Ne7pLK7m6CVfeR"
+        },
+        "type": "program"
+      },
+      "program": "bpf-upgradeable-loader",
+      "space": 36
+    }
+  },
+  {
+    "name": "upgradeable loader program data",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "authority": "QWmroo4YnnMqYW3cnxWkFdaTxGD3P7vMSzwMHGbUzwF",
+          "data": [
+            "AQID",
+            "base64"
+          ],
+          "slot": 42
+        },
+        "type": "programData"
+      },
+      "program": "bpf-upgradeable-loader",
+      "space": 48
+    }
+  },
+  {
+    "name": "upgradeable loader program data without an authority",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "authority": null,
+          "data": [
+            "BA==",
+            "base64"
+          ],
+          "slot": 9
+        },
+        "type": "programData"
+      },
+      "program": "bpf-upgradeable-loader",
+      "space": 14
+    }
+  },
+  {
+    "name": "sysvar clock",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "epoch": 1,
+          "epochStartTimestamp": 200,
+          "leaderScheduleEpoch": 2,
+          "slot": 100,
+          "unixTimestamp": 300
+        },
+        "type": "clock"
+      },
+      "program": "sysvar",
+      "space": 40
+    }
+  },
+  {
+    "name": "sysvar epoch schedule",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "firstNormalEpoch": 0,
+          "firstNormalSlot": 0,
+          "leaderScheduleSlotOffset": 432000,
+          "slotsPerEpoch": 432000,
+          "warmup": false
+        },
+        "type": "epochSchedule"
+      },
+      "program": "sysvar",
+      "space": 33
+    }
+  },
+  {
+    "name": "sysvar fees",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "feeCalculator": {
+            "lamportsPerSignature": "5000"
+          }
+        },
+        "type": "fees"
+      },
+      "program": "sysvar",
+      "space": 8
+    }
+  },
+  {
+    "name": "sysvar rent",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "lamportsPerByte": "6960"
+        },
+        "type": "rent"
+      },
+      "program": "sysvar",
+      "space": 17
+    }
+  },
+  {
+    "name": "sysvar recent blockhashes",
+    "parsed": {
+      "parsed": {
+        "info": [
+          {
+            "blockhash": "k7FaK87WHGVXzkaoHb7CdVPgkKDQhZ29VLDeBVbDfYn",
+            "feeCalculator": {
+              "lamportsPerSignature": "5000"
+            }
+          }
+        ],
+        "type": "recentBlockhashes"
+      },
+      "program": "sysvar",
+      "space": 48
+    }
+  },
+  {
+    "name": "sysvar slot hashes",
+    "parsed": {
+      "parsed": {
+        "info": [
+          {
+            "hash": "p2Yicb86aZig616Eav2VWG9vuXR5mEqhtzshZYBxzsV",
+            "slot": 77
+          }
+        ],
+        "type": "slotHashes"
+      },
+      "program": "sysvar",
+      "space": 48
+    }
+  },
+  {
+    "name": "sysvar stake history",
+    "parsed": {
+      "parsed": {
+        "info": [
+          {
+            "epoch": 3,
+            "stakeHistory": {
+              "activating": 20,
+              "deactivating": 30,
+              "effective": 10
+            }
+          }
+        ],
+        "type": "stakeHistory"
+      },
+      "program": "sysvar",
+      "space": 40
+    }
+  },
+  {
+    "name": "sysvar last restart slot",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "lastRestartSlot": 0
+        },
+        "type": "lastRestartSlot"
+      },
+      "program": "sysvar",
+      "space": 8
+    }
+  },
+  {
+    "name": "sysvar epoch rewards",
+    "parsed": {
+      "parsed": {
+        "info": {
+          "active": true,
+          "distributedRewards": "13",
+          "distributionStartingBlockHeight": 5,
+          "numPartitions": 2,
+          "parentBlockhash": "swqrv48gsrwpBFbftEwnP2vB4jckpvfGJfXkwaniLCC",
+          "totalPoints": "7",
+          "totalRewards": "11"
+        },
+        "type": "epochRewards"
+      },
+      "program": "sysvar",
+      "space": 81
+    }
+  },
+  {
+    "name": "an owner with no parser",
+    "parsed": null
+  }
+]

@@ -1,0 +1,2016 @@
+{
+ "mainnet_slot": 441617996,
+ "read_at_slot": 455113017,
+ "crate": "agave-feature-set 4.3.0",
+ "gates": [
+  {
+   "id": "16FMCmgLzCNNz6eTwGanbyN2ZxvTBSLuQ6DZhgeMshg",
+   "class": "cleaned",
+   "activated_at": 240192004,
+   "active_at_pin": true,
+   "description": "Stop truncating strings in syscalls #31029"
+  },
+  {
+   "id": "21AWDosvp3pBamFW91KB35pNoaoZVTM7ess8nr2nt53B",
+   "class": "cleaned",
+   "activated_at": 151632012,
+   "active_at_pin": true,
+   "description": "merge NonceError into SystemError"
+  },
+  {
+   "id": "25vqsfjk7Nv1prsQJmA4Xu1bN61s8LXCBGUPp8Rfy1UF",
+   "class": "cleaned",
+   "activated_at": 243648004,
+   "active_at_pin": true,
+   "description": "only hash accounts in incremental snapshot during incremental snapshot creation #26799"
+  },
+  {
+   "id": "265hPS8k8xJ37ot82KEgjRunsUp5w4n4Q4VwwiN9i9ps",
+   "class": "cleaned",
+   "activated_at": 109728000,
+   "active_at_pin": true,
+   "description": "optimize epoch boundary updates"
+  },
+  {
+   "id": "28s7i3htzhahXQKqmS2ExzbEoUypg9krwvtK2M9UWXh9",
+   "class": "cleaned",
+   "activated_at": 206064004,
+   "active_at_pin": true,
+   "description": "update rewards from cached accounts"
+  },
+  {
+   "id": "2B2SBNbUcr438LtGXNcJNBP2GBSxjx81F945SdSkUSfC",
+   "class": "cleaned",
+   "activated_at": 349056000,
+   "active_at_pin": true,
+   "description": "SIMD-0175: Disable partitioned rent collection #4562"
+  },
+  {
+   "id": "2Fr57nzzkLYXW695UdDxDeR5fhnZWSttZeZYemrnpGFV",
+   "class": "cleaned",
+   "activated_at": 325296000,
+   "active_at_pin": true,
+   "description": "SIMD-0140: Migrate Config program to Core BPF"
+  },
+  {
+   "id": "2GCrNXbzmt4xrwdcKS2RdsLzsgu4V5zHAemW57pcHT6a",
+   "class": "cleaned",
+   "activated_at": 423792000,
+   "active_at_pin": true,
+   "description": "stop use static SimpleVote transaction cost, issue #10227"
+  },
+  {
+   "id": "2HmTkCj9tXuPE4ueHzdD7jPeMf9JGCoZh5AsyoATiWEe",
+   "class": "svm",
+   "activated_at": 237168000,
+   "active_at_pin": true,
+   "description": "stop incorrectly throwing IncorrectProgramId in bpf_loader #30747"
+  },
+  {
+   "id": "2R72wpcQ7qV7aTJWUumdn8u5wmmTyXbK7qzEy7YSAgyY",
+   "class": "cleaned",
+   "activated_at": 154224000,
+   "active_at_pin": true,
+   "description": "include account index in rent tx error #25190"
+  },
+  {
+   "id": "2h63t332mGCCsWK2nqqqHhN4U9ayyqhLVFvczznHDoTZ",
+   "class": "cleaned",
+   "activated_at": 138672000,
+   "active_at_pin": true,
+   "description": "update syscall base costs"
+  },
+  {
+   "id": "2jXx2yDmGysmBKfKYNgLj2DQyAQv6mMk2BPh4eSbyB4H",
+   "class": "cleaned",
+   "activated_at": 147744004,
+   "active_at_pin": true,
+   "description": "deprecate fee calculator"
+  },
+  {
+   "id": "2ry7ygxiYURULZCrypHhveanvP5tzZ4toRwVp89oCNSj",
+   "class": "cleaned",
+   "activated_at": 329616000,
+   "active_at_pin": true,
+   "description": "apply cost tracker to blocks during replay #29595"
+  },
+  {
+   "id": "36PRUK2Dz6HWYdG9SpjeAsF5F3KxnFCakA2BZMbtMhSb",
+   "class": "cleaned",
+   "activated_at": 137808012,
+   "active_at_pin": true,
+   "description": "use correct check for nonoverlapping regions in memcpy syscall"
+  },
+  {
+   "id": "3BX6SBeEBibHaVQXywdkcgyUk6evfYZkHdztXiDtEpFS",
+   "class": "cleaned",
+   "activated_at": 136512012,
+   "active_at_pin": true,
+   "description": "warp timestamp again, adjust bounding to 150% slow #25666"
+  },
+  {
+   "id": "3E3jV7v9VcdJL8iYZUMax9DiDno8j7EWUVbhm9RtShj2",
+   "class": "cleaned",
+   "activated_at": 100656000,
+   "active_at_pin": true,
+   "description": "demote program write locks to readonly, except when upgradeable loader present #19593 #20265"
+  },
+  {
+   "id": "3HcSrCTGXTUnrTueHi4DAwNuMxZSsm5xui2Ax3mgxHqf",
+   "class": "svm",
+   "activated_at": 445392000,
+   "active_at_pin": false,
+   "description": "SIMD-0232: Custom Commission Collector"
+  },
+  {
+   "id": "3KZZ6Ks1885aGBQ45fwRcPXVBCtzUvxhUTkwKMR41Tca",
+   "class": "cleaned",
+   "activated_at": 154656004,
+   "active_at_pin": true,
+   "description": "enable versioned transaction message processing"
+  },
+  {
+   "id": "3NKRSwpySNwD3TvP5pHnRmkAQRsdkXWRr1WaQh8p4PWX",
+   "class": "cleaned",
+   "activated_at": 279072000,
+   "active_at_pin": true,
+   "description": "Reject bpf callx r10 instructions"
+  },
+  {
+   "id": "3XgNukcZWf9o3HdA3fpJbm94XFc4qpvTXc8h1wxYwiPi",
+   "class": "cleaned",
+   "activated_at": 139104000,
+   "active_at_pin": true,
+   "description": "disable ldabs* and ldind* SBF instructions"
+  },
+  {
+   "id": "3aJdcZqxoLpSBxgeYGjPwaYS1zzcByxUDqJkbzWAH1Zb",
+   "class": "cleaned",
+   "activated_at": 141696000,
+   "active_at_pin": true,
+   "description": "move the CPI stack overflow check to the end of push"
+  },
+  {
+   "id": "3ccR6QpxGYsAbWyfevEtBNGfWV4xBffxRj2tD6A9i39F",
+   "class": "cleaned",
+   "activated_at": 68688000,
+   "active_at_pin": true,
+   "description": "check initialized Vote data"
+  },
+  {
+   "id": "3gtZPqvPpsbXZVCx6hceMfWxtsmrjMzmg8C7PLKSxS2d",
+   "class": "cleaned",
+   "activated_at": 157680012,
+   "active_at_pin": true,
+   "description": "filter vote slots older than the slot hashes history"
+  },
+  {
+   "id": "3opE3EzAKnUftUDURkzMgwpNgimBAypW1mNDYH4x4Zg7",
+   "class": "cleaned",
+   "activated_at": 320112000,
+   "active_at_pin": true,
+   "description": "SIMD-0096: Reward full priority fee to validators"
+  },
+  {
+   "id": "3u3Er5Vc2jVcwz4xr2GJeSAXT3fAj6ADHZ4BJMZiScFd",
+   "class": "cleaned",
+   "activated_at": 138240000,
+   "active_at_pin": true,
+   "description": "durable nonces must be advanceable"
+  },
+  {
+   "id": "3uFHb9oKdGfgZGJK9EHaAXN4USvnQtAFC13Fh5gGFS5B",
+   "class": "cleaned",
+   "activated_at": 232848000,
+   "active_at_pin": true,
+   "description": "Update desired hashes per tick on epoch boundary"
+  },
+  {
+   "id": "3uRVPBpyEJRo1emLCrq38eLRFGcu6uKSpUXqGvU8T7SZ",
+   "class": "cleaned",
+   "activated_at": 174096000,
+   "active_at_pin": true,
+   "description": "check syscall outputs do_not overlap #28600"
+  },
+  {
+   "id": "437r62HoAdUb63amq3D7ENnBLDhHT2xY8eFkLJYVKK4x",
+   "class": "cleaned",
+   "activated_at": 198720004,
+   "active_at_pin": true,
+   "description": "enable the deactivate delinquent stake instruction #23932"
+  },
+  {
+   "id": "4ApgRX3ud6p7LNMJmsuaAcZY5HWctGPr5obAsjB3A54d",
+   "class": "cleaned",
+   "activated_at": 143424004,
+   "active_at_pin": true,
+   "description": "prevent calling precompiles as programs"
+  },
+  {
+   "id": "4Di3y24QFLt5QEUPZtbnjyfQKfm6ZMTfa6Dw1psfoMKU",
+   "class": "cleaned",
+   "activated_at": 199152000,
+   "active_at_pin": true,
+   "description": "drop redundant turbine path"
+  },
+  {
+   "id": "4EJQtF2pkRyawwcTVfQutzq4Sa5hRhibF6QAK1QXhtEX",
+   "class": "cleaned",
+   "activated_at": 138240000,
+   "active_at_pin": true,
+   "description": "enable durable nonce #25744"
+  },
+  {
+   "id": "4RWNif6C2WCNiKVW7otP4G7dkmkHGyKQWRpuZ1pxKU5m",
+   "class": "cleaned",
+   "activated_at": 57456000,
+   "active_at_pin": true,
+   "description": "pico inflation"
+  },
+  {
+   "id": "4UDcAfQ6EcA6bdcadkeHpkarkhZGJ7Bpq7wTAiRMjkoi",
+   "class": "cleaned",
+   "activated_at": 207360004,
+   "active_at_pin": true,
+   "description": "disable builtin loader ownership chains #29956"
+  },
+  {
+   "id": "4WeHX6QoXCCwqbSFgi6dxnB6QsPo6YApaNTH7P4MLQ99",
+   "class": "cleaned",
+   "activated_at": 411696000,
+   "active_at_pin": true,
+   "description": "SIMD-0083: Allow batched transactions to read/write and write/write the same accounts"
+  },
+  {
+   "id": "4a6f7o7iTcA8hRDCrPLkSatnt5Ykxiu36wo5p1Tt12wC",
+   "class": "bank",
+   "activated_at": 444096000,
+   "active_at_pin": false,
+   "description": "SIMD-0437-1: Set lamports per byte to 6333"
+  },
+  {
+   "id": "4d5AKtxoh93Dwm1vHXUU3iRATuMndx1c431KgT2td52r",
+   "class": "cleaned",
+   "activated_at": 117072004,
+   "active_at_pin": true,
+   "description": "Add compute_budget_program"
+  },
+  {
+   "id": "4eohviozzEeivk1y9UbrnekbAFMDQyJz5JjA9Y6gyvky",
+   "class": "cleaned",
+   "activated_at": 324864000,
+   "active_at_pin": true,
+   "description": "SIMD-0089: Migrate Feature Gate program to Core BPF (programify)"
+  },
+  {
+   "id": "4kpdyrcj5jS47CZb2oJGfVxjYbsMm2Kx97gFyZrxxwXz",
+   "class": "cleaned",
+   "activated_at": 51408000,
+   "active_at_pin": true,
+   "description": "no overflow rent distribution"
+  },
+  {
+   "id": "4yuaYAj2jGMGTh1sSmi4G2eFscsDq8qjugJXZoBN6YEa",
+   "class": "cleaned",
+   "activated_at": 139104000,
+   "active_at_pin": true,
+   "description": "disable reporting of unresolved SBF symbols at runtime"
+  },
+  {
+   "id": "51VCKU5eV6mcTc9q9ArfWELU2CqDoi13hdAjr6fHMdtv",
+   "class": "cleaned",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "Verify retransmitter signature #1840"
+  },
+  {
+   "id": "54KAoNiUERNoWWUhTWWwXgym94gzoXFVnHyQwPA18V9A",
+   "class": "cleaned",
+   "activated_at": 200880004,
+   "active_at_pin": true,
+   "description": "fail libsecp256k1_verify if count appears wrong"
+  },
+  {
+   "id": "55oikhjJ2LUi1xdgJ17ueRyHFURZEw32asT3iAKfh7gg",
+   "class": "cleaned",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "SIMD-0550: Double disinflation rate"
+  },
+  {
+   "id": "5GpmAKxaGsWWbPp4bNXFLJxZVvG92ctxf7jQnzTQjF3n",
+   "class": "cleaned",
+   "activated_at": 228528004,
+   "active_at_pin": true,
+   "description": "enable epoch accounts hash calculation #27539"
+  },
+  {
+   "id": "5JsG4NWH8Jbrqdd8uL6BNwnyZK3dQSoieRXG5vmofj9y",
+   "class": "cleaned",
+   "activated_at": 363312000,
+   "active_at_pin": true,
+   "description": "SIMD-0180: Enable vote address leader schedule #4573"
+  },
+  {
+   "id": "5KLGJSASDVxKPjLCDWNtnABLpZjsQSrYZ8HKwcEdAMC8",
+   "class": "cleaned",
+   "activated_at": 354672000,
+   "active_at_pin": true,
+   "description": "drops unchained Merkle shreds #2149"
+  },
+  {
+   "id": "5Pecy6ie6XGm22pc9d4P9W5c31BugcFBuy6hsP2zkETv",
+   "class": "cleaned",
+   "activated_at": 234576004,
+   "active_at_pin": true,
+   "description": "checked arithmetic in fee validation #31273"
+  },
+  {
+   "id": "5TuppMutoyzhUSfuYdhgzD47F92GL1g89KpCZQKqedxP",
+   "class": "svm",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "enable the remaining_compute_units syscall"
+  },
+  {
+   "id": "5ZCcFAzJ1zsFKe1KSZa9K92jhx7gkcKj97ci2DBo1vwj",
+   "class": "cleaned",
+   "activated_at": 241056004,
+   "active_at_pin": true,
+   "description": "Simplify checks performed for writable upgradeable program accounts #30559"
+  },
+  {
+   "id": "5cC3foj77CWun58pC51ebHFUWavHWKarWyR5UUik7dnC",
+   "class": "cleaned",
+   "activated_at": 428976000,
+   "active_at_pin": true,
+   "description": "SIMD-0178, SIMD-0189 and SIMD-0377: Enable deployment and execution of SBPFv3 programs"
+  },
+  {
+   "id": "5ekBxc8itEnPv4NzGJtr8BVVQLNMQuLMNQQj7pHoLNZ9",
+   "class": "cleaned",
+   "activated_at": 135216004,
+   "active_at_pin": true,
+   "description": "transaction wide compute cap"
+  },
+  {
+   "id": "5oMCU3JPaFLr8Zr4ct7yFA7jdk6Mw1RmB8K4u9ZbS42z",
+   "class": "cleaned",
+   "activated_at": 332640000,
+   "active_at_pin": true,
+   "description": "SIMD-0207: Raise block limit to 50M"
+  },
+  {
+   "id": "5wAGiy15X1Jb2hkHnPDCM8oB9V42VNA9ftNVFK84dEgv",
+   "class": "cleaned",
+   "activated_at": 246240000,
+   "active_at_pin": true,
+   "description": "set rent epoch to Epoch::MAX for rent-exempt accounts #28683"
+  },
+  {
+   "id": "5x3825XS7M2A3Ekbn5VGGkvFoAg5qrRWkTrY4bARP1GL",
+   "class": "svm",
+   "activated_at": 251424000,
+   "active_at_pin": true,
+   "description": "enable bpf upgradeable loader SetAuthorityChecked instruction #28424"
+  },
+  {
+   "id": "5xXZc66h4UdB6Yq7FzdBxBiRAFMMScMLwHxk2QZDaNZL",
+   "class": "bank",
+   "activated_at": 410400000,
+   "active_at_pin": true,
+   "description": "SIMD-0321: Provide instruction data offset in VM r2"
+  },
+  {
+   "id": "61BtM7BkDEE8Yq5fskEVAQT9mYA8qCejJWoLe5apqg81",
+   "class": "bank",
+   "activated_at": 446256000,
+   "active_at_pin": false,
+   "description": "SIMD-0437-2: Set lamports per byte to 5080"
+  },
+  {
+   "id": "64ixypL1HPu8WtJhNSMb9mSgfFaJvsANuRkTbHyuLfnx",
+   "class": "cleaned",
+   "activated_at": 404352000,
+   "active_at_pin": true,
+   "description": "SIMD-0160: static instruction limit"
+  },
+  {
+   "id": "6M4oQ6eXneVhtLoiAr4yRYQY43eVLjrKbiDZDJc892yk",
+   "class": "cleaned",
+   "activated_at": 355536000,
+   "active_at_pin": true,
+   "description": "SIMD-0196: Migrate Stake program to Core BPF #3655"
+  },
+  {
+   "id": "6RvdSWHh8oh72Dp7wMTS2DBkf3fRPtChfNrAo3cZZoXJ",
+   "class": "cleaned",
+   "activated_at": 104976000,
+   "active_at_pin": true,
+   "description": "secp256k1_recover syscall"
+  },
+  {
+   "id": "6TkHkRmP7JZy1fdM6fg5uXn76wChQBWGokHBJzrLB3mj",
+   "class": "svm",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "SIMD-0268: Raise CPI nesting limit from 4 to 8"
+  },
+  {
+   "id": "6Uf8S75PVh91MYgPQSHnjRAPQq6an5BDv9vomrCwDqLe",
+   "class": "cleaned",
+   "activated_at": 283392000,
+   "active_at_pin": true,
+   "description": "Deprecate unused legacy vote tx plumbing"
+  },
+  {
+   "id": "6YsBCejwK96GZCkJ6mkZ4b68oP63z2PLoQmWjC7ggTqZ",
+   "class": "cleaned",
+   "activated_at": 260064000,
+   "active_at_pin": true,
+   "description": "consume duplicate proofs from blockstore in consensus #34372"
+  },
+  {
+   "id": "6aHuNsUmwSzCEMjrBzBCYaxHAyAcQBjVES92JigHBDuC",
+   "class": "cleaned",
+   "activated_at": 432000000,
+   "active_at_pin": true,
+   "description": "SIMD-0406: Maximum instruction accounts"
+  },
+  {
+   "id": "6iyggb5MTcsvdcugX7bEKbHV8c6jdLbpHwkncrgLMhfo",
+   "class": "cleaned",
+   "activated_at": 204768000,
+   "active_at_pin": true,
+   "description": "stop adding hashes for skipped slots to recent blockhashes"
+  },
+  {
+   "id": "6oMCUgfY6BzZ6jwB681J6ju5Bh6CjVXbd7NeWYqiXBSu",
+   "class": "cleaned",
+   "activated_at": 355104000,
+   "active_at_pin": true,
+   "description": "SIMD-0256: Raise block limit to 60M"
+  },
+  {
+   "id": "6ppMXNYLhVd7GcsZ5uV11wQEW7spppiMVfqQv5SXhDpX",
+   "class": "cleaned",
+   "activated_at": 117936008,
+   "active_at_pin": true,
+   "description": "enable builtin ed25519 signature verify program"
+  },
+  {
+   "id": "6sPDzwyARRExKH52LECxcGoqziH8G7SZofwuxi8Ja331",
+   "class": "svm",
+   "activated_at": 422928004,
+   "active_at_pin": true,
+   "description": "SIMD-0312: Enable CreateAccountAllowPrefund system program instruction"
+  },
+  {
+   "id": "6tRxEYKuy2L5nnv5bgn7iT28MxUbYxp5h7F3Ncf1exrT",
+   "class": "cleaned",
+   "activated_at": 148608004,
+   "active_at_pin": true,
+   "description": "An instruction you can use to change a vote accounts authority when the current authority is a derived key #25860"
+  },
+  {
+   "id": "6uaHcKPGUy4J7emLBgUTeufhJdiwhngW6a1R9B7c2ob9",
+   "class": "cleaned",
+   "activated_at": 117936008,
+   "active_at_pin": true,
+   "description": "enable sol_log_data syscall"
+  },
+  {
+   "id": "74CoWuBmt3rUVUrCb2JiSTvh6nXyBWUsK4SaMj3CtE3T",
+   "class": "cleaned",
+   "activated_at": 202608000,
+   "active_at_pin": true,
+   "description": "cpi ignore serialized_len_ptr #29592"
+  },
+  {
+   "id": "75m6ysz33AfLA5DDEzWM1obBrnPQRSsdVQ2nRmc8Vuu1",
+   "class": "cleaned",
+   "activated_at": 133920008,
+   "active_at_pin": true,
+   "description": "support account data reallocation"
+  },
+  {
+   "id": "76dHtohc2s5dR3ahJyBxs7eJJVipFkaPdih9CLgTTb4B",
+   "class": "svm",
+   "activated_at": 428112000,
+   "active_at_pin": true,
+   "description": "SIMD-0249: Delay Commission Updates"
+  },
+  {
+   "id": "79HWsX9rpnnJBPcdNURVqygpMAfxdrAirzAGAVmf92im",
+   "class": "bank",
+   "activated_at": 209088008,
+   "active_at_pin": true,
+   "description": "disable new deployments of deprecated sol_alloc_free_ syscall"
+  },
+  {
+   "id": "7GUcYgq4tVtaqNCKT3dho9r4665Qp5TxCZ27Qgjx3829",
+   "class": "cleaned",
+   "activated_at": 139536000,
+   "active_at_pin": true,
+   "description": "Executables incur CPI data costs"
+  },
+  {
+   "id": "7VVhpg5oAjAmnmz1zCcSHb2Z9ecZB2FQqpnEwReka9Zm",
+   "class": "cleaned",
+   "activated_at": 384480000,
+   "active_at_pin": true,
+   "description": "SIMD-0242: Static Nonce Account Only"
+  },
+  {
+   "id": "7Vced912WrRnfjaiKRiNBcbuFw7RrnLv3E3z95Y4GTNc",
+   "class": "cleaned",
+   "activated_at": 222048008,
+   "active_at_pin": true,
+   "description": "enable early verification of account modifications #25899"
+  },
+  {
+   "id": "7VgiehxNxu53KdxgLspGQY8myE6f7UokaWa4jsGcaSz",
+   "class": "svm",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "SIMD-0460: Virtual Address Space Adjustments"
+  },
+  {
+   "id": "7WeS1vfPRgeeoXArLh7879YcB9mgE9ktjPDtajXeWfXn",
+   "class": "cleaned",
+   "activated_at": 259632004,
+   "active_at_pin": true,
+   "description": "disable bpf loader management instructions #34194"
+  },
+  {
+   "id": "7XRJcS5Ud5vxGB54JbK9N2vBZVwnwdBNeJW1ibRgD9gx",
+   "class": "cleaned",
+   "activated_at": 64800004,
+   "active_at_pin": true,
+   "description": "full inflation enabled by Certus One"
+  },
+  {
+   "id": "7axKe5BTYBDD87ftzWbk5DfzWMGyRvqmWTduuo22Yaqy",
+   "class": "cleaned",
+   "activated_at": 252720000,
+   "active_at_pin": true,
+   "description": "replace Lockout with LandedVote (including vote latency) in vote state #31264"
+  },
+  {
+   "id": "7bTK6Jis8Xpfrs8ZoUfiMDPazTcdPcTWheZFJTA5Z6X4",
+   "class": "svm",
+   "activated_at": 314064000,
+   "active_at_pin": true,
+   "description": "Enable MoveStake and MoveLamports stake program instructions #1610"
+  },
+  {
+   "id": "7g9EUwj4j7CS21Yx1wvgWLjSZeh5aPq8x9kpoPwXM8n8",
+   "class": "cleaned",
+   "activated_at": 142560008,
+   "active_at_pin": true,
+   "description": "limit secp256k1 recovery id"
+  },
+  {
+   "id": "7rcw5UtqgDTBBv2EcynNfYckgdAaH1MAsCjKgXMkN7Ri",
+   "class": "svm",
+   "activated_at": 275184000,
+   "active_at_pin": true,
+   "description": "enable curve25519 syscalls"
+  },
+  {
+   "id": "7txXZZD6Um59YoLMF7XUNimbMjsqsWhc7g2EniiTrmp1",
+   "class": "cleaned",
+   "activated_at": 117072004,
+   "active_at_pin": true,
+   "description": "fail vote withdraw instructions which leave the account non-rent-exempt"
+  },
+  {
+   "id": "7uZBkJXJ1HkuP6R3MJfZs7mLwymBcDbKdqbF51ZWLier",
+   "class": "cleaned",
+   "activated_at": 306720000,
+   "active_at_pin": true,
+   "description": "Enable chained Merkle shreds #34916"
+  },
+  {
+   "id": "812kqX67odAp5NFwM8D2N24cku7WTm9CHUTFUXaDkWPn",
+   "class": "cleaned",
+   "activated_at": 161136000,
+   "active_at_pin": true,
+   "description": "prevent crediting rent paying accounts #26606"
+  },
+  {
+   "id": "8199Q2gMD2kwgfopK5qqVWuDbegLgpuFUFHCcUJQDN8b",
+   "class": "cleaned",
+   "activated_at": 280800004,
+   "active_at_pin": true,
+   "description": "error on bpf function hash collisions"
+  },
+  {
+   "id": "86HpNqzutEZwLcPxS6EHDcMNYWk6ikhteg9un7Y2PBKE",
+   "class": "cleaned",
+   "activated_at": 212112000,
+   "active_at_pin": true,
+   "description": "Compact vote state updates to lower block size"
+  },
+  {
+   "id": "8C8MCtsab5SsfammbzvYz65HHauuUYdbY2DZ4sznH6h5",
+   "class": "cleaned",
+   "activated_at": 255312004,
+   "active_at_pin": true,
+   "description": "Update desired hashes per tick to 4.4M"
+  },
+  {
+   "id": "8FdwgyHFEjhAdjWfV2vfqk7wA1g9X3fQpKH7SBpEv3kC",
+   "class": "cleaned",
+   "activated_at": 153360000,
+   "active_at_pin": true,
+   "description": "require static program ids in versioned transactions"
+  },
+  {
+   "id": "8U4skmMVnF6k2kMvrWbQuRUT3qQSiTYpSjqmhmgfthZu",
+   "class": "cleaned",
+   "activated_at": 320976000,
+   "active_at_pin": true,
+   "description": "SIMD-0105: Maintain Dynamic Set of Reserved Account Keys"
+  },
+  {
+   "id": "8We4E7DPwF2WfAN8tRTtWQNhi98B99Qpuj7JoZ3Aikgg",
+   "class": "cleaned",
+   "activated_at": 255744008,
+   "active_at_pin": true,
+   "description": "Update desired hashes per tick to 7.6M"
+  },
+  {
+   "id": "8Zs9W7D9MpSEtUWSQdGniZk2cNmV22y6FLJwCx53asme",
+   "class": "cleaned",
+   "activated_at": 229824000,
+   "active_at_pin": true,
+   "description": "enable bpf upgradeable loader ExtendProgram instruction #25234"
+  },
+  {
+   "id": "8aXvSuopd1PUj7UhehfXJRg6619RHp8ZvwTyyJHdUYsj",
+   "class": "cleaned",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "fail libsecp256k1_verify if count appears wrong"
+  },
+  {
+   "id": "8kEuAshXLsgkUEdcFVLqrjCGGHVWFW99ZZpxvAzzMtBp",
+   "class": "cleaned",
+   "activated_at": 110592000,
+   "active_at_pin": true,
+   "description": "dedupe config program signers"
+  },
+  {
+   "id": "8pgXCMNXC8qyEFypuwpXyRxLXZdpM4Qo72gJ6k87A6wL",
+   "class": "cleaned",
+   "activated_at": 240624008,
+   "active_at_pin": true,
+   "description": "Native program should consume compute units #30620"
+  },
+  {
+   "id": "8sKQrMQoUHtQSUP83SPG4ta2JDjSAiWs7t5aJ9uEd6To",
+   "class": "cleaned",
+   "activated_at": 206496008,
+   "active_at_pin": true,
+   "description": "use default units per instruction in fee calculation #26785"
+  },
+  {
+   "id": "98std1NSHqXi9WYvFShfVepRdCoq1qvsp8fsR2XZtG8g",
+   "class": "cleaned",
+   "activated_at": 142128000,
+   "active_at_pin": true,
+   "description": "add compute budget ix for setting a compute unit price"
+  },
+  {
+   "id": "9LZdXeKGeBV6hRLdxS1rHbHoEUsKqesCC2ZAPTPKJAbK",
+   "class": "svm",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "increase tx account lock limit to 128 #27241"
+  },
+  {
+   "id": "9gxu85LYRAcZL38We8MYJ4A9AwgBBPtVBAqebMcT1241",
+   "class": "cleaned",
+   "activated_at": 224640020,
+   "active_at_pin": true,
+   "description": "cap accounts data allocations per transaction #27375"
+  },
+  {
+   "id": "9k5ijzTbYPtjzu8wj2ErH9v45xecHzQ1x4PMYMMxFgdM",
+   "class": "cleaned",
+   "activated_at": 205200004,
+   "active_at_pin": true,
+   "description": "enforce max number of accounts per bpf program instruction #26628"
+  },
+  {
+   "id": "9kdtFSrXHQg3hKkbXkQ6trJ3Ja1xpJ22CTFSNAciEwmL",
+   "class": "cleaned",
+   "activated_at": 137376016,
+   "active_at_pin": true,
+   "description": "fail instructions which have native_loader as program_id directly"
+  },
+  {
+   "id": "9onWzzvCzNC2jfhxxeqRgs5q7nFAAKpCUvkj6T6GJK9i",
+   "class": "bank",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "Raise minimum stake delegation to 1.0 SOL #24357"
+  },
+  {
+   "id": "9ypxGLzkMxi89eDerRKXWDXe44UY2z4hBig4mDhNq5Dp",
+   "class": "svm",
+   "activated_at": 328320000,
+   "active_at_pin": true,
+   "description": "SIMD-0159: Move precompile verification into SVM"
+  },
+  {
+   "id": "A16q37opZdQMCbe5qJ6xpBB9usykfv8jZaMkxvZQi4GJ",
+   "class": "svm",
+   "activated_at": 275616000,
+   "active_at_pin": true,
+   "description": "add alt_bn128 syscalls #27961"
+  },
+  {
+   "id": "A1pengvuM6JEcyNuTnMqepBKhwHE3N6PmUrdATGawhJS",
+   "class": "bank",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "SIMD-0326: Alpenglow: new consensus algorithm"
+  },
+  {
+   "id": "A8xyMHZovGXFkorFqEmVH2PKGLiBip5JD7jt4zsUWo4H",
+   "class": "cleaned",
+   "activated_at": 236736000,
+   "active_at_pin": true,
+   "description": "Remove congestion multiplier from transaction fee calculation #29881"
+  },
+  {
+   "id": "ALBk3EWdeAg2WAGf6GPDUf1nynyNqCdEVmgouG7rpuCj",
+   "class": "cleaned",
+   "activated_at": 170640000,
+   "active_at_pin": true,
+   "description": "fail vote account withdraw to 0 unless account earned 0 credits in last completed epoch"
+  },
+  {
+   "id": "AVZS3ZsN4gi6Rkx2QUibYuSJG3S6QHib7xCYhG6vGJxU",
+   "class": "cleaned",
+   "activated_at": 138672000,
+   "active_at_pin": true,
+   "description": "vote account withdraw authority may change the authorized voter #22521"
+  },
+  {
+   "id": "AnAP9zPV4KL7czAPQbFhpDKV2tx7g4UGNbK9wvXwjaRo",
+   "class": "svm",
+   "activated_at": 431568000,
+   "active_at_pin": true,
+   "description": "SIMD-0387: BLS Pubkey Management in Vote Account"
+  },
+  {
+   "id": "B1ockRevenueSharing111111111111111111111111",
+   "class": "svm",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "SIMD-0123: Block Revenue Sharing"
+  },
+  {
+   "id": "B7H2caeia4ZFcpE3QcgMqbiWiBtWrdBRBSJ1DY6Ktxbq",
+   "class": "svm",
+   "activated_at": 327888000,
+   "active_at_pin": true,
+   "description": "SIMD-0182: Deplete compute meter for vm errors #3993"
+  },
+  {
+   "id": "B8JJXCy5amZyWG9r7EnUYLwzXSXTxG7GZ1qZ1qggo83g",
+   "class": "svm",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "SIMD-0500: Disable deployment of SBPF v0, v1 and v2 programs"
+  },
+  {
+   "id": "B9cdB55u4jQsDNsdTK525yE9dmSc5Ga7YBaBrDFvEhM9",
+   "class": "cleaned",
+   "activated_at": 225936004,
+   "active_at_pin": true,
+   "description": "disable setting is_executable and_rent_epoch in CPI #26987"
+  },
+  {
+   "id": "BKCPBQQBZqggVnFso5nQ8rQ4RwwogYwjuUt9biBjxwNF",
+   "class": "cleaned",
+   "activated_at": 104976000,
+   "active_at_pin": true,
+   "description": "collect rent from accounts owned by sysvars"
+  },
+  {
+   "id": "BL99GYhdjjcv6ys22C9wPgn2aTVERDbPHHo4NbS3hgp7",
+   "class": "cleaned",
+   "activated_at": 66528004,
+   "active_at_pin": true,
+   "description": "spl-token self-transfer fix"
+  },
+  {
+   "id": "BTWmtJC8U5ZLMbBUUA1k6As62sYjPEjAiNAT55xYGdJU",
+   "class": "cleaned",
+   "activated_at": 244944000,
+   "active_at_pin": true,
+   "description": "revise turbine epoch stakes"
+  },
+  {
+   "id": "BUS12ciZ5gCoFafUHWW8qaFMMtwFQGVxjsDheWLdqBE2",
+   "class": "cleaned",
+   "activated_at": 200448008,
+   "active_at_pin": true,
+   "description": "Auto rewind stake's credits_observed if (accidental) vote recreation is detected #22546"
+  },
+  {
+   "id": "BY4JhHLahVzS9ynfDz4exzGPbVXhFmJvEyMWsXbDBqME",
+   "class": "svm",
+   "activated_at": 443664000,
+   "active_at_pin": false,
+   "description": "SIMD-0392: Relaxation of post-execution min_balance check"
+  },
+  {
+   "id": "BcWknVcgvonN8sL4HE4XFuEVgfcee5MwxWPAgP6ZV89X",
+   "class": "cleaned",
+   "activated_at": 92448000,
+   "active_at_pin": true,
+   "description": "vote/state program checked instructions #18345"
+  },
+  {
+   "id": "BiCU7M5w8ZCMykVSyhZ7Q3m2SWoR2qrEQ86ERcDX77ME",
+   "class": "cleaned",
+   "activated_at": 136944004,
+   "active_at_pin": true,
+   "description": "nonce must be writable"
+  },
+  {
+   "id": "Bj2jmUsM2iRhfdLLDSTkhM5UQRQvQHm57HSmPibPtEyu",
+   "class": "cleaned",
+   "activated_at": 211680000,
+   "active_at_pin": true,
+   "description": "Return InsufficientDelegation instead of InsufficientFunds or InsufficientStake where applicable #31206"
+  },
+  {
+   "id": "BkFDxiJQWZXGTZaJQxH7wVEHkAmwCgSEVkrvswFfRJPD",
+   "class": "cleaned",
+   "activated_at": 133488000,
+   "active_at_pin": true,
+   "description": "require all new transaction accounts with data to be rent-exempt"
+  },
+  {
+   "id": "BrTR9hzw4WBGFP65AJMbpAo64DcA3U6jdPSga9fMV5cS",
+   "class": "cleaned",
+   "activated_at": 93312000,
+   "active_at_pin": true,
+   "description": "perform all checks for transfers of 0 lamports"
+  },
+  {
+   "id": "BsKLKAn1WM4HVhPRDsjosmqSg2J8Tq5xP2s2daDS6Ni4",
+   "class": "cleaned",
+   "activated_at": 257040000,
+   "active_at_pin": true,
+   "description": "Update desired hashes per tick to 9.2M"
+  },
+  {
+   "id": "BtVN7YjDzNE6Dk7kTT7YTDgMNUZTNgiSJgsdzAeTg2jF",
+   "class": "cleaned",
+   "activated_at": 317088000,
+   "active_at_pin": true,
+   "description": "Removing unwanted rounding in fee calculation #34982"
+  },
+  {
+   "id": "BzBBveUDymEYoYzcMWNQCx3cd4jQs7puaVFHLtsbB6fm",
+   "class": "cleaned",
+   "activated_at": 64800004,
+   "active_at_pin": true,
+   "description": "community vote allowing Certus One to enable full inflation"
+  },
+  {
+   "id": "C5fh68nJ7uyKAuYZg2x9sEQ5YrVf3dkW6oojNBSc3Jvo",
+   "class": "cleaned",
+   "activated_at": 101088000,
+   "active_at_pin": true,
+   "description": "send votes to the tpu vote port"
+  },
+  {
+   "id": "C97eKZygrkU4JxJsZdjgbUY7iQR7rKTr4NyDWo2E5pRm",
+   "class": "cleaned",
+   "activated_at": 329184000,
+   "active_at_pin": true,
+   "description": "SIMD-0128: Migrate Address Lookup Table program to Core BPF"
+  },
+  {
+   "id": "C9oAhLxDBm3ssWtJx1yBGzPY55r2rArHmN1pbQn6HogH",
+   "class": "cleaned",
+   "activated_at": 327456000,
+   "active_at_pin": true,
+   "description": "SIMD-0170: Reserve minimal CUs for builtin instructions #2562"
+  },
+  {
+   "id": "CBkDroRDqm8HwHe6ak9cguPjUomrASEkfmxEaZ5CNNxz",
+   "class": "cleaned",
+   "activated_at": 140400004,
+   "active_at_pin": true,
+   "description": "enforce max number of locked accounts per transaction"
+  },
+  {
+   "id": "CCu4boMmfLuqcmfTLPHQiUo22ZdUsXjgzPAURYaWt1Bw",
+   "class": "cleaned",
+   "activated_at": 135216004,
+   "active_at_pin": true,
+   "description": "Requestable heap frame size"
+  },
+  {
+   "id": "CE2et8pqgyQMP2mQRg3CgvX8nJBKUArMu3wfiQiQKY1y",
+   "class": "cleaned",
+   "activated_at": 235440004,
+   "active_at_pin": true,
+   "description": "round up heap size when calculating heap cost #30679"
+  },
+  {
+   "id": "CFK1hRCNy8JJuAAY8Pb2GjLFNdCThS2qwZNe3izzBMgn",
+   "class": "cleaned",
+   "activated_at": 134352008,
+   "active_at_pin": true,
+   "description": "add add_get_processed_sibling_instruction_syscall"
+  },
+  {
+   "id": "CGB2jM8pwZkeeiXQ66kBMyBR6Np61mggL7XUsmLjVcrw",
+   "class": "cleaned",
+   "activated_at": 326160000,
+   "active_at_pin": true,
+   "description": "SIMD-0183: Skip rent rewrites"
+  },
+  {
+   "id": "CHaChatUnR3s6cPyPMMGNJa3VdQQ8PNH2JqdD4LpCKnB",
+   "class": "cleaned",
+   "activated_at": 408672000,
+   "active_at_pin": true,
+   "description": "SIMD-0332: Reduce ChaCha rounds for Turbine from 20 to 8"
+  },
+  {
+   "id": "CJzY83ggJHqPGDq8VisV3U91jDJLuEaALZooBrXtnnLU",
+   "class": "cleaned",
+   "activated_at": 326592000,
+   "active_at_pin": true,
+   "description": "SIMD-0084: Disable rent fees collection"
+  },
+  {
+   "id": "CLCoTADvV64PSrnR6QXty6Fwrt9Xc6EdxSJE4wLRePjq",
+   "class": "svm",
+   "activated_at": 321840000,
+   "active_at_pin": true,
+   "description": "SIMD-0127: Enable syscall for fetching Sysvar bytes"
+  },
+  {
+   "id": "CR3dVN2Yoo95Y96kLSTaziWDAQT2MNEpiWh5cqVq2pNE",
+   "class": "svm",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "enable account data direct mapping"
+  },
+  {
+   "id": "Cdkc8PPTeTNUPoZEfCY5AyetUrEdkZtNPMgz58nqyaHD",
+   "class": "cleaned",
+   "activated_at": 273888000,
+   "active_at_pin": true,
+   "description": "switch to new ELF parser #30497"
+  },
+  {
+   "id": "CpkdQmspsaZZ8FVAouQTtTWZkc8eeQ7V3uj7dWz543rZ",
+   "class": "cleaned",
+   "activated_at": 204336000,
+   "active_at_pin": true,
+   "description": "on bank load account, do not try to fix up rent_epoch #28541"
+  },
+  {
+   "id": "CveezY6FDLVBToHDcvJRmtMouqzsmj4UXYh5ths5G5Uv",
+   "class": "cleaned",
+   "activated_at": 212112000,
+   "active_at_pin": true,
+   "description": "Calculate vote credits for VoteStateUpdate per vote dequeue to match credit awards for Vote instruction"
+  },
+  {
+   "id": "D2aip4BBr8NPWtU9vLrwrBvbuaQ8w1zV38zFLxx4pfBV",
+   "class": "cleaned",
+   "activated_at": 254016004,
+   "active_at_pin": true,
+   "description": "Require stake split destination account to be rent exempt"
+  },
+  {
+   "id": "D31EFnLgdiysi84Woo3of4JMu7VmasUS3Z7j9HYXCeLY",
+   "class": "cleaned",
+   "activated_at": 247104008,
+   "active_at_pin": true,
+   "description": "enable turbine fanout experiments #29393"
+  },
+  {
+   "id": "D4jsDcXaqdW8tDAWn8H4R25Cdns2YwLneujSL1zvjW6R",
+   "class": "cleaned",
+   "activated_at": 71712000,
+   "active_at_pin": true,
+   "description": "require custodian to authorize withdrawer change for locked stake"
+  },
+  {
+   "id": "DT4n6ABDqs6w4bnfwrXT9rsprcPf6cdDga1egctaPkLC",
+   "class": "cleaned",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "full inflation on devnet and testnet"
+  },
+  {
+   "id": "DTVTkmw3JSofd8CJVJte8PXEbxNQ2yZijvVr3pe2APPj",
+   "class": "cleaned",
+   "activated_at": 204336000,
+   "active_at_pin": true,
+   "description": "on accounts hash calculation, do not try to rehash accounts #28934"
+  },
+  {
+   "id": "DdLwVYuvDz26JohmgSbA7mjpJFgX5zP2dkp8qsF2C33V",
+   "class": "cleaned",
+   "activated_at": 230256020,
+   "active_at_pin": true,
+   "description": "cap transaction accounts data size up to a limit #27839"
+  },
+  {
+   "id": "DeS7sR48ZcFTUmt5FFEVDr1v1bh73aAbZiZq3SYr8Eh8",
+   "class": "svm",
+   "activated_at": 381888000,
+   "active_at_pin": true,
+   "description": "SIMD-0186: Loaded transaction data size specification"
+  },
+  {
+   "id": "DhsYfRjxfnh2g7HKJYSzT79r74Afa1wbHkAgHndrA1oy",
+   "class": "cleaned",
+   "activated_at": 110592000,
+   "active_at_pin": true,
+   "description": "upgrade libsecp256k1 to v0.5.0"
+  },
+  {
+   "id": "DpJREPyuMZ5nDfU6H3WTqSqUFSXAfw8u7xqmWtEwJDcP",
+   "class": "cleaned",
+   "activated_at": 140400004,
+   "active_at_pin": true,
+   "description": "quick bail on panic"
+  },
+  {
+   "id": "Ds87KVeqhbv7Jw8W6avsS1mqz3Mw5J3pRTpPoDQ2QdiJ",
+   "class": "cleaned",
+   "activated_at": 137376016,
+   "active_at_pin": true,
+   "description": "add shred-type to shred seed #25556"
+  },
+  {
+   "id": "DwScAzPUjuv65TMbDnFY7AgwmotzWy3xpEJMXM3hZFaB",
+   "class": "cleaned",
+   "activated_at": 117936008,
+   "active_at_pin": true,
+   "description": "enable sol_{set,get}_return_data syscall"
+  },
+  {
+   "id": "E3PHP7w8kB7np3CTQ1qQ2tW3KCtjRSXBQgW9vM2mWv2Y",
+   "class": "cleaned",
+   "activated_at": 41040000,
+   "active_at_pin": true,
+   "description": "secp256k1 program"
+  },
+  {
+   "id": "E5JiFDQCwyC6QfT9REFyMpfK2mHcmv1GUDySU1Ue7TYv",
+   "class": "cleaned",
+   "activated_at": 41040000,
+   "active_at_pin": true,
+   "description": "spl-token multisig fix"
+  },
+  {
+   "id": "E8MkiWZNNPGU6n55jkGzyj8ghUmjCHRmDFdYYFYHxWhQ",
+   "class": "cleaned",
+   "activated_at": 133056012,
+   "active_at_pin": true,
+   "description": "leave nonce as is on success"
+  },
+  {
+   "id": "EBeznQDjcPG8491sFsKZYBi5S5jTVXMpAKNDJMQPS2kq",
+   "class": "cleaned",
+   "activated_at": 102816004,
+   "active_at_pin": true,
+   "description": "reduce required payer balance for program deploys"
+  },
+  {
+   "id": "EDGMC5kxFxGk4ixsNkGt8bW7QL5hDMXnbwaZvYMwNfzF",
+   "class": "svm",
+   "activated_at": 429840000,
+   "active_at_pin": true,
+   "description": "SIMD-0459: Syscall Parameter Address Restrictions"
+  },
+  {
+   "id": "EJJewYSddEEtSZHiqugnvhQHiWyZKjkFDQASd7oKSagn",
+   "class": "svm",
+   "activated_at": 276912000,
+   "active_at_pin": true,
+   "description": "add alt_bn128 compression syscalls"
+  },
+  {
+   "id": "EMX9Q7TVFAmQ9V1CggAkhMzhXSg8ECp7fHrWQX2G1chf",
+   "class": "cleaned",
+   "activated_at": 117072004,
+   "active_at_pin": true,
+   "description": "evict invalid stakes cache entries on epoch boundaries"
+  },
+  {
+   "id": "EQUMpNFr7Nacb1sva56xn1aLfBxppEoSBH8RRVdkcD1x",
+   "class": "cleaned",
+   "activated_at": 314496000,
+   "active_at_pin": true,
+   "description": "Disable account loader special case #3513"
+  },
+  {
+   "id": "EVW9B5xD9FFK7vw1SBARwMA4s5eRo5eKJdKpsBikzKBz",
+   "class": "cleaned",
+   "activated_at": 102816004,
+   "active_at_pin": true,
+   "description": "prohibit extra transaction signatures"
+  },
+  {
+   "id": "EWme9uFqfy1ikK1jhJs8fM5hxWnK336QJpbscNtizkTU",
+   "class": "cleaned",
+   "activated_at": 253584001,
+   "active_at_pin": true,
+   "description": "Update desired hashes per tick to 2.8M"
+  },
+  {
+   "id": "EYVpEP7uzH1CoXzbD6PubGhYmnxRXPeq3PPsm1ba3gpo",
+   "class": "cleaned",
+   "activated_at": 236304016,
+   "active_at_pin": true,
+   "description": "stop the search in get_processed_sibling_instruction when the parent instruction is reached #27289"
+  },
+  {
+   "id": "EaQpmC6GtRssaZ3PCUM5YksGqUdMLeZ46BQXYtHYakDS",
+   "class": "cleaned",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "include transaction loaded accounts data size in base fee calculation #30657"
+  },
+  {
+   "id": "EfhYd3SafzGT472tYQDUc4dPd2xdEfKs5fwkowUgVt4W",
+   "class": "cleaned",
+   "activated_at": 233280000,
+   "active_at_pin": true,
+   "description": "remove support for RequestUnitsDeprecated instruction #27500"
+  },
+  {
+   "id": "Eg7tXEwMZzS98xaZ1YHUbdRHsaYZiCsSaR6sKgxreoaj",
+   "class": "svm",
+   "activated_at": 433296000,
+   "active_at_pin": true,
+   "description": "SIMD-0291: Commission Rate in Basis Points"
+  },
+  {
+   "id": "ExtendProgCheckedWi11BeDe1eted11111111111111",
+   "class": "cleaned",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "Enable ExtendProgramChecked instruction"
+  },
+  {
+   "id": "F6UVKh1ujTEFK3en2SyAL3cdVnqko1FVEXWhmdLRu6WP",
+   "class": "cleaned",
+   "activated_at": 356400000,
+   "active_at_pin": true,
+   "description": "SIMD-0173 and SIMD-0174: Enable deployment and execution of SBPFv2 programs"
+  },
+  {
+   "id": "FEEXbxUuKobtrt1qNK5pjtzbPQhsppBTrNNG74xu4mai",
+   "class": "svm",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "SIMD-0290: Relax block constraint requiring valid fee-payer"
+  },
+  {
+   "id": "FKAcEvNgSY79RpqsPNUV5gDyumopH4cEHqUxyfm8b8Ap",
+   "class": "cleaned",
+   "activated_at": 249264000,
+   "active_at_pin": true,
+   "description": "relax authority signer check for lookup table creation #27205"
+  },
+  {
+   "id": "FKe75t4LXxGaQnVHdUKM6DSFifVVraGZ8LyNo7oPwy1Z",
+   "class": "svm",
+   "activated_at": 330912000,
+   "active_at_pin": true,
+   "description": "SIMD-0133: Enable syscall: sol_get_epoch_stake"
+  },
+  {
+   "id": "FKu1qYwLQSiehz644H6Si65U5ZQ2cp9GxsyFUfYcuADv",
+   "class": "cleaned",
+   "activated_at": 257904000,
+   "active_at_pin": true,
+   "description": "Update desired hashes per tick to 10M"
+  },
+  {
+   "id": "FL9RsQA6TVUoh5xJQ9d936RHSebA1NLQqe3Zv9sXZRpr",
+   "class": "svm",
+   "activated_at": 278208000,
+   "active_at_pin": true,
+   "description": "Enable Poseidon syscall"
+  },
+  {
+   "id": "FLHoAWBDjNh6zwmJ5i1NKK4KyD8otAiv7XxvmnFnVnKH",
+   "class": "bank",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "SIMD-0326: Alpenglow fast leader handover"
+  },
+  {
+   "id": "FNKCMBzYUdjhHyPdsKG2LSmdzH8TCHXn3ytj8RNBS4nG",
+   "class": "cleaned",
+   "activated_at": 284688004,
+   "active_at_pin": true,
+   "description": "enable gossip duplicate proof ingestion #32963"
+  },
+  {
+   "id": "FQnc7U4koHqWgRvFaBJjZnV8VPg6L6wWK33yJeDp4yvV",
+   "class": "cleaned",
+   "activated_at": 203904008,
+   "active_at_pin": true,
+   "description": "stake split instruction uses rent sysvar"
+  },
+  {
+   "id": "FToKNBYyiF4ky9s8WsmLBXHCht17Ek7RXaLZGHzzQhJ1",
+   "class": "cleaned",
+   "activated_at": 93312000,
+   "active_at_pin": true,
+   "description": "spl-token set_authority fix"
+  },
+  {
+   "id": "FXs1zh47QbNnhXcnB6YiAQoJ4sGB91tKF3UFHLcKT7PM",
+   "class": "cleaned",
+   "activated_at": 350352004,
+   "active_at_pin": true,
+   "description": "SIMD-0162: Remove checks of accounts is_executable flag"
+  },
+  {
+   "id": "FaTa17gVKoqbh38HcfiQonPsAaQViyDCCSg71AubYZw8",
+   "class": "cleaned",
+   "activated_at": 144288004,
+   "active_at_pin": true,
+   "description": "SPL Associated Token Account Program version 1.1.0 release #24741"
+  },
+  {
+   "id": "FaTa4SpiaSNH44PGC4z8bnGVTkSRYaWvrBs3KTu8XQQq",
+   "class": "cleaned",
+   "activated_at": 130464000,
+   "active_at_pin": true,
+   "description": "SPL Associated Token Account Program release version 1.0.4, tied to token 3.3.0 #22648"
+  },
+  {
+   "id": "Fab5oP3DmsLYCiQZXdjyqT3ukFFPrsmqhXU4WU1AWVVF",
+   "class": "cleaned",
+   "activated_at": 234144000,
+   "active_at_pin": true,
+   "description": "prevent recipients of rent rewards from ending in rent-paying state #30151"
+  },
+  {
+   "id": "Ff8b1fBeB86q8cjq47ZhsQLgv5EkHu3G1C99zjUfAzrq",
+   "class": "cleaned",
+   "activated_at": 212112000,
+   "active_at_pin": true,
+   "description": "enable direct vote state update"
+  },
+  {
+   "id": "Ffswd3egL3tccB6Rv3XY6oqfdzn913vUcjCSnpvCKpfx",
+   "class": "cleaned",
+   "activated_at": 222480020,
+   "active_at_pin": true,
+   "description": "better error codes for tx lamport check #33353"
+  },
+  {
+   "id": "Ftok2jhqAqxUWEiCVRrfRs9DPppWP8cgTB7NQNKL88mS",
+   "class": "cleaned",
+   "activated_at": 117072004,
+   "active_at_pin": true,
+   "description": "spl-token v3.3.0 release"
+  },
+  {
+   "id": "Ftok4njE8b7tDffYkC5bAbCaQv5sL6jispYrprzatUwN",
+   "class": "cleaned",
+   "activated_at": 144288004,
+   "active_at_pin": true,
+   "description": "SPL Token Program version 3.4.0 release #24740"
+  },
+  {
+   "id": "FuS3FPfJDKSNot99ECLXtp3rueq36hMNStJkPJwWodLh",
+   "class": "svm",
+   "activated_at": 311904000,
+   "active_at_pin": true,
+   "description": "SIMD-0137: Abort when elliptic curve syscalls invoked on invalid curve id"
+  },
+  {
+   "id": "G6vbf1UBok8MWb8m25ex86aoQHeKTzDKzuZADHkShqm6",
+   "class": "cleaned",
+   "activated_at": 231984004,
+   "active_at_pin": true,
+   "description": "add compute budget instruction for setting account data size per transaction #30366"
+  },
+  {
+   "id": "G74BkWBzmsByZ1kxHy44H3wjwp5hp7JbrGRuDpco22tY",
+   "class": "cleaned",
+   "activated_at": 202176000,
+   "active_at_pin": true,
+   "description": "fix root in vote state updates #27361"
+  },
+  {
+   "id": "GDH5TVdbTPUpRnXaRyQqiKUa7uZAbZ28Q2N9bhbKoMLm",
+   "class": "cleaned",
+   "activated_at": 312768000,
+   "active_at_pin": true,
+   "description": "loosen cpi size restrictions #26641"
+  },
+  {
+   "id": "GE7fRxmW46K6EmCD9AMZSbnaJ2e3LfqCZzdHi9hmYAgi",
+   "class": "cleaned",
+   "activated_at": 57888004,
+   "active_at_pin": true,
+   "description": "filter stake_delegation_accounts #14062"
+  },
+  {
+   "id": "GQALDaC48fEhZGWRj9iL5Q889emJKcj3aCvHF7VCbbF4",
+   "class": "cleaned",
+   "activated_at": 224208000,
+   "active_at_pin": true,
+   "description": "limit max instruction trace length #27939"
+  },
+  {
+   "id": "GTUMCZ8LTNxVfxdrw7ZsDFTxXb7TutYkzJnFwinpE6dg",
+   "class": "cleaned",
+   "activated_at": 167184008,
+   "active_at_pin": true,
+   "description": "disable the deprecated BPF loader"
+  },
+  {
+   "id": "GV49KKQdBNaiv2pgqhS2Dy3GWYJGXMTVYbYkdk91orRy",
+   "class": "cleaned",
+   "activated_at": 259200004,
+   "active_at_pin": true,
+   "description": "drops legacy shreds #34328"
+  },
+  {
+   "id": "GaBtBJvmS4Arjj5W1NmFcyvPjsHN38UGYDq2MDwbs9Qu",
+   "class": "cleaned",
+   "activated_at": 55728001,
+   "active_at_pin": true,
+   "description": "deprecate unused rewards sysvar"
+  },
+  {
+   "id": "Gea3ZkK2N4pHuVZVxWcnAtS6UEDdyumdYt4pFcKjA3ar",
+   "class": "cleaned",
+   "activated_at": 138240000,
+   "active_at_pin": true,
+   "description": "separate durable nonce and blockhash domains #25744"
+  },
+  {
+   "id": "GmC19j9qLn2RFk5NduX6QXaDhVpGncVVBzyM8e9WMz2F",
+   "class": "cleaned",
+   "activated_at": 207792008,
+   "active_at_pin": true,
+   "description": "check size when translating slices"
+  },
+  {
+   "id": "GmuBvtFb2aHfSfMXpuFeWZGHyDeCLPS79s48fmCWCfM5",
+   "class": "cleaned",
+   "activated_at": 228960012,
+   "active_at_pin": true,
+   "description": "delay visibility of program upgrades #30085"
+  },
+  {
+   "id": "GvDsGDkH5gyzwpDhxNixx8vtx1kwYHH13RiNAPw27zXb",
+   "class": "cleaned",
+   "activated_at": 66528004,
+   "active_at_pin": true,
+   "description": "warp timestamp again, adjust bounding to 25% fast 80% slow #15204"
+  },
+  {
+   "id": "GwtDQBghCTBgmX2cpEGNPxTEBUTQRaDMGTr5qychdGMj",
+   "class": "cleaned",
+   "activated_at": 244080000,
+   "active_at_pin": true,
+   "description": "reduce stake warmup cooldown from 25% to 9%"
+  },
+  {
+   "id": "Gx4XFcrVMt4HUvPzTpTSVkdDVgcDSjKhDN1RqRS6KDuZ",
+   "class": "cleaned",
+   "activated_at": 409968000,
+   "active_at_pin": true,
+   "description": "SIMD-0185: Vote State v4"
+  },
+  {
+   "id": "H3kBSaKdeiUsyHmeHqjJYNc27jesXZ6zWj3zWkowQbkV",
+   "class": "cleaned",
+   "activated_at": 152496000,
+   "active_at_pin": true,
+   "description": "fix owner for instructions sysvar"
+  },
+  {
+   "id": "H6iVbVaDZgDphcPbcZwc5LoznMPWQfnJ1AM7L1xzqvt5",
+   "class": "svm",
+   "activated_at": 403056000,
+   "active_at_pin": true,
+   "description": "SIMD-0339: Increase CPI Account Infos Limit"
+  },
+  {
+   "id": "HFpdDDNQjvcXnXKec697HDDsyk6tFoWS2o8fkxuhQZpL",
+   "class": "cleaned",
+   "activated_at": 110592000,
+   "active_at_pin": true,
+   "description": "remove delegations from stakes cache when inactive"
+  },
+  {
+   "id": "HH3MUYReL2BvqqA3oEcAa7txju5GY6G4nxJ51zvsEjEZ",
+   "class": "cleaned",
+   "activated_at": 156384000,
+   "active_at_pin": true,
+   "description": "preserve rent epoch for rent exempt accounts #26479"
+  },
+  {
+   "id": "HTTgmruMYRZEntyL3EdCDdnS6e4D5wRq1FA7kQsb66qq",
+   "class": "cleaned",
+   "activated_at": 117072004,
+   "active_at_pin": true,
+   "description": "remove support for the native loader"
+  },
+  {
+   "id": "HTW2pSyErTj4BV6KBM9NZ9VBUJVxt7sacNWcf76wtzb3",
+   "class": "svm",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "blake3 syscall"
+  },
+  {
+   "id": "HooKD5NC9QNxk25QuzCssB8ecrEzGt6eXEPBUxWp1LaR",
+   "class": "svm",
+   "activated_at": 282096004,
+   "active_at_pin": true,
+   "description": "SIMD-0047: Enable new sysvar last_restart_slot"
+  },
+  {
+   "id": "Hr1nUA9b7NJ6eChS26o7Vi8gYYDDwWD3YeBfzJkTbU86",
+   "class": "cleaned",
+   "activated_at": 217296000,
+   "active_at_pin": true,
+   "description": "Enable transaction to request heap frame using compute budget instruction #30076"
+  },
+  {
+   "id": "HxrEu1gXuH7iD3Puua1ohd5n4iUKJyFNtNxk9DVJkvgr",
+   "class": "cleaned",
+   "activated_at": 138240000,
+   "active_at_pin": true,
+   "description": "nonce must be authorized"
+  },
+  {
+   "id": "HyrbKftCdJ5CrUfEti6x26Cj7rZLNe32weugk7tLcWb8",
+   "class": "cleaned",
+   "activated_at": 150768000,
+   "active_at_pin": true,
+   "description": "syscalls use saturated math"
+  },
+  {
+   "id": "J2QdYx8crLbTVK8nur1jeLsmc3krDbfjoxoea2V1Uy5Q",
+   "class": "cleaned",
+   "activated_at": 141264004,
+   "active_at_pin": true,
+   "description": "Default max tx-wide compute units calculated per instruction"
+  },
+  {
+   "id": "J4HFT8usBxpcF63y46t1upYobJgChmKyZPm5uTBRg25Z",
+   "class": "cleaned",
+   "activated_at": 228960012,
+   "active_at_pin": true,
+   "description": "enable program redeployment cooldown #29135"
+  },
+  {
+   "id": "JAN1trEUEtZjgXYzNBYHU9DYd7GnThhXfFP7SzPXkPsG",
+   "class": "svm",
+   "activated_at": 208656004,
+   "active_at_pin": true,
+   "description": "disable fees sysvar"
+  },
+  {
+   "id": "JDn5q3GBeqzvUa7z67BbmVHVdE3EbUAjvFep3weR3jxX",
+   "class": "svm",
+   "activated_at": 274320000,
+   "active_at_pin": true,
+   "description": "SIMD-0129: simplify alt_bn128 syscall error codes"
+  },
+  {
+   "id": "JE86WkYvTrzW8HgNmrHY7dFYpCmSptUpKupbo2AdQ9cG",
+   "class": "cleaned",
+   "activated_at": 349488000,
+   "active_at_pin": true,
+   "description": "SIMD-0166: Enable deployment and execution of SBPFv1 programs"
+  },
+  {
+   "id": "LTDSzjZKFJMKHYpNycG1FrWwGGTaFFwqEFjB5GGLNVD",
+   "class": "svm",
+   "activated_at": 435456000,
+   "active_at_pin": true,
+   "description": "SIMD-0186 Amendment: Define fee-only semantics"
+  },
+  {
+   "id": "LTHasHQX6661DaDD4S6A2TFi6QBuiwXKv66fB1obfHq",
+   "class": "cleaned",
+   "activated_at": 347328000,
+   "active_at_pin": true,
+   "description": "SIMD-0215: enables lattice-based accounts hash"
+  },
+  {
+   "id": "LTdLt9Ycbyoipz5fLysCi1NnDnASsZfmJLJXts5ZxZz",
+   "class": "cleaned",
+   "activated_at": 348624000,
+   "active_at_pin": true,
+   "description": "SIMD-0223: removes accounts delta hash"
+  },
+  {
+   "id": "LTsNAP8h1voEVVToMNBNqoiNQex4aqfUrbFhRH3mSQ2",
+   "class": "cleaned",
+   "activated_at": 353376000,
+   "active_at_pin": true,
+   "description": "SIMD-0220: snapshots use lattice-based accounts hash"
+  },
+  {
+   "id": "LoaderV4WasAbandoned11111111111111111111111",
+   "class": "cleaned",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "SIMD-0167: Enable Loader-v4"
+  },
+  {
+   "id": "P1BCUMpAC7V2GRBRiJCNUgpMyWZhoqt3LKo712ePqsz",
+   "class": "bank",
+   "activated_at": 435888000,
+   "active_at_pin": true,
+   "description": "SIMD-0286: Raise block limit to 100M"
+  },
+  {
+   "id": "PERzQrt5gBD1XEe2c9XdFWqwgHY3mr7cYWbm5V772V8",
+   "class": "cleaned",
+   "activated_at": 305424000,
+   "active_at_pin": true,
+   "description": "SIMD-0118: replaces enable_partitioned_epoch_reward to enable partitioned rewards at epoch boundary"
+  },
+  {
+   "id": "PaymEPK2oqwT9TXAVfadjztH2H6KfLEB9Hhd5Q5frvP",
+   "class": "cleaned",
+   "activated_at": 327024000,
+   "active_at_pin": true,
+   "description": "SIMD-0082: Enable fees for some additional transaction failures"
+  },
+  {
+   "id": "RENtePQcDLrAbxAsP3k8dwVcnNYQ466hi2uKvALjnXx",
+   "class": "cleaned",
+   "activated_at": 346032000,
+   "active_at_pin": true,
+   "description": "SIMD-0267: Sets rent_epoch to a constant in the VM"
+  },
+  {
+   "id": "RfEcA95xnhuwooVAhUUksEJLZBF7xKCLuqrJoqk4Zph",
+   "class": "cleaned",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "vote only on retransmitter signed fec sets"
+  },
+  {
+   "id": "SAdVFw3RZvzbo6DvySbSdBnHN4gkzSTH9dSxesyKKPj",
+   "class": "cleaned",
+   "activated_at": 104112000,
+   "active_at_pin": true,
+   "description": "Enable advancing credits observed for activation epoch #19309"
+  },
+  {
+   "id": "STk5Xj8hdAx3sTzmtJ3QysKkq6X2A3yj73JtxttiRyk",
+   "class": "bank",
+   "activated_at": 427248000,
+   "active_at_pin": true,
+   "description": "SIMD-0490: Upgrade BPF Stake Program to v5.0.0"
+  },
+  {
+   "id": "SVn36yVApPLYsa8koK3qUcy14zXDnqkNYWyUh1f4oK1",
+   "class": "cleaned",
+   "activated_at": 225504004,
+   "active_at_pin": true,
+   "description": "ignore slot when calculating an account hash #28420"
+  },
+  {
+   "id": "St8k9dVXP97xT6faW24YmRSYConLbhsMJA4TJTBLmMT",
+   "class": "cleaned",
+   "activated_at": 199584000,
+   "active_at_pin": true,
+   "description": "add GetMinimumDelegation instruction to stake program"
+  },
+  {
+   "id": "TestFeature11111111111111111111111111111111",
+   "class": "svm",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "SIMD-0161: Disables execution of SBPFv0 programs"
+  },
+  {
+   "id": "TestFeature21111111111111111111111111111111",
+   "class": "svm",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "Re-enables execution of SBPFv0 programs"
+  },
+  {
+   "id": "VAT9huvhPjRN9cyrPytq9rwvEJ3J4ADtjdncgZRyANJ",
+   "class": "cleaned",
+   "activated_at": 434592000,
+   "active_at_pin": true,
+   "description": "SIMD-0357: Alpenglow VAT implementation"
+  },
+  {
+   "id": "Vo5siZ442SaZBKPXNocthiXysNviW4UYPwRFggmbgAp",
+   "class": "cleaned",
+   "activated_at": 171072012,
+   "active_at_pin": true,
+   "description": "fixes Bank::transaction_count to include all committed transactions, not just successful ones"
+  },
+  {
+   "id": "VoteAccount1nitia1izeV211111111111111111111",
+   "class": "svm",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "SIMD-0464: Vote Account Initialize V2"
+  },
+  {
+   "id": "YbbRLkvenrocjGPGyoQE4wjnvYzTgfsk38NFmcYK7a5",
+   "class": "svm",
+   "activated_at": 432864000,
+   "active_at_pin": true,
+   "description": "SIMD-0431: Loader V3 minimum extend program size"
+  },
+  {
+   "id": "b1sgUiJ3qu7hYm3tNDyyqZNQd6gLGJmJppnLNa93PCQ",
+   "class": "svm",
+   "activated_at": 425952004,
+   "active_at_pin": true,
+   "description": "SIMD-0388: BLS12-381 syscalls"
+  },
+  {
+   "id": "bn1hKNURMGQaQoEVxahcEAcqiX3NwRs6hgKKNSLeKxH",
+   "class": "svm",
+   "activated_at": 425520000,
+   "active_at_pin": true,
+   "description": "SIMD-0302: Add alt_bn128 G2 syscalls"
+  },
+  {
+   "id": "bn2oPgpkzQPT3tohMaAsMVGjhDmmDa4jCaVPqCFmtxM",
+   "class": "svm",
+   "activated_at": 425088000,
+   "active_at_pin": true,
+   "description": "SIMD-0284: Add little-endian compatibility for alt_bn128"
+  },
+  {
+   "id": "bn2puAyxUx6JUabAxYdKdJ5QHbNNmKw8dCGuGCyRrFN",
+   "class": "svm",
+   "activated_at": 361152000,
+   "active_at_pin": true,
+   "description": "SIMD-0222: fix alt_bn128 multiplication input length #3686"
+  },
+  {
+   "id": "bnYzodLwmybj7e1HAe98yZrdJTd7we69eMMLgCXqKZm",
+   "class": "svm",
+   "activated_at": 406944000,
+   "active_at_pin": true,
+   "description": "SIMD-0334: Fix alt_bn128_pairing length check"
+  },
+  {
+   "id": "chaie9S2zVfuxJKNRGkyTDokLwWxx6kD2ZLsqQHaDD8",
+   "class": "cleaned",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "generate duplicate proofs for chained merkle root conflicts"
+  },
+  {
+   "id": "decoMktMcnmiq6t3u7g5BfgcQu91nKZr6RvMYf9z1Jb",
+   "class": "cleaned",
+   "activated_at": 304128000,
+   "active_at_pin": true,
+   "description": "Allow commission decrease at any time in epoch #33843"
+  },
+  {
+   "id": "depVvnQ2UysGrhwdiwU42tCadZL8GcBb1i2GYhMopQv",
+   "class": "svm",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "Deprecate legacy vote instructions"
+  },
+  {
+   "id": "disCA4efguFL6Wqa4pGdG7jpjC7C5uiKzKnhEBqchBe",
+   "class": "cleaned",
+   "activated_at": 434160000,
+   "active_at_pin": true,
+   "description": "SIMD-0337: Markers for Alpenglow Fast Leader Handover, DATA_COMPLETE_SHRED placement rules"
+  },
+  {
+   "id": "dupPajaLy2SSn8ko42aZz4mHANDNrLe8Nw8VQgFecLa",
+   "class": "cleaned",
+   "activated_at": 260496000,
+   "active_at_pin": true,
+   "description": "generate duplicate proofs for index and erasure conflicts #34360"
+  },
+  {
+   "id": "eca6zf6JJRjQsYYPkBHF3N32MTzur4n2WL4QiiacPCL",
+   "class": "cleaned",
+   "activated_at": 262224008,
+   "active_at_pin": true,
+   "description": "restrict curve25519 multiscalar multiplication vector lengths #34763"
+  },
+  {
+   "id": "ed9tNscbWLYBooxWA7FE2B5KHWs8A6sxfY8EzezEcoo",
+   "class": "cleaned",
+   "activated_at": 308448000,
+   "active_at_pin": true,
+   "description": "SIMD-0152: Use strict verification in ed25519 precompile"
+  },
+  {
+   "id": "expH2ppKPW2ANEdEmAjfhSEcnBQJfmoX4FjuNpe9ttg",
+   "class": "svm",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "SIMD-0529: big_integer mod_exp syscall"
+  },
+  {
+   "id": "ffecLRhhakKSGhMuc6Fz2Lnfq4uT9q3iu9ZsNaPLxPc",
+   "class": "cleaned",
+   "activated_at": 332208000,
+   "active_at_pin": true,
+   "description": "vote only full fec sets"
+  },
+  {
+   "id": "fixfecLZYMfkGzwq6NJA11Yw6KYztzXiK9QcL3K78in",
+   "class": "cleaned",
+   "activated_at": 403920000,
+   "active_at_pin": true,
+   "description": "SIMD-0317: Enforce 32 data + 32 coding shreds"
+  },
+  {
+   "id": "htsptAwi2yRoZH83SKaUXykeZGtZHgxkS2QwW1pssR8",
+   "class": "cleaned",
+   "activated_at": 379296000,
+   "active_at_pin": true,
+   "description": "SIMD-0306: Raise account CU limit to 40% max"
+  },
+  {
+   "id": "iBRL5RuWhw4yqaAZu96RUULHckHTZAoe2b77qaV38JZ",
+   "class": "cleaned",
+   "activated_at": 440208000,
+   "active_at_pin": true,
+   "description": "SIMD-0525: Reduce slot time to 350ms"
+  },
+  {
+   "id": "iBRLL3k18HST852F1Mf3Lv83waTNQmmqvKDxvYGwQFL",
+   "class": "cleaned",
+   "activated_at": 441936000,
+   "active_at_pin": false,
+   "description": "SIMD-0525: Reduce slot time to 300ms"
+  },
+  {
+   "id": "iBRLMc81UjRa8fn8A6eE8bJTnRbgQoPTynM51akENCV",
+   "class": "cleaned",
+   "activated_at": 447552000,
+   "active_at_pin": false,
+   "description": "SIMD-0525: Reduce slot time to 250ms"
+  },
+  {
+   "id": "iBRLjhJnkmDZgNoZRDMW11d8ZV7HvsL3vAyRjZB5npW",
+   "class": "cleaned",
+   "activated_at": 454464000,
+   "active_at_pin": false,
+   "description": "SIMD-0525: Reduce slot time to 200ms"
+  },
+  {
+   "id": "meRgp4ArRPhD3KtCY9c5yAf2med7mBLsjKTPeVUHqBL",
+   "class": "cleaned",
+   "activated_at": 104112000,
+   "active_at_pin": true,
+   "description": "allow merging active stakes with unmatched credits_observed #18985"
+  },
+  {
+   "id": "mrkPjRg79B2oK2ZLgd7S3AfEJaX9B6gAF3H9aEykRUS",
+   "class": "cleaned",
+   "activated_at": 283824004,
+   "active_at_pin": true,
+   "description": "generate duplicate proofs for merkle root conflicts #34270"
+  },
+  {
+   "id": "nWBqjr3gpETbiaVj3CBJ3HFC5TMdnJDGt21hnvSTvVZ",
+   "class": "cleaned",
+   "activated_at": 142560008,
+   "active_at_pin": true,
+   "description": "check physical overlapping regions"
+  },
+  {
+   "id": "noRuG2kzACwgaY7TVmLRnUNPLKNVQE1fb7X55YWBehp",
+   "class": "cleaned",
+   "activated_at": 210384016,
+   "active_at_pin": true,
+   "description": "validator commission updates are only allowed in the first half of an epoch #29362"
+  },
+  {
+   "id": "poUdAqRXXsNmfqAZ6UqpjbeYgwBygbfQLEvWSqVhSnb",
+   "class": "svm",
+   "activated_at": 406080000,
+   "active_at_pin": true,
+   "description": "SIMD-0359: Enforce padding in Poseidon hash inputs"
+  },
+  {
+   "id": "prpFrMtgNmzaNzkPJg9o753fVvbHKqNrNTm76foJ2wm",
+   "class": "cleaned",
+   "activated_at": 258336004,
+   "active_at_pin": true,
+   "description": "validate fee collector account #33888"
+  },
+  {
+   "id": "ptokFjwyJtrwCa9Kgo9xoDS59V4QccBGEaRFnRPnSdP",
+   "class": "cleaned",
+   "activated_at": 419472000,
+   "active_at_pin": true,
+   "description": "SIMD-0266: Efficient Token program"
+  },
+  {
+   "id": "ptr9umikaeAS7ZBBp2fsfRhie16F1V2jCKA2y6gXNAK",
+   "class": "svm",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "SIMD-0449: Direct Account Pointers in Program Input"
+  },
+  {
+   "id": "rent6iVy6PDoViPBeJ6k5EJQrkj62h7DPyLbWGHwjrC",
+   "class": "bank",
+   "activated_at": 407376000,
+   "active_at_pin": true,
+   "description": "SIMD-0194: Deprecate rent exemption threshold"
+  },
+  {
+   "id": "rexav5eNTUSNT1K2N7cfRjnthwhcP5BC25v2tA4rW4h",
+   "class": "bank",
+   "activated_at": 412992000,
+   "active_at_pin": true,
+   "description": "SIMD-0444: Relax program data account check in migration"
+  },
+  {
+   "id": "rnt8ZQpz2HYhX3DkYBDGjJS1a36mYq69oXka7JrhEdi",
+   "class": "cleaned",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "SIMD-0438: Reset lamports per byte to legacy value of 6960"
+  },
+  {
+   "id": "rntCigrTppP5JdZz7K8TyN9sMzLdAcXp8SejYpVpX6D",
+   "class": "bank",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "SIMD-0437-3: Set lamports per byte to 2575"
+  },
+  {
+   "id": "rntD7invRBswCAdKtRsh1G4psKjrPdS3BKqtnA78C7N",
+   "class": "bank",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "SIMD-0437-4: Set lamports per byte to 1322"
+  },
+  {
+   "id": "rntTjNZ9boq8owDxjGVFHPfWNQPDaKiM5JcjxmDGg47",
+   "class": "cleaned",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "SIMD-0437-5: Set lamports per byte to 696"
+  },
+  {
+   "id": "s512oDwgx8hjMnaQjXfqqrZroVj4HvC6TkN3iSSWXCh",
+   "class": "svm",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "SIMD-0512: SHA512 Syscall"
+  },
+  {
+   "id": "s51VGwCAgebo2745DSUris72RavoLkXGUmVJosESCXr",
+   "class": "bank",
+   "activated_at": 443232000,
+   "active_at_pin": false,
+   "description": "SIMD-0391: Upgrade BPF Stake Program to v5.1.0 (fixed-point warmup/cooldown)"
+  },
+  {
+   "id": "sTKz343FM8mqtyGvYWvbLpTThw3ixRM4Xk8QvZ985mw",
+   "class": "cleaned",
+   "activated_at": 200016004,
+   "active_at_pin": true,
+   "description": "Allow zero-lamport undelegated amount for initialized stakes #24670"
+  },
+  {
+   "id": "srremy31J5Y25FrAApwVb9kZcfXbusYMMsvTK9aWv5q",
+   "class": "cleaned",
+   "activated_at": 345600000,
+   "active_at_pin": true,
+   "description": "SIMD-0075: Enable secp256r1 precompile"
+  },
+  {
+   "id": "tSynMCspg4xFiCj1v3TDb4c7crMR5tSBhLz4sF7rrNA",
+   "class": "cleaned",
+   "activated_at": 323568000,
+   "active_at_pin": true,
+   "description": "Enable tower sync vote instruction"
+  },
+  {
+   "id": "turbRpTzBzDU6PJmWvRTbcJXXGxUs19CvQamUrRD9bN",
+   "class": "cleaned",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "enable turbine extended fanout experiments #"
+  },
+  {
+   "id": "turbnbNRp22nwZCmgVVXFSshz7H7V23zMzQgA46YpmQ",
+   "class": "cleaned",
+   "activated_at": 380160000,
+   "active_at_pin": true,
+   "description": "disable turbine fanout experiments #29393"
+  },
+  {
+   "id": "tvcF6b1TRz353zKuhBjinZkKzjmihXmBAHJdjNYw1sQ",
+   "class": "cleaned",
+   "activated_at": 303696000,
+   "active_at_pin": true,
+   "description": "use timeliness of votes in determining credits to award"
+  },
+  {
+   "id": "txv1aq4pp281K9um3tnPgkfX8UqtFT6wcVW3hNezGLL",
+   "class": "bank",
+   "activated_at": 447120000,
+   "active_at_pin": false,
+   "description": "SIMD-0385: Transaction V1"
+  },
+  {
+   "id": "vcmrbYbiMVKaq1snKP6eCacNDcr6qZvpCNUjmk6gxvZ",
+   "class": "cleaned",
+   "activated_at": 428544000,
+   "active_at_pin": true,
+   "description": "SIMD-0340: Validate chained block ID"
+  },
+  {
+   "id": "vcmrw431aNM8ngQ46derkZXipoTGQdbHkEygBDh12dA",
+   "class": "cleaned",
+   "activated_at": 428544000,
+   "active_at_pin": true,
+   "description": "SIMD-340: Encompassing check for validate chained block ID"
+  },
+  {
+   "id": "wLckV1a64ngtcKPRGU4S4grVTestXjmNjxBjaKZrAcn",
+   "class": "cleaned",
+   "activated_at": 312336000,
+   "active_at_pin": true,
+   "description": "cost model uses number of requested write locks #34819"
+  },
+  {
+   "id": "zk1snxsc6Fh3wsGNbbHAJNHiJoYgF29mMnTSusGx5EJ",
+   "class": "cleaned",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "enable Zk Token proof program and syscalls"
+  },
+  {
+   "id": "zkNLP7EQALfC1TYeB3biDU7akDckj8iPkvh9y2Mt2K3",
+   "class": "cleaned",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "enable Zk Token proof program transfer with fee"
+  },
+  {
+   "id": "zkdoVwnSFnSLtGJG7irJPEYUpmb4i7sGMGcnN6T9rnC",
+   "class": "svm",
+   "activated_at": 347760000,
+   "active_at_pin": true,
+   "description": "Disables zk-elgamal-proof program"
+  },
+  {
+   "id": "zkexuyPRdyTVbZqEAREueqL2xvvoBhRgth9xGSc1tMN",
+   "class": "svm",
+   "activated_at": 424224000,
+   "active_at_pin": true,
+   "description": "Re-enables zk-elgamal-proof program"
+  },
+  {
+   "id": "zkhiy5oLowR7HY4zogXjCjeMXyruLqBwSWH21qcFtnv",
+   "class": "cleaned",
+   "activated_at": 315792000,
+   "active_at_pin": true,
+   "description": "SIMD-0153: Enable ZkElGamalProof program"
+  },
+  {
+   "id": "zkiTNuzBKxrCLMKehzuQeKZyLtX2yvFcEKMML8nExU8",
+   "class": "cleaned",
+   "activated_at": null,
+   "active_at_pin": false,
+   "description": "Enable zk token proof program to read proof from accounts instead of instruction data #34750"
+  }
+ ]
+}

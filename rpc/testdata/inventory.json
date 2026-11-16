@@ -1,0 +1,431 @@
+{
+ "agave": "4.3.0",
+ "methods": [
+  {
+   "name": "getBalance",
+   "set": "minimal",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "getEpochInfo",
+   "set": "minimal",
+   "required": 0,
+   "total": 1
+  },
+  {
+   "name": "getGenesisHash",
+   "set": "minimal",
+   "required": 0,
+   "total": 0
+  },
+  {
+   "name": "getHealth",
+   "set": "minimal",
+   "required": 0,
+   "total": 0
+  },
+  {
+   "name": "getIdentity",
+   "set": "minimal",
+   "required": 0,
+   "total": 0
+  },
+  {
+   "name": "getSlot",
+   "set": "minimal",
+   "required": 0,
+   "total": 1
+  },
+  {
+   "name": "getBlockHeight",
+   "set": "minimal",
+   "required": 0,
+   "total": 1
+  },
+  {
+   "name": "getHighestSnapshotSlot",
+   "set": "minimal",
+   "required": 0,
+   "total": 0
+  },
+  {
+   "name": "getTransactionCount",
+   "set": "minimal",
+   "required": 0,
+   "total": 1
+  },
+  {
+   "name": "getVersion",
+   "set": "minimal",
+   "required": 0,
+   "total": 0
+  },
+  {
+   "name": "getVoteAccounts",
+   "set": "minimal",
+   "required": 0,
+   "total": 1
+  },
+  {
+   "name": "getLeaderSchedule",
+   "set": "minimal",
+   "required": 0,
+   "total": 2
+  },
+  {
+   "name": "getMinimumBalanceForRentExemption",
+   "set": "bank",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "getInflationGovernor",
+   "set": "bank",
+   "required": 0,
+   "total": 1
+  },
+  {
+   "name": "getInflationRate",
+   "set": "bank",
+   "required": 0,
+   "total": 0
+  },
+  {
+   "name": "getEpochSchedule",
+   "set": "bank",
+   "required": 0,
+   "total": 0
+  },
+  {
+   "name": "getSlotLeader",
+   "set": "bank",
+   "required": 0,
+   "total": 1
+  },
+  {
+   "name": "getSlotLeaders",
+   "set": "bank",
+   "required": 2,
+   "total": 2
+  },
+  {
+   "name": "getAgGenesisCert",
+   "set": "bank",
+   "required": 0,
+   "total": 0
+  },
+  {
+   "name": "getBlockProduction",
+   "set": "bank",
+   "required": 0,
+   "total": 1
+  },
+  {
+   "name": "getAccountInfo",
+   "set": "accounts",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "getMultipleAccounts",
+   "set": "accounts",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "getBlockCommitment",
+   "set": "accounts",
+   "required": 1,
+   "total": 1
+  },
+  {
+   "name": "getTokenAccountBalance",
+   "set": "accounts",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "getTokenSupply",
+   "set": "accounts",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "getProgramAccounts",
+   "set": "accounts-scan",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "getLargestAccounts",
+   "set": "accounts-scan",
+   "required": 0,
+   "total": 1
+  },
+  {
+   "name": "getSupply",
+   "set": "accounts-scan",
+   "required": 0,
+   "total": 1
+  },
+  {
+   "name": "getTokenLargestAccounts",
+   "set": "accounts-scan",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "getTokenAccountsByOwner",
+   "set": "accounts-scan",
+   "required": 2,
+   "total": 3
+  },
+  {
+   "name": "getTokenAccountsByDelegate",
+   "set": "accounts-scan",
+   "required": 2,
+   "total": 3
+  },
+  {
+   "name": "getInflationReward",
+   "set": "full",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "getClusterNodes",
+   "set": "full",
+   "required": 0,
+   "total": 0
+  },
+  {
+   "name": "getRecentPerformanceSamples",
+   "set": "full",
+   "required": 0,
+   "total": 1
+  },
+  {
+   "name": "getSignatureStatuses",
+   "set": "full",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "getMaxRetransmitSlot",
+   "set": "full",
+   "required": 0,
+   "total": 0
+  },
+  {
+   "name": "getMaxShredInsertSlot",
+   "set": "full",
+   "required": 0,
+   "total": 0
+  },
+  {
+   "name": "requestAirdrop",
+   "set": "full",
+   "required": 2,
+   "total": 3
+  },
+  {
+   "name": "sendTransaction",
+   "set": "full",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "simulateTransaction",
+   "set": "full",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "minimumLedgerSlot",
+   "set": "full",
+   "required": 0,
+   "total": 0
+  },
+  {
+   "name": "getBlock",
+   "set": "full",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "getBlockTime",
+   "set": "full",
+   "required": 1,
+   "total": 1
+  },
+  {
+   "name": "getBlocks",
+   "set": "full",
+   "required": 1,
+   "total": 3
+  },
+  {
+   "name": "getBlocksWithLimit",
+   "set": "full",
+   "required": 2,
+   "total": 3
+  },
+  {
+   "name": "getTransaction",
+   "set": "full",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "getSignaturesForAddress",
+   "set": "full",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "getFirstAvailableBlock",
+   "set": "full",
+   "required": 0,
+   "total": 0
+  },
+  {
+   "name": "getLatestBlockhash",
+   "set": "full",
+   "required": 0,
+   "total": 1
+  },
+  {
+   "name": "isBlockhashValid",
+   "set": "full",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "getFeeForMessage",
+   "set": "full",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "getStakeMinimumDelegation",
+   "set": "full",
+   "required": 0,
+   "total": 1
+  },
+  {
+   "name": "getRecentPrioritizationFees",
+   "set": "full",
+   "required": 0,
+   "total": 1
+  }
+ ],
+ "subscriptions": [
+  "accountSubscribe",
+  "blockSubscribe",
+  "logsSubscribe",
+  "programSubscribe",
+  "rootSubscribe",
+  "signatureSubscribe",
+  "slotSubscribe",
+  "slotsUpdatesSubscribe",
+  "voteSubscribe"
+ ],
+ "websocket": [
+  {
+   "name": "accountSubscribe",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "accountUnsubscribe",
+   "required": 1,
+   "total": 1
+  },
+  {
+   "name": "programSubscribe",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "programUnsubscribe",
+   "required": 1,
+   "total": 1
+  },
+  {
+   "name": "logsSubscribe",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "logsUnsubscribe",
+   "required": 1,
+   "total": 1
+  },
+  {
+   "name": "signatureSubscribe",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "signatureUnsubscribe",
+   "required": 1,
+   "total": 1
+  },
+  {
+   "name": "slotSubscribe",
+   "required": 0,
+   "total": 0
+  },
+  {
+   "name": "slotUnsubscribe",
+   "required": 1,
+   "total": 1
+  },
+  {
+   "name": "slotsUpdatesSubscribe",
+   "required": 0,
+   "total": 0
+  },
+  {
+   "name": "slotsUpdatesUnsubscribe",
+   "required": 1,
+   "total": 1
+  },
+  {
+   "name": "blockSubscribe",
+   "required": 1,
+   "total": 2
+  },
+  {
+   "name": "blockUnsubscribe",
+   "required": 1,
+   "total": 1
+  },
+  {
+   "name": "voteSubscribe",
+   "required": 0,
+   "total": 0
+  },
+  {
+   "name": "voteUnsubscribe",
+   "required": 1,
+   "total": 1
+  },
+  {
+   "name": "rootSubscribe",
+   "required": 0,
+   "total": 0
+  },
+  {
+   "name": "rootUnsubscribe",
+   "required": 1,
+   "total": 1
+  },
+  {
+   "name": "getVersion",
+   "required": 0,
+   "total": 0
+  }
+ ]
+}

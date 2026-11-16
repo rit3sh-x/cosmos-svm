@@ -1,0 +1,115 @@
+[package]
+name = "svm-engine"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "The SVM engine, the static library svmd links through cgo"
+license = "Apache-2.0"
+
+[build-dependencies]
+# build.rs computes the digest. sha2 is already in the lockfile, resolved for
+# solana-svm's own tree.
+sha2 = "=0.10.9"
+
+[lib]
+name = "svm_engine"
+crate-type = ["staticlib"]
+
+[dependencies]
+# The crate also compiles the digest module, so a test can recompute the
+# digest from the tree and compare it with the constant.
+sha2 = "=0.10.9"
+# solana-svm pins solana-program-runtime =4.3.0, which pins solana-sbpf =0.23.0
+# with features = ["jit"]. Upstream sets the sbpf version, not this crate.
+# All of solana-svm is behind `#![cfg(feature = "agave-unstable-api")]`.
+solana-svm = { version = "=4.3.0", features = ["agave-unstable-api"] }
+solana-sbpf = "=0.23.0"
+# A crate that Anza's tree does not resolve needs a reason, written here.
+# Two have one. `rayon` runs parallel execution, and this crate is its only
+# reverse dependency in the lockfile. `serde_json` renders the
+# TransactionError, so Go needs no table of 37 transaction errors and about
+# 50 instruction errors that would drift on each version bump.
+bincode = "=1.3.3"
+# The signature-result key is BLAKE3 of the exact signed transaction bytes.
+# Cargo.lock already has this version, for the message hash that
+# `solana-message` computes. This pins what was there.
+blake3 = "=1.8.6"
+rayon = "1"
+# The transaction wire format. Agave serialises entries with wincode, and its
+# RPC decodes with it. `verify_transaction_with_serialized_message` sizes a
+# transaction with `wincode::serialized_size`. V1 has no bincode encoding.
+# `solana-message` serialises it under serde, in a shape its own comment marks
+# as "not the wire format per SIMD-0385". wincode is already in Cargo.lock. It
+# is resolved for the crates with the `wincode` feature, which this crate turns
+# on through `solana-transaction/verify`.
+wincode = "=0.6.1"
+solana-account = "=4.5.0"
+solana-pubkey = "=4.3.0"
+solana-address-lookup-table-interface = { version = "=3.2.0", features = ["bincode", "bytemuck"] }
+solana-address = "=2.7.0"
+solana-message = { version = "=4.5.0", features = ["serde"] }
+# Instruction and AccountMeta, which the conformance harness's InstrContext
+# takes. Already in solana-svm's tree. This pins the resolved version.
+solana-instruction = "=3.5.0"
+# The two program-account layouts the block's text budget reads: the upgradeable
+# loader's 45-byte programdata metadata and loader v4's 48-byte state. Both are
+# already in Cargo.lock, resolved for solana-bpf-loader-program.
+solana-loader-v3-interface = { version = "=7.0.0", features = ["bincode"] }
+solana-loader-v4-interface = "=3.1.0"
+solana-svm-timings = "=4.3.0"
+solana-transaction = { version = "=4.2.0", features = ["serde", "verify"] }
+
+# Execution. The builtin table copies solana-builtins by hand. The check result
+# comes from Agave's replay path (RuntimeTransaction plus solana-fee), not from
+# a reimplementation. None of these is a validator crate.
+agave-feature-set = { version = "=4.3.0", features = ["agave-unstable-api"] }
+# The three signature verifiers. This is Anza's crate, not a port. Its ed25519
+# verifier calls `verify_strict` on `ed25519-dalek` pinned at =1.0.1. A
+# reimplementation of that accept-and-reject boundary on a modern crate would
+# diverge in consensus. Its `agave-feature-set` dependency is the =4.3.0 above,
+# so the version unifies.
+agave-precompiles = { version = "=4.3.0", features = ["agave-unstable-api"] }
+agave-reserved-account-keys = { version = "=4.3.0", features = ["agave-unstable-api"] }
+solana-bpf-loader-program = { version = "=4.3.0", features = ["agave-unstable-api"] }
+solana-bincode = "=3.1.0"
+solana-slot-hashes = { version = "=3.2.0", features = ["serde"] }
+solana-clock = "=3.2.0"
+solana-compute-budget = { version = "=4.3.0", features = ["agave-unstable-api"] }
+solana-compute-budget-program = { version = "=4.3.0", features = ["agave-unstable-api"] }
+solana-fee = { version = "=4.3.0", features = ["agave-unstable-api"] }
+solana-hash = "=4.6.0"
+solana-nonce = "=3.3.0"
+solana-nonce-account = "=4.3.0"
+solana-program-runtime = { version = "=4.3.0", features = ["agave-unstable-api"] }
+# The ZK ElGamal proof program. The engine registers it unconditionally. Its
+# Agave feature gate is class `cleaned`, so this chain never reads the gate.
+# Genesis declares the program enabled from block zero.
+solana-zk-elgamal-proof-program = { version = "=4.3.0", features = ["agave-unstable-api"] }
+# The error type the precompile callback returns. Already in the lockfile,
+# resolved for agave-precompiles and solana-svm. This pins that version.
+solana-precompile-error = "=3.0.0"
+solana-rent = "=4.4.0"
+solana-runtime-transaction = { version = "=4.3.0", features = ["agave-unstable-api"] }
+solana-sdk-ids = "=3.1.0"
+solana-svm-callback = "=4.3.0"
+solana-svm-feature-set = "=4.3.0"
+solana-svm-transaction = "=5.0.0"
+solana-syscalls = { version = "=4.3.0", features = ["agave-unstable-api"] }
+solana-system-interface = { version = "=3.3.0", features = ["bincode"] }
+solana-system-program = { version = "=4.3.0", features = ["agave-unstable-api"] }
+solana-transaction-context = { version = "=4.3.0", features = ["agave-unstable-api"] }
+solana-transaction-error = { version = "=3.4.0", features = ["serde"] }
+# The nested enum inside TransactionError, named by the renderer test.
+solana-instruction-error = "=2.5.0"
+# The rendered TransactionError the RPC serves. Only Anza's derive defines the
+# shape of `err`. The engine renders it, and Go forwards the bytes without
+# knowing a variant name. serde_json and the crates it needs were already in
+# the lockfile, resolved for solana-zk-elgamal-proof-program, so the graph does
+# not grow.
+serde_json = "=1.0.151"
+
+[dev-dependencies]
+# The differential conformance oracle. `dev-context-only-utils` exposes
+# `solana_svm::conformance`, Anza's own harness at the version the engine
+# ships. The oracle and the engine are one build, not two.
+solana-svm = { version = "=4.3.0", features = ["agave-unstable-api", "dev-context-only-utils"] }

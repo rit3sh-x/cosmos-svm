@@ -1,0 +1,47 @@
+{
+  "note": "make fetch-programs downloads each program from url into programs/ and refuses any file whose sha256 is not the pin. spl_token, token-2022 and kamino-lend are the builds mainnet runs. The others are the newest build each project publishes, not mainnet's. Ordered by size.",
+  "programs": [
+    {
+      "name": "spl_token",
+      "sha256": "8190d3f7ceb6cb7a7a8d8924bff89f9f611e15ce1f806f2b6237f3311a98f697",
+      "bytes": 108600,
+      "url": "https://github.com/solana-program/token/releases/download/p-token%40v1.0.0/spl_p_token.so"
+    },
+    {
+      "name": "serum-v3",
+      "sha256": "ad0b3f3bd078fb51b6a5296679d91ac4485e80707fb204685946d2d62e500323",
+      "bytes": 276200,
+      "url": "https://github.com/project-serum/serum-dex/releases/download/v0.4.0/serum_dex.so"
+    },
+    {
+      "name": "token-2022",
+      "sha256": "9bbf90b30e06778ca0feca100b29f0eeb9be576ae024f6323cc207308f51a5d1",
+      "bytes": 632560,
+      "url": "https://github.com/solana-program/token-2022/releases/download/program%40v11.0.0/spl_token_2022-11.0.0.so"
+    },
+    {
+      "name": "openbook-v2",
+      "sha256": "4318c0f1b6994e2d151c1badcd7ac1c93027d9a4470f99b8ad8ad7f440c1eb55",
+      "bytes": 814904,
+      "url": "https://github.com/openbook-dex/openbook-v2/releases/download/v0.2.10/openbook_v2-v0.2.10.so"
+    },
+    {
+      "name": "kamino-lend",
+      "sha256": "ac5a94790923b0a8cccb981e6f20b5bbb4a67ae35490b685db3009b144771009",
+      "bytes": 2431968,
+      "url": "https://github.com/Kamino-Finance/klend/releases/download/release/v1.25.0/kamino_lending.so"
+    },
+    {
+      "name": "mango-v4",
+      "sha256": "c9fe0bd68ab0d02386d71883a597534f1d0e469f56b53d3c5ffd72dafc764cae",
+      "bytes": 3547928,
+      "url": "https://github.com/blockworks-foundation/mango-v4/releases/download/program-v0.24.3/mango_v4.so"
+    },
+    {
+      "name": "drift-v2",
+      "sha256": "133102d333d70933f02e9ae1d3e96407c54f2c89ccd79017bfb016c4c404d906",
+      "bytes": 4664760,
+      "url": "https://github.com/velocity-exchange/protocol-v2/releases/download/v2.97.0/drift.so"
+    }
+  ]
+}

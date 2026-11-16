@@ -1,0 +1,83 @@
+# Hermes 1.13.1, relaying between this chain and one counterparty. Hermes runs
+# next to a full node of your own that is not a validator, the relayer's node.
+# Set that node's pruning-keep-recent to clear_interval below. The relayer's
+# key on this chain must be an operator's key, because only an operator holds
+# the usvm that the fee floor asks for.
+#
+# The counterparty's entry is a template. Fill it from that chain's own
+# documentation. rpc/accept/ibc.sh proves this file, with the test chain's
+# ports replaced by the shipped ones.
+#
+#   hermes --config /etc/hermes/config.toml keys add --chain <this chain id> --mnemonic-file /etc/hermes/relayer.mnemonic
+#   hermes --config /etc/hermes/config.toml start
+
+[global]
+log_level = 'info'
+
+[mode.clients]
+enabled = true
+refresh = true
+misbehaviour = false
+
+[mode.connections]
+enabled = false
+
+[mode.channels]
+enabled = false
+
+[mode.packets]
+enabled = true
+# The relayer's node keeps this many recent heights (pruning-keep-recent), so
+# Hermes proves a packet again while the node still serves those heights.
+clear_interval = 100
+clear_on_start = true
+tx_confirmation = false
+
+[[chains]]
+# This chain.
+id = '<this chain id>'
+type = 'CosmosSdk'
+# The relayer's node: its CometBFT RPC and its gRPC.
+rpc_addr = 'http://127.0.0.1:26657'
+grpc_addr = 'http://127.0.0.1:9090'
+# Pull, not push, because the CometBFT 0.39 websocket is not what Hermes expects.
+event_source = { mode = 'pull', interval = '1s' }
+rpc_timeout = '10s'
+account_prefix = 'cosmos'
+key_name = 'relayer'
+key_store_folder = '/etc/hermes/keys'
+store_prefix = 'ibc'
+default_gas = 200000
+max_gas = 4000000
+# One usvm for a transaction of up to a million gas.
+gas_price = { price = 0.000001, denom = 'usvm' }
+gas_multiplier = 1.5
+clock_drift = '5s'
+max_block_time = '30s'
+trusting_period = '14days'
+trust_threshold = '2/3'
+# Hermes refreshes an idle client every 42 hours, 1/8 of the trusting period.
+client_refresh_rate = '1/8'
+# Hermes knows no CometBFT version after 0.38. This chain's version is compatible.
+compat_mode = '0.38'
+
+[[chains]]
+# The counterparty: a stock Cosmos SDK chain. Fill in its values.
+id = '<counterparty chain id>'
+type = 'CosmosSdk'
+rpc_addr = 'http://<counterparty host>:26657'
+grpc_addr = 'http://<counterparty host>:9090'
+event_source = { mode = 'push', url = 'ws://<counterparty host>:26657/websocket', batch_delay = '500ms' }
+rpc_timeout = '10s'
+account_prefix = '<its bech32 prefix>'
+key_name = 'relayer'
+key_store_folder = '/etc/hermes/keys'
+store_prefix = 'ibc'
+default_gas = 200000
+max_gas = 4000000
+gas_price = { price = 0.0, denom = '<its fee denom>' }
+gas_multiplier = 1.5
+clock_drift = '5s'
+max_block_time = '30s'
+trusting_period = '14days'
+trust_threshold = '2/3'

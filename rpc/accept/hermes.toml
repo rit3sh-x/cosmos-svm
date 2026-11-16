@@ -1,0 +1,65 @@
+# Hermes 1.13.1 config for rpc/accept/ibc.sh. ibc.sh writes it to its work
+# directory and replaces WORK with the path of that directory. The config of
+# the second Hermes differs from this one only in key_name.
+[global]
+log_level = 'info'
+
+[mode.clients]
+enabled = true
+refresh = true
+misbehaviour = false
+
+[mode.connections]
+enabled = false
+
+[mode.channels]
+enabled = false
+
+[mode.packets]
+enabled = true
+clear_interval = 100
+clear_on_start = true
+tx_confirmation = false
+
+[[chains]]
+id = 'svm-ibc'
+type = 'CosmosSdk'
+rpc_addr = 'http://127.0.0.1:28757'
+grpc_addr = 'http://127.0.0.1:9090'
+event_source = { mode = 'pull', interval = '1s' }
+rpc_timeout = '10s'
+account_prefix = 'cosmos'
+key_name = 'relayer'
+key_store_folder = 'WORK/hermes-keys'
+store_prefix = 'ibc'
+default_gas = 200000
+max_gas = 4000000
+gas_price = { price = 0.000001, denom = 'usvm' }
+gas_multiplier = 1.5
+clock_drift = '5s'
+max_block_time = '30s'
+trusting_period = '14days'
+trust_threshold = '2/3'
+client_refresh_rate = '1/8'
+compat_mode = '0.38'
+
+[[chains]]
+id = 'simd-ibc'
+type = 'CosmosSdk'
+rpc_addr = 'http://127.0.0.1:27657'
+grpc_addr = 'http://127.0.0.1:27090'
+event_source = { mode = 'push', url = 'ws://127.0.0.1:27657/websocket', batch_delay = '500ms' }
+rpc_timeout = '10s'
+account_prefix = 'cosmos'
+key_name = 'relayer'
+key_store_folder = 'WORK/hermes-keys'
+store_prefix = 'ibc'
+default_gas = 200000
+max_gas = 4000000
+gas_price = { price = 0.0, denom = 'stake' }
+gas_multiplier = 1.5
+clock_drift = '5s'
+max_block_time = '30s'
+trusting_period = '14days'
+trust_threshold = '2/3'
+compat_mode = '0.38'

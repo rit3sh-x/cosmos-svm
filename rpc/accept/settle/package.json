@@ -1,0 +1,14 @@
+{
+  "name": "svm-settle-run",
+  "private": true,
+  "description": "The settlement acceptance run's client: Squads' own SDK, and web3.js for the proof checks.",
+  "dependencies": {
+    "@solana/web3.js": "1.99.0",
+    "@sqds/multisig": "2.1.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "typescript": "5.9.3"
+    }
+  }
+}

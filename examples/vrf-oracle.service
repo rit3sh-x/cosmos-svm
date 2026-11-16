@@ -1,0 +1,40 @@
+# A systemd unit for MagicBlock's VRF oracle v0.4.1. The oracle answers the
+# random number requests of apps on the base chain. Its identity must be one
+# that the network's genesis admitted with `svmd init --vrf-oracle IDENTITY:VRF_PUBKEY`.
+# Genesis registers it at slot 0, and the oracle opens its queues after block
+# 200. A second oracle, pointed at the rollup's RPC, serves the apps on the
+# rollup.
+#
+# The oracle is under the Business Source License 1.1 until 2029-12-01
+# (genesis/licenses/README.md).
+#
+#   curl -sSfL -o /usr/local/bin/vrf-oracle \
+#     https://github.com/magicblock-labs/solana-vrf/releases/download/v0.4.1/vrf-oracle-linux-x64-glibc
+#   echo "b7a33dd9ce7298d55241354fdec6fe34dec1ebb8b4e93bf6b839c8846baa8cf5  /usr/local/bin/vrf-oracle" | sha256sum -c
+#   chmod +x /usr/local/bin/vrf-oracle
+#   install -m 644 examples/vrf-oracle.service /etc/systemd/system/
+#   systemctl enable --now vrf-oracle
+
+[Unit]
+Description=MagicBlock VRF oracle, on the base chain
+After=network-online.target svmd.service
+Wants=network-online.target
+
+[Service]
+User=svmd
+Group=svmd
+# The oracle's identity keypair file. It pays each answer, so fund it.
+Environment=VRF_ORACLE_IDENTITY=/etc/svmd/vrf-oracle.json
+# The chain that the oracle serves. This unit uses this chain's RPC and
+# websocket. An oracle for the rollup's apps uses the rollup's RPC and
+# websocket (ports 7799 and 7800 in examples/ephemeral-validator.toml).
+Environment=RPC_URL=http://127.0.0.1:8899
+Environment=WEBSOCKET_URL=ws://127.0.0.1:8900
+Environment=VRF_ORACLE_SKIP_PREFLIGHT=true
+Environment=RUST_LOG=info
+ExecStart=/usr/local/bin/vrf-oracle
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

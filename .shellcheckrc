@@ -1,0 +1,5 @@
+# shellcheck resolves sourced files from the script's own directory. The
+# `# shellcheck source=` directives give paths from the repository root, where
+# CI runs shellcheck.
+source-path=SCRIPTDIR
+external-sources=true

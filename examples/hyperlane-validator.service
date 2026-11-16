@@ -1,0 +1,38 @@
+# A template systemd unit for a Hyperlane validator at agents-v2.3.0.
+# It is one of the signers that your multisig ISM trusts, and it attests the
+# messages sent on one chain. A Hyperlane validator only signs messages. It
+# is not a CometBFT validator and not an ephemeral validator. It reads the
+# same agent config JSON as the relayer. Fill in the placeholders.
+#
+#   install -d -m 700 -o hyperlane /etc/hyperlane /var/lib/hyperlane
+#   # write /etc/hyperlane/agent-config.json and /etc/hyperlane/validator.env
+#   install -m 644 examples/hyperlane-validator.service /etc/systemd/system/
+#   systemctl enable --now hyperlane-validator
+
+[Unit]
+Description=Hyperlane validator, attesting one chain's messages
+After=network-online.target svmd.service
+Wants=network-online.target
+
+[Service]
+User=hyperlane
+Group=hyperlane
+Environment=CONFIG_FILES=/etc/hyperlane/agent-config.json
+# The chain whose messages this validator attests, by its agent config name.
+Environment=HYP_ORIGINCHAINNAME=<this chain>
+Environment=HYP_DB=/var/lib/hyperlane/validator
+# Where the validator writes signed checkpoints for the relayer to read. Use a
+# local path, as here, or an S3 or GCS location for a relayer on another machine.
+Environment=HYP_CHECKPOINTSYNCER_TYPE=localStorage
+Environment=HYP_CHECKPOINTSYNCER_PATH=/var/lib/hyperlane/checkpoints
+Environment=HYP_VALIDATOR_TYPE=hexKey
+Environment=RUST_LOG=info
+# The validator's signing key (HYP_VALIDATOR_KEY=0x...) and its announce key on
+# the chain (HYP_CHAINS_<CHAIN>_SIGNER_KEY=...).
+EnvironmentFile=/etc/hyperlane/validator.env
+ExecStart=/usr/local/bin/validator
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

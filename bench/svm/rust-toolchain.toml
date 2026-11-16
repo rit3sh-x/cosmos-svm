@@ -1,0 +1,5 @@
+# Agave v4.3.0, which the engine links, pins Rust 1.97.1.
+# Execution is consensus-critical, so the compiler version is part of the
+# chain's configuration, not a local preference.
+[toolchain]
+channel = "1.97.1"

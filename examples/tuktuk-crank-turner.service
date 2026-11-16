@@ -1,0 +1,38 @@
+# A systemd unit for Helium's crank turner, which runs the tasks that apps
+# queue on tuktuk. The crank turner is an external service. It is not part
+# of svmd and not a validator's duty. Run one per network, on any machine
+# that can reach an RPC of the network. This unit uses the RPC of the same
+# machine. The crank turner takes the websocket address from the RPC address,
+# so the websocket must be at the same host, port 8900.
+#
+#   cargo install --locked tuktuk-crank-turner@0.2.31 tuktuk-cli@0.2.18
+#   solana-keygen new --no-bip39-passphrase -o /etc/svmd/turner.json
+#   # fund the key: it pays 5,001 lamports a crank and receives each task's reward
+#   install -m 644 examples/tuktuk-crank-turner.service /etc/systemd/system/
+#   systemctl enable --now tuktuk-crank-turner
+#   curl -s http://127.0.0.1:8080/metrics | grep tuktuk
+
+[Unit]
+Description=tuktuk crank turner
+After=network-online.target svmd.service
+Wants=network-online.target
+
+[Service]
+# The RPC of a machine of this network, and its websocket on port 8900.
+Environment=TUKTUK__RPC_URL=http://127.0.0.1:8899
+# The crank turner's funded key.
+Environment=TUKTUK__KEY_PATH=/etc/svmd/turner.json
+# The crank turner skips a task that pays less than this many lamports. The
+# value is twice the signature fee, as in Helium's own README.
+Environment=TUKTUK__MIN_CRANK_FEE=10000
+# Its metrics, on this port.
+Environment=TUKTUK__METRICS_PORT=8080
+ExecStart=/usr/local/bin/tuktuk-crank-turner
+# The crank turner exits when the RPC closes the websocket without a handshake.
+Restart=always
+RestartSec=5
+User=svmd
+Group=svmd
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,370 @@
+# Run extended checks on every push to main, nightly, or on demand.
+# These checks are too slow for ci.yml: race detection, fuzzing, and acceptance
+# suites. Independent jobs ensure one failure does not skip unrelated checks.
+name: nightly
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Serialize runs without cancelling active tests. GitHub may replace pending
+# runs with newer ones, so the report identifies commits since the last pass.
+concurrency:
+  group: nightly
+  cancel-in-progress: false
+
+jobs:
+  race:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@3138316df39ed29be04236d7ffc686fa525866aa # v23
+
+      # Cache the flake's Nix store closure across runs.
+      - name: Restore the Nix store
+        uses: nix-community/cache-nix-action@7df957e333c1e5da7721f60227dbba6d06080569 # v7
+        with:
+          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.nix', 'flake.lock', 'nix/**') }}
+          restore-prefixes-first-match: nix-${{ runner.os }}-
+          gc-max-store-size-linux: 6G
+          purge: true
+          purge-prefixes: nix-${{ runner.os }}-
+          purge-created: 0
+          purge-primary-key: never
+
+      # Add the pinned toolchain and dependencies to PATH.
+      - name: Enter the flake's shell
+        uses: nicknovitski/nix-develop@9be7cfb4b10451d3390a75dc18ad0465bed4932a # v1.2.1
+
+      - name: Configure Rust cache
+        uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6 # v2.9.2
+
+      - name: Build the engine
+        run: cargo build --release --locked
+
+      # The RPC history test exceeds Go's default timeout under the race detector.
+      - name: go test -race
+        run: go test -race -count=1 -timeout 30m ./x/... ./ffi/... ./rpc/... ./cmd/...
+
+      # Exclude the arena stress test. Under the race detector, its memory use
+      # exceeds the hosted runner's limit. Keep this suite in a separate step
+      # so failures in the other packages do not prevent it from running.
+      - name: go test -race ./app
+        if: ${{ !cancelled() }}
+        run: go test -race -count=1 -timeout 30m -skip '^TestTheArenaCeilingHoldsAgainstTheAttackShape$' ./app/
+
+  fuzz:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@3138316df39ed29be04236d7ffc686fa525866aa # v23
+
+      # Cache the flake's Nix store closure across runs.
+      - name: Restore the Nix store
+        uses: nix-community/cache-nix-action@7df957e333c1e5da7721f60227dbba6d06080569 # v7
+        with:
+          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.nix', 'flake.lock', 'nix/**') }}
+          restore-prefixes-first-match: nix-${{ runner.os }}-
+          gc-max-store-size-linux: 6G
+          purge: true
+          purge-prefixes: nix-${{ runner.os }}-
+          purge-created: 0
+          purge-primary-key: never
+
+      # Add the pinned toolchain and dependencies to PATH.
+      - name: Enter the flake's shell
+        uses: nicknovitski/nix-develop@9be7cfb4b10451d3390a75dc18ad0465bed4932a # v1.2.1
+
+      - name: Configure Rust cache
+        uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6 # v2.9.2
+
+      - name: Build the engine
+        run: cargo build --release --locked
+
+      - name: untrusted transaction bytes
+        run: go test ./ffi -run '^$' -fuzz FuzzUntrustedTransactionBytes -fuzztime 10m
+
+      - name: account rendering
+        run: go test ./rpc -run '^$' -fuzz FuzzAccountRendering -fuzztime 10m
+
+      # Preserve crashing inputs as regression-test fixtures.
+      - name: Upload failing fuzz inputs
+        if: failure()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: fuzz-inputs
+          path: "**/testdata/fuzz/**"
+
+  retention:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@3138316df39ed29be04236d7ffc686fa525866aa # v23
+
+      # Cache the flake's Nix store closure across runs.
+      - name: Restore the Nix store
+        uses: nix-community/cache-nix-action@7df957e333c1e5da7721f60227dbba6d06080569 # v7
+        with:
+          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.nix', 'flake.lock', 'nix/**') }}
+          restore-prefixes-first-match: nix-${{ runner.os }}-
+          gc-max-store-size-linux: 6G
+          purge: true
+          purge-prefixes: nix-${{ runner.os }}-
+          purge-created: 0
+          purge-primary-key: never
+
+      # Add the pinned toolchain and dependencies to PATH.
+      - name: Enter the flake's shell
+        uses: nicknovitski/nix-develop@9be7cfb4b10451d3390a75dc18ad0465bed4932a # v1.2.1
+
+      - name: Configure Rust cache
+        uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6 # v2.9.2
+
+      - name: Run the retention harness
+        run: make accept-retention
+
+      - name: Upload results artifact
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: retention-results
+          path: rpc/accept/results/
+          if-no-files-found: ignore
+
+  # Run pinned JavaScript clients against a local chain.
+  clients:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@3138316df39ed29be04236d7ffc686fa525866aa # v23
+
+      # Cache the flake's Nix store closure across runs.
+      - name: Restore the Nix store
+        uses: nix-community/cache-nix-action@7df957e333c1e5da7721f60227dbba6d06080569 # v7
+        with:
+          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.nix', 'flake.lock', 'nix/**') }}
+          restore-prefixes-first-match: nix-${{ runner.os }}-
+          gc-max-store-size-linux: 6G
+          purge: true
+          purge-prefixes: nix-${{ runner.os }}-
+          purge-created: 0
+          purge-primary-key: never
+
+      # Add the pinned toolchain and dependencies to PATH.
+      - name: Enter the flake's shell
+        uses: nicknovitski/nix-develop@9be7cfb4b10451d3390a75dc18ad0465bed4932a # v1.2.1
+
+      - name: Configure Rust cache
+        uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6 # v2.9.2
+
+      - name: Run the client suites
+        run: make accept-clients
+
+      - name: Upload results artifact
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: clients-results
+          path: rpc/accept/results/
+          if-no-files-found: ignore
+
+  # Run MagicBlock's apps, Pyth replay and suites against both validators.
+  # Split the suites into separate jobs to run them in parallel.
+  er:
+    strategy:
+      fail-fast: false
+      matrix:
+        parts: ["apps pyth", suites]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 330
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Free disk space
+        run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@3138316df39ed29be04236d7ffc686fa525866aa # v23
+
+      # Cache the flake's Nix store closure across runs.
+      - name: Restore the Nix store
+        uses: nix-community/cache-nix-action@7df957e333c1e5da7721f60227dbba6d06080569 # v7
+        with:
+          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.nix', 'flake.lock', 'nix/**') }}
+          restore-prefixes-first-match: nix-${{ runner.os }}-
+          gc-max-store-size-linux: 6G
+          purge: true
+          purge-prefixes: nix-${{ runner.os }}-
+          purge-created: 0
+          purge-primary-key: never
+
+      # Add the pinned toolchain and dependencies to PATH.
+      - name: Enter the flake's shell
+        uses: nicknovitski/nix-develop@9be7cfb4b10451d3390a75dc18ad0465bed4932a # v1.2.1
+
+      - name: Configure Rust cache
+        uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6 # v2.9.2
+
+      - name: Run the ephemeral rollup acceptance run
+        run: |
+          sudo prlimit --pid $$ --nofile=1048576:1048576
+          make accept-er PARTS="${{ matrix.parts }}"
+
+      - name: Upload results artifact
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: er-results-${{ strategy.job-index }}
+          path: rpc/accept/results/
+          if-no-files-found: ignore
+
+  # Run Hyperlane, SP1, RISC Zero and Squads settlement integrations.
+  settle:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 330
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Free disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /usr/local/.ghcup \
+            /usr/local/share/boost "${AGENT_TOOLSDIRECTORY:?}"/* /usr/share/swift /usr/lib/jvm \
+            /usr/local/share/powershell /usr/local/julia* /opt/az
+          sudo docker image prune --all --force >/dev/null
+          df -h /
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@3138316df39ed29be04236d7ffc686fa525866aa # v23
+
+      # Cache the flake's Nix store closure across runs.
+      - name: Restore the Nix store
+        uses: nix-community/cache-nix-action@7df957e333c1e5da7721f60227dbba6d06080569 # v7
+        with:
+          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.nix', 'flake.lock', 'nix/**') }}
+          restore-prefixes-first-match: nix-${{ runner.os }}-
+          gc-max-store-size-linux: 6G
+          purge: true
+          purge-prefixes: nix-${{ runner.os }}-
+          purge-created: 0
+          purge-primary-key: never
+
+      # Add the pinned toolchain and dependencies to PATH.
+      - name: Enter the flake's shell
+        uses: nicknovitski/nix-develop@9be7cfb4b10451d3390a75dc18ad0465bed4932a # v1.2.1
+
+      - name: Configure Rust cache
+        uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6 # v2.9.2
+
+      - name: Run the settlement acceptance run
+        run: SVM_THIRD_PARTY="$RUNNER_TEMP/third-party" make accept-settle
+
+      - name: Upload results artifact
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: settle-results
+          path: rpc/accept/results/
+          if-no-files-found: ignore
+
+  # Run TukTuk's TESTING suite and its memo and cron examples.
+  tuktuk:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 240
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Free disk space
+        run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@3138316df39ed29be04236d7ffc686fa525866aa # v23
+
+      # Cache the flake's Nix store closure across runs.
+      - name: Restore the Nix store
+        uses: nix-community/cache-nix-action@7df957e333c1e5da7721f60227dbba6d06080569 # v7
+        with:
+          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.nix', 'flake.lock', 'nix/**') }}
+          restore-prefixes-first-match: nix-${{ runner.os }}-
+          gc-max-store-size-linux: 6G
+          purge: true
+          purge-prefixes: nix-${{ runner.os }}-
+          purge-created: 0
+          purge-primary-key: never
+
+      # Add the pinned toolchain and dependencies to PATH.
+      - name: Enter the flake's shell
+        uses: nicknovitski/nix-develop@9be7cfb4b10451d3390a75dc18ad0465bed4932a # v1.2.1
+
+      - name: Configure Rust cache
+        uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6 # v2.9.2
+
+      - name: Run the tuktuk acceptance run
+        run: SVM_THIRD_PARTY="$RUNNER_TEMP/third-party" make accept-tuktuk
+
+      - name: Upload results artifact
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: tuktuk-results
+          path: rpc/accept/results/
+          if-no-files-found: ignore
+
+  # Summarize job results and commits since the last successful run.
+  report:
+    if: ${{ always() }}
+    needs: [race, fuzz, retention, clients, er, settle, tuktuk]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Name the commits a failure can come from
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RESULTS: ${{ toJSON(needs) }}
+        run: |
+          green=$(gh run list --workflow nightly.yml --branch main --status success --limit 1 \
+            --json headSha --jq '.[0].headSha // ""') || green=""
+          {
+            echo "## ${GITHUB_SHA::12}, from ${GITHUB_EVENT_NAME}"
+            echo
+            jq -r 'to_entries[] | "- \(.key): \(.value.result)"' <<<"$RESULTS"
+            echo
+            if [ -z "$green" ]; then
+              echo "No earlier run of this workflow passed."
+            elif [ "$green" = "$GITHUB_SHA" ]; then
+              echo "This commit passed before, so a failure comes from outside the repository: a mainnet account, a release download or the runner image."
+            else
+              echo "The last pass was on ${green::12}. The commits since:"
+              echo
+              git log --format='- %h %s' "$green..$GITHUB_SHA" 2>/dev/null ||
+                echo "- ${green::12} is not an ancestor of this commit"
+            fi
+          } >>"$GITHUB_STEP_SUMMARY"

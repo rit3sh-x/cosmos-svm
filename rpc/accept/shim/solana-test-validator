@@ -1,0 +1,78 @@
+#!/usr/bin/env bash
+# A stand-in for solana-test-validator that starts svmd for the acceptance
+# runs. The ER run's apps, MagicBlock's suites and Hyperlane's e2e start their
+# own base chain with solana-test-validator. A run puts this directory first on
+# PATH, so they start svmd with no change to their code. The shim turns the
+# flags into an svmd genesis.
+#
+#   --rpc-port P                     RPC on P, the websocket on P+1 (8899 unless given)
+#   --bpf-program ID SO              a genesis program at ID, loader v3
+#   --upgradeable-program ID SO A    the same. A genesis program has no upgrade authority.
+#   --account ID FILE                a genesis account at ID, from `solana account --output json`
+#   --mint PUBKEY                    the wallet anchor test pays from, funded in genesis
+#   --ledger DIR, --limit-ledger-size N, --url U, --log, -r, --reset, -q, --quiet   ignored
+#
+# If this chain's genesis already seeds a program or an account at ID, the
+# genesis copy stays (nodetool preload). With SHIM_REPLACE set, a --bpf-program
+# at a seeded ID replaces the program and drops the genesis accounts it owns.
+# A suite's own build of a program that this chain carries then starts clean,
+# as on Agave (the tuktuk run).
+#
+#   SHIM_BIN                   the directory that holds svmd-devnet and nodetool
+#   SHIM_WORK                  each start makes a new genesis in its own directory here
+#   SHIM_REPLACE               replace seeded programs, as above
+#   SHIM_EPHEMERAL_VALIDATORS  the ephemeral validators that genesis admits
+#                              (svmd init --ephemeral-validator). Genesis then holds
+#                              the delegation program, its companions and the fees vaults.
+#   SHIM_VRF_ORACLES           the VRF oracles, each IDENTITY:VRF_PUBKEY (--vrf-oracle),
+#                              for the VRF program and its oracle list
+#
+# The chain is the devnet build with a faucet, so requestAirdrop answers as on
+# solana-test-validator. svmd replaces this process, so a stop of this process
+# stops the chain.
+set -euo pipefail
+ROOT=$(cd "$(dirname "$0")/../../.." && pwd)
+: "${SHIM_BIN:?names the directory that holds svmd-devnet and nodetool}" "${SHIM_WORK:?names the directory for the chains}"
+port=8899 preload=()
+W=$(mktemp -d "$SHIM_WORK/chain.XXXXXX")
+while [ $# -gt 0 ]; do
+    case $1 in
+    --rpc-port) port=$2 && shift 2 ;;
+    --bpf-program) preload+=(-program "$2=$3") && shift 3 ;;
+    --upgradeable-program)
+        [ "$4" = none ] || echo "shim: $2 asks for upgrade authority $4; a genesis program has none" >&2
+        preload+=(-program "$2=$3") && shift 4
+        ;;
+    --account) preload+=(-account "$2=$3") && shift 3 ;;
+    --mint) mint=$2 && shift 2 ;;
+    --ledger | --limit-ledger-size | --url) shift 2 ;;
+    --log | -r | --reset | -q | --quiet) shift ;;
+    *)
+        echo "shim: no flag $1" >&2
+        exit 2
+        ;;
+    esac
+done
+g=$W/home/config/genesis.json
+admit=()
+for key in ${SHIM_EPHEMERAL_VALIDATORS:-}; do admit+=(--ephemeral-validator "$key"); done
+for oracle in ${SHIM_VRF_ORACLES:-}; do admit+=(--vrf-oracle "$oracle"); done
+"$SHIM_BIN/svmd-devnet" init local --chain-id svm-shim --home "$W/home" "${admit[@]}" >"$W/init.log" 2>&1
+"$SHIM_BIN/svmd-devnet" add-genesis-programs "$ROOT/genesis" --home "$W/home" >>"$W/init.log" 2>&1
+solana-keygen new --no-bip39-passphrase -s -o "$W/faucet.json" >/dev/null
+chmod 600 "$W/faucet.json"
+"$SHIM_BIN/nodetool" fund -genesis "$g" -lamports 1000000000000000 "$(solana-keygen pubkey "$W/faucet.json")"
+# --mint is the wallet that anchor test pays from. solana-test-validator gives
+# it 500,000,000 SOL.
+[ -z "${mint:-}" ] || "$SHIM_BIN/nodetool" fund -genesis "$g" -lamports 500000000000000000 "$mint"
+replace=()
+[ -z "${SHIM_REPLACE:-}" ] || replace=(-replace)
+[ ${#preload[@]} -eq 0 ] || "$SHIM_BIN/nodetool" preload -genesis "$g" "${replace[@]}" "${preload[@]}"
+# index-max-bytes, the history budget, is required. The faucet limits go up,
+# because a test suite airdrops far more than a person does.
+"$SHIM_BIN/nodetool" set "$W/home/config/app.toml" index-max-bytes=1073741824 \
+    rpc-address="\"127.0.0.1:$port\"" ws-address="\"127.0.0.1:$((port + 1))\"" \
+    faucet-key="\"$W/faucet.json\"" faucet-max-lamports=1000000000000000
+printf '\n[[svm.faucet-limit]]\nwindow = "1m"\nrequests = 1000000\nlamports = 1000000000000000000\n' >>"$W/home/config/app.toml"
+echo "shim: svmd on 127.0.0.1:$port, home $W/home" >&2
+exec "$SHIM_BIN/svmd-devnet" start --home "$W/home"

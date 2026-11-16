@@ -1,0 +1,26 @@
+[package]
+name = "rpc-client-suite"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# A separate workspace, like tools/tx-oracle. Agave's RPC client is the client
+# under test, never a dependency of the engine.
+[workspace]
+
+[[bin]]
+name = "rpc-client-suite"
+path = "src/main.rs"
+
+[dependencies]
+solana-rpc-client = "=4.3.0"
+solana-rpc-client-api = "=4.3.0"
+solana-transaction-status-client-types = "=4.3.0"
+solana-account-decoder-client-types = "=4.3.0"
+solana-commitment-config = "3"
+solana-keypair = "3"
+solana-signer = "3"
+solana-pubkey = "4"
+solana-transaction = { version = "4", features = ["wincode"] }
+solana-message = "4"
+solana-system-interface = { version = "3", features = ["bincode"] }

@@ -1,0 +1,39 @@
+# A template systemd unit for Hyperlane's relayer at agents-v2.3.0.
+# The relayer carries attested messages between this chain and an SVM rollup
+# that settles here. You operate it, as you operate the ephemeral validators.
+#
+# The agent reads its chains from an agent config JSON in Hyperlane's own
+# format. The config names your network's domain id, its mailbox, ISM, IGP and
+# validator announce programs, and the RPC of a machine of this network.
+# Hyperlane's documentation and the rust/main/config files of the monorepo at
+# the tag show the shape. Fill in the placeholders.
+#
+#   # build the agents from hyperlane-monorepo at agents-v2.3.0 (cargo build --release -p relayer -p validator)
+#   install -d -m 700 -o hyperlane /etc/hyperlane /var/lib/hyperlane
+#   # write /etc/hyperlane/agent-config.json and /etc/hyperlane/relayer.env
+#   install -m 644 examples/hyperlane-relayer.service /etc/systemd/system/
+#   systemctl enable --now hyperlane-relayer
+
+[Unit]
+Description=Hyperlane relayer, between this chain and a settled rollup
+After=network-online.target svmd.service
+Wants=network-online.target
+
+[Service]
+User=hyperlane
+Group=hyperlane
+Environment=CONFIG_FILES=/etc/hyperlane/agent-config.json
+# The two chains, by the names the agent config gives them.
+Environment=HYP_RELAYCHAINS=<this chain>,<the rollup>
+Environment=HYP_DB=/var/lib/hyperlane/relayer
+Environment=HYP_ALLOWLOCALCHECKPOINTSYNCERS=true
+Environment=RUST_LOG=info
+# The relayer's key on each chain pays for delivery. Keep it in a file that
+# only this user can read: HYP_CHAINS_<CHAIN>_SIGNER_KEY=...
+EnvironmentFile=/etc/hyperlane/relayer.env
+ExecStart=/usr/local/bin/relayer
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,353 @@
+[
+ {
+  "method": "*",
+  "path": "result.context.slot",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "*",
+  "path": "notifications[*].params.result.context.slot",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "getGenesisHash",
+  "path": "result",
+  "reason": "there is no Agave genesis config; the value is this chain's genesis hash"
+ },
+ {
+  "method": "getSlot",
+  "path": "result",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "getBlockHeight",
+  "path": "result",
+  "reason": "a height differs between any two chains"
+ },
+ {
+  "method": "getFirstAvailableBlock",
+  "path": "result",
+  "reason": "retention differs between any two machines"
+ },
+ {
+  "method": "getLatestBlockhash",
+  "path": "result.value.blockhash",
+  "reason": "a blockhash differs between any two chains"
+ },
+ {
+  "method": "getLatestBlockhash",
+  "path": "result.value.lastValidBlockHeight",
+  "reason": "a height differs between any two chains"
+ },
+ {
+  "method": "sendTransaction",
+  "path": "result",
+  "reason": "the signature covers a blockhash, which differs between any two chains"
+ },
+ {
+  "method": "getSignatureStatuses",
+  "path": "result.value[*].slot",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "getTransaction",
+  "path": "result.slot",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "getTransaction",
+  "path": "result.blockTime",
+  "reason": "a block time differs between any two chains"
+ },
+ {
+  "method": "getTransaction",
+  "path": "result.transaction[0]",
+  "reason": "the encoded transaction carries its recent blockhash and signatures, which differ between any two chains"
+ },
+ {
+  "method": "getTransaction",
+  "path": "result.transaction",
+  "kind": "string",
+  "reason": "binary is the bare base58 transaction, which carries its recent blockhash and signatures"
+ },
+ {
+  "method": "getTransaction",
+  "path": "result.transaction.signatures[*]",
+  "reason": "a setup signature covers its blockhash"
+ },
+ {
+  "method": "getTransaction",
+  "path": "result.transaction.message.recentBlockhash",
+  "reason": "a blockhash differs between any two chains"
+ },
+ {
+  "method": "getSignaturesForAddress",
+  "path": "result[*].signature",
+  "reason": "a setup signature covers its blockhash"
+ },
+ {
+  "method": "getSignaturesForAddress",
+  "path": "result[*].slot",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "getSignaturesForAddress",
+  "path": "result[*].blockTime",
+  "reason": "a block time differs between any two chains"
+ },
+ {
+  "method": "getBlock",
+  "path": "result.blockhash",
+  "reason": "a blockhash differs between any two chains"
+ },
+ {
+  "method": "getBlock",
+  "path": "result.previousBlockhash",
+  "reason": "a blockhash differs between any two chains"
+ },
+ {
+  "method": "getBlock",
+  "path": "result.parentSlot",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "getBlock",
+  "path": "result.blockHeight",
+  "reason": "a height differs between any two chains"
+ },
+ {
+  "method": "getBlock",
+  "path": "result.blockTime",
+  "reason": "a block time differs between any two chains"
+ },
+ {
+  "method": "getBlock",
+  "path": "result.signatures[*]",
+  "reason": "a setup signature covers its blockhash"
+ },
+ {
+  "method": "getBlock",
+  "path": "result.transactions[*].transaction[0]",
+  "reason": "the encoded transaction carries its blockhash and signatures"
+ },
+ {
+  "method": "getBlock",
+  "path": "result.transactions[*].transaction.signatures[*]",
+  "reason": "a setup signature covers its blockhash"
+ },
+ {
+  "method": "getBlock",
+  "path": "result.transactions[*].transaction.message.recentBlockhash",
+  "reason": "a blockhash differs between any two chains"
+ },
+ {
+  "method": "logsSubscribe",
+  "path": "notifications[*].params.result.value.signature",
+  "reason": "the trigger's signature covers its blockhash"
+ },
+ {
+  "method": "slotSubscribe",
+  "path": "notifications[*].params.result.slot",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "slotSubscribe",
+  "path": "notifications[*].params.result.parent",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "slotSubscribe",
+  "path": "notifications[*].params.result.root",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "isBlockhashValid",
+  "path": "result.context.slot",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "simulateTransaction",
+  "path": "result.value.replacementBlockhash.blockhash",
+  "reason": "a blockhash differs between any two chains"
+ },
+ {
+  "method": "simulateTransaction",
+  "path": "result.value.replacementBlockhash.lastValidBlockHeight",
+  "reason": "a height differs between any two chains"
+ },
+ {
+  "method": "*",
+  "path": "error.data.contextSlot",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "getRecentPrioritizationFees",
+  "path": "result[*].slot",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "getSignaturesForAddress",
+  "path": "result[*].transactionIndex",
+  "reason": "a transaction's index in its block depends on what else the block holds"
+ },
+ {
+  "method": "framing",
+  "path": "[0].result",
+  "reason": "the batch's first call is getSlot; a slot differs between any two chains"
+ },
+ {
+  "method": "rootSubscribe",
+  "path": "notifications[*].params.result",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "slotsUpdatesSubscribe",
+  "path": "notifications[*].params.result.slot",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "slotsUpdatesSubscribe",
+  "path": "notifications[*].params.result.timestamp",
+  "reason": "a wall-clock time differs between any two chains"
+ },
+ {
+  "method": "slotsUpdatesSubscribe",
+  "path": "notifications[*].params.result.parent",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "getIdentity",
+  "path": "result.identity",
+  "reason": "a validator's identity is its own key, which differs between any two chains"
+ },
+ {
+  "method": "getSlotLeader",
+  "path": "result",
+  "reason": "a validator's identity is its own key, which differs between any two chains"
+ },
+ {
+  "method": "getSlotLeaders",
+  "path": "result[*]",
+  "reason": "a validator's identity is its own key, which differs between any two chains"
+ },
+ {
+  "method": "getClusterNodes",
+  "path": "result[*].pubkey",
+  "reason": "a validator's identity is its own key, which differs between any two chains"
+ },
+ {
+  "method": "getClusterNodes",
+  "path": "result[*].rpc",
+  "reason": "a machine's address differs between any two machines"
+ },
+ {
+  "method": "getClusterNodes",
+  "path": "result[*].pubsub",
+  "reason": "a machine's address differs between any two machines"
+ },
+ {
+  "method": "getEpochInfo",
+  "path": "result.absoluteSlot",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "getEpochInfo",
+  "path": "result.slotIndex",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "getEpochInfo",
+  "path": "result.blockHeight",
+  "reason": "a height differs between any two chains"
+ },
+ {
+  "method": "getBlockProduction",
+  "path": "result.value.range.lastSlot",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "getClusterNodes",
+  "path": "result[*].tpuQuic",
+  "reason": "a machine's address differs between any two machines"
+ },
+ {
+  "method": "getClusterNodes",
+  "path": "result[*].tpuForwardsQuic",
+  "reason": "a machine's address differs between any two machines"
+ },
+ {
+  "method": "http /",
+  "path": "body.result",
+  "reason": "a slot differs between any two chains"
+ },
+ {
+  "method": "getBlocks",
+  "path": "result",
+  "reason": "the heights a history holds differ between any two chains"
+ },
+ {
+  "method": "getBlocksWithLimit",
+  "path": "result",
+  "reason": "the heights a history holds differ between any two chains"
+ },
+ {
+  "method": "minimumLedgerSlot",
+  "path": "result",
+  "reason": "the heights a history holds differ between any two chains"
+ },
+ {
+  "method": "getMaxShredInsertSlot",
+  "path": "result",
+  "reason": "the heights a history holds differ between any two chains"
+ },
+ {
+  "method": "getBlockTime",
+  "path": "result",
+  "reason": "a block time differs between any two chains"
+ },
+ {
+  "method": "getSupply",
+  "path": "result.value.total",
+  "reason": "a supply figure depends on each side's genesis"
+ },
+ {
+  "method": "getSupply",
+  "path": "result.value.circulating",
+  "reason": "a supply figure depends on each side's genesis"
+ },
+ {
+  "method": "getSupply",
+  "path": "result.value.nonCirculating",
+  "reason": "a supply figure depends on each side's genesis"
+ },
+ {
+  "method": "getLargestAccounts",
+  "path": "result.value",
+  "reason": "the largest accounts depend on each side's genesis"
+ },
+ {
+  "method": "http /v0/total-supply",
+  "path": "body",
+  "reason": "a supply figure depends on each side's genesis"
+ },
+ {
+  "method": "http /v0/circulating-supply",
+  "path": "body",
+  "reason": "a supply figure depends on each side's genesis"
+ },
+ {
+  "method": "getTransactionCount",
+  "path": "result",
+  "reason": "a transaction count depends on each side's history, and Agave's counts vote transactions"
+ },
+ {
+  "method": "getEpochInfo",
+  "path": "result.transactionCount",
+  "reason": "a transaction count depends on each side's history, and Agave's counts vote transactions"
+ },
+ {
+  "method": "getRecentPerformanceSamples",
+  "path": "result",
+  "reason": "a sample depends on each side's history and clock"
+ }
+]

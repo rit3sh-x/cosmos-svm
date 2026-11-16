@@ -1,0 +1,35 @@
+# A systemd unit for MagicBlock's ephemeral validator v1.0.2.
+# Its config is examples/ephemeral-validator.toml. The identity must be one
+# that the network's genesis admitted. The identity pays for each commit on
+# the base chain, so fund it. The validator is under the BSL 1.1.
+#
+#   curl -sSfL -o /usr/local/bin/ephemeral-validator \
+#     https://github.com/magicblock-labs/magicblock-validator/releases/download/v1.0.2/ephemeral-validator-linux-x64-glibc
+#   echo "b1718382a4104caffa8421f7aea13f10eaeb91153b1dd14cf7b53375e16f4085  /usr/local/bin/ephemeral-validator" | sha256sum -c
+#   chmod +x /usr/local/bin/ephemeral-validator
+#   install -m 644 examples/ephemeral-validator.toml /etc/svmd/
+#   install -m 644 examples/ephemeral-validator.service /etc/systemd/system/
+#   systemctl enable --now ephemeral-validator
+#   solana -u http://127.0.0.1:7799 slot
+
+[Unit]
+Description=MagicBlock ephemeral validator, a rollup on this chain
+After=network-online.target svmd.service
+Wants=network-online.target
+
+[Service]
+User=svmd
+Group=svmd
+# The validator's identity keypair, as base58 of the 64 bytes of the keypair
+# file. Keep it in a file that only this user can read, not in this unit.
+EnvironmentFile=/etc/svmd/ephemeral-validator.env
+# The file holds one line: MBV_VALIDATOR__KEYPAIR=<base58 secret key>
+Environment=RUST_LOG=info
+ExecStart=/usr/local/bin/ephemeral-validator --no-tui /etc/svmd/ephemeral-validator.toml
+Restart=on-failure
+RestartSec=5
+# The validator does not open its ledger with a limit below 1,000,000 open files.
+LimitNOFILE=1048576
+
+[Install]
+WantedBy=multi-user.target

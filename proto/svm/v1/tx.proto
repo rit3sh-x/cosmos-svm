@@ -1,0 +1,45 @@
+// Regenerate x/svm/tx.pb.go with `make proto`.
+syntax = "proto3";
+
+package svm.v1;
+
+import "cosmos/msg/v1/msg.proto";
+
+option go_package = "github.com/rit3sh-x/cosmos-svm/x/svm";
+
+// MsgSVMTransaction carries one Solana transaction into a CometBFT block,
+// in Solana's own wire encoding.
+message MsgSVMTransaction {
+  bytes transaction = 1;
+}
+
+// MsgScheduleGates schedules feature gates to activate at a block height.
+// Only the governance module account may send it, and the height must be
+// at least MinActivationDelay blocks away.
+message MsgScheduleGates {
+  option (cosmos.msg.v1.signer) = "authority";
+  string authority = 1;
+  uint64 height = 2;
+  // Feature pubkeys, base58.
+  repeated string gates = 3;
+}
+
+message MsgScheduleGatesResponse {}
+
+// MsgCancelGates drops scheduled activations before their height. A gate
+// is never deactivated once active, so this is the only way back.
+message MsgCancelGates {
+  option (cosmos.msg.v1.signer) = "authority";
+  string authority = 1;
+  uint64 height = 2;
+  repeated string gates = 3;
+}
+
+message MsgCancelGatesResponse {}
+
+service Msg {
+  option (cosmos.msg.v1.service) = true;
+
+  rpc ScheduleGates(MsgScheduleGates) returns (MsgScheduleGatesResponse);
+  rpc CancelGates(MsgCancelGates) returns (MsgCancelGatesResponse);
+}

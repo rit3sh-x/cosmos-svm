@@ -1,0 +1,323 @@
+{
+  "mainnet_slot": 441617996,
+  "pinned_date": "2026-08-25",
+  "endpoint": "https://api.mainnet-beta.solana.com",
+  "solana_core": "4.2.0",
+  "feature_set": 565236538,
+  "note": "Genesis downloads each release program from url into genesis/programs/ and refuses any file whose sha256 is not the pin. A row with a mainnet object is read from mainnet instead: a program from its ProgramData, pinned by its executable_sha256 (the sha256 of the ELF without trailing zeros), and an account in accounts[], pinned by its data_sha256. loader, sha256 and bytes are what genesis seeds. upstream_upgrade_authority and the programdata fields record mainnet at mainnet_slot, for genesis/check-manifest.py's drift report. Ordering here is by address, for reading; it does not set the order genesis writes. A row with a part is seeded only on a network that turns the part on: ephemeral-rollup by svmd init --ephemeral-validator, vrf by --vrf-oracle.",
+  "programs": [
+    {
+      "name": "ata",
+      "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+      "loader": "BPFLoader2111111111111111111111111111111111",
+      "sha256": "6804554e69fd3a58caa191dc4a58f4c67223d30ca28ab8987f39fc18d2f7374d",
+      "bytes": 105032,
+      "url": "https://github.com/solana-labs/solana-program-library/releases/download/associated-token-account-v1.1.0/spl_associated_token_account-1.1.0.so",
+      "upstream_upgrade_authority": null
+    },
+    {
+      "name": "alt",
+      "address": "AddressLookupTab1e1111111111111111111111111",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "sha256": "e264e1537c5ee1252aae1fa476c25000b641357bc6af4efab65f314160a99570",
+      "bytes": 170144,
+      "url": "https://github.com/solana-program/address-lookup-table/releases/download/program%40v3.0.0/solana_address_lookup_table_program.so",
+      "upstream_upgrade_authority": null,
+      "programdata": "4zSpbk5jGQyMmUrqCSjFZbRKwsrMXBPsyTzjhJEAsefG",
+      "programdata_len": 170189,
+      "last_modified_slot": 329184000,
+      "padding_dropped": 0
+    },
+    {
+      "name": "committor",
+      "address": "ComtrB2KEaWgXsW1dhr1xYL4Ht4Bjj3gXnnL6KMdABq",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "part": "ephemeral-rollup",
+      "mainnet": {
+        "programdata": "2bnq2d5GTnVmEH2N7rRtyydF9knvK2RiVeHuyig7KLF8",
+        "executable_sha256": "e0a0a7d46e6830bd58d70faa568192a2f45899a4eea2924fcc051bb19379a2e2",
+        "deploy_slot": 375458076
+      }
+    },
+    {
+      "name": "dlp",
+      "address": "DELeGGvXpWV2fqJUhqcF5ZSYMS4JTLjteaAMARRSaeSh",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "part": "ephemeral-rollup",
+      "mainnet": {
+        "programdata": "Ew1j4p6jU82qmLFLJe2SVp5ZKoNokMP6J1Bf5LaZ6GyE",
+        "executable_sha256": "9f33fea9576e6e13d08f1e68025a350a853f3b969b1ce8ca88b9d6430f728b2e",
+        "deploy_slot": 464850612
+      }
+    },
+    {
+      "name": "pyth-pro-wormhole",
+      "address": "HDw2E7P8X1SkCyjvoGsfBGAVUutKcj874bXjHrpVYrVL",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "mainnet": {
+        "programdata": "9hLWdeVhSG9ufuQFA5d6zUoZ6qXoMRWrS8i4HGFHnR1x",
+        "executable_sha256": "14517936b6def82d7cd726520e4b9ca2c0f3a51bbb24ef45de9becebd31b292f",
+        "deploy_slot": 417825233
+      }
+    },
+    {
+      "name": "pyth-wormhole",
+      "address": "HDwcJBJXjL9FpJ7UBsYBtaDjsBUhuLCUYoz3zr8SWWaQ",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "mainnet": {
+        "programdata": "CmumsQAU6TvqW2VLFVySBjQYKqKDeUPMBVdrxJ2YoK1",
+        "executable_sha256": "35dd1e5c4f06ef77baa6685ac5fc5c048e286a4b917c7b67be78ed62a994fde2",
+        "deploy_slot": 441901675
+      }
+    },
+    {
+      "name": "session-keys",
+      "address": "KeyspM2ssCJbqUhQ4k7sveSiY4WjnYsrXkC8oDbwde5",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "part": "ephemeral-rollup",
+      "mainnet": {
+        "programdata": "93yt58EXXNgiFUrcZS8TAW2iAEyZH69pEZLPe4kChKuN",
+        "executable_sha256": "c4e355256531f500a6e2a9ffa268d074bf9a45684fc431d5dc908ae52f620779",
+        "deploy_slot": 411665331
+      }
+    },
+    {
+      "name": "memo-v1",
+      "address": "Memo1UhkJRfHyvLMcVucJwxXeuD728EqVDDwQDxFMNo",
+      "loader": "BPFLoader2111111111111111111111111111111111",
+      "sha256": "9b097bd59cc2b02b0d78e8d1cdb2b5f92292b9507a4fd3c1b436c61c1931c63b",
+      "bytes": 17072,
+      "url": "https://github.com/solana-program/memo/releases/download/program%40v1.0.0/spl_memo.so",
+      "upstream_upgrade_authority": null
+    },
+    {
+      "name": "memo-v4",
+      "address": "Memo4c2pN8afCj432Lb7RMVKi9PbQnnW7ewFFaV3oAH",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "sha256": "0c92063c6838d9ad8af50aaefea9a166b5bb41a2bfa2bc6327d7db320849bc78",
+      "bytes": 2304,
+      "url": "https://github.com/solana-program/memo/releases/download/program%40v4.0.0/spl_memo.so",
+      "upstream_upgrade_authority": "GbX5VJUWBXgqDFKXZAmaneVHFuhauMVgvgGE7NPsJahD",
+      "programdata": "HPD8Gxq19uaXy6zDaEGBtkb9NEZwd4jRTnXQ4GM8qe86",
+      "programdata_len": 2349,
+      "last_modified_slot": 421287453,
+      "padding_dropped": 0
+    },
+    {
+      "name": "memo-v3",
+      "address": "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr",
+      "loader": "BPFLoader2111111111111111111111111111111111",
+      "sha256": "f520eaf096361abbb9639ea4dc3e5388a87b9330e121f476607b87c46ef67954",
+      "bytes": 74800,
+      "url": "https://github.com/solana-program/memo/releases/download/program%40v3.0.0/spl_memo.so",
+      "upstream_upgrade_authority": null
+    },
+    {
+      "name": "squads",
+      "address": "SQDS4ep65T869zMMBKyuUq6aD6EgTu8psMjkvj52pCf",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "mainnet": {
+        "programdata": "Fy3YMJCvwbAXUgUM5b91ucUVA3jYzwWLHL3MwBqKsh8n",
+        "executable_sha256": "d48660833989ecea3145ff726164fe640bd90696f03ce00dfd0cda258cbf2fac",
+        "deploy_slot": 302582236
+      }
+    },
+    {
+      "name": "token",
+      "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "sha256": "8190d3f7ceb6cb7a7a8d8924bff89f9f611e15ce1f806f2b6237f3311a98f697",
+      "bytes": 108600,
+      "url": "https://github.com/solana-program/token/releases/download/p-token%40v1.0.0/spl_p_token.so",
+      "upstream_upgrade_authority": null,
+      "programdata": "3gvYRKWyXRR9xKWe1ZjPhLY5ZJRN7KDB4rFZFGoJfFk2",
+      "programdata_len": 108645,
+      "last_modified_slot": 419472000,
+      "padding_dropped": 0
+    },
+    {
+      "name": "token-2022",
+      "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "sha256": "9bbf90b30e06778ca0feca100b29f0eeb9be576ae024f6323cc207308f51a5d1",
+      "bytes": 632560,
+      "url": "https://github.com/solana-program/token-2022/releases/download/program%40v11.0.0/spl_token_2022-11.0.0.so",
+      "upstream_upgrade_authority": "AeLmXCbPaQHGWRLr2saFsEVfmMNuKnxRAbWCT9P5twgz",
+      "programdata": "DoU57AYuPFu2QU514RktNPG22QhApEjnKxnBcu4BHDTY",
+      "programdata_len": 1382061,
+      "last_modified_slot": 427147035,
+      "padding_dropped": 749456
+    },
+    {
+      "name": "vrf",
+      "address": "Vrf1RNUjXmQGjmQrQLvJHs9SNkvDJEsRVFPkfSQUwGz",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "part": "vrf",
+      "mainnet": {
+        "programdata": "CrMJ8fvhdUDTUmvY9rV24gQ6gBdqAjx5P4YZbEkduhp1",
+        "executable_sha256": "3a88342176ae6a5a33df77a3ed1cee0f83a519440892e92865706ba1e25370d3",
+        "deploy_slot": 457592029
+      }
+    },
+    {
+      "name": "cron",
+      "address": "cronAjRZnJn3MTP3B9kE62NWDrjSuAPVXf9c4hu4grM",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "mainnet": {
+        "programdata": "5f7TWpzsBFPKjaoAP5mZ5t2FZCV7ZuA9usZVr5K1PDTz",
+        "executable_sha256": "3247399abbc95b8ee1f8323d16b63141bf769538e458ab28bae49fe67423dbdf",
+        "deploy_slot": 460133337
+      }
+    },
+    {
+      "name": "noop",
+      "address": "noopb9bkMVfRPU8AsbpTUg8AQkHtKwMYZiFUjNRtMmV",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "part": "ephemeral-rollup",
+      "mainnet": {
+        "programdata": "3RHkdjCwWyK2firrwFQGvXCxbUpBky1GTmb9EDK9hUnX",
+        "executable_sha256": "1bec855d4c66b38f2852d73944bd9b459759745f3864d040927c471444f34818",
+        "deploy_slot": 154177312
+      }
+    },
+    {
+      "name": "pyth-pro-push-oracle",
+      "address": "pyt2F414BA6dPttK6RddPZUdHfapoBN24GL5wbrPCou",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "mainnet": {
+        "programdata": "9nxngQjxBGUZ3ajfqoTrpiuDBVfztXCQVDuWDAw52Gew",
+        "executable_sha256": "44bc0785f4fb1e143e01a7b3d86af5696b894de37031291b1b5bb930bc76d77f",
+        "deploy_slot": 417825281
+      }
+    },
+    {
+      "name": "pyth-push-oracle",
+      "address": "pythWSnswVUd12oZpeFP8e9CVaEqJg25g1Vtc2biRsT",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "mainnet": {
+        "programdata": "8xAeURaAWExxyHUXJSgjsg5r96Ydr3G4cek2if7imQmz",
+        "executable_sha256": "1930dbc2dbea6471c1adb10df33b5f5dc3ffaca5c16f611574b74976941a7869",
+        "deploy_slot": 261073328
+      }
+    },
+    {
+      "name": "pyth-pro-receiver",
+      "address": "rec2HHDDnjLfj4kE7VyEtFA1HPGQLK33259532cRyHp",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "mainnet": {
+        "programdata": "3UV7w2yTaqVcUAbWm1KUXdcE1Ziw8CfyyCpZvhKFkPfX",
+        "executable_sha256": "f602e35f66a4ef122218c37537e3255c5f8331c8a00cf4a5b724b6ae2a52bdc2",
+        "deploy_slot": 417825260
+      }
+    },
+    {
+      "name": "pyth-receiver",
+      "address": "rec5EKMGg6MxZYaMdyBfgwp4d5rB9T1VQH5pJv5LtFJ",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "mainnet": {
+        "programdata": "96QrNCjmh32H9quY9DX4NEH81nECVsbkATBDZeoVbvLV",
+        "executable_sha256": "c4f7e05b1d9264719be62bedbb53aa4cdb4563e94134c6199df4a732462dc1c7",
+        "deploy_slot": 327047637
+      }
+    },
+    {
+      "name": "tuktuk",
+      "address": "tuktukUrfhXT6ZT77QTU8RQtvgL967uRuVagWF57zVA",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "mainnet": {
+        "programdata": "5eD2ns9eqYhRMQVaJo1cExfY1JQme6ybt2ZgjkXLA1cU",
+        "executable_sha256": "a30a79f674b3ee9938778df26e648c31273f56d9813549830cb1b7cb5194f080",
+        "deploy_slot": 460133297
+      }
+    }
+  ],
+  "accounts": [
+    {
+      "name": "pyth-pro-wormhole-guardian-set-1",
+      "address": "59LY6jV5LcoEdXrhNhX7AJQmW1gHUHQWSLy3299CgGBY",
+      "owner": "HDw2E7P8X1SkCyjvoGsfBGAVUutKcj874bXjHrpVYrVL",
+      "mainnet": {
+        "data_sha256": "894e8b9fa421a7aa1f07efb8f18781215f3eeb6cd9e2fd6a64d65e59312bf999",
+        "slot": 457976909
+      }
+    },
+    {
+      "name": "pyth-wormhole-bridge",
+      "address": "7iUNa1go9BPLC4Y8KM1RJErtbv2qcVQ62UruXA3yokPF",
+      "owner": "HDwcJBJXjL9FpJ7UBsYBtaDjsBUhuLCUYoz3zr8SWWaQ",
+      "mainnet": {
+        "data_sha256": "2eddaea7db061d21087dd357071376904661adfb0820d4bf97071880eb7b6024",
+        "slot": 457976905
+      }
+    },
+    {
+      "name": "pyth-wormhole-guardian-set-1",
+      "address": "8d9szTd157GKCLcxBqiLUgB7mek3v65rbsy2ErRyjwQ5",
+      "owner": "HDwcJBJXjL9FpJ7UBsYBtaDjsBUhuLCUYoz3zr8SWWaQ",
+      "mainnet": {
+        "data_sha256": "894e8b9fa421a7aa1f07efb8f18781215f3eeb6cd9e2fd6a64d65e59312bf999",
+        "slot": 457976906
+      }
+    },
+    {
+      "name": "squads-config",
+      "address": "BSTq9w3kZwNwpBXJEvTZz2G9ZTNyKBvoSeXMvwb4cNZr",
+      "owner": "SQDS4ep65T869zMMBKyuUq6aD6EgTu8psMjkvj52pCf",
+      "data": "xNJa55CVjD/S+X8vVeN3E3D1MA+GMmni09h2Uo6hw6gXJznKy9X1JAAAAAAAAAAA0vl/L1XjdxNw9TAPhjJp4tPYdlKOocOoFyc5ysvV9SQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    {
+      "name": "pyth-config",
+      "address": "DaWUKXCyXsnzcvLUyeJRWou8KTn7XtadgTsdhJ6RHS7b",
+      "owner": "rec5EKMGg6MxZYaMdyBfgwp4d5rB9T1VQH5pJv5LtFJ",
+      "mainnet": {
+        "data_sha256": "4cc12aa34a009e52084d66e00d671514dd6b97ff20578be4c9cf2fafb35431dd",
+        "slot": 457976901
+      }
+    },
+    {
+      "name": "cron-idl",
+      "address": "EiFi2BQZaNbG3HFdVaU82web2GqXaq9vepobNNgzMHPb",
+      "owner": "cronAjRZnJn3MTP3B9kE62NWDrjSuAPVXf9c4hu4grM",
+      "mainnet": {
+        "data_sha256": "317f4e3ca26c44035dd1e698f2b0a77f7d7889374722e48dabcd2da3e873168d",
+        "slot": 460467009
+      }
+    },
+    {
+      "name": "pyth-pro-wormhole-bridge",
+      "address": "GPhDjebMkciFeemuNGaUn5RsmxauQL7UZArqRDjCSZSW",
+      "owner": "HDw2E7P8X1SkCyjvoGsfBGAVUutKcj874bXjHrpVYrVL",
+      "mainnet": {
+        "data_sha256": "2eddaea7db061d21087dd357071376904661adfb0820d4bf97071880eb7b6024",
+        "slot": 457976908
+      }
+    },
+    {
+      "name": "tuktuk-idl",
+      "address": "GkUxZMcw2RbwZ64VL3MvBtYNV8zim3y7UfzabFTybAUJ",
+      "owner": "tuktukUrfhXT6ZT77QTU8RQtvgL967uRuVagWF57zVA",
+      "mainnet": {
+        "data_sha256": "f357dba925f700f116c7b5531570fe4f5625166f83e3b73e5f5251756e10be5f",
+        "slot": 460467005
+      }
+    },
+    {
+      "name": "pyth-pro-config",
+      "address": "H3R4M45f2gyqp6geVUruapzZdyxpgGZ96UnWkDM3ndye",
+      "owner": "rec2HHDDnjLfj4kE7VyEtFA1HPGQLK33259532cRyHp",
+      "mainnet": {
+        "data_sha256": "e3abebb9b51d2bcde43e074278f41bd872dc9a536f35b02eb403b0dac1a7eec1",
+        "slot": 457976906
+      }
+    },
+    {
+      "name": "tuktuk-config",
+      "address": "HGBovqKte26DbEMBma3T1TvvdmAFYSSgjncRoKECqfXq",
+      "owner": "tuktukUrfhXT6ZT77QTU8RQtvgL967uRuVagWF57zVA",
+      "mainnet": {
+        "data_sha256": "83cda5733da034ee55bc238b6f1d55fb3160a07f877569960f9e1221ea3f7212",
+        "slot": 460467001
+      }
+    }
+  ]
+}

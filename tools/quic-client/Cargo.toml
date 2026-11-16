@@ -1,0 +1,18 @@
+[package]
+name = "quic-client"
+version = "0.0.0"
+edition = "2024"
+publish = false
+description = "The QUIC client svm-tpu's integration tests drive"
+license = "Apache-2.0"
+
+# A test tool in its own workspace, like tools/parsed-oracle. It is Agave's own
+# streamer test client, with the TLS and ALPN that tpu-client-next uses. The
+# dev-context feature it needs never reaches svm-tpu or the engine.
+[workspace]
+
+[dependencies]
+quinn = "0.11.11"
+solana-keypair = "3.1.2"
+solana-streamer = { version = "=4.3.0", features = ["agave-unstable-api", "dev-context-only-utils"] }
+tokio = { version = "1.53.1", features = ["rt-multi-thread", "macros", "time"] }

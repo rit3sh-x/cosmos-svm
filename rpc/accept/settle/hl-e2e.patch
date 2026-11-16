@@ -1,0 +1,15 @@
+--- a/rust/main/utils/run-locally/src/sealevel/solana.rs
++++ b/rust/main/utils/run-locally/src/sealevel/solana.rs
+@@ -280,7 +280,11 @@
+         .join();
+ 
+     log!("Starting solana validator");
+-    let mut args = Program::new(concat_path(&solana_cli_tools_path, "solana-test-validator"))
++    // The cosmos-svm acceptance run names its own base chain here.
++    let validator_bin = std::env::var("SOLANA_TEST_VALIDATOR_BIN")
++        .map(PathBuf::from)
++        .unwrap_or_else(|_| concat_path(&solana_cli_tools_path, "solana-test-validator"));
++    let mut args = Program::new(validator_bin)
+         .flag("quiet")
+         .flag("reset")
+         .arg("ledger", ledger_dir.to_str().unwrap())

@@ -1,0 +1,79 @@
+--- a/test-integration/test-committor-service/tests/test_delivery_preparator.rs
++++ b/test-integration/test-committor-service/tests/test_delivery_preparator.rs
+@@ -366,6 +366,14 @@
+     // next preparation uses the same authority, account, commit id, and cached
+     // blockhash, so ignoring its intent nonce would reproduce the old init
+     // signature after the buffer has already been closed.
++    //
++    // The client caches that blockhash for BLOCKHASH_CACHE_TTL (5 s) from its
++    // fetch, and the setup must confirm inside it. So the fetch is fresh and
++    // made just after a slot begins, and the write and the cleanup go in one
++    // transaction: a base chain with 2 s blocks then confirms the setup in two
++    // blocks rather than three.
++    fixture.rpc_client.wait_for_next_slot().await.expect("next slot");
++    fixture.rpc_client.invalidate_cached_blockhash().await;
+     let cached_blockhash = fixture
+         .rpc_client
+         .get_latest_blockhash()
+@@ -387,25 +395,20 @@
+         .into_iter()
+         .next()
+         .expect("write instruction");
+-    let mut write_instructions = fixture
+-        .compute_budget_config
+-        .buffer_write
+-        .instructions(write_instruction.data.len());
+-    write_instructions.push(write_instruction);
+-    let write_signature =
+-        send_with_blockhash(&fixture, &write_instructions, cached_blockhash)
+-            .await;
+-    wait_for_processed(&fixture, &write_signature, &cached_blockhash).await;
+-
+     let historical_cleanup = preparation_task.cleanup_task();
+-    // Three realloc budget units produce the same 30k limit used by cleanup.
+-    let mut close_instructions =
+-        fixture.compute_budget_config.buffer_init.instructions(3);
+-    close_instructions
++    // Eight realloc budget units (60k) cover the write and the 30k limit
++    // cleanup uses; one transaction keeps the write before the close.
++    let mut write_and_close_instructions =
++        fixture.compute_budget_config.buffer_init.instructions(8);
++    write_and_close_instructions.push(write_instruction);
++    write_and_close_instructions
+         .push(historical_cleanup.instruction(&fixture.authority.pubkey()));
+-    let close_signature =
+-        send_with_blockhash(&fixture, &close_instructions, cached_blockhash)
+-            .await;
++    let close_signature = send_with_blockhash(
++        &fixture,
++        &write_and_close_instructions,
++        cached_blockhash,
++    )
++    .await;
+     wait_for_processed(&fixture, &close_signature, &cached_blockhash).await;
+ 
+     assert_eq!(
+--- a/test-integration/test-committor-service/tests/test_intent_executor.rs
++++ b/test-integration/test-committor-service/tests/test_intent_executor.rs
+@@ -61,7 +61,6 @@
+     hash::Hash,
+     instruction::InstructionError,
+     native_token::LAMPORTS_PER_SOL,
+-    rent::Rent,
+     signature::{Keypair, Signer},
+     transaction::{Transaction, TransactionError},
+ };
+@@ -1614,7 +1613,12 @@
+     // Confirm actor escrow
+     let escrow_pda =
+         ephemeral_balance_pda_from_payer(&payer.pubkey(), ACTOR_ESCROW_INDEX);
+-    let rent = Rent::default().minimum_balance(0);
++    // The chain's own rent, as the destination setup above reads it: a base
++    // chain need not charge Rent::default()'s 6,960 lamports per byte.
++    let rent = rpc_client
++        .get_minimum_balance_for_rent_exemption(0)
++        .await
++        .unwrap();
+     assert_eq!(
+         rpc_client.get_account(&escrow_pda).await.unwrap().lamports,
+         LAMPORTS_PER_SOL / 2 + rent

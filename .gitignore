@@ -1,0 +1,12 @@
+target/
+bin/
+build/
+dist/
+__pycache__/
+node_modules/
+*.so
+/genesis/programs/
+/rpc/accept/results
+/bench/results
+/result
+/.direnv/

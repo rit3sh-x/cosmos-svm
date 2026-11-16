@@ -1,0 +1,44 @@
+[package]
+name = "tx-oracle"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# A separate workspace, named nowhere in the root Cargo.toml, like
+# tools/parsed-oracle. This keeps solana-transaction-status out of the engine's
+# Cargo.lock, which the engine digest covers.
+[workspace]
+
+[[bin]]
+name = "tx-oracle"
+path = "src/main.rs"
+
+[dependencies]
+base64 = "0.22.1"
+bs58 = "0.5.1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+wincode = "0.6"
+# The oracle: Anza's own renderer at the reference version.
+solana-transaction-status = { version = "=4.3.0", features = ["agave-unstable-api"] }
+solana-account-decoder = { version = "=4.3.0", features = ["agave-unstable-api"] }
+# The blockstore's protobuf. Agave's getTransaction reads a stored meta back
+# through it.
+solana-storage-proto = { version = "=4.3.0", features = ["agave-unstable-api"] }
+solana-transaction = { version = "4", features = ["serde", "wincode"] }
+solana-transaction-error = { version = "3", features = ["serde"] }
+solana-message = { version = "4", features = ["serde"] }
+solana-pubkey = "4"
+solana-transaction-context = "4"
+# The instruction interfaces at the versions Agave v4.3.0's own lockfile
+# resolves, so the oracle's parsers read the same layouts as Agave's, not the
+# newest that a caret would pick.
+spl-token-2022-interface = "=3.1.1"
+spl-token-group-interface = "=0.7.2"
+spl-token-metadata-interface = "=1.0.1"
+spl-associated-token-account-interface = "=2.0.0"
+spl-memo-interface = "=2.1.0"
+solana-system-interface = "=3.3.0"
+solana-loader-v2-interface = "=3.0.0"
+solana-loader-v3-interface = "=7.0.0"
+solana-address-lookup-table-interface = "=3.2.0"

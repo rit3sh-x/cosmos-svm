@@ -1,0 +1,2793 @@
+[
+ {
+  "method": "getBalance",
+  "case": "getBalance/payer",
+  "path": "result.value",
+  "agave": 98994414840,
+  "chain": 98995911320,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getBalance",
+  "case": "getBalance/finalized",
+  "path": "result.value",
+  "agave": 98994414840,
+  "chain": 98995911320,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getBalance",
+  "case": "getBalance/processed",
+  "path": "result.value",
+  "agave": 98994414840,
+  "chain": 98995911320,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getBalance",
+  "case": "getBalance/bad-commitment",
+  "path": "result.value",
+  "agave": 98994414840,
+  "chain": 98995911320,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getHighestSnapshotSlot",
+  "case": "getHighestSnapshotSlot",
+  "path": "error",
+  "chain": {
+   "code": -32008,
+   "message": "No snapshot"
+  },
+  "reason": "kept: the test validator holds a snapshot archive, and this machine holds no Agave snapshot, because CometBFT state sync does that job",
+  "page": "| `getHighestSnapshotSlot` | minimal | served |"
+ },
+ {
+  "method": "getHighestSnapshotSlot",
+  "case": "getHighestSnapshotSlot",
+  "path": "result",
+  "agave": {
+   "full": 200,
+   "incremental": null
+  },
+  "reason": "kept: the test validator holds a snapshot archive, and this machine holds no Agave snapshot, because CometBFT state sync does that job",
+  "page": "| `getHighestSnapshotSlot` | minimal | served |"
+ },
+ {
+  "method": "getVoteAccounts",
+  "case": "getVoteAccounts/default",
+  "path": "result.current",
+  "agave": [
+   {
+    "activatedStake": 999999997717120,
+    "commission": 0,
+    "epochCredits": [
+     [
+      0,
+      3472,
+      0
+     ]
+    ],
+    "epochVoteAccount": true,
+    "inflationRewardsCommissionBps": 0,
+    "lastVote": 248,
+    "nodePubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+    "rootSlot": 217,
+    "votePubkey": "91D5oPS7RFk276Z2BWPdP8BPonbegy6pdJkUJvRnBkcv"
+   }
+  ],
+  "chain": [],
+  "reason": "kept: there are no vote accounts, no stake and no inflation here, and the test validator has all three",
+  "page": "**Vote, stake and inflation.**"
+ },
+ {
+  "method": "getMinimumBalanceForRentExemption",
+  "case": "getMinimumBalanceForRentExemption/zero",
+  "path": "result",
+  "agave": 890880,
+  "chain": 650240,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getMinimumBalanceForRentExemption",
+  "case": "getMinimumBalanceForRentExemption/token-account",
+  "path": "result",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getInflationGovernor",
+  "case": "getInflationGovernor",
+  "path": "result.foundation",
+  "agave": 0.05,
+  "chain": 0,
+  "reason": "kept: there are no vote accounts, no stake and no inflation here, and the test validator has all three",
+  "page": "**Vote, stake and inflation.**"
+ },
+ {
+  "method": "getInflationGovernor",
+  "case": "getInflationGovernor",
+  "path": "result.foundationTerm",
+  "agave": 7.0,
+  "chain": 0,
+  "reason": "kept: there are no vote accounts, no stake and no inflation here, and the test validator has all three",
+  "page": "**Vote, stake and inflation.**"
+ },
+ {
+  "method": "getInflationGovernor",
+  "case": "getInflationGovernor",
+  "path": "result.initial",
+  "agave": 0.08,
+  "chain": 0,
+  "reason": "kept: there are no vote accounts, no stake and no inflation here, and the test validator has all three",
+  "page": "**Vote, stake and inflation.**"
+ },
+ {
+  "method": "getInflationGovernor",
+  "case": "getInflationGovernor",
+  "path": "result.taper",
+  "agave": 0.15,
+  "chain": 0,
+  "reason": "kept: there are no vote accounts, no stake and no inflation here, and the test validator has all three",
+  "page": "**Vote, stake and inflation.**"
+ },
+ {
+  "method": "getInflationGovernor",
+  "case": "getInflationGovernor",
+  "path": "result.terminal",
+  "agave": 0.015,
+  "chain": 0,
+  "reason": "kept: there are no vote accounts, no stake and no inflation here, and the test validator has all three",
+  "page": "**Vote, stake and inflation.**"
+ },
+ {
+  "method": "getInflationRate",
+  "case": "getInflationRate",
+  "path": "result.foundation",
+  "agave": 0.004,
+  "chain": 0,
+  "reason": "kept: there are no vote accounts, no stake and no inflation here, and the test validator has all three",
+  "page": "**Vote, stake and inflation.**"
+ },
+ {
+  "method": "getInflationRate",
+  "case": "getInflationRate",
+  "path": "result.total",
+  "agave": 0.08,
+  "chain": 0,
+  "reason": "kept: there are no vote accounts, no stake and no inflation here, and the test validator has all three",
+  "page": "**Vote, stake and inflation.**"
+ },
+ {
+  "method": "getInflationRate",
+  "case": "getInflationRate",
+  "path": "result.validator",
+  "agave": 0.076,
+  "chain": 0,
+  "reason": "kept: there are no vote accounts, no stake and no inflation here, and the test validator has all three",
+  "page": "**Vote, stake and inflation.**"
+ },
+ {
+  "method": "getBlockProduction",
+  "case": "getBlockProduction/default",
+  "path": "result.value.byIdentity.77rKtJuGrZiRkTjbioxs8AgPFd9wsq9zCYQ9cX3XX5QY",
+  "chain": [
+   9,
+   9
+  ],
+  "reason": "kept: slot 0 is genesis and holds no block here, and a leader's identity is a key name that no rule normalizes",
+  "page": "**Leaders, epochs and the cluster.**"
+ },
+ {
+  "method": "getBlockProduction",
+  "case": "getBlockProduction/default",
+  "path": "result.value.byIdentity.HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+  "agave": [
+   250,
+   250
+  ],
+  "reason": "kept: slot 0 is genesis and holds no block here, and a leader's identity is a key name that no rule normalizes",
+  "page": "**Leaders, epochs and the cluster.**"
+ },
+ {
+  "method": "getBlockProduction",
+  "case": "getBlockProduction/default",
+  "path": "result.value.range.firstSlot",
+  "agave": 0,
+  "chain": 1,
+  "reason": "kept: slot 0 is genesis and holds no block here, and a leader's identity is a key name that no rule normalizes",
+  "page": "**Leaders, epochs and the cluster.**"
+ },
+ {
+  "method": "getAccountInfo",
+  "case": "getAccountInfo/payer-default",
+  "path": "result.value.lamports",
+  "agave": 98994414840,
+  "chain": 98995911320,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getAccountInfo",
+  "case": "getAccountInfo/payer-base64",
+  "path": "result.value.lamports",
+  "agave": 98994414840,
+  "chain": 98995911320,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getAccountInfo",
+  "case": "getAccountInfo/mint-base64",
+  "path": "result.value.lamports",
+  "agave": 1461600,
+  "chain": 1066800,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getAccountInfo",
+  "case": "getAccountInfo/mint-base58",
+  "path": "result.value.lamports",
+  "agave": 1461600,
+  "chain": 1066800,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getAccountInfo",
+  "case": "getAccountInfo/mint-binary",
+  "path": "result.value.lamports",
+  "agave": 1461600,
+  "chain": 1066800,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getAccountInfo",
+  "case": "getAccountInfo/mint-jsonParsed",
+  "path": "result.value.lamports",
+  "agave": 1461600,
+  "chain": 1066800,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getAccountInfo",
+  "case": "getAccountInfo/token-account-jsonParsed",
+  "path": "result.value.lamports",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getAccountInfo",
+  "case": "getAccountInfo/mint-zstd",
+  "path": "result.value.data[0]",
+  "agave": "KLUv/QBYpQEAtAIBAAAAenlBEMx5YAt/nsnS6cIqQCZ3P1mtM4A/eRNYABYA5n5AQg8ABgEAAgAADaygDA==",
+  "chain": "KLUv/QQAvQEA9AIBAAAAenlBEMx5YAt/nsnS6cIqQCZ3P1mtM4A/eRNYABYA5n5AQg8AAAAAAAYBAAFUFwIgRyoaYZs=",
+  "reason": "kept: the two compressors write different bytes for the same data, and both decompress to it",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getAccountInfo",
+  "case": "getAccountInfo/mint-zstd",
+  "path": "result.value.lamports",
+  "agave": 1461600,
+  "chain": 1066800,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getAccountInfo",
+  "case": "getAccountInfo/data-slice",
+  "path": "result.value.lamports",
+  "agave": 1461600,
+  "chain": 1066800,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getMultipleAccounts",
+  "case": "getMultipleAccounts/three",
+  "path": "result.value[0].lamports",
+  "agave": 98994414840,
+  "chain": 98995911320,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getMultipleAccounts",
+  "case": "getMultipleAccounts/three",
+  "path": "result.value[1].lamports",
+  "agave": 1461600,
+  "chain": 1066800,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getMultipleAccounts",
+  "case": "getMultipleAccounts/default-encoding",
+  "path": "result.value[0].lamports",
+  "agave": 1461600,
+  "chain": 1066800,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getBlockCommitment",
+  "case": "getBlockCommitment/transfer",
+  "path": "result.commitment",
+  "agave": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   999999997717120
+  ],
+  "chain": null,
+  "reason": "kept: the test validator has a vote account and stake, and this chain has neither",
+  "page": "| `getBlockCommitment` | accounts | served |"
+ },
+ {
+  "method": "getBlockCommitment",
+  "case": "getBlockCommitment/transfer",
+  "path": "result.totalStake",
+  "agave": 999999997717120,
+  "chain": 0,
+  "reason": "kept: the test validator has a vote account and stake, and this chain has neither",
+  "page": "| `getBlockCommitment` | accounts | served |"
+ },
+ {
+  "method": "getProgramAccounts",
+  "case": "getProgramAccounts/token-by-mint",
+  "path": "result[0].account.lamports",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getProgramAccounts",
+  "case": "getProgramAccounts/token-by-mint",
+  "path": "result[1].account.lamports",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getProgramAccounts",
+  "case": "getProgramAccounts/token-with-context",
+  "path": "result.value[0].account.lamports",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getProgramAccounts",
+  "case": "getProgramAccounts/token-with-context",
+  "path": "result.value[1].account.lamports",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getProgramAccounts",
+  "case": "getProgramAccounts/token-jsonParsed",
+  "path": "result[0].account.lamports",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getProgramAccounts",
+  "case": "getProgramAccounts/token-jsonParsed",
+  "path": "result[1].account.lamports",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getProgramAccounts",
+  "case": "getProgramAccounts/token-account-state",
+  "path": "result[0].account.lamports",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getProgramAccounts",
+  "case": "getProgramAccounts/token-account-state",
+  "path": "result[1].account.lamports",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getProgramAccounts",
+  "case": "getProgramAccounts/data-slice",
+  "path": "result[0].account.lamports",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getProgramAccounts",
+  "case": "getProgramAccounts/data-slice",
+  "path": "result[1].account.lamports",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getSupply",
+  "case": "getSupply/default",
+  "path": "result.value.nonCirculatingAccounts",
+  "agave": [
+   "145FLxWrDG9gKifyJKSnkKNAUPhG6hxUMEiZWw6XeSMW",
+   "14FUT96s9swbmH7ZjpDvfEDywnAYy9zaNhv4xvezySGu",
+   "26FqcAbTLvr6cVXk2ktPu9hpeMYWukY7uUwNCtTwu7Wb",
+   "2UdDthRdtZKMjEx9oQYnzuLdWy3sa4XKeaqihdXkXFza",
+   "2WWb1gRzuXDd5viZLQF7pNRR6Y7UiyeaPpaL35X6j3ve",
+   "2bvGnYAPSV8pa1H3vRYr5tPAXktP4DkFACHfAgqyyfhd",
+   "2xP8YQ3sVmfNPtGM17tZi7Lr4vsPUiN6mHLx42roazG5",
+   "33XwSCq2Ft5tTCsGK7kTyMCJ4hqufDZT2REFAWXmsia8",
+   "362rDzQwChHJ9ToZgLdv8wzFHTTsxsxzFLTZPwKY3CYg",
+   "3CYxk8uTXtANvbU1HW3NHNhKcBEfYesi2BdBFizy3f6s",
+   "3FKwgoQWCz4i43Pbo3jdfsjzkgrkjnk44rDWh7A9J9Ee",
+   "3MP45RTcFdLX3HpPD18asXCCxFjsgrZM9V6tEeQxFXd4",
+   "3ZrsTmNM6AkMcqFfv3ryfhQ2jMfqP64RQbqVyAaxqhrQ",
+   "3bTGcGB9F98XxnrBNftmmm48JGfPgi5sYxDEKiCjQYk3",
+   "3fV2GaDKa3pZxyDcpMh5Vrh2FVAMUiWUKbYmnBFv8As3",
+   "3iPvAS4xdhYr6SkhVDHCLr7tJjMAFK4wvvHWJxFQVg15",
+   "3itU5ME8L6FDqtMiRoUiT1F7PwbkTtHBbW51YWD5jtjm",
+   "3jnknRabs7G2V9dKhxd2KP85pNWXKXiedYnYxtySnQMs",
+   "3o6xgkJ9sTmDeQWyfj3sxwon18fXJB9PV5LDc8sfgR4a",
+   "3p9ZxnrSFTkXVrT3KnYg2tT6asnysDApEFB5DRkdeAhB",
+   "3wzw3L4wd3B7DHocbQxHosQXEfqEz5AnkQHKBisGKLzY",
+   "3yeCpRbBU5gzBaweVRqUXFcZUp7gSXBeknKcbGmjwmjJ",
+   "43Cwv866ActL11JqVQXoFPiytUYA3tFXUaNg1zPsarn9",
+   "43KdfhYK6LUXX4LmyxfZ1KLaQrfpRe8vNwopNS7wXsUC",
+   "4VCET97mE8ixxAPRYabM7S7dvkiAFZ8ZzEoH6kbmfYus",
+   "4bAowZuPRG8jzNwMceqjYjZnrGXQNR5ZCgQJM8s4hF4i",
+   "4bWjzNek2m6P3Q8rKkq11C47TaoAwpj3ykk5yDCYLWr1",
+   "4dc5ty7TNod2EQfx4bPnDofPbQk5cELcn3it47qnLizL",
+   "4pV47TiPzZ7SSBPHmgUvSLmH9mMSe8tjyPhQZGbi1zPC",
+   "4sNBQyPbJCQyUimBueZkGWnLVqds4rWkm7eXyi9WskGU",
+   "4sxwau4mdqZ8zEJsfryXq4QFYnMJSCp3HWuZQod8WU5k",
+   "4vuWt1oHRqLMhf8Nv1zyEXZsYaeK7dipwrfKLoYU9Riq",
+   "513qFSVgmAQFBDsnyFCM1MrVKBrWiDgb4nXrdGsqa7Z4",
+   "56AidDLicyQaLMqbMQeZ7itUmJyd7TAvehVDi8MXDYbx",
+   "5A2yoxdGdC3B3QC39pkXpjx2ZPH4WGgie9exHQnhNz4J",
+   "5D5NxsNVTgXHyVziwV7mDFwVDS6voaBsyyGxUbhQrhNW",
+   "5HA8QV7tp59iNpfjs8f84LGUGX4imaynMFSKWHUcTrMT",
+   "5McU7LcsRw3RHyrjj98qHefx6ehy7MdjF1uKKi6Kp8hV",
+   "5PLJZLJiRR9vf7d1JCCg7UuWjtyN9nkab9uok6TqSyuP",
+   "5TuV9WpmESXNfTNqasXVehoXpQy65WUHBbzgKPXPLwWx",
+   "5XdtyEDREHJXXW1CTtCsVjJRjBapAwK78ZquzvnNVRrV",
+   "5aUknZidNKmAPxLMHoUeWsEdmXX8sGKvj8s71pHTDC7H",
+   "5kFTzLuM2VgFdb6x16smnY3JWoVdPxNZVFAqeVgjSTUP",
+   "5khMKAcvmsFaAhoKkdg3u5abvKsmjUQNmhTNP624WB1F",
+   "5q54XjQ7vDx4y6KphPeE97LUNiYGtP55spjvXAWPGBuf",
+   "5smrYwb1Hr2T8XMnvsqccTgXxuqQs14iuE8RbHFYf2Cf",
+   "5tDptzMGG79DLp9XV4fdcmiRNPQGCkfBJeo8EVCSYKw7",
+   "5zHRch6mowPiobRQHYXZ1siRcthw4dYkFPuaNDQkK3EE",
+   "619qLS85ieR4qh7MGNLLZyLefN7hMi2FDVb5cmX1nisb",
+   "63DtkW7zuARcd185EmHAkfF44bDcC2SiTSEj2spLP3iA",
+   "6B7mXMM6BixHvDpPAPLSKweLyCXcbtprkfsw3HfMUSjZ",
+   "6Lfk4e6yxXGcFNMHue5u8KQM9hWYKjbdMFZ2n7SHHd6L",
+   "6WuU6DWoM7ZpgUVL5TR97Fgose7vLgrv4Qvg1Yhqv8Xw",
+   "6dXeE5hS8bQKeqZsc18ewCyqHimnhCBAvVJBusnRqa2F",
+   "6mXiGJbQbX726ZhrMSmbLCF81E8rkSfo1pvBWyn1asG5",
+   "6n1mSmsdGFCkEyyHe4wtgEigbwhiwYRszrerMW9YRyYF",
+   "6nN69B4uZuESZYxr9nrLDjmKRtjDZQXrehwkfQTKw62U",
+   "6o5v1HC7WhBnLfRHp8mQTtCP2khdXXjhuyGyYEoy2Suy",
+   "6spvvQJzFCcw5fVVdF1zKxCeq8Gj2yRFGgFuG16fYSMo",
+   "6vHscAGjgbTfi1ooRVWGjSiUhHcUnLBceJyuKjpKrCYy",
+   "6yKHERk8rsbmJxvMpPuwPs1ct3hRiP7xaJF2tvnGU6nK",
+   "6zw7em7uQdmMpuS9fGz8Nq9TLHa5YQhEKKwPjo5PwDK4",
+   "73Aa7yCd6AMPqsaLisfgrpjESVFtDrLnHEjfDsXBK3HV",
+   "768NcPfBJpFBtjDAbYZLFkej6ca1W5jeArsW5MtdF8S9",
+   "7Anoa4ZRiq8qaaiEnhmdpXyTEmBjZASXGfnQqVDynNie",
+   "7Np41oeYqPefeNQEHSv1UDhYrehxin3NStELsSKCT4K2",
+   "7PzsZ3ApLcfQosSr2B1C9YV1GNNgriZVFyqzDpeHoAD",
+   "7Xgby7EgwoRkhbQSdNJL9sXwpo3jddUhqB4zv3WuJB4m",
+   "7Y8smnoUrYKGGuDq2uaFKVxJYhojgg7DVixHyAtGTYEV",
+   "7cvkjYAkUYs4W8XcXsca7cBrEGFeSUjeZmKoNBvEwyri",
+   "7xJ9CLtEAcEShw9kW2gSoZkRWL566Dg12cvgzANJwbTr",
+   "88YC29WwpugANLcN7DYkuL3benW79WsdxkQ3KX8zER9s",
+   "8CUUMKYNGxdgYio5CLHRHyzMEhhVRMcqefgE6dLqnVRK",
+   "8DE8fqPfv1fp9DHyGyDFFaMjpopMgDeXspzoi9jpBJjC",
+   "8M731ZthMdeVoMFGRaPnUBzR7Ze6qY4zEcQ7WALEAn5i",
+   "8UVjvYyoqP6sqcctTso3xpCdCfgTMiv3VRh7vraC2eJk",
+   "8W58E8JVJjH1jCy5CeHJQgvwFXTyAVyesuXRZGbcSUGG",
+   "8ndGYFjav6NDXvzYcxs449Aub3AxYv4vYpk89zRDwgj7",
+   "8o8trB6XdG8o4qo29De2mcooY5E3pW2rvMMkeBwJHkUD",
+   "8pNBEppa1VcFAsx4Hzq9CpdXUXZjUXbvQwLX2K7QsCwb",
+   "8rT45mqpuDBR1vcnDc9kwP9DrZAXDR4ZeuKWw3u1gTGa",
+   "8rp9vcJG1Uwk25g9XfQNHysfGBYcHizVEJvavqiffB6P",
+   "8vqrX3H2BYLaXVintse3gorPEM4TgTwTFZNN1Fm9TdYs",
+   "98j2yMfxrLzQ5YQJU1FMW3CTkoYgZStJirpm4HLAkA3o",
+   "9S2M3UYPpnPZTBtbcUvehYmiWFK3kBhwfzV2iWuwvaVy",
+   "9ahLw5LFpeTuBykK3A5aiFZ1CidTY7z4YxG2kmQdSGon",
+   "9hknftBZAQL4f48tWfk3bUEV5YSLcYYtDRqNmpNnhCWG",
+   "9huDUZfxoJ7wGMTffUE7vh1xePqef7gyrLJu9NApncqA",
+   "9oBNYSARUMuH2swnxzbxCi827YfUnYWyWSAkrHz93h5y",
+   "9xbcBZoGYFnfJZe81EDuDYKUm8xGkjzW8z4EgnVhNvsv",
+   "9xz1vZSWgY6TFPLZgPM2WJjDM1KiPXcALnjYFHRTkYiK",
+   "A3aaVsuX7BfNCUQbuepQSaLs9KNB7c6djG6u4UuJzwwP",
+   "AG3m2bAibcY8raMt4oXEGqRHwX4FWKPPJVjZxn1LySDX",
+   "AKXpgmVhedTT49sekGbh6MXfx2kJKBcaFQLpc83NCp6N",
+   "ATWFW8xBGPe6xB8JnjyjZqG5FuEXnfyuhEocmqAqfeJG",
+   "AUqLkd6bR54NtXY9Zt4J2zZ7CJbhVHuDR95YFk5qahaX",
+   "AVYpwVou2BhdLivAwLxKPALZQsY7aZNkNmGbP2fZw7RU",
+   "AZWdNvnZxJnbcT8ZzonpN19AZJadxPdUxSiCEDTJzu8L",
+   "AZkdkkHzSEbaZXpr7xBmt71AHj9c8iWE2oWYELm3nns5",
+   "Ab1UcdsFXZVnkSt1Z3vcYU65GQk5MvCbs54SviaiaqHb",
+   "AksPzoA9DKCipgdhHjhUzQJe4iEniCvBoEfvayuFA3BN",
+   "Amn9KQZY5kJj932b49pxwqZuuKfNWewrmNQtdMrRfdvf",
+   "AnbszMCtjEVZTquG3FQ68x1f1WK5B1Z6E7gtN2J6vD5a",
+   "AsrYX4FeLXnZcrjcZmrASY2Eq1jvEeQfwxtNTxS5zojA",
+   "AzHQ8Bia1grVVbcGyci7wzueSWkgvu7YZVZ4B9rkL5P6",
+   "AzVV9ZZDxTgW4wWfJmsG6ytaHpQGSe1yz76Nyy84VbQF",
+   "B22zqCsZL6PDsi4fftmcjj5k7hFjhH1BM8Dcz4fXfFXK",
+   "B5tRZWRCTCLANkY5zLnxEXAn8S2exJD9EkH3cacEYqmE",
+   "BDvLyqobZFubd7ESEJde6KqjbNoChkdj5aEiBdCqcN5r",
+   "BUjkdqUuH5Lz9XzcMcR4DdEMnFG6r8QzUMBm16Rfau96",
+   "BUnRE27mYXN9p8H1Ay24GXhJC88q2CuwLoNU2v2CrW4W",
+   "BVsJuJbhXmxPB9XPZrYMXs1SfuZuo998u1jQ9emVp8YD",
+   "BhvLngiqqKeZ8rpxch2uGjeCiC88zzewoWPRuoxpp1aS",
+   "Br3aeVGapRb2xTq17RU2pYZCoJpWA7bq6TKBCcYtMSmt",
+   "BsKsunvENxAraBrL77UfAn1Gi7unVEmQAdCbhsjUN6tU",
+   "BtF4msVoQYJPrQUMwNtEXw58LVjux18ddVhC4XjbsdwX",
+   "BtvSeDfZNfA3VEH6baFprfx6JcS6JX8jdt6NffCxoJGV",
+   "BuCEvc9ze8UoAQwwsQLy8d447C8sA4zeVtVpc6m5wQeS",
+   "C4fATCN93YL5iYS3c2MrHeDmkMD6waHuBXLqsri5q5AF",
+   "C7C8odR8oashR5Feyrq2tJKaXL18id1dSj2zbkDGL2C2",
+   "CHmdL15akDcJgBkY6BP3hzs98Dqr6wbdDC5p8odvtSbq",
+   "CND6ZjRTzaCFVdX7pSSWgjTfHZuhxqFDoUBqWBJguNoA",
+   "CQDYc4ET2mbFhVpgj41gXahL6Exn5ZoPcGAzSHuYxwmE",
+   "CSSxN8vQYqSjg5GV6ZUGSM65dXqhytLzANLpMrBZjLKP",
+   "CTqnGTKHrcg8AVK5pSwVzpA3mmSxz7Js9y7rEqCbjryH",
+   "CTvhdUVf8KNyMbyEdnvRrBCHJjBKtQwkbj6zwoqcEssG",
+   "CUageMFi49kzoDqtdU8NvQ4Bq3sbtJygjKDAXJ45nmAi",
+   "CVgyXrbEd1ctEuvq11QdpnCQVnPit8NLdhyqXQHLprM2",
+   "CWeRmXme7LmbaUWTZWFLt6FMnpzLCHaQLuR2TdgFn4Lq",
+   "CY7X5o3Wi2eQhTocLmUS6JSWyx1NinBfW7AXRrkRCpi8",
+   "CakcnaRDHka2gXyfbEd2d3xsvkJkqsLw2akB3zsN1D2S",
+   "CfCvwXZk1sLSqzuoFx1K7KG1puMofgwHA3tSpcArVysX",
+   "Cj53e3n1WX9dAUNX5PZpsc9xG9e7hXGnuJkKLJkNaf6v",
+   "CsUqV42gVQLJwQsKyjWHqGkfHarxn9hcY4YeSjgaaeTd",
+   "CuatS6njAcfkFHnvai7zXCs7syA9bykXWsDCJEWfhjHG",
+   "CzAHrrrHKx9Lxf6wdCMrsZkLvk74c7J2vGv8VYPUmY6v",
+   "DE1bawNcRJB9rVm3buyMVfr8mBEoyyu73NBovf2oXJsJ",
+   "DEGyTHFXmYuyANRDYRoEcShBXLonWNdBRpNzbFZBuzhY",
+   "DFaHYDcuLmxx3vrJGCgw8sPehzBNjvbvZTjz7PgvYLcb",
+   "DQQGPtj7pphPHCLzzBuEyDDQByUcKGrsJdsH7SP3hAug",
+   "DUS1KxwUhUyDKB4A81E8vdnTe3hSahd92Abtn9CXsEcj",
+   "DVhs8YHWrvhhGxoefDNY9KotqtEEnjnSAK8MYGL2Q7X",
+   "DWfXRxmUXKdSTji4S1nXncviTmrhWQwxHAQCcvjRLeWm",
+   "Dc2oHxFXQaC2QfLStuU7txtD3U5HZ82MrCSGDooWjbsv",
+   "DeXE7LTUqsC3B9kSACfFdW5TPG1eT9n1Z6gVB9dJNxqz",
+   "DrKzW5koKSZp4mg4BdHLwr72MMXscd2kTiWgckCvvPXz",
+   "Ds69ZQPb3D3aVPXdN5REyzALBrzJLdruJZ1cwyfyoEEx",
+   "DwqBsPgtAHqQUmRN3WF5YTuLKhK7dqzrb9eRJ4UVRNLf",
+   "E8jcgWvrvV7rwYHJThwfiBeQ8VAH4FgNEEMG9aAuCMAq",
+   "EAJJD6nDqtXcZ4DnQb19F9XEz8y8bRDHxbWbahatZNbL",
+   "EHUv6Hc9XGAb57C8iNCUuoE9xnJnRTFr9LaP7zbu8LNB",
+   "EMAY24PrS6rWfvpqffFCsTsFJypeeYYmtUc26wdh3Wup",
+   "EMhn1U3TMimW3bvWYbPUvN2eZnCfsuBN4LGWhzzYhiWR",
+   "EPfiDzgbdgXdyqqwbYFMqU6Qvfx2J9Zf2J9noXBYYbbx",
+   "EWAjC8a9VPbALSM3D6tGsbRfgDV48kRuHZPu8qtYSNDv",
+   "EbitXxcwjC1dzrGJ7sa3Y6RBzSM3wxvrxMaBncNBKEf2",
+   "EhN8bv8LCXnNAVju9ERGsCccmdBNmNTAESAHXE8PyBLR",
+   "EnX9MvycxMGKFpMPJHgNo6kD2proVaorKQcSaMmguMEZ",
+   "Ep5Y58PaSyALPrdFxDVAdfKtVdP55vApvsWjb3jSmXsG",
+   "Es13uD2p64UVPFpEWfDtd6SERdoNR2XVgqBQBZcZSLqW",
+   "Eyr9P5XsjK2NUKNCnfu39eqpGoiLFgVAv1LSQgMZCwiQ",
+   "EziVYi3Sv5kJWxmU77PnbrT8jmkVuqwdiFLLzZpLVEn7",
+   "F9MWFw8cnYVwsRq8Am1PGfFL3cQUZV37mbGoxZftzLjN",
+   "FB6VmiYFnVGp1uKXA3WbNsqg9neGYVpwYYiB9q8bFRrQ",
+   "FG6UGgT4VpCQxjwQsVy6woHeemwb5jP5u9kR5ry3twcK",
+   "FPzPT7YV5BHSTjYjqycXbwBsD4E5WsrZNPcCgcHhPkUx",
+   "FR84wZQy3Y3j2gWz6pgETUiUoJtreMEuWfbg6573UCj9",
+   "FThHNjNQYi7FLvP4KjeYf3LXjcN2LhyYHmza35ucqtDT",
+   "Fas9FrnngyVjdMZ6r8p8SsfyFDtHLMmrw1dyBxRWWVTF",
+   "Fg12tB1tz8w6zJSQ4ZAGotWoCztdMJF9hqK8R11pakog",
+   "Fgyh8EeYGZtbW8sS33YmNQnzx54WXPrJ5KWNPkCfWPot",
+   "FiWYY85b58zEEcPtxe3PuqzWPjqBJXqdwgZeqSBmT9Cn",
+   "FnXgwJZT7RMhpYEJFCXGLHp63bhVLfVn5d4aSVQDe19n",
+   "FwfaykN7ACnsEUDHANzGHqTGQZMcGnUSsahAHUqbdPrz",
+   "G8EBx1Qo5W8731nmaBSGYyvU96onpEP5adrVSjt4vnLF",
+   "GEWSkfWgHkpiLbeKaAnwvqnECGdRNf49at5nFccVey7c",
+   "GK2zqSsXLA2rwVZk347RYhh6jJpRsCA69FjLW93ZGi3B",
+   "GK8R4uUmrawcREZ5xJy5dAzVV5V7aFvYg77id37pVTK",
+   "GLUmCeJpXB8veNcchPwibkRYwCwvQbKodex5mEjrgToi",
+   "GLz4zxemfHJy3BnK7PjZ4uUgJoHtycpT3JrmTDYduVpg",
+   "GNiz4Mq886bTNDT3pijGsu2gbw6it7sqrwncro45USeB",
+   "GbPK6cgUKso2ZGNV6GRwbp3hkdUzTVjsybYQMGDBvMFa",
+   "Gbz6wkNFus8SNEkWGNNENLv9NFwVvF1pWVDpaVKUWcMh",
+   "GdnSyH3YtwcxFvQrVVJMm1JhTS4QVX7MFsX56uJLUfiZ",
+   "GhsotwFMH6XUrRLJCxcx62h7748N2Uq8mf87hUGkmPhg",
+   "GmyW1nqYcrw7P7JqrcyP9ivU9hYNbrgZ1r5SYJJH41Fs",
+   "GpYnVDgB7dzvwSgsjQFeHznjG6Kt1DLBFYrKxjGU1LuD",
+   "GpxpMVhrBBBEYbEJxdR62w3daWz444V7m6dxYDZKH77D",
+   "GumSE5HsMV5HCwBTv2D2D81yy9x17aDkvobkqAfTRgmo",
+   "GvpCiTgq9dmEeojCDBivoLoZqc4AkbUDACpqPMwYLWKh",
+   "H1rt8KvXkNhQExTRfkY8r9wjZbZ8yCih6J4wQ5Fz9HGP",
+   "H35YRuMGE6WDPBLu3fDYLxV7tEcL2yJ7C97jDkw6NrBf",
+   "H3Ni7vG1CsmJZdTvxF7RkAf9UM5qk4RsohJsmPvtZNnu",
+   "H5PutDz8EgAoznaX7Bc8qSB6sPxD2Xho145H6MH6AcbV",
+   "H8wurbnaaXsgtrjqkNH1HhncUPUhTLAmKUHkwMeyqmfN",
+   "HBfi37TwD4kMa1WrAWwXp3ZaFbZQ1g3XxWwNZs8QsCpY",
+   "HCV5dGFJXRrJ3jhDYA4DCeb9TEDTwGGYXtT3wHksu2Zr",
+   "HKJgYGTTYYR2ZkfJKHbn58w676fKueQXmvbtpyvrSM3N",
+   "HMmHHmCmC3oo4G4QCjKvNxctSBQzRFDp2WQHZoXyrW6Q",
+   "HNCooAiRiVeqGK9VSjxsvRsfr4weTcx14XhkvM7zDMgx",
+   "HQJtLqvEGGxgNYfRXUurfxV8E1swvCnsbC3456ik27HY",
+   "HUAkU5psJXZuw54Lrg1ksbXzHv2fzczQ9sNbmisVMeJU",
+   "HbJUXNHXLzpucDr9wgjuoqAwK6XNKEcqi5h29MkkuSBQ",
+   "HbZ5FfmKWNHC7uwk6TF1hVi6TCs7dtYfdjEcuPGgzFAg",
+   "Hm9JW7of5i9dnrboS8pCUCSeoQUPh7JsP1rkbJnW7An4",
+   "Ht5roME7Fjzt3dcEyf7UxYpPPAAdyTrnJ6rgEwQrNAFg",
+   "HuqDWJodFhAEWh6aWdsDVUqsjRket5DYXMYyDYtD8hdN",
+   "Hz9nydgN1k15wnwffKX7CSmZp4VFTnTwLXAEdomFGNXy",
+   "JCwT5Ygmq3VeBEbDjL8s8E82Ra2rP9bq45QfZE7Xyaq7",
+   "Mc5XB47H3DKJHym5RLa9mPzWv5snERsF3KNv5AauXK8",
+   "P8aKfWQPeRnsZtpBrwWTYzyAoRk74KMz56xc6NEpC4J",
+   "nGME7HgBT6tAJN1f6YuCCngpqT5cvSTndZUVLjQ4jwA",
+   "wRVP5MYuqP8HJ1Q8RCJ5NzUraL3DxCKPGMKSBd5iQH1",
+   "xQadXQiUTCCFhfHjvQx1hyJK6KVWr1w2fD6DT3cdwj7"
+  ],
+  "chain": [],
+  "reason": "kept: Agave lists mainnet's 214 non-circulating addresses on every cluster; they mean nothing here, and nothing on this chain is locked, so its list is empty",
+  "page": "`nonCirculatingAccounts` is empty and `nonCirculating` is 0"
+ },
+ {
+  "method": "getTokenAccountsByOwner",
+  "case": "getTokenAccountsByOwner/payer-mint",
+  "path": "result.value[0].account.lamports",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTokenAccountsByOwner",
+  "case": "getTokenAccountsByOwner/payer-program",
+  "path": "result.value[0].account.lamports",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTokenAccountsByOwner",
+  "case": "getTokenAccountsByOwner/payer-jsonParsed",
+  "path": "result.value[0].account.lamports",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTokenAccountsByDelegate",
+  "case": "getTokenAccountsByDelegate/mint",
+  "path": "result.value[0].account.lamports",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTokenAccountsByDelegate",
+  "case": "getTokenAccountsByDelegate/program",
+  "path": "result.value[0].account.lamports",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getClusterNodes",
+  "case": "getClusterNodes",
+  "path": "result[0].clientId",
+  "agave": "Agave",
+  "chain": null,
+  "reason": "kept: there is no gossip, shred, vote or repair port here, and this software is none of Agave's client ids",
+  "page": "**Leaders, epochs and the cluster.**"
+ },
+ {
+  "method": "getClusterNodes",
+  "case": "getClusterNodes",
+  "path": "result[0].gossip",
+  "agave": "127.0.0.1:8000",
+  "chain": null,
+  "reason": "kept: there is no gossip, shred, vote or repair port here, and this software is none of Agave's client ids",
+  "page": "**Leaders, epochs and the cluster.**"
+ },
+ {
+  "method": "getClusterNodes",
+  "case": "getClusterNodes",
+  "path": "result[0].serveRepair",
+  "agave": "127.0.0.1:8008",
+  "chain": null,
+  "reason": "kept: there is no gossip, shred, vote or repair port here, and this software is none of Agave's client ids",
+  "page": "**Leaders, epochs and the cluster.**"
+ },
+ {
+  "method": "getClusterNodes",
+  "case": "getClusterNodes",
+  "path": "result[0].shredVersion",
+  "agave": 62863,
+  "chain": null,
+  "reason": "kept: there is no gossip, shred, vote or repair port here, and this software is none of Agave's client ids",
+  "page": "**Leaders, epochs and the cluster.**"
+ },
+ {
+  "method": "getClusterNodes",
+  "case": "getClusterNodes",
+  "path": "result[0].tpuVote",
+  "agave": "127.0.0.1:8004",
+  "chain": null,
+  "reason": "kept: there is no gossip, shred, vote or repair port here, and this software is none of Agave's client ids",
+  "page": "**Leaders, epochs and the cluster.**"
+ },
+ {
+  "method": "getClusterNodes",
+  "case": "getClusterNodes",
+  "path": "result[0].tvu",
+  "agave": "127.0.0.1:8001",
+  "chain": null,
+  "reason": "kept: there is no gossip, shred, vote or repair port here, and this software is none of Agave's client ids",
+  "page": "**Leaders, epochs and the cluster.**"
+ },
+ {
+  "method": "getBlock",
+  "case": "getBlock/transfer-default",
+  "path": "result.rewards",
+  "agave": [
+   {
+    "commission": null,
+    "lamports": 7500,
+    "postBalance": 499999770000,
+    "pubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+    "rewardType": "Fee"
+   }
+  ],
+  "chain": [],
+  "reason": "kept: Agave's blocks carry vote transactions and fee rewards; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getBlock",
+  "case": "getBlock/transfer-default",
+  "path": "result.transactions",
+  "agave": [
+   {
+    "meta": {
+     "computeUnitsConsumed": 2100,
+     "costUnits": 4185,
+     "err": null,
+     "fee": 10000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program Vote111111111111111111111111111111111111111 invoke [1]",
+      "Program Vote111111111111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      499999762500,
+      1000000000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      499999772500,
+      1000000000000000,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "transaction": {
+     "message": {
+      "accountKeys": [
+       "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+       "91D5oPS7RFk276Z2BWPdP8BPonbegy6pdJkUJvRnBkcv",
+       "Vote111111111111111111111111111111111111111"
+      ],
+      "header": {
+       "numReadonlySignedAccounts": 0,
+       "numReadonlyUnsignedAccounts": 1,
+       "numRequiredSignatures": 2
+      },
+      "instructions": [
+       {
+        "accounts": [
+         1,
+         1
+        ],
+        "data": "67MGn13jxcyfeEp82voiLFPGwJosowhUrz2MCQChirvwpxM5QNiSNAMaXN87hMxERPkLhg6fSccRv4H6Tcd4N9iacHyz3VqZyLtbh7BwXiw2VYzDkQe6cQToT5vc5JjmZsvj7vmAP3kGdutMrRHZvfwiXgc882W1d4Fhmd4C1BCqmS1a1Yn559jJtZtsL9s4G7eYbaoxcs",
+        "programIdIndex": 2,
+        "stackHeight": 1
+       }
+      ],
+      "recentBlockhash": "normalized string"
+     },
+     "signatures": [
+      "normalized string",
+      "normalized string"
+     ]
+    }
+   },
+   {
+    "meta": {
+     "computeUnitsConsumed": 150,
+     "costUnits": 1481,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98999995000,
+      1000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      100000000000,
+      0,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "transaction": {
+     "message": {
+      "accountKeys": [
+       "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+       "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+       "11111111111111111111111111111111"
+      ],
+      "header": {
+       "numReadonlySignedAccounts": 0,
+       "numReadonlyUnsignedAccounts": 1,
+       "numRequiredSignatures": 1
+      },
+      "instructions": [
+       {
+        "accounts": [
+         0,
+         1
+        ],
+        "data": "3Bxs3zzLZLuLQEYX",
+        "programIdIndex": 2,
+        "stackHeight": 1
+       }
+      ],
+      "recentBlockhash": "normalized string"
+     },
+     "signatures": [
+      "normalized string"
+     ]
+    }
+   }
+  ],
+  "chain": [
+   {
+    "meta": {
+     "computeUnitsConsumed": 150,
+     "costUnits": 24352,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98999995000,
+      1000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      100000000000,
+      0,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "transaction": {
+     "message": {
+      "accountKeys": [
+       "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+       "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+       "11111111111111111111111111111111"
+      ],
+      "header": {
+       "numReadonlySignedAccounts": 0,
+       "numReadonlyUnsignedAccounts": 1,
+       "numRequiredSignatures": 1
+      },
+      "instructions": [
+       {
+        "accounts": [
+         0,
+         1
+        ],
+        "data": "3Bxs3zzLZLuLQEYX",
+        "programIdIndex": 2,
+        "stackHeight": 1
+       }
+      ],
+      "recentBlockhash": "normalized string"
+     },
+     "signatures": [
+      "normalized string"
+     ]
+    }
+   }
+  ],
+  "reason": "kept: Agave's blocks carry vote transactions and fee rewards; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getBlock",
+  "case": "getBlock/transfer-json",
+  "path": "result.rewards",
+  "agave": [
+   {
+    "commission": null,
+    "lamports": 7500,
+    "postBalance": 499999770000,
+    "pubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+    "rewardType": "Fee"
+   }
+  ],
+  "chain": [],
+  "reason": "kept: Agave's blocks carry vote transactions and fee rewards; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getBlock",
+  "case": "getBlock/transfer-json",
+  "path": "result.transactions",
+  "agave": [
+   {
+    "meta": {
+     "computeUnitsConsumed": 2100,
+     "costUnits": 4185,
+     "err": null,
+     "fee": 10000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program Vote111111111111111111111111111111111111111 invoke [1]",
+      "Program Vote111111111111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      499999762500,
+      1000000000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      499999772500,
+      1000000000000000,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "transaction": {
+     "message": {
+      "accountKeys": [
+       "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+       "91D5oPS7RFk276Z2BWPdP8BPonbegy6pdJkUJvRnBkcv",
+       "Vote111111111111111111111111111111111111111"
+      ],
+      "header": {
+       "numReadonlySignedAccounts": 0,
+       "numReadonlyUnsignedAccounts": 1,
+       "numRequiredSignatures": 2
+      },
+      "instructions": [
+       {
+        "accounts": [
+         1,
+         1
+        ],
+        "data": "67MGn13jxcyfeEp82voiLFPGwJosowhUrz2MCQChirvwpxM5QNiSNAMaXN87hMxERPkLhg6fSccRv4H6Tcd4N9iacHyz3VqZyLtbh7BwXiw2VYzDkQe6cQToT5vc5JjmZsvj7vmAP3kGdutMrRHZvfwiXgc882W1d4Fhmd4C1BCqmS1a1Yn559jJtZtsL9s4G7eYbaoxcs",
+        "programIdIndex": 2,
+        "stackHeight": 1
+       }
+      ],
+      "recentBlockhash": "normalized string"
+     },
+     "signatures": [
+      "normalized string",
+      "normalized string"
+     ]
+    },
+    "version": "legacy"
+   },
+   {
+    "meta": {
+     "computeUnitsConsumed": 150,
+     "costUnits": 1481,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98999995000,
+      1000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      100000000000,
+      0,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "transaction": {
+     "message": {
+      "accountKeys": [
+       "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+       "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+       "11111111111111111111111111111111"
+      ],
+      "header": {
+       "numReadonlySignedAccounts": 0,
+       "numReadonlyUnsignedAccounts": 1,
+       "numRequiredSignatures": 1
+      },
+      "instructions": [
+       {
+        "accounts": [
+         0,
+         1
+        ],
+        "data": "3Bxs3zzLZLuLQEYX",
+        "programIdIndex": 2,
+        "stackHeight": 1
+       }
+      ],
+      "recentBlockhash": "normalized string"
+     },
+     "signatures": [
+      "normalized string"
+     ]
+    },
+    "version": "legacy"
+   }
+  ],
+  "chain": [
+   {
+    "meta": {
+     "computeUnitsConsumed": 150,
+     "costUnits": 24352,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98999995000,
+      1000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      100000000000,
+      0,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "transaction": {
+     "message": {
+      "accountKeys": [
+       "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+       "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+       "11111111111111111111111111111111"
+      ],
+      "header": {
+       "numReadonlySignedAccounts": 0,
+       "numReadonlyUnsignedAccounts": 1,
+       "numRequiredSignatures": 1
+      },
+      "instructions": [
+       {
+        "accounts": [
+         0,
+         1
+        ],
+        "data": "3Bxs3zzLZLuLQEYX",
+        "programIdIndex": 2,
+        "stackHeight": 1
+       }
+      ],
+      "recentBlockhash": "normalized string"
+     },
+     "signatures": [
+      "normalized string"
+     ]
+    },
+    "version": "legacy"
+   }
+  ],
+  "reason": "kept: Agave's blocks carry vote transactions and fee rewards; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getBlock",
+  "case": "getBlock/transfer-jsonParsed",
+  "path": "result.rewards",
+  "agave": [
+   {
+    "commission": null,
+    "lamports": 7500,
+    "postBalance": 499999770000,
+    "pubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+    "rewardType": "Fee"
+   }
+  ],
+  "chain": [],
+  "reason": "kept: Agave's blocks carry vote transactions and fee rewards; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getBlock",
+  "case": "getBlock/transfer-jsonParsed",
+  "path": "result.transactions",
+  "agave": [
+   {
+    "meta": {
+     "computeUnitsConsumed": 2100,
+     "costUnits": 4185,
+     "err": null,
+     "fee": 10000,
+     "innerInstructions": [],
+     "logMessages": [
+      "Program Vote111111111111111111111111111111111111111 invoke [1]",
+      "Program Vote111111111111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      499999762500,
+      1000000000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      499999772500,
+      1000000000000000,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "transaction": {
+     "message": {
+      "accountKeys": [
+       {
+        "pubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+        "signer": true,
+        "source": "transaction",
+        "writable": true
+       },
+       {
+        "pubkey": "91D5oPS7RFk276Z2BWPdP8BPonbegy6pdJkUJvRnBkcv",
+        "signer": true,
+        "source": "transaction",
+        "writable": true
+       },
+       {
+        "pubkey": "Vote111111111111111111111111111111111111111",
+        "signer": false,
+        "source": "transaction",
+        "writable": false
+       }
+      ],
+      "instructions": [
+       {
+        "parsed": {
+         "info": {
+          "towerSync": {
+           "blockId": "A5CzkUAtrr2DvMHnCccKLTcKG25MrPo3rabXVPKFEK2s",
+           "hash": "H88XFUpcUdhGyrCyNTA7A5ZDSuvdPQ58oX3mMZncbcAx",
+           "lockouts": [
+            {
+             "confirmation_count": 31,
+             "slot": 17
+            },
+            {
+             "confirmation_count": 30,
+             "slot": 18
+            },
+            {
+             "confirmation_count": 29,
+             "slot": 19
+            },
+            {
+             "confirmation_count": 28,
+             "slot": 20
+            },
+            {
+             "confirmation_count": 27,
+             "slot": 21
+            },
+            {
+             "confirmation_count": 26,
+             "slot": 22
+            },
+            {
+             "confirmation_count": 25,
+             "slot": 23
+            },
+            {
+             "confirmation_count": 24,
+             "slot": 24
+            },
+            {
+             "confirmation_count": 23,
+             "slot": 25
+            },
+            {
+             "confirmation_count": 22,
+             "slot": 26
+            },
+            {
+             "confirmation_count": 21,
+             "slot": 27
+            },
+            {
+             "confirmation_count": 20,
+             "slot": 28
+            },
+            {
+             "confirmation_count": 19,
+             "slot": 29
+            },
+            {
+             "confirmation_count": 18,
+             "slot": 30
+            },
+            {
+             "confirmation_count": 17,
+             "slot": 31
+            },
+            {
+             "confirmation_count": 16,
+             "slot": 32
+            },
+            {
+             "confirmation_count": 15,
+             "slot": 33
+            },
+            {
+             "confirmation_count": 14,
+             "slot": 34
+            },
+            {
+             "confirmation_count": 13,
+             "slot": 35
+            },
+            {
+             "confirmation_count": 12,
+             "slot": 36
+            },
+            {
+             "confirmation_count": 11,
+             "slot": 37
+            },
+            {
+             "confirmation_count": 10,
+             "slot": 38
+            },
+            {
+             "confirmation_count": 9,
+             "slot": 39
+            },
+            {
+             "confirmation_count": 8,
+             "slot": 40
+            },
+            {
+             "confirmation_count": 7,
+             "slot": 41
+            },
+            {
+             "confirmation_count": 6,
+             "slot": 42
+            },
+            {
+             "confirmation_count": 5,
+             "slot": 43
+            },
+            {
+             "confirmation_count": 4,
+             "slot": 44
+            },
+            {
+             "confirmation_count": 3,
+             "slot": 45
+            },
+            {
+             "confirmation_count": 2,
+             "slot": 46
+            },
+            {
+             "confirmation_count": 1,
+             "slot": 47
+            }
+           ],
+           "root": 16,
+           "timestamp": 1791634850
+          },
+          "voteAccount": "91D5oPS7RFk276Z2BWPdP8BPonbegy6pdJkUJvRnBkcv",
+          "voteAuthority": "91D5oPS7RFk276Z2BWPdP8BPonbegy6pdJkUJvRnBkcv"
+         },
+         "type": "towersync"
+        },
+        "program": "vote",
+        "programId": "Vote111111111111111111111111111111111111111",
+        "stackHeight": 1
+       }
+      ],
+      "recentBlockhash": "normalized string"
+     },
+     "signatures": [
+      "normalized string",
+      "normalized string"
+     ]
+    },
+    "version": "legacy"
+   },
+   {
+    "meta": {
+     "computeUnitsConsumed": 150,
+     "costUnits": 1481,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "logMessages": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98999995000,
+      1000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      100000000000,
+      0,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "transaction": {
+     "message": {
+      "accountKeys": [
+       {
+        "pubkey": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+        "signer": true,
+        "source": "transaction",
+        "writable": true
+       },
+       {
+        "pubkey": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+        "signer": false,
+        "source": "transaction",
+        "writable": true
+       },
+       {
+        "pubkey": "11111111111111111111111111111111",
+        "signer": false,
+        "source": "transaction",
+        "writable": false
+       }
+      ],
+      "instructions": [
+       {
+        "parsed": {
+         "info": {
+          "destination": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+          "lamports": 1000000000,
+          "source": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty"
+         },
+         "type": "transfer"
+        },
+        "program": "system",
+        "programId": "11111111111111111111111111111111",
+        "stackHeight": 1
+       }
+      ],
+      "recentBlockhash": "normalized string"
+     },
+     "signatures": [
+      "normalized string"
+     ]
+    },
+    "version": "legacy"
+   }
+  ],
+  "chain": [
+   {
+    "meta": {
+     "computeUnitsConsumed": 150,
+     "costUnits": 24352,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "logMessages": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98999995000,
+      1000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      100000000000,
+      0,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "transaction": {
+     "message": {
+      "accountKeys": [
+       {
+        "pubkey": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+        "signer": true,
+        "source": "transaction",
+        "writable": true
+       },
+       {
+        "pubkey": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+        "signer": false,
+        "source": "transaction",
+        "writable": true
+       },
+       {
+        "pubkey": "11111111111111111111111111111111",
+        "signer": false,
+        "source": "transaction",
+        "writable": false
+       }
+      ],
+      "instructions": [
+       {
+        "parsed": {
+         "info": {
+          "destination": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+          "lamports": 1000000000,
+          "source": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty"
+         },
+         "type": "transfer"
+        },
+        "program": "system",
+        "programId": "11111111111111111111111111111111",
+        "stackHeight": 1
+       }
+      ],
+      "recentBlockhash": "normalized string"
+     },
+     "signatures": [
+      "normalized string"
+     ]
+    },
+    "version": "legacy"
+   }
+  ],
+  "reason": "kept: Agave's blocks carry vote transactions and fee rewards; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getBlock",
+  "case": "getBlock/transfer-base64",
+  "path": "result.rewards",
+  "agave": [
+   {
+    "commission": null,
+    "lamports": 7500,
+    "postBalance": 499999770000,
+    "pubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+    "rewardType": "Fee"
+   }
+  ],
+  "chain": [],
+  "reason": "kept: Agave's blocks carry vote transactions and fee rewards; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getBlock",
+  "case": "getBlock/transfer-base64",
+  "path": "result.transactions",
+  "agave": [
+   {
+    "meta": {
+     "computeUnitsConsumed": 2100,
+     "costUnits": 4185,
+     "err": null,
+     "fee": 10000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program Vote111111111111111111111111111111111111111 invoke [1]",
+      "Program Vote111111111111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      499999762500,
+      1000000000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      499999772500,
+      1000000000000000,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "transaction": [
+     "normalized string",
+     "base64"
+    ],
+    "version": "legacy"
+   },
+   {
+    "meta": {
+     "computeUnitsConsumed": 150,
+     "costUnits": 1481,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98999995000,
+      1000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      100000000000,
+      0,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "transaction": [
+     "normalized string",
+     "base64"
+    ],
+    "version": "legacy"
+   }
+  ],
+  "chain": [
+   {
+    "meta": {
+     "computeUnitsConsumed": 150,
+     "costUnits": 24352,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98999995000,
+      1000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      100000000000,
+      0,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "transaction": [
+     "normalized string",
+     "base64"
+    ],
+    "version": "legacy"
+   }
+  ],
+  "reason": "kept: Agave's blocks carry vote transactions and fee rewards; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getBlock",
+  "case": "getBlock/transfer-signatures",
+  "path": "result.rewards",
+  "agave": [
+   {
+    "commission": null,
+    "lamports": 7500,
+    "postBalance": 499999770000,
+    "pubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+    "rewardType": "Fee"
+   }
+  ],
+  "chain": [],
+  "reason": "kept: Agave's blocks carry vote transactions and fee rewards; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getBlock",
+  "case": "getBlock/transfer-signatures",
+  "path": "result.signatures",
+  "agave": [
+   "normalized string",
+   "normalized string"
+  ],
+  "chain": [
+   "normalized string"
+  ],
+  "reason": "kept: Agave's blocks carry vote transactions and fee rewards; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getBlock",
+  "case": "getBlock/transfer-accounts",
+  "path": "result.rewards",
+  "agave": [
+   {
+    "commission": null,
+    "lamports": 7500,
+    "postBalance": 499999770000,
+    "pubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+    "rewardType": "Fee"
+   }
+  ],
+  "chain": [],
+  "reason": "kept: Agave's blocks carry vote transactions and fee rewards; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getBlock",
+  "case": "getBlock/transfer-accounts",
+  "path": "result.transactions",
+  "agave": [
+   {
+    "meta": {
+     "err": null,
+     "fee": 10000,
+     "postBalances": [
+      499999762500,
+      1000000000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      499999772500,
+      1000000000000000,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "transaction": {
+     "accountKeys": [
+      {
+       "pubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+       "signer": true,
+       "source": "transaction",
+       "writable": true
+      },
+      {
+       "pubkey": "91D5oPS7RFk276Z2BWPdP8BPonbegy6pdJkUJvRnBkcv",
+       "signer": true,
+       "source": "transaction",
+       "writable": true
+      },
+      {
+       "pubkey": "Vote111111111111111111111111111111111111111",
+       "signer": false,
+       "source": "transaction",
+       "writable": false
+      }
+     ],
+     "signatures": [
+      "normalized string",
+      "normalized string"
+     ]
+    },
+    "version": "legacy"
+   },
+   {
+    "meta": {
+     "err": null,
+     "fee": 5000,
+     "postBalances": [
+      98999995000,
+      1000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      100000000000,
+      0,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "transaction": {
+     "accountKeys": [
+      {
+       "pubkey": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+       "signer": true,
+       "source": "transaction",
+       "writable": true
+      },
+      {
+       "pubkey": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+       "signer": false,
+       "source": "transaction",
+       "writable": true
+      },
+      {
+       "pubkey": "11111111111111111111111111111111",
+       "signer": false,
+       "source": "transaction",
+       "writable": false
+      }
+     ],
+     "signatures": [
+      "normalized string"
+     ]
+    },
+    "version": "legacy"
+   }
+  ],
+  "chain": [
+   {
+    "meta": {
+     "err": null,
+     "fee": 5000,
+     "postBalances": [
+      98999995000,
+      1000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      100000000000,
+      0,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "transaction": {
+     "accountKeys": [
+      {
+       "pubkey": "9F5yfNPYQf9hDxwCmRd7AbZJ1X1qNwsfm3ztHaJT3jty",
+       "signer": true,
+       "source": "transaction",
+       "writable": true
+      },
+      {
+       "pubkey": "4G8s3JGwqXTLAgTf2ertKdvgf2DHbw4HeetnbxLzpLvr",
+       "signer": false,
+       "source": "transaction",
+       "writable": true
+      },
+      {
+       "pubkey": "11111111111111111111111111111111",
+       "signer": false,
+       "source": "transaction",
+       "writable": false
+      }
+     ],
+     "signatures": [
+      "normalized string"
+     ]
+    },
+    "version": "legacy"
+   }
+  ],
+  "reason": "kept: Agave's blocks carry vote transactions and fee rewards; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getBlock",
+  "case": "getBlock/bare-string",
+  "path": "result.rewards",
+  "agave": [
+   {
+    "commission": null,
+    "lamports": 7500,
+    "postBalance": 499999770000,
+    "pubkey": "HzNx88UpqajcnVrtu4NyxEyDdPLzina8RxxBvDwzx2JW",
+    "rewardType": "Fee"
+   }
+  ],
+  "chain": [],
+  "reason": "kept: Agave's blocks carry vote transactions and fee rewards; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getBlock",
+  "case": "getBlock/bare-string",
+  "path": "result.transactions",
+  "agave": [
+   {
+    "meta": {
+     "computeUnitsConsumed": 2100,
+     "costUnits": 4185,
+     "err": null,
+     "fee": 10000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program Vote111111111111111111111111111111111111111 invoke [1]",
+      "Program Vote111111111111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      499999762500,
+      1000000000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      499999772500,
+      1000000000000000,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "transaction": [
+     "normalized string",
+     "base64"
+    ]
+   },
+   {
+    "meta": {
+     "computeUnitsConsumed": 150,
+     "costUnits": 1481,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98999995000,
+      1000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      100000000000,
+      0,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "transaction": [
+     "normalized string",
+     "base64"
+    ]
+   }
+  ],
+  "chain": [
+   {
+    "meta": {
+     "computeUnitsConsumed": 150,
+     "costUnits": 24352,
+     "err": null,
+     "fee": 5000,
+     "innerInstructions": [],
+     "loadedAddresses": {
+      "readonly": [],
+      "writable": []
+     },
+     "logMessages": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+     ],
+     "postBalances": [
+      98999995000,
+      1000000000,
+      1
+     ],
+     "postTokenBalances": [],
+     "preBalances": [
+      100000000000,
+      0,
+      1
+     ],
+     "preTokenBalances": [],
+     "rewards": [],
+     "status": {
+      "Ok": null
+     }
+    },
+    "transaction": [
+     "normalized string",
+     "base64"
+    ]
+   }
+  ],
+  "reason": "kept: Agave's blocks carry vote transactions and fee rewards; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/transfer-default",
+  "path": "result.meta.costUnits",
+  "agave": 1481,
+  "chain": 24352,
+  "reason": "kept: costUnits is this chain's cost against the block limit, on its own scale",
+  "page": "**`costUnits`.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/transfer-default",
+  "path": "result.transactionIndex",
+  "agave": 1,
+  "chain": 0,
+  "reason": "kept: an Agave block holds a vote transaction before this one; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/transfer-json",
+  "path": "result.meta.costUnits",
+  "agave": 1481,
+  "chain": 24352,
+  "reason": "kept: costUnits is this chain's cost against the block limit, on its own scale",
+  "page": "**`costUnits`.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/transfer-json",
+  "path": "result.transactionIndex",
+  "agave": 1,
+  "chain": 0,
+  "reason": "kept: an Agave block holds a vote transaction before this one; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/transfer-json-v0",
+  "path": "result.meta.costUnits",
+  "agave": 1481,
+  "chain": 24352,
+  "reason": "kept: costUnits is this chain's cost against the block limit, on its own scale",
+  "page": "**`costUnits`.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/transfer-json-v0",
+  "path": "result.transactionIndex",
+  "agave": 1,
+  "chain": 0,
+  "reason": "kept: an Agave block holds a vote transaction before this one; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/transfer-jsonParsed",
+  "path": "result.meta.costUnits",
+  "agave": 1481,
+  "chain": 24352,
+  "reason": "kept: costUnits is this chain's cost against the block limit, on its own scale",
+  "page": "**`costUnits`.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/transfer-jsonParsed",
+  "path": "result.transactionIndex",
+  "agave": 1,
+  "chain": 0,
+  "reason": "kept: an Agave block holds a vote transaction before this one; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/transfer-base64",
+  "path": "result.meta.costUnits",
+  "agave": 1481,
+  "chain": 24352,
+  "reason": "kept: costUnits is this chain's cost against the block limit, on its own scale",
+  "page": "**`costUnits`.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/transfer-base64",
+  "path": "result.transactionIndex",
+  "agave": 1,
+  "chain": 0,
+  "reason": "kept: an Agave block holds a vote transaction before this one; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/transfer-base58",
+  "path": "result.meta.costUnits",
+  "agave": 1481,
+  "chain": 24352,
+  "reason": "kept: costUnits is this chain's cost against the block limit, on its own scale",
+  "page": "**`costUnits`.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/transfer-base58",
+  "path": "result.transactionIndex",
+  "agave": 1,
+  "chain": 0,
+  "reason": "kept: an Agave block holds a vote transaction before this one; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/transfer-binary",
+  "path": "result.meta.costUnits",
+  "agave": 1481,
+  "chain": 24352,
+  "reason": "kept: costUnits is this chain's cost against the block limit, on its own scale",
+  "page": "**`costUnits`.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/transfer-binary",
+  "path": "result.transactionIndex",
+  "agave": 1,
+  "chain": 0,
+  "reason": "kept: an Agave block holds a vote transaction before this one; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-base64",
+  "path": "result.meta.costUnits",
+  "agave": 1759,
+  "chain": 223596,
+  "reason": "kept: costUnits is this chain's cost against the block limit, on its own scale",
+  "page": "**`costUnits`.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-base64",
+  "path": "result.meta.postBalances[0]",
+  "agave": 98994424840,
+  "chain": 98995921320,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-base64",
+  "path": "result.meta.postBalances[1]",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-base64",
+  "path": "result.meta.postBalances[2]",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-base64",
+  "path": "result.meta.postBalances[3]",
+  "agave": 1461600,
+  "chain": 1066800,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-base64",
+  "path": "result.meta.preBalances[0]",
+  "agave": 98994429840,
+  "chain": 98995926320,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-base64",
+  "path": "result.meta.preBalances[1]",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-base64",
+  "path": "result.meta.preBalances[2]",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-base64",
+  "path": "result.meta.preBalances[3]",
+  "agave": 1461600,
+  "chain": 1066800,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-base64",
+  "path": "result.transactionIndex",
+  "agave": 1,
+  "chain": 0,
+  "reason": "kept: an Agave block holds a vote transaction before this one; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-jsonParsed",
+  "path": "result.meta.costUnits",
+  "agave": 1759,
+  "chain": 223596,
+  "reason": "kept: costUnits is this chain's cost against the block limit, on its own scale",
+  "page": "**`costUnits`.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-jsonParsed",
+  "path": "result.meta.postBalances[0]",
+  "agave": 98994424840,
+  "chain": 98995921320,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-jsonParsed",
+  "path": "result.meta.postBalances[1]",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-jsonParsed",
+  "path": "result.meta.postBalances[2]",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-jsonParsed",
+  "path": "result.meta.postBalances[3]",
+  "agave": 1461600,
+  "chain": 1066800,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-jsonParsed",
+  "path": "result.meta.preBalances[0]",
+  "agave": 98994429840,
+  "chain": 98995926320,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-jsonParsed",
+  "path": "result.meta.preBalances[1]",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-jsonParsed",
+  "path": "result.meta.preBalances[2]",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-jsonParsed",
+  "path": "result.meta.preBalances[3]",
+  "agave": 1461600,
+  "chain": 1066800,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/token-transfer-jsonParsed",
+  "path": "result.transactionIndex",
+  "agave": 1,
+  "chain": 0,
+  "reason": "kept: an Agave block holds a vote transaction before this one; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/memo-base64",
+  "path": "result.meta.costUnits",
+  "agave": 21761,
+  "chain": 219353,
+  "reason": "kept: costUnits is this chain's cost against the block limit, on its own scale",
+  "page": "**`costUnits`.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/memo-base64",
+  "path": "result.meta.postBalances[0]",
+  "agave": 98994414840,
+  "chain": 98995911320,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/memo-base64",
+  "path": "result.meta.preBalances[0]",
+  "agave": 98994419840,
+  "chain": 98995916320,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/memo-base64",
+  "path": "result.transactionIndex",
+  "agave": 1,
+  "chain": 0,
+  "reason": "kept: an Agave block holds a vote transaction before this one; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/failed-base64",
+  "path": "result.meta.costUnits",
+  "agave": 1481,
+  "chain": 24352,
+  "reason": "kept: costUnits is this chain's cost against the block limit, on its own scale",
+  "page": "**`costUnits`.**"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/failed-base64",
+  "path": "result.meta.postBalances[1]",
+  "agave": 98994414840,
+  "chain": 98995911320,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/failed-base64",
+  "path": "result.meta.preBalances[1]",
+  "agave": 98994414840,
+  "chain": 98995911320,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "getTransaction",
+  "case": "getTransaction/failed-base64",
+  "path": "result.transactionIndex",
+  "agave": 1,
+  "chain": 0,
+  "reason": "kept: an Agave block holds a vote transaction before this one; this chain has no vote accounts",
+  "page": "**Kept differences.**"
+ },
+ {
+  "method": "getStakeMinimumDelegation",
+  "case": "getStakeMinimumDelegation",
+  "path": "error",
+  "chain": {
+   "code": -32601,
+   "message": "Method not found"
+  },
+  "reason": "kept: the Stake program is not on this chain",
+  "page": "| `getStakeMinimumDelegation` | full | `-32601`, kept: the Stake program is not on this chain |"
+ },
+ {
+  "method": "getStakeMinimumDelegation",
+  "case": "getStakeMinimumDelegation",
+  "path": "result",
+  "agave": {
+   "context": {
+    "apiVersion": "4.3.0",
+    "slot": "normalized number"
+   },
+   "value": 1000000000
+  },
+  "reason": "kept: the Stake program is not on this chain",
+  "page": "| `getStakeMinimumDelegation` | full | `-32601`, kept: the Stake program is not on this chain |"
+ },
+ {
+  "method": "simulateTransaction",
+  "case": "simulateTransaction/valid",
+  "path": "result.value.postBalances[0]",
+  "agave": 98994407807,
+  "chain": 98995904287,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "simulateTransaction",
+  "case": "simulateTransaction/valid",
+  "path": "result.value.preBalances[0]",
+  "agave": 98994414840,
+  "chain": 98995911320,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "simulateTransaction",
+  "case": "simulateTransaction/replace-blockhash",
+  "path": "result.value.postBalances[0]",
+  "agave": 98994407787,
+  "chain": 98995904267,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "simulateTransaction",
+  "case": "simulateTransaction/replace-blockhash",
+  "path": "result.value.preBalances[0]",
+  "agave": 98994414840,
+  "chain": 98995911320,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "simulateTransaction",
+  "case": "simulateTransaction/accounts",
+  "path": "result.value.accounts[0].lamports",
+  "agave": 98994407767,
+  "chain": 98995904247,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "simulateTransaction",
+  "case": "simulateTransaction/accounts",
+  "path": "result.value.postBalances[0]",
+  "agave": 98994407767,
+  "chain": 98995904247,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "simulateTransaction",
+  "case": "simulateTransaction/accounts",
+  "path": "result.value.preBalances[0]",
+  "agave": 98994414840,
+  "chain": 98995911320,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "simulateTransaction",
+  "case": "simulateTransaction/inner-instructions",
+  "path": "result.value.postBalances[0]",
+  "agave": 98994407757,
+  "chain": 98995904237,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "simulateTransaction",
+  "case": "simulateTransaction/inner-instructions",
+  "path": "result.value.preBalances[0]",
+  "agave": 98994414840,
+  "chain": 98995911320,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "accountSubscribe",
+  "case": "accountSubscribe/payer",
+  "path": "notifications[0].params.result.value.lamports",
+  "agave": 98994406839,
+  "chain": 98995903319,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "accountSubscribe",
+  "case": "accountSubscribe/payer-default",
+  "path": "notifications[0].params.result.value.lamports",
+  "agave": 98994398837,
+  "chain": 98995895317,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "accountSubscribe",
+  "case": "accountSubscribe/token-jsonParsed",
+  "path": "notifications[0].params.result.value.lamports",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "programSubscribe",
+  "case": "programSubscribe/token",
+  "path": "notifications[0].params.result.value.account.lamports",
+  "agave": 2039280,
+  "chain": 1488440,
+  "reason": "kept: genesis rent here is mainnet's 5,080 lamports a byte, with SIMD-0437-1 and -2 active from block 0, and solana-test-validator always starts at Rent::default's 6,960, so an account funded at its rent minimum, and its funder, differ by a multiple of 1,880",
+  "page": "`Rent.lamports_per_byte` is 5,080 here"
+ },
+ {
+  "method": "signatureSubscribe",
+  "case": "signatureSubscribe/received",
+  "path": "notifications",
+  "agave": [
+   {
+    "jsonrpc": "2.0",
+    "method": "signatureNotification",
+    "params": {
+     "result": {
+      "context": {
+       "slot": "normalized number"
+      },
+      "value": {
+       "err": null
+      }
+     },
+     "subscription": 7
+    }
+   }
+  ],
+  "chain": [
+   {
+    "jsonrpc": "2.0",
+    "method": "signatureNotification",
+    "params": {
+     "result": {
+      "context": {
+       "slot": "normalized number"
+      },
+      "value": "receivedSignature"
+     },
+     "subscription": 7
+    }
+   },
+   {
+    "jsonrpc": "2.0",
+    "method": "signatureNotification",
+    "params": {
+     "result": {
+      "context": {
+       "slot": "normalized number"
+      },
+      "value": {
+       "err": null
+      }
+     },
+     "subscription": 7
+    }
+   }
+  ],
+  "reason": "kept: a single test validator leads every slot and receives no shreds, so it never sends receivedSignature; this machine sends it when the block reaches it",
+  "page": "**Subscriptions.**"
+ },
+ {
+  "method": "slotsUpdatesSubscribe",
+  "case": "slotsUpdatesSubscribe",
+  "path": "notifications",
+  "agave": [
+   {
+    "jsonrpc": "2.0",
+    "method": "slotsUpdatesNotification",
+    "params": {
+     "result": {
+      "slot": "normalized number",
+      "timestamp": "normalized number",
+      "type": "root"
+     },
+     "subscription": 9
+    }
+   }
+  ],
+  "chain": [
+   {
+    "jsonrpc": "2.0",
+    "method": "slotsUpdatesNotification",
+    "params": {
+     "result": {
+      "slot": "normalized number",
+      "timestamp": "normalized number",
+      "type": "completed"
+     },
+     "subscription": 9
+    }
+   },
+   {
+    "jsonrpc": "2.0",
+    "method": "slotsUpdatesNotification",
+    "params": {
+     "result": {
+      "parent": "normalized number",
+      "slot": "normalized number",
+      "timestamp": "normalized number",
+      "type": "createdBank"
+     },
+     "subscription": 9
+    }
+   },
+   {
+    "jsonrpc": "2.0",
+    "method": "slotsUpdatesNotification",
+    "params": {
+     "result": {
+      "slot": "normalized number",
+      "timestamp": "normalized number",
+      "type": "optimisticConfirmation"
+     },
+     "subscription": 9
+    }
+   },
+   {
+    "jsonrpc": "2.0",
+    "method": "slotsUpdatesNotification",
+    "params": {
+     "result": {
+      "slot": "normalized number",
+      "timestamp": "normalized number",
+      "type": "root"
+     },
+     "subscription": 9
+    }
+   }
+  ],
+  "reason": "kept: a commit is completed, createdBank, optimisticConfirmation and root at once, and frozen, whose stats count PoH entries, is never sent",
+  "page": "**Leaders, epochs and the cluster.**"
+ },
+ {
+  "method": "requestAirdrop",
+  "case": "requestAirdrop/payer",
+  "path": "error",
+  "chain": {
+   "code": -32600,
+   "message": "Invalid request"
+  },
+  "reason": "kept: the test validator runs a faucet, and a machine without one answers -32600, as an Agave RPC without one does",
+  "page": "| `requestAirdrop` | full | served: `-32600 Invalid request` on a machine without a faucet, as Agave answers; the faucet on a devnet machine that holds a key |"
+ },
+ {
+  "method": "requestAirdrop",
+  "case": "requestAirdrop/payer",
+  "path": "result",
+  "agave": "3Y4kCwYGw12yEw9SaoPHu6t7X7HkPgo6jGnyRippVxMSYNRaGKWTegSaYrp61zxwLCpmE4jUCEy21ffqKRV8aZsc",
+  "reason": "kept: the test validator runs a faucet, and a machine without one answers -32600, as an Agave RPC without one does",
+  "page": "| `requestAirdrop` | full | served: `-32600 Invalid request` on a machine without a faucet, as Agave answers; the faucet on a devnet machine that holds a key |"
+ },
+ {
+  "method": "http /genesis.tar.bz2",
+  "case": "http/genesis",
+  "path": "body",
+  "agave": {
+   "length": 393542,
+   "sha256": "001c1b65a3023cf5c1c2b07d9fa2261f9ef81d926b1983488f3b71faf5294c32"
+  },
+  "chain": "",
+  "reason": "kept: this chain has no Agave genesis archive and no Agave snapshot, because CometBFT state sync does both jobs, so it answers 404 as Agave does for a file it does not hold",
+  "page": "**The HTTP layer.**"
+ },
+ {
+  "method": "http /genesis.tar.bz2",
+  "case": "http/genesis",
+  "path": "status",
+  "agave": 200,
+  "chain": 404,
+  "reason": "kept: this chain has no Agave genesis archive and no Agave snapshot, because CometBFT state sync does both jobs, so it answers 404 as Agave does for a file it does not hold",
+  "page": "**The HTTP layer.**"
+ },
+ {
+  "method": "http /snapshot.tar.bz2",
+  "case": "http/snapshot",
+  "path": "body",
+  "agave": {
+   "length": 415768,
+   "sha256": "79c479006f4ba45d4ca590be7729ca9e7bbeaccfd6a78b151a37b54f0b4f3994"
+  },
+  "chain": "",
+  "reason": "kept: this chain has no Agave genesis archive and no Agave snapshot, because CometBFT state sync does both jobs, so it answers 404 as Agave does for a file it does not hold",
+  "page": "**The HTTP layer.**"
+ },
+ {
+  "method": "http /snapshot.tar.bz2",
+  "case": "http/snapshot",
+  "path": "status",
+  "agave": 200,
+  "chain": 404,
+  "reason": "kept: this chain has no Agave genesis archive and no Agave snapshot, because CometBFT state sync does both jobs, so it answers 404 as Agave does for a file it does not hold",
+  "page": "**The HTTP layer.**"
+ }
+]

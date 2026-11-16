@@ -1,0 +1,28 @@
+# A systemd unit for Hermes 1.13.1, the IBC relayer. Its config is
+# examples/hermes.toml. Run it next to the relayer's node, a full node of your
+# own that is not a validator.
+#
+#   curl -sSfL -o /tmp/hermes.tar.gz \
+#     https://github.com/informalsystems/hermes/releases/download/v1.13.1/hermes-v1.13.1-x86_64-unknown-linux-gnu.tar.gz
+#   echo "effd6b5d698f9e3d78a4e064a407a44987ac941f3faa10411a34e72506b3aa28  /tmp/hermes.tar.gz" | sha256sum -c
+#   tar -xzf /tmp/hermes.tar.gz -C /usr/local/bin hermes
+#   install -d -m 700 -o hermes /etc/hermes
+#   install -m 644 examples/hermes.toml /etc/hermes/config.toml   # then fill in both chains
+#   hermes --config /etc/hermes/config.toml keys add --chain <this chain id> --mnemonic-file /etc/hermes/relayer.mnemonic
+#   install -m 644 examples/hermes.service /etc/systemd/system/
+#   systemctl enable --now hermes
+
+[Unit]
+Description=Hermes, the IBC relayer
+After=network-online.target svmd.service
+Wants=network-online.target
+
+[Service]
+User=hermes
+Group=hermes
+ExecStart=/usr/local/bin/hermes --config /etc/hermes/config.toml start
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

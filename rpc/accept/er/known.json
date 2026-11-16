@@ -1,0 +1,8 @@
+[
+  {
+    "difference": "A block counts the compute units a transaction declares; Agave refunds the unused part after execution",
+    "compatibility": "docs/compatibility.md section 1, declared units",
+    "accepted": true,
+    "tests": {}
+  }
+]
