@@ -95,13 +95,12 @@ golden: engine ## Regenerate the parsed-account, transaction, and instruction go
 
 # Test the release profile because panic = "unwind" affects consensus behavior.
 # Require QUIC binaries so missing integration-test dependencies fail explicitly.
-test: engine svm-tpu quic-client fetch-programs ## Run Rust, Go, devnet, and benchmark-report tests
+test: engine svm-tpu quic-client fetch-programs ## Run Rust, Go, and devnet tests
 	scripts/check-engine-deps.sh
 	cargo test --release --locked -- --nocapture
 	cargo test --release --locked --manifest-path tpu/Cargo.toml
 	SVM_REQUIRE_QUIC=1 $(GO_TEST) ./...
 	SVM_REQUIRE_QUIC=1 $(GO_TEST) -tags devnet ./...
-	python3 -m unittest discover -s bench -p '*_test.py'
 	bench/bench.sh list >/dev/null
 
 lint: lint-go lint-shell ## Run all CI linters

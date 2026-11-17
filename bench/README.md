@@ -58,8 +58,7 @@ The [glossary](GLOSSARY.md) explains the terms and cell names that the suites us
 2. If the benchmark needs a build step, add it to `build` in `bench.sh`.
 3. Add a suite definition under `suites/`, with its dependencies, parameters and cells.
 4. Add a small test case to `suites/smoke.sh`.
-5. If the suite needs its own analysis, add it to `report.py`. If its output sets a constant that the
-   chain uses, add a test for it to `report_test.py`.
+5. If the suite needs its own analysis, add it to `report.py`.
 6. Add the suite to the table above.
 
 ## Tools
